@@ -6,67 +6,84 @@
 					<h1>log in your account</h1>
 				</div>
 			</div>
-				
-				<div class="forms-layout">
-					<div class="row align-items-center">
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-							<figure><img src="../../../../assets/images/dr-ali-rehman.png" class="img-fluid" alt="" /></figure>
-						</div>
-						
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-							<h4 class="mb-4">Sign in and forward your step..</h4>
-							
-							<div class="login-form">
-								<form>
-									<div class="row">
-										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<input type="text" placeholder="Username/Email ID" class="form-control" required="required">
-										</div>
 
-										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<input type="password" placeholder="Your Password" class="form-control" required="required">
-										</div>
-										<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
-											<input type="submit" value="Login" class="form-control">
-										</div>
+			<div class="forms-layout">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<figure><img src="../../../../assets/images/dr-ali-rehman.png" class="img-fluid" alt="" />
+						</figure>
+					</div>
 
-										<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
-											<p class="form-info">Don't have an account? <a routerLink="/register">Register</a></p>
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<h4 class="mb-4">Sign in and forward your step..</h4>
+
+						<div class="login-form">
+							<form name="form" #loginData="ngForm" (ngSubmit)="loginData.form.valid && loginUserData()">
+								<div class="row">
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<input type="email" placeholder="Username/Email ID" class="form-control"
+											name="email" [(ngModel)]="loginObj.email" required #email="ngModel"
+											[ngClass]="{ 'is-invalid': loginData.submitted && email.errors }">
+										<div *ngIf="loginData.submitted && email.errors" class="invalid-feedback">
+											<div *ngIf="email.errors?.['required']">Email is
+												required </div>
 										</div>
-									</div><!--row-->
-								</form>
-							</div>
+									</div>
+
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<input type="password" placeholder="Your Password" name="password" class="form-control"
+											[(ngModel)]="loginObj.password" required #password="ngModel"
+											[ngClass]="{ 'is-invalid': loginData.submitted && password.errors }" />
+
+										<div *ngIf="loginData.submitted && password.errors" class="invalid-feedback">
+											<div *ngIf="password.errors['required']">Password is required</div>
+										</div>
+									</div>
+
+									<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+										<input type="submit" value="Login" class="form-control">
+									</div>
+
+									<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
+										<p class="form-info">Don't have an account? <a
+												routerLink="/register">Register</a></p>
+									</div>
+								</div><!--row-->
+							</form>
 						</div>
 					</div>
 				</div>
-			
+			</div>
+
 		</div>
 	</div><!--registration and login page-->
-	
-	
-	
-				
-	
+
+
+
+
+
 	<div class="section-j">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 					<div class="position-relative">
-					<ol class="d-flex">
-						<li>
-							<strong>Book your Appointment</strong>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-						</li>
-						
-						<li>
-							<aside><a href="#">Book Appointment <i class="fa-regular fa-arrow-right"></i></a></aside>
-						</li>
-					</ol>
+						<ol class="d-flex">
+							<li>
+								<strong>Book your Appointment</strong>
+								<p>It is a long established fact that a reader will be distracted by the readable
+									content of a page when looking at its layout.</p>
+							</li>
+
+							<li>
+								<aside><a href="#">Book Appointment <i class="fa-regular fa-arrow-right"></i></a>
+								</aside>
+							</li>
+						</ol>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div><!--section j-->
-	
-	
+
+
 </div><!--site wrapper-->

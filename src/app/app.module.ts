@@ -35,6 +35,11 @@ import { HydrocephalusAndCSFComponent } from './components/neuroradiology/hydroc
 import { StrokeAndItsMimicsComponent } from './components/neuroradiology/stroke-and-its-mimics/stroke-and-its-mimics.component';
 import { ChildAcuteNeurologicalComponent } from './components/neuroradiology/child-acute-neurological/child-acute-neurological.component';
 import { HeadTraumaComponent } from './components/neuroradiology/head-trauma/head-trauma.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { CommonModule } from '@angular/common';
+import { PasswordPatternDirective } from './directives/password-pattern.directive';
 
 @NgModule({
   declarations: [
@@ -66,13 +71,18 @@ import { HeadTraumaComponent } from './components/neuroradiology/head-trauma/hea
     HydrocephalusAndCSFComponent,
     StrokeAndItsMimicsComponent,
     ChildAcuteNeurologicalComponent,
-    HeadTraumaComponent
+    HeadTraumaComponent,
+    RegisterComponent,
+    LoginComponent,
+    UserDashboardComponent,
+    PasswordPatternDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()

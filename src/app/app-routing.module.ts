@@ -29,6 +29,7 @@ import { HydrocephalusAndCSFComponent } from './components/neuroradiology/hydroc
 import { StrokeAndItsMimicsComponent } from './components/neuroradiology/stroke-and-its-mimics/stroke-and-its-mimics.component';
 import { ChildAcuteNeurologicalComponent } from './components/neuroradiology/child-acute-neurological/child-acute-neurological.component';
 import { HeadTraumaComponent } from './components/neuroradiology/head-trauma/head-trauma.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -60,6 +61,7 @@ const routes: Routes = [
   { path: 'strokeAndItsMimics', component: StrokeAndItsMimicsComponent },
   { path: 'childWithAcuteNeurological', component: ChildAcuteNeurologicalComponent },
   { path: 'headTrauma', component: HeadTraumaComponent },
+  { path: 'userDashboard', component: UserDashboardComponent },
 ];
 
 @NgModule({
