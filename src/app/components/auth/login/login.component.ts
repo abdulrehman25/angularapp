@@ -22,7 +22,7 @@ export class LoginComponent {
     this.authService.loginUser(this.loginObj).subscribe((res:any)=>{
       if(res.message==='success'){
         localStorage.setItem('isloggedin','true');
-        this._toastr.success('Logged In Successfully !','Login');
+        this._toastr.success('Logged In Successfully !','Logged In');
         this.router.navigate(['/userDashboard']);
       }else{
         this._toastr.error('Log In Fail !','Error');
