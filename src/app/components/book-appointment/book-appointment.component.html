@@ -448,7 +448,7 @@
 		</div>
 	</div><!--section j-->
 	
-	<div class="book-appointment-page">
+	<div [ngClass]="{'book-appointment-page': showBookAppointmentPage }">
 		<button class="close-book-appointment-page" (click)="closeBookAppointment()"><i class="fa-regular fa-xmark-large"></i></button>
 		<div class="container">
 			<div class="row">
@@ -460,12 +460,12 @@
 							<h2>Need to see a doctor?</h2>
 							<strong>Book your appointment in a few clicks.</strong>
 							<samp><i class="fa-regular fa-clock-ten"></i> It will takes 2 minutes</samp>
-							<aside><a href="javascript:;" (click)="showStepTwo()" class="start-appoint-1 page1">start</a></aside>
+							<aside><a href="javascript:;" (click)="showDiv('step2','2')" class="start-appoint-1 page1">start</a></aside>
 						</div>
 					</div><!--step1-->
 					
 					
-					<div class="step2">
+					<div *ngIf="addClass == 'step2'" [style] ="divStyle" class="step2">
 						<div class="step2-inner">
 							<a id="stp2"></a>
 							<label><span class="query-number">1</span> What's your name?</label>
@@ -474,13 +474,13 @@
 							</div>
 							<input type="text" name="name" [(ngModel)]="objectForBookingAppointment.name" placeholder="Type your answer here.." required ngModel #name='ngModel' />
 							
-							<aside><a *ngIf="name.valid" href="javascript:;" class="start-appoint-1 page2" (click)="showStepThree()">next</a></aside>
+							<aside><a *ngIf="name.valid" href="javascript:;" class="start-appoint-1 page2" (click)="showDiv('step3','3')">next</a></aside>
 						</div>
 						
 					</div><!--step2-->
 						
 						
-					<div class="step3">
+					<div *ngIf="addClass == 'step3'" [style] ="divStyle" class="step3">
 						<div class="step3-inner">
 							<a id="stp3"></a>
 							<label><span class="query-number">2</span> Is this going to be your first visit, or are you already a patient of ours?</label>
@@ -498,11 +498,11 @@
 									<span>I've been here before</span>
 								</li>
 							</ul>
-							<aside><a href="javascript:;" (click)="backToStepTwo()" class="start-appoint-1 back6" >back</a> <a *ngIf="visit_type.valid" href="javascript:;" class="start-appoint-1 page3" (click)="showStepFour()" >next</a></aside>
+							<aside><a href="javascript:;" (click)="showDiv('step2','2')" class="start-appoint-1 back6" >back</a> <a *ngIf="visit_type.valid" href="javascript:;" class="start-appoint-1 page3" (click)="showDiv('step4','4')" >next</a></aside>
 						</div>
 					</div><!--step3-->
 						
-					<div class="step4">
+					<div *ngIf="addClass == 'step4'" [style] ="divStyle" class="step4">
 						<div class="step4-inner">
 							<a id="stp4"></a>
 							<label><span class="query-number">3</span> Can you briefly describe the reason you're booking an appointment?</label>
@@ -523,13 +523,13 @@
                                 <option value="Oncological Radiology">Oncological Radiology</option>
                             </select>
 							<aside>
-								<a href="javascript:;" (click)="backToStepThree()" class="start-appoint-1 back5">back</a> 
-								<a *ngIf="appointment_reason.valid" href="javascript:;" class="start-appoint-1 page4" (click)="showStepFive()">next</a>
+								<a href="javascript:;" (click)="showDiv('step3','3')" class="start-appoint-1 back5">back</a> 
+								<a *ngIf="appointment_reason.valid" href="javascript:;" class="start-appoint-1 page4" (click)="showDiv('step5','5')">next</a>
 							</aside>
 						</div>
 					</div><!--step4-->
 					
-					<div class="step5">
+					<div *ngIf="addClass == 'step5'" [style] ="divStyle" class="step5">
 						<div class="step5-inner">
 							<a id="stp5"></a>
 							<label><span class="query-number">4</span> Which date do you want to book appointment?</label>
@@ -554,12 +554,12 @@
 								</li>
 							</ol>-->
 							<aside>
-								<a href="javascript:;" (click)="backToStepFour()" class="start-appoint-1 back4">back</a> 
-								<a *ngIf="appointment_date.valid" href="javascript:;" class="start-appoint-1 page5" (click)="showStepSix()">next</a></aside>
+								<a href="javascript:;" (click)="showDiv('step4','4')" class="start-appoint-1 back4">back</a> 
+								<a *ngIf="appointment_date.valid" href="javascript:;" class="start-appoint-1 page5" (click)="showDiv('step6','6')">next</a></aside>
 						</div>
 					</div><!--step5-->
 					
-					<div class="step6">
+					<div *ngIf="addClass == 'step6'" [style] ="divStyle" class="step6">
 						<div class="step6-inner">
 							<a id="stp6"></a>
 							<label><span class="query-number">5</span> Choose your timing schedule?</label>
@@ -568,12 +568,12 @@
 							</div>
 							<input type="time" name="appointment_time" [(ngModel)]="objectForBookingAppointment.appointment_time" required #appointment_time="ngModel" />
 							<aside>
-								<a href="javascript:;" (click)="backToStepFive()" class="start-appoint-1 back3">back</a>
-								<a *ngIf="appointment_time.valid" href="javascript:;" class="start-appoint-1 page6" (click)="showStepSeven()">next</a></aside>
+								<a href="javascript:;" (click)="showDiv('step5','5')" class="start-appoint-1 back3">back</a>
+								<a *ngIf="appointment_time.valid" href="javascript:;" class="start-appoint-1 page6" (click)="showDiv('step7','7')">next</a></aside>
 						</div>
 					</div><!--step2-->
 					
-					<div class="step7">
+					<div *ngIf="addClass == 'step7'" [style] ="divStyle" class="step7">
 						<div class="step7-inner">
 							<a id="stp7"></a>
 							<label><span class="query-number">6</span> We'll send you an email address to confirm your appointment. Where to?</label>
@@ -583,13 +583,13 @@
 							</div>
 							<input type="email" name="appointment_email" [(ngModel)]="objectForBookingAppointment.appointment_email" placeholder="name@example.com"   #appointment_email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
 							<aside>
-								<a href="javascript:;" (click)="backToStepSix()" class="start-appoint-1 back2">back</a>
-								<a *ngIf="appointment_email.valid" href="javascript:;" class="start-appoint-1 page7" (click)="showStepEight()">next</a>
+								<a href="javascript:;" (click)="showDiv('step6','6')" class="start-appoint-1 back2">back</a>
+								<a *ngIf="appointment_email.valid" href="javascript:;" class="start-appoint-1 page7" (click)="showDiv('step8','8')">next</a>
 							</aside>
 						</div>
 					</div><!--step2-->
 					
-					<div class="step8">
+					<div *ngIf="addClass == 'step8'" [style] ="divStyle" class="step8">
 						<div class="step8-inner">
 							<a id="stp8"></a>
 							<label><span class="query-number">7</span> Please leave your phone number in case we need to call you about last-minute changes to your appointment.</label>
@@ -599,7 +599,7 @@
 							</div>
 							<input type="tel" placeholder="9999XXXX99" maxlength="12" name="appointment_number" [(ngModel)]="objectForBookingAppointment.appointment_number" #appointment_number="ngModel" pattern="^((\\+91-?)|0)?[0-9]{10}$" required />
 							<aside>
-								<a href="javascript:;" (click)="backToStepSeven()" class="start-appoint-1 back1">back</a> 
+								<a href="javascript:;" (click)="showDiv('step7','7')" class="start-appoint-1 back1">back</a> 
 								<input *ngIf="appointment_number.valid" type="submit" value="Book My Appointment" class="start-appoint-1">
 							</aside>
 						</div>
