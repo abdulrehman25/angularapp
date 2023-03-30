@@ -30,6 +30,16 @@ import { StrokeAndItsMimicsComponent } from './components/neuroradiology/stroke-
 import { ChildAcuteNeurologicalComponent } from './components/neuroradiology/child-acute-neurological/child-acute-neurological.component';
 import { HeadTraumaComponent } from './components/neuroradiology/head-trauma/head-trauma.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { ResourcesComponent } from './components/resources/resources.component';
+import { AboutComponent } from './components/resources/about/about.component';
+import { BlogComponent } from './components/resources/blog/blog.component';
+import { ComparisonStudiesComponent } from './components/resources/comparison-studies/comparison-studies.component';
+import { ContactComponent } from './components/resources/contact/contact.component';
+import { GuidanceRadiologyTrainingComponent } from './components/resources/guidance-radiology-training/guidance-radiology-training.component';
+import { OurTeamComponent } from './components/resources/our-team/our-team.component';
+import { PrimaryReadsComponent } from './components/resources/primary-reads/primary-reads.component';
+import { ProBonoComponent } from './components/resources/pro-bono/pro-bono.component';
+import { TestimonialComponent } from './components/resources/testimonial/testimonial.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -62,6 +72,16 @@ const routes: Routes = [
   { path: 'childWithAcuteNeurological', component: ChildAcuteNeurologicalComponent },
   { path: 'headTrauma', component: HeadTraumaComponent },
   { path: 'userDashboard', component: UserDashboardComponent },
+  { path: 'resources', component: ResourcesComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'comparisonStudies', component: ComparisonStudiesComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'guidanceRadiologyTraining', component: GuidanceRadiologyTrainingComponent },
+  { path: 'ourTeam', component: OurTeamComponent },
+  { path: 'primaryReads', component: PrimaryReadsComponent },
+  { path: 'proBono', component: ProBonoComponent },
+  { path: 'testimonial', component: TestimonialComponent },
 ];
 
 @NgModule({
