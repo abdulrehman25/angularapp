@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,6 +41,15 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 import { CommonModule } from '@angular/common';
 import { PasswordPatternDirective } from './directives/password-pattern.directive';
+import { AboutComponent } from './components/resources/about/about.component';
+import { OurTeamComponent } from './components/resources/our-team/our-team.component';
+import { ProBonoComponent } from './components/resources/pro-bono/pro-bono.component';
+import { PrimaryReadsComponent } from './components/resources/primary-reads/primary-reads.component';
+import { ComparisonStudiesComponent } from './components/resources/comparison-studies/comparison-studies.component';
+import { GuidanceRadiologyTrainingComponent } from './components/resources/guidance-radiology-training/guidance-radiology-training.component';
+import { ContactComponent } from './components/resources/contact/contact.component';
+import { BlogComponent } from './components/resources/blog/blog.component';
+import { TestimonialComponent } from './components/resources/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +85,16 @@ import { PasswordPatternDirective } from './directives/password-pattern.directiv
     RegisterComponent,
     LoginComponent,
     UserDashboardComponent,
-    PasswordPatternDirective
+    PasswordPatternDirective,
+    AboutComponent,
+    OurTeamComponent,
+    ProBonoComponent,
+    PrimaryReadsComponent,
+    ComparisonStudiesComponent,
+    GuidanceRadiologyTrainingComponent,
+    ContactComponent,
+    BlogComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
@@ -85,6 +104,7 @@ import { PasswordPatternDirective } from './directives/password-pattern.directiv
     CommonModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    CarouselModule,
     ToastrModule.forRoot()
   ],
   providers: [],

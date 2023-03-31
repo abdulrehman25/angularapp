@@ -30,7 +30,6 @@ import { StrokeAndItsMimicsComponent } from './components/neuroradiology/stroke-
 import { ChildAcuteNeurologicalComponent } from './components/neuroradiology/child-acute-neurological/child-acute-neurological.component';
 import { HeadTraumaComponent } from './components/neuroradiology/head-trauma/head-trauma.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
-import { ResourcesComponent } from './components/resources/resources.component';
 import { AboutComponent } from './components/resources/about/about.component';
 import { BlogComponent } from './components/resources/blog/blog.component';
 import { ComparisonStudiesComponent } from './components/resources/comparison-studies/comparison-studies.component';
@@ -72,7 +71,6 @@ const routes: Routes = [
   { path: 'childWithAcuteNeurological', component: ChildAcuteNeurologicalComponent },
   { path: 'headTrauma', component: HeadTraumaComponent },
   { path: 'userDashboard', component: UserDashboardComponent },
-  { path: 'resources', component: ResourcesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'comparisonStudies', component: ComparisonStudiesComponent },
