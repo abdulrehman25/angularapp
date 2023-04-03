@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class BlogComponent {
 
+  constructor(private router:Router){
+
+  }
+  blogDetails(){
+    this.router.navigate(['/blogDetails'])
+  }
 }

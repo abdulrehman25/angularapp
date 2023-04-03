@@ -15,6 +15,17 @@ a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear 
 #siteNav ul.navbar-nav.mr-auto {justify-content: end;width: 100%;}
 #siteNav ul li a {color: #6c89b3; cursor: pointer;}
 #siteNav ul li.active a {color: #407839;}
+#siteNav button.ddl-menu {background-color: transparent;border: none;outline: none;color: #6c89b3;padding-left: 0px;padding-right: 0px; margin-right: 5px;}
+.ddl-item {position: relative;display: flex;}
+#siteNav ul span li .dropdown-menu {right: 0px;}
+.primary-navbar.sticky-top #siteNav button.ddl-menu {padding-top: 0px;padding-bottom: 0px;}
+#siteNav .dropdown-menu {background-color: #ffffff;border-color: #234474;border-radius: 0; padding: 25px 0px;}
+#siteNav .dropdown-menu a {font-size: 14px;color: #234474;line-height: 20px; border-bottom: 1px solid rgba(0,0,0,.10);}
+#siteNav .dropdown-menu a:last-child {border-bottom: none;}
+#siteNav .dropdown-menu a:hover {font-size: 14px; color: #ffffff;background-color: #407839;}
+.dropdown-item:focus, .dropdown-item:hover { color: #ffffff; background-color: #407839;}
+#siteNav .dropdown-menu a.active {color: #ffffff;}
+.dropdown-item.active, .dropdown-item:active {background-color: #407839;} 
 
 #siteNav .dropdown-menu {background-color: #ffffff;border-color: #234474;border-radius: 0; padding: 25px 0px;}
 #siteNav .dropdown-menu a {font-size: 14px;color: #234474;line-height: 20px; border-bottom: 1px solid rgba(0,0,0,.10);}
@@ -284,7 +295,7 @@ background-repeat: no-repeat;background-position: left top;background-size: cont
 
 .experience-training {width: 100%;height: auto;display: inline-block;padding: 0px 0px 100px;position: relative;background-color: #ffffff;}
 .experience-training::before {position: absolute;content: '';width: 750px;height: 650px;background-image: url('../images/experience-training.jpg');background-repeat: no-repeat;background-size: cover;background-position: top center;}
-.experience-training .bg-white.p-5 {box-shadow: 0px 6px 70px rgba(0,0,0,.1); margin-top: 50px;}
+.experience-training .bg-white.p-5 {box-shadow: 0px 6px 70px rgba(0,0,0,.1); margin-top: 50px; position: relative;}
 .experience-training h3 {font-size: 28px;font-weight: 500;color: #1e4171;padding-bottom: 20px;margin-bottom: 20px;position: relative;}
 .experience-training h3::before {position: absolute;content: '';width: 75px;height: 3px;background-color: #407839;bottom: 0;left: 0;}
 .experience-training ul li {list-style-type: none;position: relative; padding-left: 0px; padding-bottom: 15px; line-height: 20px;font-size: 15px;}
@@ -584,8 +595,6 @@ margin: 0px auto 20px;}
 img.inner-page-right-picture {max-width: 450px;float: right;margin-bottom: 15px;margin-left: 15px;}
 img.inner-page-left-picture {max-width: 450px;float: left;margin-bottom: 15px;margin-right: 15px;}
 /*inner pages*/
-
-
 
 .testimonial-section ul li {list-style-type: none;background-color: #f6f6f6;padding: 20px;margin-bottom: 100px;border-left: 5px solid #407839;position: relative; box-shadow: 0px 38px 81px rgba(124, 154, 185,.20);}
 .testimonial-section ul li::before {position: absolute;content: '\22';font-family: inherit;font-size: 10rem;color: #407839;left: 90%;top: 40px;
