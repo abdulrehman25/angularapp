@@ -39,6 +39,8 @@ import { OurTeamComponent } from './components/resources/our-team/our-team.compo
 import { PrimaryReadsComponent } from './components/resources/primary-reads/primary-reads.component';
 import { ProBonoComponent } from './components/resources/pro-bono/pro-bono.component';
 import { TestimonialComponent } from './components/resources/testimonial/testimonial.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
+import { Error404Component } from './components/error404/error404.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -80,6 +82,8 @@ const routes: Routes = [
   { path: 'primaryReads', component: PrimaryReadsComponent },
   { path: 'proBono', component: ProBonoComponent },
   { path: 'testimonial', component: TestimonialComponent },
+  { path: 'thankYou', component: ThankYouComponent },
+  { path: 'error404', component: Error404Component },
 ];
 
 @NgModule({

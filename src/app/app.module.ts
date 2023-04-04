@@ -50,6 +50,8 @@ import { GuidanceRadiologyTrainingComponent } from './components/resources/guida
 import { ContactComponent } from './components/resources/contact/contact.component';
 import { BlogComponent } from './components/resources/blog/blog.component';
 import { TestimonialComponent } from './components/resources/testimonial/testimonial.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
+import { Error404Component } from './components/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +96,9 @@ import { TestimonialComponent } from './components/resources/testimonial/testimo
     GuidanceRadiologyTrainingComponent,
     ContactComponent,
     BlogComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    ThankYouComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@
       <div class="banner-caption">
         <h1>Second Opinion <br />Makes a <span>Difference</span></h1>
         <aside>
-          <a href="#"
+          <a routerLink="/bookAppointment"
             >Book Appoinment <i class="fa-regular fa-arrow-right"></i
           ></a>
         </aside>
@@ -176,7 +176,7 @@
 
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <aside>
-            <a href="#"
+            <a routerLink="/bookAppointment"
               >Book an Appointment <i class="fa-regular fa-arrow-right"></i
             ></a>
           </aside>
@@ -415,7 +415,7 @@
 
               <li>
                 <aside>
-                  <a href="#"
+                  <a routerLink="/bookAppointment"
                     >Book Appoinment <i class="fa-regular fa-arrow-right"></i
                   ></a>
                 </aside>
@@ -669,14 +669,14 @@
   </div>
   <!--section h-->
 
-  <div class="section-i" id="testimonial-slider">
+  <div class="section-i">
     <div class="container">
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <h3>Testimonial</h3>
         </div>
 		<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
-				<owl-carousel-o [options]="customOptions">
+				<owl-carousel-o [options]="customOptions" id="testimonial-slider">
 					<ng-container *ngFor="let slide of imgUrls">
 					  <ng-template class="slide" carouselSlide [id]="slide.id">
 						<div class="item">
@@ -746,7 +746,7 @@
 
               <li>
                 <aside>
-                  <a href="#"
+                  <a routerLink="/bookAppointment"
                     >Book Appoinment <i class="fa-regular fa-arrow-right"></i
                   ></a>
                 </aside>
