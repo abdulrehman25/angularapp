@@ -33,11 +33,13 @@ export class BookAppointmentComponent {
     this.showBookAppointmentPage = true;
   }
 
-  addBookAppointmentData(appointmentData:NgForm){
+  addBookAppointmentData(){
     this.bookAppointmentDataService.insertBookAppointmentData(this.objectForBookingAppointment).subscribe((res:any)=>{
       if(res.status === 'success'){
         this._toastr.success('Your Appointment is Successfully Booked!','Booked Appointment');
-        this.router.navigate(['/']);
+        this.router.navigate(['/thankYou']);
+      }else if (res.status !== 'success') {
+        this.router.navigate(['/error404']);
       }
     })
   }
