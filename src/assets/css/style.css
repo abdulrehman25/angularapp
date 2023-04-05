@@ -61,11 +61,12 @@ box-shadow: 0px 11px 35px #407839;}
 .section-a {width: 100%;height: auto;background-color: #ffffff;position: relative;display: inline-block;}
 .banner-beneath-form {padding: 30px 25px;background-color: #ffffff;border-left: 1px solid rgba(0,0,0,.1);border-bottom: 1px solid rgba(0,0,0,.1);border-top: 1px solid rgba(0,0,0,.1);border-right: 1px solid transparent;position: relative;top: -50px;z-index: 11;right: -15px;
 box-shadow: 8px 0px 114px #96a2b4;}
-.banner-beneath-form h4 {color: #14457b;font-weight: 400;font-size: 24px;padding-top: 24px;}
+.banner-beneath-form h4 {color: #14457b;font-weight: 400;font-size: 24px;padding-top: 50px;}
 .banner-beneath-form form input[type="text"],
 .banner-beneath-form form input[type="tel"],
 .banner-beneath-form form input[type="email"],
 .banner-beneath-form form input[type="date"],
+.banner-beneath-form form input[type="time"],
 .banner-beneath-form form select{background-color: #f4f4f4;box-shadow: inset 0px 0px 4px rgb(0 0 0 / 10%);margin-bottom: 8px;margin-top: 8px;}
 .banner-beneath-form form input[type="submit"] {background-color: #407839;color: #ffffff;border-color: #407839;margin-bottom: 8px;margin-top: 8px;
 border-radius: 50px;box-shadow: 0px 11px 35px #407839;}
@@ -213,6 +214,8 @@ padding-right: 10px;outline: none;border-radius: 0px;padding-top: 15px;padding-b
 .accordion-section .card-header h2 button i.fa {float: right; color: #407839;}
 .accordion-section .card-header h2 button[data-toggle="collapse"] i.fa {color: #ffffff;}
 .accordion-section .card-header h2 button.collapsed i.fa {color: #407839;}
+.section-h aside a {background-color: #407839;color: #ffffff;padding: 8px 20px;display: inline-block;border-radius: 100px;border: 1px solid #407839;}
+.section-h aside a:hover {color: #ffffff;background-color: #1e4171;border: 1px solid #4b80f8;}
 /*section h*/
 
 
