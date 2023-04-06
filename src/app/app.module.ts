@@ -54,6 +54,7 @@ import { BlogComponent } from './components/resources/blog/blog.component';
 import { TestimonialComponent } from './components/resources/testimonial/testimonial.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { Error404Component } from './components/error404/error404.component';
+import { DefaultHomeComponent } from './components/default-home/default-home.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +101,8 @@ import { Error404Component } from './components/error404/error404.component';
     BlogComponent,
     TestimonialComponent,
     ThankYouComponent,
-    Error404Component
+    Error404Component,
+    DefaultHomeComponent
   ],
   imports: [
     BrowserModule,
