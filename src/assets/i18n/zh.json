@@ -1,11 +1,28 @@
 {
-    "Sitetitle": "Hoekige site met meerdere talen",
-    "Name": "阿里拉赫曼医",
-    "NameError": "Ik weet zeker dat je een naam moet hebben",
-    "Email": "E-mailadres",
-    "PhoneNo": "Telefoon nr",
-    "Password": "Wachtwoord",
-    "Bio": "Voer bio in",
-    "TermsConditions": "Ik ga akkoord met de voorwaarden.",
-    "Submit": "voorleggen"
+    "Dr Ali Rahman": "阿里拉赫曼医",
+    "Introduction":"简介",
+    "proBonoP1":"在医疗保健方面，获得正确的诊断对于确保恰当的治疗和护理至关重要。然而，由于医疗条件的复杂性，可能会发生误诊并对患者造成有害后果。这也是为什么我们需要第二诊疗意见。",
+    "proBonoP2":"我们相信每个人都享有健康，这就是为什么 阿里·拉赫曼医生和他的团队发起了一项无偿第二诊疗意见倡议，即针对失业者、残疾人、老年人、单身母亲或获得有限医疗机会的人，提供免费的放射学报告第二诊疗意见。",
+    "proBonoP3":"第二诊疗意见本身可以帮助患者更好地了解他们的诊断和治疗方案。它既可以确保初步诊断是正确的，也可以识别潜在的误诊。",
+    "proBonoP4":"此外，这种类型的第二意见可以向患者提供必要的信息并使他们能够做出明智的选择。这样患者能够更好地掌控自己的医疗保健。",
+    "proBonoP5_1":"",
+    "proBonoP5_2":" 发起的这项无偿的第二诊疗意见公益活动，打破了获得医疗保健的障碍，并确保所有患者，无论其财务状况如何，都能获得所需的护理和关注。",
+
+
+    "_commetsForOurUnderstanding":"About section starts from here",
+    "aboutComponentP1":"阿里·拉赫曼 (Ali Rahman) 医生出生于伦敦，拥有德国和瑞士双重国籍。他于2022年获得瑞士公民身份。他的医学经验涵盖了放射学和神经放射学的各个方面，并且他在普通放射学、肌肉骨骼放射学和神经放射学方面获得了瑞士和德国委员会的认证。他在诊断神经放射学和肌肉骨骼骨科放射学方面接受过进修培训，重点是运动损伤。",
+    "aboutComponentP2":"此外，阿里·拉赫曼医生还具有超声培训方面的专业知识，是一位充满激情的超声教师，并获得了瑞士超声学会的认证。他还擅长肿瘤放射学、全身放射学、风湿病放射学、妇科放射学和胃肠放射学。",
+    "aboutComponentP3":"作为一名慈善家，阿里·拉赫曼医生通过radiologycheck.com网站上的公益活动为社会贡献一份力量。他希望所有人都能负担得起第二诊疗意见。radiologycheck.com网站上的特殊公益计划使有经济困难的人可以接受免费的第二诊疗意见。一切以患者为中心，他保证为患者的所有扫描提供准确无误的诊断。",
+    "aboutComponentP4":"目前，阿里·拉赫曼医生在瑞士伯尔尼大学医院集团担任放射学和神经放射学高级顾问。作为部门中的二把手，他用自己的专长影响着每一个人。",
+
+    "Abdominal Radiology":"腹部放射科",
+    "Abdominal Radiology Banner Heading":"获取腹部放射科的第二诊疗意见服务",
+    "Abdominal Radiology Banner Heading Instructions":"您的腹部放射学报告由我们在该领域拥有多年专业知识的专家提供。通过对您扫描结果的专业分析，我们可以将您腹部扫描的误诊率降至为零。",
+    "Abdominal Radiology Below Banner Text":"在 Radiologycheck.com这个网站上，您可以就有关磁共振、CT、X光和超声波的问题咨询来自德国和瑞士的进修过的放射科医生。我们的医生不仅获得了德国和瑞士委员会的认证，而且还获得了欧洲委员会的认证，并按照欧洲放射学会的规定进行医学操作。对于与腹部器官和身体其他受影响部位相关的健康问题，您可以获得准确的第二诊疗意见和详细的诊断说明。",
+    "Rely on us for an error-free second opinion":"依靠我们获得准确无误的第二诊疗意见。",
+    "Do you want an Abdominal Radiology Second Opinion?":"您想要获取腹部放射科的第二诊疗意见吗？",
+    "Click here to book an appointment now":"单击此处立即预约 (CT血管造影)"
+
+
+
 }

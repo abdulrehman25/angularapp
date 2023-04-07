@@ -42,6 +42,7 @@ import { TestimonialComponent } from './components/resources/testimonial/testimo
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { Error404Component } from './components/error404/error404.component';
 import { DefaultHomeComponent } from './components/default-home/default-home.component';
+import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
 
 const routes: Routes = [
   {path:'', component:DefaultHomeComponent, children:[
@@ -76,6 +77,7 @@ const routes: Routes = [
     { path: 'headTrauma', component: HeadTraumaComponent },
     { path: 'about', component: AboutComponent },
     { path: 'blog', component: BlogComponent },
+    { path: 'blogDetails', component: BlogDetailsComponent },
     { path: 'comparisonStudies', component: ComparisonStudiesComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'guidanceRadiologyTraining', component: GuidanceRadiologyTrainingComponent },
