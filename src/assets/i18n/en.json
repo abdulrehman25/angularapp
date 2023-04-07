@@ -1,11 +1,28 @@
 {
-    "Sitetitle": "Hoekige site met meerdere talen",
-    "Name": "Dr Ali Rahman",
-    "NameError": "Ik weet zeker dat je een naam moet hebben",
-    "Email": "E-mailadres",
-    "PhoneNo": "Telefoon nr",
-    "Password": "Wachtwoord",
-    "Bio": "Voer bio in",
-    "TermsConditions": "Ik ga akkoord met de voorwaarden.",
-    "Submit": "voorleggen"
+    "Dr Ali Rahman": "Dr Ali Rahman",
+    "Introduction":"Introduction",
+    "proBonoP1":"When it comes to healthcare, obtaining a correct diagnosis is crucial in ensuring appropriate treatment and care. However, due to the complex nature of medical conditions, misdiagnosis can occur and lead to harmful consequences for patients. This is where a second opinion proves to be handy.",
+    "proBonoP2":"We believe everybody is privy to good health; that is why Dr. Ali Rahman and his team have started an initiative of pro bono second opinions, where a free second opinion is provided on the radiology reports of people who are unemployed, disabled, elderly, living as single mothers or have limited access to healthcare. Pro bono second opinions are medical consultations provided by a healthcare professional free of charge.",
+    "proBonoP3":"A second opinion as such can help patients gain a better understanding of their diagnosis and treatment options. It can either provide reassurance about the initial diagnosis being correct or identify potential misdiagnosis.",
+    "proBonoP4":"Additionally, this type of a second opinion can help patients feel more in control of their healthcare by offering them necessary information and enabling them to make informed choices.",
+    "proBonoP5_1":"By breaking down barriers to healthcare access, ",
+    "proBonoP5_2":" has initiated a pro bono second opinion program that ensures all patients receive the care and attention they need regardless of their financial situation.",
+
+
+
+    "_commetsForOurUnderstanding":"About section starts from here",
+    "aboutComponentP1":"Dr Ali Rahman was born in London and holds dual citizenship in Germany and Switzerland. He received his Swiss citizenship in 2022. His experience covers all aspects of radiology and neuroradiology as he is Swiss and German board certified in general radiology, muscle-skeletal radiology and neuroradiology. He is fellowship-trained in diagnostic neuroradiology and musculoskeletal orthopaedic radiology with an emphasis on sports injuries.",
+    "aboutComponentP2":"Further, he has expertise in ultrasound training and is a passionate ultrasound teacher certified by the Swiss Society of Ultrasound.  Dr Ali Rahman also specializes in oncology radiology, body radiology, rheumatology radiology, woman's radiology and gastrointestinal radiology.",
+    "aboutComponentP3":"Dr Ali Rahman is taking meaningful steps as a philanthropist and with this initiative at radiologycheck.com, he pledges to make second opinions affordable and available for all. With a special pro bono program on radiologycheck.com, people with financial difficulties can opt for a free second opinion of their scans. With patient-centric goals, he vouches to provide an error-free diagnosis of all of your scans.",
+    "aboutComponentP4":"Currently, Dr Ali Rahman is working as a Senior Consultant (Leitender Oberarzt) in Radiology and Neuroradiology at the University Hospital Group in Bern, Switzerland. He is influencing everyone with his expertise and holds the second highest position in his departement.",
+
+
+    "Abdominal Radiology":"Abdominal Radiology",
+    "Abdominal Radiology Banner Heading":"Get a Second Opinion on Abdominal Radiology",
+    "Abdominal Radiology Banner Heading Instructions":"Your abdominal radiology reports go through our specialists with years of expertise in the field. By expertly analyzing your scans, a misdiagnosis of your abdominal radiology scan is completely eliminated.",
+    "Abdominal Radiology Below Banner Text":"At Radiologycheck.com, you have access to special German and Swiss fellowship-trained radiologists of all modalities like MRI, CT, X-ray and Ultrasound. In addition to the German and Swiss Boards’ Certification, the radiologists are also European Board certified and operate in accordance to the regulations of the European Society of Radiology. You can get a precise second opinion and detailed diagnosis for health issues related to the abdomen, organs and other affected areas of your body.",
+    "Rely on us for an error-free second opinion":"Rely on us for an error-free second opinion.",
+    "Do you want an Abdominal Radiology Second Opinion?":"Do you want an Abdominal Radiology Second Opinion?",
+    "Click here to book an appointment now":"Click here to book an appointment now"
+
 }

@@ -387,10 +387,11 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 .register-form select {appearance: none; background-image: url('../images/angle-down.jpg'); background-repeat: no-repeat; background-position: right center;}
 .register-form select, .register-form input[type="text"], .register-form input[type="tel"], .register-form input[type="email"], .register-form input[type="password"] {border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-bottom: 20px;color: #000000;}
 
-.login-form input[type="text"], .login-form input[type="password"]{border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-bottom: 20px;color: #000000;}
-.register-form form input[type="submit"], .login-form form input[type="submit"] {background-color: #407839;border: none;border-radius: 0;height: 50px;color: #ffffff; outline: none; margin-bottom: 15px;}
+.login-form input[type="email"], .login-form input[type="password"]{border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-top: 12px;margin-bottom: 5px;color: #000000;}
+.register-form form input[type="submit"], .login-form form input[type="submit"] {background-color: #407839;border: none;border-radius: 0;height: 50px;color: #ffffff; outline: none; margin-top: 12px; margin-bottom: 5px;}
 .register-form form p,.login-form form p.form-info {color: #000000;line-height: 50px;}
 .register-form form p a,.login-form form p a {color: rgb(30,65,113); text-decoration: underline;}
+.forgot-password a {color: rgb(30,65,113);text-transform: capitalize; margin: 8px 0px; display: inline-block;}
 /*Register page*/
 
 
@@ -665,3 +666,18 @@ text-align: center;line-height: 65px;font-size: 2.5rem;border-radius: 100px;marg
 .dashboard-layout-section.sidebar-active .dashboard-sidebar ul li a span i.fa-regular {border-right: 0px;}
 span.sidebar-item {padding-left: 5px;}
 /* user dashboard */
+
+select.language-selecter {border: 1px solid rgba(0,0,0,.1);padding: 4px 15px;text-transform: uppercase;
+font-size: 14px;letter-spacing: 1px;outline: none;box-shadow: none;}
+select.language-selecter:focus {outline: none;box-shadow: none;}
+
+/* language */
+
+.dash-profile-page-layout {width: 100%;height: auto;display: inline-block;position: relative;}
+.radio-wrapper ul li {list-style-type: none;display: inline-flex;margin-inline-end: 35px;text-transform: capitalize;align-items: center;}
+.dash-profile-page-layout input[type="text"], .dash-profile-page-layout input[type="email"], .dash-profile-page-layout input[type="tel"], .dash-profile-page-layout select, .dash-profile-page-layout input[type="date"] {border-radius: 0px;height: 50px;color: #000000;margin: 8px 0px 20px;}
+
+.radio-wrapper {display: block;margin-bottom: 50px;}
+.radio-wrapper ul li input[type="radio"] {margin-right: 8px;}
+.checkbox-wrapper {display: block;margin-bottom: 25px;margin-top: 25px;}
+.checkbox-wrapper ul li {list-style-type: none;text-transform: capitalize; margin: 8px 0px;}
