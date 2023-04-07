@@ -20,7 +20,7 @@
                         <ol  *ngIf="showProfile">
                             <li><a href="javascript:;"><i class="fa-regular fa-user"></i> update profile</a></li>
                             <li><a href="javascript:;"><i class="fa-regular fa-prescription-bottle-pill"></i> my report</a></li>
-                            <li><a href="javascript:;"><i class="fa-regular fa-arrow-right-to-arc"></i> log out</a></li>
+                            <li><a href="javascript:;" (click)="logOut()"><i class="fa-regular fa-arrow-right-to-arc"></i> log out</a></li>
                         </ol>
                     </div>
                 </li>
