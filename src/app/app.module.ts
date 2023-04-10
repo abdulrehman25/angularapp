@@ -57,6 +57,9 @@ import { Error404Component } from './components/error404/error404.component';
 import { DefaultHomeComponent } from './components/default-home/default-home.component';
 import { UserProfileComponent } from './components/user-dashboard/user-profile/user-profile.component';
 import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
+import { ClickOutsideDirective } from './directives/click-outside.directive';
+import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
+import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +109,10 @@ import { UserHomeComponent } from './components/user-dashboard/user-home/user-ho
     Error404Component,
     DefaultHomeComponent,
     UserProfileComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    ClickOutsideDirective,
+    MyReportsComponent,
+    GiveFeedbackComponent,
   ],
   imports: [
     BrowserModule,

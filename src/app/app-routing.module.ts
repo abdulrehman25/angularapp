@@ -45,6 +45,8 @@ import { DefaultHomeComponent } from './components/default-home/default-home.com
 import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
 import { UserProfileComponent } from './components/user-dashboard/user-profile/user-profile.component';
 import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
+import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
+import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
 
 const routes: Routes = [
   {path:'', component:DefaultHomeComponent, children:[
@@ -93,6 +95,8 @@ const routes: Routes = [
   { path: 'userDashboard', component: UserDashboardComponent, children:[
     {path:'', component:UserHomeComponent},
     {path:'userProfile', component:UserProfileComponent},
+    {path:'myReports', component:MyReportsComponent},
+    {path:'giveFeedback', component:GiveFeedbackComponent},
   ] },
 
 ];

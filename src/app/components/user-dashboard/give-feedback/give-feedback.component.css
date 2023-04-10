@@ -1,0 +1,11 @@
+.giveStarFeedback {
+    display: inline-flex;
+    margin-bottom: 12px;
+}
+.giveStarFeedback .group {
+    margin-inline-end: 8px;
+    cursor: pointer;
+}
+.giveStarFeedback .group i.fa-star {
+    color: #fba420;
+}
