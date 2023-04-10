@@ -43,6 +43,8 @@ import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { Error404Component } from './components/error404/error404.component';
 import { DefaultHomeComponent } from './components/default-home/default-home.component';
 import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
+import { UserProfileComponent } from './components/user-dashboard/user-profile/user-profile.component';
+import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
 
 const routes: Routes = [
   {path:'', component:DefaultHomeComponent, children:[
@@ -88,7 +90,10 @@ const routes: Routes = [
     { path: 'thankYou', component: ThankYouComponent },
     { path: 'error404', component: Error404Component },  
   ]},
-  { path: 'userDashboard', component: UserDashboardComponent },
+  { path: 'userDashboard', component: UserDashboardComponent, children:[
+    {path:'', component:UserHomeComponent},
+    {path:'userProfile', component:UserProfileComponent},
+  ] },
 
 ];
 

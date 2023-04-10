@@ -55,6 +55,8 @@ import { TestimonialComponent } from './components/resources/testimonial/testimo
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { Error404Component } from './components/error404/error404.component';
 import { DefaultHomeComponent } from './components/default-home/default-home.component';
+import { UserProfileComponent } from './components/user-dashboard/user-profile/user-profile.component';
+import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +104,9 @@ import { DefaultHomeComponent } from './components/default-home/default-home.com
     TestimonialComponent,
     ThankYouComponent,
     Error404Component,
-    DefaultHomeComponent
+    DefaultHomeComponent,
+    UserProfileComponent,
+    UserHomeComponent
   ],
   imports: [
     BrowserModule,
