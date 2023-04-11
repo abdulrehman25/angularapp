@@ -54,8 +54,26 @@
 
 
     "Prostate Radiology":"前列腺放射科",
-    "key3":"",
-    "key4":"",
+    "Banner - Get a Second Opinion in Prostate Radiology":"横幅 - 获取前列腺放射科的第二诊疗意见",
+    "Instructions - Get a Second Opinion in Prostate Radiology":"您的前列腺放射学报告由我们在该领域拥有多年专业知识的专家提供。通过对您扫描结果的专业分析，我们可以将您前列腺扫描的误诊率降至为零。",
+    "Text Bellow the Banner Get a Second Opinion in Prostate Radiology":"在 Radiologycheck.com这个网站，您可以咨询到来自德国和瑞士的进修过的前列腺磁共振医生。他们持有德国放射学会颁发、德国委员会认证的前列腺磁共振成像 Q1 和 Q2 文凭。对于与前列腺、淋巴结、骨骼和身体其他部位相关的健康问题，您可以获得准确的第二诊疗意见和详细的诊断说明。",
+    "Do you want a Prostate Radiology Second Opinion?":"您想要获取前列腺放射科的第二诊疗意见吗？",
+    "Why should you go for a Prostate Radiology Second Opinion?":"为什么您需要寻求前列腺放射科的第二诊疗意见？",
+    "Why should you go for a Prostate Radiology Second Opinion?_p1":"根据医学数据库统计，前列腺癌是男性第二大常见的癌症类型。2022 年，美国约有268,490名男性被诊断出前列腺癌，大概有34,500人失去生命。",
+    "Why should you go for a Prostate Radiology Second Opinion?_p2":"PSA（前列腺特异性抗原）筛查通常用于确定患者是否患有前列腺癌。该测试的广泛使用降低了男性癌症患者的死亡率。这也使得很多肿瘤被早期发现并及时治疗，并抑制了肿瘤的潜在扩散风险（即临床上无关紧要的病变）。",
+    "Why should you go for a Prostate Radiology Second Opinion?_p3":"我们应该始终优先考虑临床显着病变的存在、疾病诊断的程度和未来进展的风险，以做出准确评估。这有助于防止由过度治疗或治疗不足而导致的医疗失败。",
+    "Why should you go for a Prostate Radiology Second Opinion?_p4":"磁共振成像(MRI)可以更准确地观察潜在的前列腺恶性肿瘤，这可以帮助到做活检的患者，并有助于在活检期间直接定位病灶。MRI也可用于判断肿瘤分期和评估治疗反应。",
+    "Why should you go for a Prostate Radiology Second Opinion?_p5":"MRI也被证明对评估确诊为前列腺癌的男性有用。好处包括：优化肿瘤定位以进行分期和风险分层，选择合适的低风险疾病患者进行主动监测，在主动监测期间进行监控以及在放射治疗后检测局部复发。",
+    "Why should you go for a Prostate Radiology Second Opinion?_p6":"分期 — 前列腺MRI可以通过确认器官受限状态从而支持进行保留神经的根治性前列腺切除术的决定、评估盆腔淋巴结的状态以及确定肿瘤的位置和局部范围来帮助分期放射治疗的患者。",
+    "Radiologycheck.com second opinion encompasses all the elements of a prostate scan, including":"Radiologycheck.com网站上的第二诊疗意见满足前列腺扫描的所有要求，包括：",
+    "Prostate mp- MRI with diffusion and dynamic contrast enhancement":"前列腺多参数磁共振成象,包括动态对比增强MRI和弥散加权MRI",
+    "Prostate mp-MRI cancer staging and surveillance":"前列腺多参数磁共振成象癌症分期和监测",
+    "P on Prostate Bellow Why is it necessary to go for a Second Opinion?":"任何疾病的诊断都有可能改变我们的生活，这往往让我们变得不知所措。但是，了解各种可能性会让我们做出更放心的选择。许多人寻求放射科医生的第二诊疗意见，以便感到安心并更好地掌控自己的生活。",
+    "You have a better understanding of your condition":"您可以更好地了解自己的状况",
+    "Our experts give second opinions for all Prostate Radiology scans":"我们的专家对所有前列腺放射扫描提供第二诊疗意见",
+    "Click here to book an appointment":"点击此处预约 (CT血管造影)",
+
+
     "key5":"",
     "key6":"",
     "key7":"",
