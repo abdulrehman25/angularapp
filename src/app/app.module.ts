@@ -60,6 +60,9 @@ import { UserHomeComponent } from './components/user-dashboard/user-home/user-ho
 import { ClickOutsideDirective } from './directives/click-outside.directive';
 import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
 import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
+import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
+import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
+import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +116,9 @@ import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback
     ClickOutsideDirective,
     MyReportsComponent,
     GiveFeedbackComponent,
+    ResetPasswordComponent,
+    UpdatePasswordComponent,
+    VarifyOtpComponent,
   ],
   imports: [
     BrowserModule,
