@@ -1,0 +1,76 @@
+<div class="site_wrapper">
+	<div class="login-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<h1>varify your account</h1>
+				</div>
+			</div>
+
+			<div class="forms-layout">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<figure><img src="../../../../assets/images/dr-ali-rehman.png" class="img-fluid" alt="" />
+						</figure>
+					</div>
+
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<h4 class="mb-4">Enter the OTP for varify -</h4>
+
+						<div class="login-form">
+							<form name="form" #otpForm="ngForm"
+							(ngSubmit)="otpForm.form.valid && verifyOtp()">
+								<div class="row">
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<input type="text" name="otp" maxlength="6" placeholder="Enter your 6 digit varification code here" class="form-control" pattern="^[0-9]{6}$"
+										required [(ngModel)]="otpData.otp" #otp="ngModel" [ngClass]="{ 'is-invalid': otpForm.submitted && otp.errors }">
+
+									<div *ngIf="otpForm.submitted && otp.errors" class="invalid-feedback">
+										<div *ngIf="otp.errors?.['required']">OTP is required </div>
+										<div *ngIf="otp.errors?.['pattern']">This is not
+											a valid OTP</div>
+									</div>
+                                    </div>
+
+									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+										<input type="submit" value="Varify OTP" class="form-control">
+									</div>
+                                </div><!--row-->
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div><!--registration and login page-->
+
+
+
+
+
+	<div class="section-j">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="position-relative">
+						<ol class="d-flex">
+							<li>
+								<strong>Book your Appointment</strong>
+								<p>It is a long established fact that a reader will be distracted by the readable
+									content of a page when looking at its layout.</p>
+							</li>
+
+							<li>
+								<aside><a href="#">Book Appointment <i class="fa-regular fa-arrow-right"></i></a>
+								</aside>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--section j-->
+
+
+</div><!--site wrapper-->
