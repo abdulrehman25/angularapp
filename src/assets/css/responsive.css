@@ -227,17 +227,23 @@
     .site-feature-banner.other-slide .feature-banner-caption {bottom: 20%; left: 40px;}
     
     /* inner pages */
+
+    .testimonial-section ol li {width: 48%;}
     }/*1199*/
     
     @media (max-width: 767px){
     .dropdown {display: inline-grid;}
     .navbar-dark .navbar-brand {min-width: 220px;max-width: 220px;}
-    #siteNav .dropdown-menu {overflow-y: scroll;max-height: 400px;}
+    #siteNav .dropdown-menu {overflow-y: scroll;max-height: 200px;}
     #siteNav .dropdown-menu a {white-space: pre-wrap; border-bottom: 1px solid rgba(255,255,255,.25); line-height: 30px;}
     #siteNav .dropdown-menu a:last-child {border-bottom: none;}
     .site-banner figure {padding: 0px 0px 0px 0px;}
     .banner-caption {width: 100%;padding: 0px 15px;}
     .site-banner figure img {object-position: -300px 0px;}
+    .dropdown-toggle::after {float: right;margin-top: 10px;}
+    li.nav-item.dropdown {float: right;  width: 100%; margin-right: -5px;}
+    #siteNav .ddl-item li.nav-item.dropdown.show .dropdown-menu {overflow-y: scroll;max-height: 190px;width: 100%;max-width: 100vw;min-width: 85vw;margin-left: -125px;left: 0%;position: relative; margin-top: 15px;}
+    #siteNav .dropdown-menu {margin-left: 0px;}
         
     .section-b {padding: 100px 0px 200px;}
     .section-b img {height: auto;margin-bottom: 100px;}
@@ -326,12 +332,17 @@
     .site-feature-banner.other-slide .feature-banner-caption h1 small {line-height: 24px; padding-top: 12px;font-size: 16px;}
     .inner-pages h4 {line-height: 30px;font-size: 18px;}
     .inner-pages h3 {font-size: 24px; line-height: 32px;}
-    .inner-pages ul li {width: 100%;margin-bottom: 8px;}
+    .inner-pages ul li {width: 100%;margin-bottom: 80px;}
     .inner-pages h5 {margin-bottom: 15px;}
     .our-team {padding: 100px 10px;}
     .site-feature-banner.other-slide .feature-banner-caption h1 {font-size: 22px;color: #ffffff; background-image: url('../images/doctor-sign-white.png'); text-shadow: 1px 1px rgba(0,0,0,.75);}
     .site-feature-banner .feature-banner-caption aside {text-align: center;}
     /* inner pages */
+
+    .testimonial-section ol li {width: 100%;margin-bottom: 25px;}
+    .testimonial-section ul li::before {
+        left: 0%;
+    }
     }/*767*/
     
     
