@@ -47,6 +47,8 @@ import { UserProfileComponent } from './components/user-dashboard/user-profile/u
 import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
 import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
 import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
+import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
+import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
 
 const routes: Routes = [
   {path:'', component:DefaultHomeComponent, children:[
@@ -64,6 +66,8 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'resetPassword', component: ResetPasswordComponent },
+    { path: 'updatePassword', component: UpdatePasswordComponent },
+    { path: 'varifyotp', component: VarifyOtpComponent },
     { path: 'neuroradiology', component: NeuroradiologyComponent },
     { path: 'brainTumors', component: BrainTumorsComponent },
     { path: 'backPain', component: BackPainComponent },

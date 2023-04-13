@@ -16,4 +16,15 @@ export class AuthService {
     return this.httpClient.post(`${this.Api_Base}/login`,data);
   }
 
+  resetPassword(data:any){
+    return this.httpClient.post(`${this.Api_Base}/password/email?email=${data}`,data);
+  }
+
+  validateOtp(data:any){
+    return this.httpClient.post(`${this.Api_Base}/password/code/check?code=${data}`,data);
+  }
+
+  updatePassword(data:any){
+    return this.httpClient.post(`${this.Api_Base}/password/reset`,data);
+  }
 }
