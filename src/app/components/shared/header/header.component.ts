@@ -13,7 +13,7 @@ export class HeaderComponent {
     public translate: TranslateService
   ) {
     translate.addLangs(['en', 'de', 'ar', 'ru', 'zh']);
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('em');
   }
   switchLang(lang: string) {
     this.translate.use(lang);
