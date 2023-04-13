@@ -47,6 +47,7 @@ import { UserProfileComponent } from './components/user-dashboard/user-profile/u
 import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
 import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
 import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
+import { FaqComponent } from './components/resources/faq/faq.component';
 
 const routes: Routes = [
   {path:'', component:DefaultHomeComponent, children:[
@@ -84,7 +85,7 @@ const routes: Routes = [
     { path: 'blogDetails', component: BlogDetailsComponent },
     { path: 'comparisonStudies', component: ComparisonStudiesComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'guidanceRadiologyTraining', component: GuidanceRadiologyTrainingComponent },
+    { path: 'faq', component: FaqComponent },
     { path: 'ourTeam', component: OurTeamComponent },
     { path: 'primaryReads', component: PrimaryReadsComponent },
     { path: 'proBono', component: ProBonoComponent },

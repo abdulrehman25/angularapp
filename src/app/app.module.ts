@@ -60,6 +60,7 @@ import { UserHomeComponent } from './components/user-dashboard/user-home/user-ho
 import { ClickOutsideDirective } from './directives/click-outside.directive';
 import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
 import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
+import { FaqComponent } from './components/resources/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +114,7 @@ import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback
     ClickOutsideDirective,
     MyReportsComponent,
     GiveFeedbackComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
