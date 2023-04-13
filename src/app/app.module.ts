@@ -54,6 +54,12 @@ import { BlogComponent } from './components/resources/blog/blog.component';
 import { TestimonialComponent } from './components/resources/testimonial/testimonial.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { Error404Component } from './components/error404/error404.component';
+import { DefaultHomeComponent } from './components/default-home/default-home.component';
+import { UserProfileComponent } from './components/user-dashboard/user-profile/user-profile.component';
+import { UserHomeComponent } from './components/user-dashboard/user-home/user-home.component';
+import { ClickOutsideDirective } from './directives/click-outside.directive';
+import { MyReportsComponent } from './components/user-dashboard/my-reports/my-reports.component';
+import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +106,13 @@ import { Error404Component } from './components/error404/error404.component';
     BlogComponent,
     TestimonialComponent,
     ThankYouComponent,
-    Error404Component
+    Error404Component,
+    DefaultHomeComponent,
+    UserProfileComponent,
+    UserHomeComponent,
+    ClickOutsideDirective,
+    MyReportsComponent,
+    GiveFeedbackComponent,
   ],
   imports: [
     BrowserModule,

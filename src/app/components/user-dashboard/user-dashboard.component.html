@@ -1,1 +1,121 @@
-<p>user-dashboard works!</p>
+<div class="dashboard-section">
+  <div class="dashboard-navbar">
+    <div class="site-logo"><img src="../assets/images/logo2.png" alt="" /></div>
+    <div class="site-navbar-options">
+      <ul>
+        <li class="position-relative">
+          <a href="javascript:;"> <i class="fa-regular fa-envelope"></i></a>
+          <div class="get-notify">4</div>
+        </li>
+
+        <li class="position-relative">
+          <a href="javascript:;"> <i class="fa-regular fa-bell"></i></a>
+          <div class="get-notify">2</div>
+        </li>
+        <li appClickOutside (clickOutside)="clickedOutside()">
+          <a href="javascript:;" class="profile-picture">
+            <img src="../assets/images/testi-user.png" alt="" />
+            <h5>
+              welcome, alex
+              <button clickOutside (click)="openProfileBar()">
+                <i class="fa-light fa-angle-down"></i>
+              </button>
+            </h5>
+          </a>
+          <div class="profile-bar">
+            <ol *ngIf="showProfile">
+              <li>
+                <a class="pointer" (click)="redirectAndClose('userProfile')"
+                  ><i class="fa-regular fa-user"></i> update profile</a
+                >
+              </li>
+              <li>
+                <a class="pointer" (click)="redirectAndClose('myReports')"
+                  ><i class="fa-regular fa-prescription-bottle-pill"></i> my
+                  reports</a
+                >
+              </li>
+              <li>
+                <a class="pointer" (click)="logOut()"
+                  ><i class="fa-regular fa-arrow-right-to-arc"></i> log out</a
+                >
+              </li>
+            </ol>
+          </div>
+        </li>
+
+        <li>
+          <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"
+            ><i class="fa-regular fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- dashboard navbar -->
+
+  <div
+    class="dashboard-layout-section"
+    [ngClass]="{ 'sidebar-active': toggleDashboardSidebar }"
+  >
+    <div class="dashboard-sidebar">
+      <ul>
+        <li>
+          <a routerLink="userProfile">
+            <span><i class="fa-regular fa-user"></i></span>
+            <span class="sidebar-item">user profile</span>
+          </a>
+        </li>
+        <!--list item-->
+
+        <li>
+          <a href="javascript:;">
+            <span><i class="fa-regular fa-heart"></i></span>
+            <span class="sidebar-item">health history</span>
+          </a>
+        </li>
+        <!--list item-->
+
+        <li>
+          <a routerLink="myReports">
+            <span><i class="fa-regular fa-notes-medical"></i></span>
+            <span class="sidebar-item">my reports</span>
+          </a>
+        </li>
+        <!--list item-->
+
+        <li>
+          <a href="javascript:;">
+            <span><i class="fa-regular fa-staff-snake"></i></span>
+            <span class="sidebar-item">health insurance</span>
+          </a>
+        </li>
+        <!--list item-->
+
+        <li>
+          <a routerLink="giveFeedback">
+            <span><i class="fa-regular fa-comment-quote"></i></span>
+            <span class="sidebar-item">give feedback</span>
+          </a>
+        </li>
+        <!--list item-->
+
+        <li>
+          <a href="javascript:;" (click)="logOut()">
+            <span><i class="fa-regular fa-right-from-bracket"></i></span>
+            <span class="sidebar-item">log out</span>
+          </a>
+        </li>
+        <!--list item-->
+      </ul>
+    </div>
+    <!-- dashboard sidebar -->
+
+    <div class="dashboard-right-content">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- dashboard right content -->
+  </div>
+  <!-- dashboard layout section -->
+</div>
+<!-- dashboard section -->

@@ -1,0 +1,66 @@
+<div class="give-feedback-page">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <h4 class="text-dark text-capitalize"><span><i class="fa-regular fa-comment-quote"></i></span> give feedback</h4><hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="upload-your-picture">
+                <img src="assets/images/testi-user.png" alt="" />
+            </div>
+            <label class="text-capitalize">upload your photo</label>
+            <div class="d-flex">
+                <input type="file">
+                <button type="button" class="btn btn-danger remove-photo">Remove Photo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <label class="text-capitalize">first name</label>
+            <input type="text" required class="form-control" />
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <label class="text-capitalize">last name</label>
+            <input type="text" required class="form-control" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <label class="text-capitalize">mobile</label>
+            <input type="tel" maxlength="12" required class="form-control" />
+        </div>
+
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <label class="text-capitalize">email address</label>
+            <input type="email" required  class="form-control" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <label class="text-capitalize">text your feedback here</label>
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+
+    <div class="giveStarFeedback">
+            <div *ngFor="let item of starList; let i=index" (click)="setStar(i)" class="group">
+                <i class="fa" [ngClass]="{'fa-star-o':item,'fa-star':!item}"></i>            
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+            <input type="submit" value="submit feedback" class="btn btn-success text-capitalize">
+        </div>
+    </div>
+
+</div>
+<!-- row -->
+<!-- Feedback Page -->
