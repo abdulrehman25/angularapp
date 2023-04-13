@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  languagesFullNames = {en: 'English', de: 'German', ar: 'Arebic', ru:'Russian', zh:'Chines' };
 
   constructor(
     public translate: TranslateService
