@@ -6,9 +6,9 @@
 					<li><a routerLink="/register"><i class="fa-thin fa-user"></i> Register</a></li>
 					<li><a routerLink="/login"><i class="fa-thin fa-right-to-bracket"></i> Login</a></li>
 					<li><select class="form-control language-selecter position-relative" #selectedLang (change)="switchLang(selectedLang.value)">
-						<option *ngFor="let language of translate.getLangs()" [value]="language"
-						  [selected]="language === translate.currentLang">
-						  {{ language }}
+						<option *ngFor="let language of languageList" [value]="language.languageCode"
+						[selected]="language.language === translate.currentLang" >
+						  {{ language.language.toUpperCase() }}
 						</option>
 					  </select></li>
 				</ul>

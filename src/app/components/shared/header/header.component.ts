@@ -1,23 +1,24 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  languagesFullNames = {en: 'English', de: 'German', ar: 'Arebic', ru:'Russian', zh:'Chines' };
-
-  constructor(
-    public translate: TranslateService
-  ) {
+  languageList = [
+    { language: 'English', languageCode: 'en' },
+    { language: 'German', languageCode: 'de' },
+    { language: 'Arebic', languageCode: 'ar' },
+    { language: 'Russian', languageCode: 'ru' },
+    { language: 'Chines', languageCode: 'zh' },
+  ];
+  constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'de', 'ar', 'ru', 'zh']);
     translate.setDefaultLang('en');
   }
-  switchLang(lang: string) {
+  switchLang(lang:string) {
     this.translate.use(lang);
   }
-
 }

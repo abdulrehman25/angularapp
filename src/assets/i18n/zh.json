@@ -261,6 +261,60 @@
     "Our experts give second opinions for all Interventional Radiology Scans":"我们的专家对您所有的介入放射扫描提供第二诊疗意见",
 
 
+    "Neuroradiology":"神经放射科",
+    "Banner - Get a Second Opinion on Neuroradiology":"获取神经放射科的第二诊疗意见",
+    "Instructions - Get a Second Opinion on Neuroradiology":"您的神经放射报告由我们在该领域拥有多年专业知识的专家提供。通过对您的扫描进行专业分析，我们可以将神经放射扫描的误诊率降至为零。",
+    "P bellow Banner - Get a Second Opinion on Neuroradiology":"在Radiologycheck.com这个网站，您可以咨询到来自德国和瑞士神经放射学会（综合和高级神经影像学）的进修过的磁共振放射科医生。我们的医生不仅获得了德国和瑞士委员会的认证，而且还获得了欧洲委员会的认证，并按照欧洲放射学会（ESNR）的规定进行医学操作。针对您的神经放射学扫描，您可以获得准确的第二诊疗意见和详细的诊断说明。",
+    "Do you want a Neuroradiology Second Opinion?":"您想要获取神经放射学的第二诊疗意见吗？",
+
+
+    "Differential Diagnosis of Intracranial Masses and Brain Tumors":"颅内肿块与脑肿瘤的鉴别诊断",
+    "Banner - Differential Diagnosis of Intracranial Masses and Brain Tumours":"颅内肿块与脑肿瘤的鉴别诊断",
+    "introduction":"介绍",
+    "introduction_P1":"脑肿瘤是大脑或中枢神经系统 (CNS) 中的异常肿块或增生。在几种脑肿瘤中，良性（非癌性）和恶性（癌性）脑肿瘤都可能发生。原发性脑肿瘤始于大脑；继发性（转移性）脑肿瘤从身体的其他区域开始并转移到大脑。脑肿瘤转移的速度可能会有很大差异，因为这完全取决于肿瘤的发展速度和所在位置。",
+    "introduction_P2":"局部脑部侵犯、附近组织受压和颅内压（ICP）升高均可引起脑瘤的症状和体征。除了肿瘤组织学之外，临床症状还取决于受影响的大脑区域的功能。准确评估疑似脑肿瘤患者需要仔细询问其病史、广泛的神经系统检查和适当的诊断性神经影像手术。",
+    "neuroimaging features":"神经影像学特征",
+    "neuroimaging features_dd1":"增强磁共振成像 (MRI) 是评估脑肿瘤的最佳方式。",
+    "neuroimaging features_dd2":"计算机断层扫描 (CT) 的软组织分辨率低得多，主要适用于对 MRI 有 禁忌的患者。紧急情况下，通过CT可以获取更详细的骨结构视图。",
+    "differential diagnosis":"鉴别诊断",
+    "differential diagnosis_p":"神经影像学上新脑肿块的鉴别诊断包括肿瘤性和非肿瘤性疾病。",
+    "Ischemic infarct":"缺血性梗塞",
+    "Haemorrhage":"出血",
+    "Venous infarct":"静脉梗塞",
+    "Vascular malformation":"血管畸形",
+    "Abscess":"脓肿",
+    "Inflammatory disorders":"炎症性疾病",
+
+
+    "Back Pain and Radiculopathy":"背痛和神经根病",
+    "Back Pain introduction":"介绍",
+    "Back Pain introduction_P1":"据预测，高达84%的人在一生中的某个时刻会经历下背部疼痛。对许多人来说，背痛发作通常是自限性的。在急性阶段（4周）后出现背痛的患者被称为亚急性背痛（持续4至12周），并可能发展为慢性背痛（持续12 周）。背痛通常是严重疾病的征兆。",
+    "Back Pain introduction_P2":"非特异性腰痛——许多接受初级保健治疗的患者(>85%)患有非特异性腰痛，这意味着他们在没有识别出特定潜在疾病的情况下会出现背痛。其中许多人可能患有肌肉骨骼不适。大多数非特异性背痛患者会在几周内痊愈。",
+    "Spinal cord or cauda equina compression –":"脊髓或马尾神经受压 –",
+    "Metastatic cancer":"转移性癌症",
+    "Spinal epidural abscess":"脊髓硬膜外脓肿",
+    "Vertebral compression fracture":"椎体压缩性骨折",
+    "Radiculopathy":" 神经根病",
+    "Axial spondyloarthritis (includes ankylosing spondylitis and non-radiographic axial spondyloarthritis)":"中轴型脊柱关节炎（包括强直性脊柱炎和非放射学中轴​​型脊柱关节炎）",
+    "Osteoarthritis":"骨关节炎",
+    "Piriformis syndrome":"梨状肌综合症",
+    "Piriformis syndrome_text":"梨状肌综合症被一些人认为是梨状肌（一种位于臀部的狭窄肌肉）压迫或刺激坐骨神经的病症。",
+    "Sacroiliac joint dysfunction":"骶髂关节功能障碍",
+    "Sacroiliac joint dysfunction_text":"是一个描述骶髂关节区域疼痛的术语，被认为是由于排列不齐或关节运动异常而引起的，是个具有争议的话题。",
+    "Bertolotti's syndrome":"Bertolotti综合征",
+    "Bertolotti's syndrome_text":"移行椎体引起的背痛被称为“Bertolotti综合征”。",
+
+    
+    "Spinal Trauma and Injuries":"脊柱外伤和损伤",
+    "Spinal Trauma and Injuries_p":"尽管不如颈椎损伤普遍，但胸腰椎(TL)脊柱损伤在世界范围内正变得越来越普遍。这些伤害本身就可能会很严重，并且由于高能创伤，它们还经常伴随着胸部和腹部的严重内伤。",
+
+    "Demyelinating Diseases of the CNS (Brain and Spine)":"中枢神经系统脱髓鞘疾病（大脑和脊柱）",
+    "Demyelinating Diseases of the CNS (Brain and Spine)_text":"多发性硬化症(MS)是中枢神经系统最普遍的免疫介导的炎症性脱髓鞘疾病。多发性硬化症的病理特征是多灶性脱髓鞘区域伴有少突胶质细胞丢失和星形胶质细胞瘢痕形成。另一个主要的病理特征，特别是在后期阶段，是轴突损伤。虽然该疾病有许多非典型形式和非常多变的病程，但一些临床特征还是很典型的。",
+
+    
+
+
+
 
     
     "key8":"",
