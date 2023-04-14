@@ -49,6 +49,7 @@ import { MyReportsComponent } from './components/user-dashboard/my-reports/my-re
 import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
 import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
 import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
+import { RegisterNowComponent } from './components/register-now/register-now.component';
 
 const routes: Routes = [
   {path:'', component:DefaultHomeComponent, children:[
@@ -93,6 +94,7 @@ const routes: Routes = [
     { path: 'primaryReads', component: PrimaryReadsComponent },
     { path: 'proBono', component: ProBonoComponent },
     { path: 'testimonial', component: TestimonialComponent },
+    { path: 'registerNow', component: RegisterNowComponent },
     { path: 'thankYou', component: ThankYouComponent },
     { path: 'error404', component: Error404Component },  
   ]},

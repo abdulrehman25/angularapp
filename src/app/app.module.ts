@@ -63,6 +63,7 @@ import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
 import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
+import { RegisterNowComponent } from './components/register-now/register-now.component';
 
 @NgModule({
   declarations: [
@@ -119,6 +120,7 @@ import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.comp
     ResetPasswordComponent,
     UpdatePasswordComponent,
     VarifyOtpComponent,
+    RegisterNowComponent,
   ],
   imports: [
     BrowserModule,
