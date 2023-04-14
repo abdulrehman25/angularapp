@@ -675,7 +675,7 @@ text-align: center;line-height: 65px;font-size: 2.5rem;border-radius: 100px;marg
 span.sidebar-item {padding-left: 5px;}
 /* user dashboard */
 
-select.language-selecter {border: 1px solid rgba(0,0,0,.1);padding: 4px 15px;text-transform: uppercase;
+select.language-selecter {border: 1px solid rgba(0,0,0,.1);padding: 4px 15px;
 font-size: 14px;letter-spacing: 1px;outline: none;box-shadow: none;}
 select.language-selecter:focus {outline: none;box-shadow: none;}
 /* language */
