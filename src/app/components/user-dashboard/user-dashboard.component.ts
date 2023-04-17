@@ -34,6 +34,7 @@ export class UserDashboardComponent {
 
   logOut(){
     localStorage.removeItem('isloggedin');
+    localStorage.removeItem('user');
     this.router.navigate(['']);
   }
 }
