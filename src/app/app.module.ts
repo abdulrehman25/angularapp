@@ -64,6 +64,7 @@ import { ResetPasswordComponent } from './components/auth/reset-password/reset-p
 import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
 import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
 import { RegisterNowComponent } from './components/register-now/register-now.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -121,6 +122,7 @@ import { RegisterNowComponent } from './components/register-now/register-now.com
     UpdatePasswordComponent,
     VarifyOtpComponent,
     RegisterNowComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
