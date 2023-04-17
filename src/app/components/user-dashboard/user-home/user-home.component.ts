@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-home.component.css']
 })
 export class UserHomeComponent {
+  userName:string | null='';
+
+  ngOnInit(){
+   this.userName = localStorage.getItem("userName");
+  }
 
 }

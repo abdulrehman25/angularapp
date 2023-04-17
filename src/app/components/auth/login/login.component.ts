@@ -22,6 +22,8 @@ export class LoginComponent {
     this.authService.loginUser(this.loginObj).subscribe((res:any)=>{
       if(res.message==='success'){
         localStorage.setItem('isloggedin','true');
+        localStorage.setItem('userData',JSON.stringify(res.data));
+        localStorage.setItem('userName',JSON.stringify(res.data.name));
         this._toastr.success('Logged In Successfully !','Logged In');
         this.router.navigate(['/userDashboard']);
       }else{
