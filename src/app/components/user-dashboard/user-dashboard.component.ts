@@ -9,9 +9,15 @@ import { Router } from '@angular/router';
 export class UserDashboardComponent {
   showProfile:boolean= false;
   toggleDashboardSidebar:boolean= false;
-  // userProfile="userProfile";
+  userName:string | null='';
 
-  constructor(private router:Router){ }
+  constructor(private router:Router){}
+
+
+  ngOnInit(){
+   this.userName = localStorage.getItem("userName");
+  }
+
   openProfileBar(){
     this.showProfile= !this.showProfile;
   }

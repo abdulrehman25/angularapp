@@ -50,7 +50,7 @@ export class BookAppointmentComponent {
 
   closeBookAppointment() {
     this.showBookAppointmentPage = false;
-    this.router.navigate(['/']);
+    this.router.navigate(['/userDashboard']);
   }
 
   showDiv(divClass:string,styleIndex:string){

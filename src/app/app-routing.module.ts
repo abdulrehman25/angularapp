@@ -49,14 +49,24 @@ import { MyReportsComponent } from './components/user-dashboard/my-reports/my-re
 import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback/give-feedback.component';
 import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
 import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
-import { RegisterNowComponent } from './components/register-now/register-now.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: DefaultHomeComponent,
     children: [
-      { path: '', component: HomeComponent },
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      },
+      { path: 'home', component: HomeComponent },
       { path: 'about-us', component: AboutUsComponent },
       { path: 'abdominalRadiology', component: AbdominalAdiologyComponent },
       { path: 'prostateRadiology', component: ProstateRadiologyComponent },
@@ -78,7 +88,7 @@ const routes: Routes = [
         path: 'oncologicalRadiology',
         component: OncologicalRadiologyComponent,
       },
-      { path: 'bookAppointment', component: BookAppointmentComponent },
+      // { path: 'bookAppointment', component: BookAppointmentComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'resetPassword', component: ResetPasswordComponent },
@@ -138,8 +148,10 @@ const routes: Routes = [
       { path: 'userProfile', component: UserProfileComponent },
       { path: 'myReports', component: MyReportsComponent },
       { path: 'giveFeedback', component: GiveFeedbackComponent },
+      { path: 'bookAppointment', component: BookAppointmentComponent },
     ],
   },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

@@ -16,7 +16,7 @@
           <a href="javascript:;" class="profile-picture">
             <img src="../assets/images/testi-user.png" alt="" />
             <h5>
-              welcome, alex
+             {{userName}}
               <button clickOutside (click)="openProfileBar()">
                 <i class="fa-light fa-angle-down"></i>
               </button>
@@ -93,7 +93,7 @@
         <!--list item-->
 
         <li>
-          <a href="javascript:;">
+          <a routerLink="bookAppointment">
             <span><i class="fa-regular fa-calendar"></i></span>
             <span class="sidebar-item">book an appointment</span>
           </a>

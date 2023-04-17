@@ -10,9 +10,9 @@ export class HeaderComponent {
   languageList = [
     { language: 'English', languageCode: 'en' },
     { language: 'German', languageCode: 'de' },
-    { language: 'Arebic', languageCode: 'ar' },
+    { language: 'Arabic', languageCode: 'ar' },
     { language: 'Russian', languageCode: 'ru' },
-    { language: 'Chines', languageCode: 'zh' },
+    { language: 'Chinese', languageCode: 'zh' },
   ];
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'de', 'ar', 'ru', 'zh']);
