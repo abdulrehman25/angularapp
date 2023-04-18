@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="secondry-navbar">
 				<ul class="d-flex">
-					<li><a routerLink="/register"><i class="fa-thin fa-user"></i> Register</a></li>
+					<!-- <li><a routerLink="/register"><i class="fa-thin fa-user"></i> Register</a></li> -->
 					<li><a routerLink="/login"><i class="fa-thin fa-right-to-bracket"></i> Login</a></li>
 					<li><select class="form-control language-selecter position-relative" #selectedLang (change)="switchLang(selectedLang.value)">
 						<option *ngFor="let language of languageList" [value]="language.languageCode"
@@ -84,15 +84,13 @@
 						  </div>
 						  </li>
 						  
-						  <li class="nav-item">
+						  <!-- <li class="nav-item">
 						  <a class="nav-link" routerLink="/register">Register/Login</a>
-						  </li>
+						  </li> -->
 
 						  <li class="nav-item">
-						  <a class="nav-link" routerLink="/bookAppointment">Book an appointment</a>
+						  <a class="nav-link" routerLink="/bookAppointment">Get a second opinion</a>
 						  </li>
-
-						  
                       </ul>
                   </div>
                   <!-- Collapsible content -->
