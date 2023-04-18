@@ -1,0 +1,751 @@
+<div [ngClass]="{ 'register-now-page': showRegisterNowPage }">
+  <button class="close-book-appointment-page" (click)="closeGetSecondOpinion()">
+    <i class="fa-regular fa-xmark-large"></i>
+  </button>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <form #getSecondOpinion="ngForm">
+          <div class="registerNow_step1">
+            <div class="step1-inner">
+              <a id="stp1"></a>
+              <figure><img src="images/logo2.png" alt="" /></figure>
+              <h2>Get a second opinion today {{addClass === 'registerNow_step2'}}</h2>
+              <aside>
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step2', '2')"
+                  class="start-appoint-1 page1"
+                  >get started</a
+                >
+              </aside>
+            </div>
+          </div>
+          <!--step1-->
+
+          <div [style]="divStyle"
+            class="registerNow_step2"
+          >
+            <div class="step2-inner">
+              <a id="stp2"></a>
+              <label>What is your e-mail?</label>
+              <input type="text" placeholder="Your email" required />
+              <aside>
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step1', '1')"
+                  class="start-appoint-1 back12"
+                  >back</a
+                >
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step3', '3')"
+                  class="start-appoint-1 page2"
+                  >next</a
+                >
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_1">8%</span>
+            </div>
+          </div>
+          <!--step2-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step3'"
+            [style]="divStyle"
+            class="registerNow_step3"
+          >
+            <div class="step3-inner">
+              <a id="stp3"></a>
+              <label
+                ><strong class="text-capitalize d-block pb-3">password</strong>
+                Create a pasword to protect all your personal
+                informations.</label
+              >
+              <input
+                type="password"
+                placeholder="Make Your Password"
+                required
+              />
+              <aside>
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step2', '2')"
+                  class="start-appoint-1 back11"
+                  >back</a
+                >
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step4', '4')"
+                  class="start-appoint-1 page3"
+                  >next</a
+                >
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_2">18%</span>
+            </div>
+          </div>
+          <!--step3-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step4'"
+            [style]="divStyle"
+            class="registerNow_step4"
+            class="registerNow_step4"
+          >
+            <div class="step4-inner">
+              <a id="stp4"></a>
+              <label>Please, verify your email.</label>
+              <input type="text" placeholder="Verification code" required />
+
+              <aside>
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step3', '3')"
+                  class="start-appoint-1 back10"
+                  >back</a
+                >
+                <a
+                  href="javascript:;"
+                  (click)="showDiv('registerNow_step5', '5')"
+                  class="start-appoint-1 page4"
+                  >next</a
+                >
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_3">25%</span>
+            </div>
+          </div>
+          <!--step4-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step5'"
+            [style]="divStyle"
+            class="registerNow_step5"
+            class="registerNow_step5"
+          >
+            <div class="step5-inner">
+              <a id="stp5"></a>
+              <label>What's your name?</label>
+              <input type="text" placeholder="First name" required />
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step4', '4')" class="start-appoint-1 back9">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step6', '6')" class="start-appoint-1 page5">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_4">40%</span>
+            </div>
+          </div>
+          <!--step5-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step6'"
+            [style]="divStyle"
+            class="registerNow_step6"
+            class="registerNow_step6"
+          >
+            <div class="step6-inner">
+              <a id="stp6"></a>
+              <label>What's your surname?</label>
+              <input type="text" placeholder="Sur name" required />
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step5', '5')" class="start-appoint-1 back8">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step7', '7')" class="start-appoint-1 page6">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_5">45%</span>
+            </div>
+          </div>
+          <!--step6-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step7'"
+            [style]="divStyle"
+            class="registerNow_step7"
+            class="registerNow_step7"
+          >
+            <div class="step7-inner">
+              <a id="stp7"></a>
+              <label>What's your phone number?</label>
+              <small
+                >We will send you a notification then a report will be
+                ready.</small
+              >
+              <input
+                type="tel"
+                placeholder="Your contact"
+                maxlength="12"
+                required
+              />
+              <div class="checkbox-wrapper">
+                <input type="checkbox" required name="abc" id="abc" />
+                <label class="check-wrap-label text-capitalize"
+                  >i agree terms &amp; conditions.</label
+                >
+              </div>
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step6', '6')" class="start-appoint-1 back7">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step8', '8')" class="start-appoint-1 page7">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_6">50%</span>
+            </div>
+          </div>
+          <!--step7-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step8'"
+            [style]="divStyle"
+            class="registerNow_step8"
+            class="registerNow_step8"
+          >
+            <div class="step8-inner">
+              <a id="stp8"></a>
+              <label>What type of scan do you want to check?</label>
+              <div class="manage-1-place-wrapper">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label mri-check text-uppercase"
+                    >mri</label
+                  >
+                </div>
+                <!--mri-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label ct-check text-uppercase"
+                    >ct</label
+                  >
+                </div>
+                <!--ct-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label pet-ct-check text-uppercase"
+                    >pet-ct</label
+                  >
+                </div>
+                <!--pet ct-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label xray-check text-uppercase"
+                    >x-ray</label
+                  >
+                </div>
+                <!--x ray-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label ultrasound-check text-uppercase"
+                    >ultrasound</label
+                  >
+                </div>
+                <!--ultrasound-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label mammogram-check text-uppercase"
+                    >mammogram</label
+                  >
+                </div>
+                <!--mammogram-->
+              </div>
+              <!--manage 1 place wrapper-->
+
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step7', '7')" class="start-appoint-1 back6">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step9', '9')" class="start-appoint-1 page8">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_7">60%</span>
+            </div>
+          </div>
+          <!--step8-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step9'"
+            [style]="divStyle"
+            class="registerNow_step9"
+            class="registerNow_step9"
+          >
+            <div class="step9-inner">
+              <a id="stp9"></a>
+              <label>What part of the body?</label>
+
+              <div class="manage-1-place-wrapper scroll-here">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label leg-check text-lowercase"
+                    >Legg</label
+                  >
+                </div>
+                <!--Leg-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label human-back-check text-lowercase"
+                    >Back</label
+                  >
+                </div>
+                <!--Back-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label stomach-check text-lowercase"
+                    >Stomach</label
+                  >
+                </div>
+                <!--Stomach-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label colon-check text-lowercase"
+                    >Colon</label
+                  >
+                </div>
+                <!--Colon-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label small-intestine-check text-lowercase"
+                    >Small intestine</label
+                  >
+                </div>
+                <!--Small intestine-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label reproductive-organs-check text-lowercase"
+                    >Reproductive Organs</label
+                  >
+                </div>
+                <!--Reproductive-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label esophagus-check text-lowercase"
+                    >Esophagus</label
+                  >
+                </div>
+                <!--Esophagus-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label spleen-check text-lowercase"
+                    >Spleen</label
+                  >
+                </div>
+                <!--Spleen-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label liver-check text-lowercase"
+                    >Liver</label
+                  >
+                </div>
+                <!--Liver-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label bile-duct-check text-lowercase"
+                    >Bile Duct</label
+                  >
+                </div>
+                <!--Bile Duct-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label pancreas-check text-lowercase"
+                    >Pancreas</label
+                  >
+                </div>
+                <!--Pancreas-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label prostata-check text-lowercase"
+                    >Prostata</label
+                  >
+                </div>
+                <!--Prostata-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label woman-organs-check text-lowercase"
+                    >Woman organs</label
+                  >
+                </div>
+                <!--Woman organs-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label chest-radiology-check text-lowercase"
+                    >Chest Radiology</label
+                  >
+                </div>
+                <!--Chest Radiology-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label lung-check text-lowercase"
+                    >Lung</label
+                  >
+                </div>
+                <!--Lung-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label airways-check text-lowercase"
+                    >Airways</label
+                  >
+                </div>
+                <!--Airways-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label heart-check text-lowercase"
+                    >Heart</label
+                  >
+                </div>
+                <!--Heart-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label musculoskeletal-radiology-check text-lowercase"
+                    >Musculoskeletal Radiology</label
+                  >
+                </div>
+                <!--Musculoskeletal Radiology-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label shoulder-check text-lowercase"
+                    >Shoulder</label
+                  >
+                </div>
+                <!--Shoulder-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label arm-check text-lowercase"
+                    >Arm</label
+                  >
+                </div>
+                <!--Arm-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label elbow-check text-lowercase"
+                    >Elbow</label
+                  >
+                </div>
+                <!--Elbow-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label handjoint-check text-lowercase"
+                    >Handjoint</label
+                  >
+                </div>
+                <!--Handjoint-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label hand-check text-lowercase"
+                    >Hand</label
+                  >
+                </div>
+                <!--Hand-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label hip-check text-lowercase"
+                    >Hip</label
+                  >
+                </div>
+                <!--Hip-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label pelvis-check text-lowercase"
+                    >Pelvis</label
+                  >
+                </div>
+                <!--Pelvis-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label knee-check text-lowercase"
+                    >Knee</label
+                  >
+                </div>
+                <!--Knee-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label footjoint_ankle-check text-lowercase"
+                    >Footjoint / Ankle</label
+                  >
+                </div>
+                <!--Footjoint / Ankle-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label foot-check text-lowercase"
+                    >Foot</label
+                  >
+                </div>
+                <!--Foot-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label bone-spine-check text-lowercase"
+                    >Bone Spine (cervical, thoracic, lumbar, sacral)</label
+                  >
+                </div>
+                <!--Bone Spine (cervical, thoracic, lumbar, sacral)-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label neuroradiology-check text-lowercase"
+                    >Neuroradiology</label
+                  >
+                </div>
+                <!--Neuroradiology-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label brain-check text-lowercase"
+                    >Brain</label
+                  >
+                </div>
+                <!--Brain-->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label class="check-wrap-label spineback-check text-lowercase"
+                    >Spine</label
+                  >
+                </div>
+                <!--Spine -->
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" required name="abc" id="" />
+                  <label
+                    class="check-wrap-label head-and-neck-rgans-check text-lowercase"
+                    >Head and Neck Organs</label
+                  >
+                </div>
+                <!--Head and Neck Organs -->
+              </div>
+              <!--manage 1 place wrapper-->
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step8', '8')" class="start-appoint-1 back5">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step10', '10')" class="start-appoint-1 page9">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_8">70%</span>
+            </div>
+          </div>
+          <!--step9-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step10'"
+            [style]="divStyle"
+            class="registerNow_step10"
+            class="registerNow_step10"
+          >
+            <div class="step10-inner">
+              <a id="stp10"></a>
+              <label
+                ><strong class="text-capitalize d-block pb-3">upload</strong> my
+                scans and reports.</label
+              >
+              <ul>
+                <li>
+                  <label for="inputFieldScan" class="btn btn-success"
+                    >Scan</label
+                  >
+                  <input type="file" id="inputFieldScan" class="d-none" />
+                </li>
+
+                <li>
+                  <label for="inputFieldReport" class="btn btn-success"
+                    >Report</label
+                  >
+                  <input type="file" id="inputFieldReport" class="d-none" />
+                </li>
+              </ul>
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step9', '9')" class="start-appoint-1 back4">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step11', '11')" class="start-appoint-1 page10">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_9">78%</span>
+            </div>
+          </div>
+          <!--step10-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step11'"
+            [style]="divStyle"
+            class="registerNow_step11"
+            class="registerNow_step11"
+          >
+            <div class="step11-inner">
+              <a id="stp11"></a>
+              <label>Add your comments.</label>
+              <textarea></textarea>
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step10', '10')" class="start-appoint-1 back3">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step12', '12')" class="start-appoint-1 page11">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_10">85%</span>
+            </div>
+          </div>
+          <!--step11-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step12'"
+            [style]="divStyle"
+            class="registerNow_step12"
+            class="registerNow_step12"
+          >
+            <div class="step12-inner">
+              <a id="stp12"></a>
+              <label
+                ><strong class="text-capitalize d-block pb-3"
+                  >Select a bundle that suites you best.</strong
+                >
+                No need to pay now. Pay after results are ready.</label
+              >
+              <small>MRI, Legg</small>
+
+              <div class="our-plans">
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="select1"
+                    name="select1"
+                    value="select1"
+                    checked="checked"
+                  />
+                  <label for="select1">
+                    <p class="text-center">Express, 399 EUR</p>
+                    <ul type="square">
+                      <li>Express result in 2 hours</li>
+                      <li>Unlimited video-phone support for 1 year</li>
+                    </ul>
+                  </label>
+                </div>
+
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="select2"
+                    name="select1"
+                    value="select2"
+                  />
+                  <label for="select1">
+                    <p class="text-center">Premium, 249 EUR</p>
+                    <ul type="square">
+                      <li>Result in 24 hours</li>
+                      <li>Unlimited support for 1 year</li>
+                    </ul>
+                  </label>
+                </div>
+
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="select3"
+                    name="select1"
+                    value="select3"
+                  />
+                  <label for="select1">
+                    <p class="text-center">Basic, 199 EUR</p>
+                    <ul type="square">
+                      <li>Result in 24 hours</li>
+                      <li>Support for 1 week</li>
+                    </ul>
+                  </label>
+                </div>
+              </div>
+              <!--our plans-->
+
+              <aside>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step11', '11')" class="start-appoint-1 back2">back</a>
+                <a href="javascript:;"
+                (click)="showDiv('registerNow_step13', '13')" class="start-appoint-1 page12">next</a>
+              </aside>
+            </div>
+            <div class="progress-bar-layer">
+              <span class="progress-bar-increasing progress_11">95%</span>
+            </div>
+          </div>
+          <!--step12-->
+
+          <div
+            *ngIf="addClass === 'registerNow_step13'"
+            [style]="divStyle"
+            class="registerNow_step13"
+            class="registerNow_step13"
+          >
+            <div class="step13-inner">
+              <a id="stp13"></a>
+              <label
+                >All done. We will get back to you during next 24 hours.</label
+              >
+              <aside>
+                <a href="javascript:;" class="start-appoint-1 btn btn-success"
+                  >Finish</a
+                >
+              </aside>
+            </div>
+            <div class="progress-bar-layer mt-2">
+              <span class="progress-bar-increasing progress_12">100%</span>
+            </div>
+          </div>
+          <!--step10-->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

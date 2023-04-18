@@ -50,6 +50,8 @@ import { GiveFeedbackComponent } from './components/user-dashboard/give-feedback
 import { UpdatePasswordComponent } from './components/auth/update-password/update-password.component';
 import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AuthGuardForUserDashboardGuard } from './guards/auth-guard-for-user-dashboard.guard';
+import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
 
 const routes: Routes = [
   {
@@ -131,13 +133,14 @@ const routes: Routes = [
       { path: 'primaryReads', component: PrimaryReadsComponent },
       { path: 'proBono', component: ProBonoComponent },
       { path: 'testimonial', component: TestimonialComponent },
+      { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
       { path: 'thankYou', component: ThankYouComponent },
       { path: 'error404', component: Error404Component },
     ],
   },
   {
     path: 'userDashboard',
-    component: UserDashboardComponent,
+    component: UserDashboardComponent, canActivate:[AuthGuardForUserDashboardGuard],
     children: [
       {
         path: '',

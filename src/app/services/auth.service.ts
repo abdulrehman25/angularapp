@@ -16,6 +16,10 @@ export class AuthService {
     return this.httpClient.post(`${this.Api_Base}/login`,data);
   }
 
+  isLoggedIn():boolean {
+    return !!localStorage.getItem('isloggedin')
+  }
+
   resetPassword(data:any){
     return this.httpClient.post(`${this.Api_Base}/password/email?email=${data}`,data);
   }
