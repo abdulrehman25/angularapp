@@ -99,10 +99,11 @@ box-shadow: 0px 11px 35px #407839;}
 
 .section-c ul {display: flex;flex-wrap: wrap;justify-content: space-between; margin: 50px 0px 15px;}
 .section-c ul li {list-style-type: none;width: 30%; margin-bottom: 35px;}
-.section-c ul li h3 {font-size: 17px;font-weight: 500;color: #ffffff;position: relative;padding-top: 20px;}
+.section-c ul li h3 {font-size: 20px;font-weight: 700;color: #ffffff;position: relative;
+padding-top: 20px;line-height: 30px;padding-bottom: 12px;}
 .section-c ul li h3::before {position: absolute;content: '\f141';font-family: 'Font Awesome 5 Pro';top: -8px;left: 50%;margin-left: -15px;
 font-size: 30px;color: #ffffff;}
-.section-c ul li p {color: #ffffff;}
+.section-c ul li p {color: #ffffff;line-height: 20px;text-align: center;}
 /*section c*/
 
 
@@ -176,7 +177,7 @@ z-index: -1;top: 30px;}
 
 .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 22rem;}
 
-.section-f .position-relative ol li aside a, .section-j .position-relative ol li aside a {background-color: #407839;color: #ffffff;padding: 8px 20px;display: inline-block;border-radius: 100px;box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839; text-align: center;}
+.section-f .position-relative ol li aside a, .section-j .position-relative ol li aside a {background-color: #407839;color: #ffffff;padding: 8px 20px;display: inline-block;border-radius: 100px;box-shadow: 0px 11px 35px #407839;min-width: 250px;border: 1px solid #407839; text-align: center;}
 
 .section-f ol li aside a:hover, .section-j ol li aside a:hover {color: #ffffff;background-color: #1e4171;border: 1px solid #1e4171;}
 /*section f*/
