@@ -5,5 +5,5 @@ export interface UserFeedback {
     email:string;
     rating:number;
     feedback:string;
-    image:string;
+    image:any;
 }

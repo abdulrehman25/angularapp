@@ -21,6 +21,7 @@ formObj : UserFeedback = {
   image: '',
 };
 userData : any;
+file : any;
 constructor(private router: Router , private userFeedbackService:UserFeedbackService, private _toastr: ToastrService) {  }
 
 starList: boolean[] = [true,true,true,true,true];
@@ -44,9 +45,9 @@ setStar(data:any){
  selectFile(event: any): void {
    this.preview = '';
    this.selectedFiles = event.target.files;
+   this.file = event.target.files[0];
    if (this.selectedFiles) {
      const file: File | null = this.selectedFiles.item(0);
-     this.formObj.image = event.target.files[0];
     
      if (file) {
        this.preview = '';
@@ -71,11 +72,19 @@ setStar(data:any){
     this.formObj.rating = this.rating;
     this.userData = localStorage.getItem('user');
     this.formObj.user_id = JSON.parse(this.userData).id;
+    this.formObj.image = (this.file);
+    //console.log(this.formObj);
 
-    console.log(this.formObj);
-    
-    this.userFeedbackService.insertUserFeedbackData(this.formObj).subscribe((res:any)=>{
-      console.log("res : ", res);
+    var formData = new FormData();
+    formData.append("image", this.file, this.file.name);
+    formData.append("email", this.formObj.email);
+    formData.append("first_name", this.formObj.first_name);
+    formData.append("last_name", this.formObj.last_name);
+    formData.append("user_id", this.formObj.user_id);
+    formData.append("feedback", this.formObj.feedback);
+    formData.append("rating", `${this.formObj.rating}`);
+
+    this.userFeedbackService.insertUserFeedbackData(formData).subscribe((res:any)=>{
       if(res.status === 'error'){
         this._toastr.error(res.data,'Error');
       }
