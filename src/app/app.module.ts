@@ -66,6 +66,7 @@ import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.comp
 import { RegisterNowComponent } from './components/register-now/register-now.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
+import { BottomOfPagesComponent } from './components/shared/bottom-of-pages/bottom-of-pages.component';
 
 @NgModule({
   declarations: [
@@ -125,6 +126,7 @@ import { GetSecondOpinionComponent } from './components/get-second-opinion/get-s
     RegisterNowComponent,
     NotFoundComponent,
     GetSecondOpinionComponent,
+    BottomOfPagesComponent,
   ],
   imports: [
     BrowserModule,
