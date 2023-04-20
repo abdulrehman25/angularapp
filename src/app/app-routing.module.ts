@@ -52,6 +52,7 @@ import { VarifyOtpComponent } from './components/auth/varify-otp/varify-otp.comp
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthGuardForUserDashboardGuard } from './guards/auth-guard-for-user-dashboard.guard';
 import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
+import { FaqComponent } from './components/resources/faq/faq.component';
 
 const routes: Routes = [
   {
@@ -125,6 +126,7 @@ const routes: Routes = [
       { path: 'blogDetails', component: BlogDetailsComponent },
       { path: 'comparisonStudies', component: ComparisonStudiesComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'faq', component: FaqComponent },
       {
         path: 'guidanceRadiologyTraining',
         component: GuidanceRadiologyTrainingComponent,

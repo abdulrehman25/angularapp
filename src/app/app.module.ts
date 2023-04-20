@@ -67,6 +67,7 @@ import { RegisterNowComponent } from './components/register-now/register-now.com
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
 import { BottomOfPagesComponent } from './components/shared/bottom-of-pages/bottom-of-pages.component';
+import { FaqComponent } from './components/resources/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -127,6 +128,7 @@ import { BottomOfPagesComponent } from './components/shared/bottom-of-pages/bott
     NotFoundComponent,
     GetSecondOpinionComponent,
     BottomOfPagesComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
