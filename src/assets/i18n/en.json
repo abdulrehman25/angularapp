@@ -482,7 +482,14 @@
     "How often is a radiologist wrong?":"How often is a radiologist wrong?",
     "How often is a radiologist wrong?_p1":"It is difficult to define the mistake rate of radiologic exams. The authors of a 2013 research published in the American Journal of Roentgenol+-ogy stated a real-time error rate of 3-4% and a retrospective mistake rate of up to 30%*.",
     "How often is a radiologist wrong?_p2":"It might be difficult to provide an accurate diagnosis in everyday business. Telemedicine can aid with radiological results and on-demand online second opinion readings in this situation.",
-
+    "Ask The Radiologist":"Ask The Radiologist",
+    "Ask Your Question":"Ask Your Question",
+    "Fields marked with":"Fields marked with",
+    "are required":"are required.",
+    "Name":"Name",
+    "Email":"Email",
+    "Subject":"Subject",
+    "Message":"Message",
 
     "key25":"",
     "key26":""
