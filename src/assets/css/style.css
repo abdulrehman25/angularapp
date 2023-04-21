@@ -437,38 +437,6 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 .blog-details-next-prev {margin-top: 25px;}
  /* Blog pages section */
 
-/*23 march 2023*/
-.faq-page {width: 100%;height: auto;display: inline-block;padding: 50px 0px;position: relative;}
-.faq-page h3 {font-size: 28px;font-weight: 600;color: #1e4171;padding-bottom: 20px;margin: 50px 0px;position: relative;}
-.faq-page h3::before {position: absolute;content: '';width: 75px;height: 3px;background-color: #407839;bottom: 0;left: 0;}
-.card {border-radius: 0px; margin: 10px 0px;}
-#faq .card .card-header {border: 0;-webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-border-radius: 0px;padding: 0;}
-#faq .card .card-header .btn-header-link {display: block;text-align: left;background: #407839;color: #ffffff;padding: 20px;border: none;
-border-radius: 0px;}
-#faq .card .card-header .btn-header-link:after {content: "\f107";font-family: 'Font Awesome 5 Free';font-weight: 700;float: right;}
-#faq .card .card-header .btn-header-link.collapsed {background: #1e4171;color: #fff;}
-#faq .card .card-header .btn-header-link.collapsed:after {content: "\f106";}
-#faq .card .collapsing {background: #f2f2f2;line-height: 30px;}
-#faq .card .collapse {border: 0;}
-#faq .card .collapse.show {background: #f2f2f2;line-height: 30px;color: #000;}
-
-.card .card-body p {padding-bottom: 15px;}
-.card .card-body p > a {color: #407839; text-decoration: underline;}
-.card .card-body ul {padding-left: 40px;margin: 10px 0px;}
-
-.faq-form {width: 100%;height: auto;position: relative;background-color: #f2f2f2;padding: 30px;margin: 50px 0px 0px;border: 1px solid rgba(0,0,0,.1);border-radius: 15px;}
-.faq-form fieldset {border: 1px solid rgba(0,0,0,.2);padding: 40px 25px;width: 100%;height: auto;border-radius: 15px;background-color: #f8f8f8;
-position: relative;}
-.faq-form fieldset h4 {font-size: 18px;color: #ffffff;position: absolute;top: -20px;left: 25px;background-color: #1e4171;padding: 4px 12px;
-border: 1px solid rgba(0,0,0,.2);border-radius: 25px;}
-.faq-form fieldset .form-group label > sup {color: #dc3545;}
-.faq-form fieldset .form-group textarea {resize: none;height: 125px;}
-.faq-form fieldset .form-group input[type="submit"] {background-color: #407839;color: #ffffff;padding: 8px 20px;display: inline-block;border-radius: 100px;box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;}
-.faq-form mark {display: block;background-color: #407839;padding: 0px 12px;color: #ffffff;line-height: 36px;font-weight: 500;margin-bottom: 15px;
-border-radius: 4px;}
-/*faq section*/
-
 
 
 .intro-dr-rehman {width: 100%;height: auto;display: inline-block;padding: 100px 0px 0px;position: relative;}
