@@ -68,6 +68,12 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
 import { BottomOfPagesComponent } from './components/shared/bottom-of-pages/bottom-of-pages.component';
 import { FaqComponent } from './components/resources/faq/faq.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminHomeComponent } from './components/admin/admin-home/admin-home.component';
+import { ManageProfileComponent } from './components/admin/manage-profile/manage-profile.component';
+import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
+import { AppointmentsComponent } from './components/admin/appointments/appointments.component';
+import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
 
 @NgModule({
   declarations: [
@@ -129,6 +135,12 @@ import { FaqComponent } from './components/resources/faq/faq.component';
     GetSecondOpinionComponent,
     BottomOfPagesComponent,
     FaqComponent,
+    AdminComponent,
+    AdminHomeComponent,
+    ManageProfileComponent,
+    ViewReportsComponent,
+    AppointmentsComponent,
+    PatientFeedbackComponent,
   ],
   imports: [
     BrowserModule,
