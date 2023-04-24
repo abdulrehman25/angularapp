@@ -74,6 +74,7 @@ import { ManageProfileComponent } from './components/admin/manage-profile/manage
 import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
 import { AppointmentsComponent } from './components/admin/appointments/appointments.component';
 import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -158,7 +159,8 @@ import { PatientFeedbackComponent } from './components/admin/patient-feedback/pa
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgxUiLoaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
