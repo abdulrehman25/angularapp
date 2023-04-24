@@ -74,6 +74,7 @@ import { ManageProfileComponent } from './components/admin/manage-profile/manage
 import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
 import { AppointmentsComponent } from './components/admin/appointments/appointments.component';
 import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
+import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
 
 @NgModule({
   declarations: [
@@ -141,6 +142,7 @@ import { PatientFeedbackComponent } from './components/admin/patient-feedback/pa
     ViewReportsComponent,
     AppointmentsComponent,
     PatientFeedbackComponent,
+    BlogDetailsComponent
   ],
   imports: [
     BrowserModule,
