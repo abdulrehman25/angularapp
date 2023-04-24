@@ -75,6 +75,7 @@ import { ViewReportsComponent } from './components/admin/view-reports/view-repor
 import { AppointmentsComponent } from './components/admin/appointments/appointments.component';
 import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
+import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
 
 @NgModule({
   declarations: [
@@ -142,6 +143,7 @@ import { NgxUiLoaderModule } from 'ngx-ui-loader';
     ViewReportsComponent,
     AppointmentsComponent,
     PatientFeedbackComponent,
+    BlogDetailsComponent
   ],
   imports: [
     BrowserModule,
