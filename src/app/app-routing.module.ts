@@ -53,6 +53,12 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthGuardForUserDashboardGuard } from './guards/auth-guard-for-user-dashboard.guard';
 import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
 import { FaqComponent } from './components/resources/faq/faq.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminHomeComponent } from './components/admin/admin-home/admin-home.component';
+import { AppointmentsComponent } from './components/admin/appointments/appointments.component';
+import { ManageProfileComponent } from './components/admin/manage-profile/manage-profile.component';
+import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
+import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
 
 const routes: Routes = [
   {
@@ -154,6 +160,22 @@ const routes: Routes = [
       { path: 'myReports', component: MyReportsComponent },
       { path: 'giveFeedback', component: GiveFeedbackComponent },
       { path: 'bookAppointment', component: BookAppointmentComponent },
+    ],
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'adminHome',
+        pathMatch: 'full',
+      },
+      { path: 'adminHome', component: AdminHomeComponent },
+      { path: 'appointments', component: AppointmentsComponent },
+      { path: 'manageProfile', component: ManageProfileComponent },
+      { path: 'patientFeedback', component: PatientFeedbackComponent },
+      { path: 'viewReports', component: ViewReportsComponent },
     ],
   },
   { path: '**', component: NotFoundComponent },
