@@ -68,6 +68,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GetSecondOpinionComponent } from './components/get-second-opinion/get-second-opinion.component';
 import { BottomOfPagesComponent } from './components/shared/bottom-of-pages/bottom-of-pages.component';
 import { FaqComponent } from './components/resources/faq/faq.component';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -146,7 +147,8 @@ import { FaqComponent } from './components/resources/faq/faq.component';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgxUiLoaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
