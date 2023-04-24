@@ -43,12 +43,6 @@
             </ol>
           </div>
         </li>
-
-        <li>
-          <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"
-            ><i class="fa-regular fa-bars"></i
-          ></a>
-        </li>
       </ul>
     </div>
   </div>
@@ -59,6 +53,9 @@
     [ngClass]="{ 'sidebar-active': toggleDashboardSidebar }"
   >
     <div class="dashboard-sidebar">
+      <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"
+            ><i class="fa-regular fa-arrow-right-arrow-left"></i></a>
+
       <ul>
         <li>
           <a routerLink="userHome">
