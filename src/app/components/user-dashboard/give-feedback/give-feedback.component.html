@@ -7,7 +7,7 @@
     <form name="form" #feedbackData="ngForm"
     (ngSubmit)="feedbackData.form.valid && insertFeedbackData()">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12">
                 <div class="upload-your-picture" *ngIf="preview && preview !== ''">
                     <!-- <img src="assets/images/testi-user.png" alt="" /> -->
                     <img [src]="preview" class="preview" style="width: 150px;">
