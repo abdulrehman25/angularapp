@@ -14,7 +14,7 @@
           </li>
           <li appClickOutside (clickOutside)="clickedOutside()">
             <a href="javascript:;" class="profile-picture">
-              <img src="../assets/images/testi-user.png" alt="" />
+              <!-- <img src="../assets/images/testi-user.png" alt="" /> -->
               <h5>
                {{userName}}
                 <button clickOutside (click)="openProfileBar()">
@@ -24,7 +24,7 @@
             </a>
             <div class="profile-bar">
               <ol *ngIf="showProfile">
-                <li>
+                <!-- <li>
                   <a class="pointer" (click)="redirectAndClose('userProfile')"
                     ><i class="fa-regular fa-user"></i> update profile</a
                   >
@@ -34,7 +34,7 @@
                     ><i class="fa-regular fa-prescription-bottle-pill"></i> my
                     reports</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a class="pointer" (click)="logOut()"
                     ><i class="fa-regular fa-arrow-right-to-arc"></i> log out</a
