@@ -16,8 +16,16 @@ export class AuthService {
     return this.httpClient.post(`${this.Api_Base}/login`,data);
   }
 
-  isLoggedIn():boolean {
-    return !!localStorage.getItem('isloggedin')
+  isUserLoggedin():boolean {
+    return !!localStorage.getItem('isUserLoggedin')
+  }
+
+  isAdmin():boolean {
+    return !!localStorage.getItem('isAdmin');
+    // if(this.isUserLoggedin()){
+    // }else{
+    //   return false
+    // }
   }
 
   resetPassword(data:any){

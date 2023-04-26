@@ -6,17 +6,16 @@ import { AuthService } from '../services/auth.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuardForUserDashboardGuard implements CanActivate {
-
-  constructor(private auth:AuthService, private router:Router){}
+export class AdminRoutesGuardGuard implements CanActivate {
+  constructor(private router:Router, private auth:AuthService){}
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if(!this.auth.isUserLoggedin()){
+      if(!this.auth.isAdmin()){
         this.router.navigate(['/login'],{queryParams:{redirectUrl:state.url}});
         return false;
       }
-    return true;
+      return true;
   }
   
 }

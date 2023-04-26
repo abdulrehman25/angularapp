@@ -40,7 +40,7 @@ export class AdminComponent {
   }
 
   logOut(){
-    localStorage.removeItem('isloggedin');
+    localStorage.removeItem('isAdmin');
     localStorage.removeItem('user');
     localStorage.removeItem('userName');
     this.router.navigate(['/login']);

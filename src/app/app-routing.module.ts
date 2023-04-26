@@ -59,6 +59,7 @@ import { AppointmentsComponent } from './components/admin/appointments/appointme
 import { ManageProfileComponent } from './components/admin/manage-profile/manage-profile.component';
 import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
 import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
+import { AdminRoutesGuardGuard } from './guards/admin-routes-guard.guard';
 
 const routes: Routes = [
   {
@@ -164,7 +165,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent,
+    component: AdminComponent, canActivate:[AdminRoutesGuardGuard],
     children: [
       {
         path: '',
