@@ -24,7 +24,7 @@ export class LoginComponent {
       if(res.message==='success'){
         localStorage.setItem('isloggedin','true');
         localStorage.setItem('user',JSON.stringify(res.data));
-        localStorage.setItem('userName',JSON.stringify(res.data.name));
+        localStorage.setItem('userName',res.data.first_name);
         this._toastr.success('Logged In Successfully !','Logged In');
         this.router.navigate(['/userDashboard']);
       }else{

@@ -148,7 +148,7 @@ const routes: Routes = [
   },
   {
     path: 'userDashboard',
-    component: UserDashboardComponent, 
+    component: UserDashboardComponent,canActivate:[AuthGuardForUserDashboardGuard],
     children: [
       {
         path: '',
