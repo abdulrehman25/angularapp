@@ -165,7 +165,20 @@
     img.inner-page-left-picture {max-width: 100%;float: unset;margin-right: 0px;}
     img.inner-page-right-picture {max-width: 100%;float: unset;margin-left: 0px;}
     /* for inner pages */
+
+    .three-report-graph .rounded ol li:nth-child(2) {font-size: 14px; text-transform: capitalize;}
+    .three-report-graph .rounded ol li img.img-fluid {height: 120px;}
+    span.sidebar-item {padding-left: 0px;font-size: 12px;}
+    .dashboard-sidebar ul li a span i.fa-regular {margin-right: 0px;}
+    .dashboard-layout-section.sidebar-active .dashboard-sidebar {width: 10%;}
+    a.open-sidebar:hover, a.open-sidebar:focus {color: #ffffff;}
+    /* for dashboar pages */
     }/*1023*/
+
+
+
+
+
     
     @media (min-width: 1024px) and (max-width: 1199px){
     #siteNav ul li a {font-size: 14px;}
@@ -229,8 +242,18 @@
     /* inner pages */
 
     .testimonial-section ol li {width: 48%;}
+
+    .dashboard-layout-section.sidebar-active .dashboard-sidebar {width: 8%;}
+    /* for dashboard */
     }/*1199*/
     
+
+
+
+
+
+
+
     @media (max-width: 767px){
     .dropdown {display: inline-grid;}
     .navbar-dark .navbar-brand {min-width: 220px;max-width: 220px;}
@@ -340,9 +363,20 @@
     /* inner pages */
 
     .testimonial-section ol li {width: 100%;margin-bottom: 25px;}
-    .testimonial-section ul li::before {
-        left: 0%;
-    }
+    .testimonial-section ul li::before {left: 0%;}
+
+    a.open-sidebar {display: none;}
+    .dashboard-sidebar {width: 12%; padding: 10px;}
+    .dashboard-right-content {width: 88%;}
+    span.sidebar-item {display: none;}
+    .dashboard-sidebar ul li a span i.fa-regular {border-right: none;}
+    .dashboard-sidebar ul li {text-align: center;}
+    .site-logo img {max-width: 100%;}
+    .three-report-graph .rounded {margin-block: 15px;}
+    .three-report-graph .rounded ol li img.img-fluid {height: 180px;}
+    .myReport-page input[type="file"] {max-width: 100%;margin-bottom: 20px;}
+    .give-feedback-page .col-xl-6 .d-flex {flex-direction: column;margin-bottom: 20px;}
+    /* for dashboard */
     }/*767*/
     
     
