@@ -31,11 +31,18 @@
 									</div>
 
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 position-relative">
-										<input type="password" placeholder="Your Password" name="password" class="form-control"
+										<input [type]="!fieldTextType ? 'text' : 'password'" placeholder="Your Password" name="password" class="form-control"
 											[(ngModel)]="loginObj.password" required #password="ngModel"
 											[ngClass]="{ 'is-invalid': loginData.submitted && password.errors }" />
 
-										<button type="button" class="show-password" title="Show Password"><i class="fa-regular fa-eye"></i></button>
+										<span class="show-password" >
+											<i class="fa"  [ngClass]="{
+												'fa-eye-slash': !fieldTextType,
+												'fa-eye': fieldTextType
+											  }" (click)="toggleShowPassword()"></i>
+										  
+											<!-- <i class="fa-regular fa-eye"></i> -->
+										</span>
 										<div *ngIf="loginData.submitted && password.errors" class="invalid-feedback">
 											<div *ngIf="password.errors['required']">Password is required</div>
 										</div>

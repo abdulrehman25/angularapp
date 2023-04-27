@@ -16,8 +16,10 @@ export class LoginComponent {
     email: '',
     password: ''
   };
+  fieldTextType = true;
   constructor(private router: Router, private authService: AuthService, private _toastr: ToastrService) {}
-
+  ngOnInit() {
+  }
   loginUserData(){
     this.authService.loginUser(this.loginObj).subscribe((res:any)=>{
       console.log(res);
@@ -44,6 +46,10 @@ export class LoginComponent {
         this._toastr.error('Log In Fail !','Error');
       }
     });
+  }
+
+  toggleShowPassword() {
+    this.fieldTextType=!this.fieldTextType;
   }
 
 }
