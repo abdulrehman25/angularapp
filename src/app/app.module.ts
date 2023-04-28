@@ -76,6 +76,8 @@ import { AppointmentsComponent } from './components/admin/appointments/appointme
 import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -143,7 +145,8 @@ import { BlogDetailsComponent } from './components/resources/blog/blog-details/b
     ViewReportsComponent,
     AppointmentsComponent,
     PatientFeedbackComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -163,6 +166,7 @@ import { BlogDetailsComponent } from './components/resources/blog/blog-details/b
       }
     }),
     NgxUiLoaderModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

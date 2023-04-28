@@ -6,23 +6,28 @@
     </div>
 
     <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
-            <label class="d-block mb-3 text-capitalize">file title name</label>
-            <select class="form-control text-capitalize" required>
-                <option value="">-- select your options --</option>
-                <option value="written radiology reports">written radiology reports</option>
-                <option value="current lab results">current lab results</option>
-                <option value="last GP/specialist report">last GP/specialist report</option>
-                <option value="last medical report">last medical report</option>
-                <option value="Sergical Operation procedure report">Sergical Operation procedure report</option>
-            </select>
-        </div>
-
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
-            <label class="d-block mb-3">Upload your reports</label>
-            <input type="file">
-            <input type="submit" value="upload report" class="btn btn-success text-capitalize">
-        </div>
+        <form #myReportForm="ngForm" (ngSubmit)="addMyReportData()">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+                <label class="d-block mb-3 text-capitalize">file title name</label>
+                <select class="form-control text-capitalize" name="title" [(ngModel)]="objectForMyReport.title" #title="ngModel" required>
+                    <option value="">-- select your options --</option>
+                    <option value="written radiology reports">written radiology reports</option>
+                    <option value="current lab results">current lab results</option>
+                    <option value="last GP/specialist report">last GP/specialist report</option>
+                    <option value="last medical report">last medical report</option>
+                    <option value="Sergical Operation procedure report">Sergical Operation procedure report</option>
+                </select>
+            </div>
+            <div *ngIf="title.touched && !title.valid" class="text-danger">
+                This is required !!
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+                <label class="d-block mb-3">Upload your reports</label>
+                <input type="file" name="report" required (change)="selectReport($event)">
+                <span *ngIf="reportFileSizeError" class="text-danger">File Should be less than 2 mb.</span>
+                <input type="submit" value="upload report" class="btn btn-success text-capitalize">
+            </div>
+        </form>
     </div>
 
     <div class="row">

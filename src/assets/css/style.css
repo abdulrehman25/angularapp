@@ -392,14 +392,14 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 .register-form select {appearance: none; background-image: url('../images/angle-down.jpg'); background-repeat: no-repeat; background-position: right center;}
 .register-form select, .register-form input[type="text"], .register-form input[type="tel"], .register-form input[type="email"], .register-form input[type="password"] {border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-bottom: 20px;color: #000000;}
 
-.login-form input[type="email"], .login-form input[type="password"]{border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-top: 12px;margin-bottom: 5px;color: #000000;}
+.login-form input[type="text"],.login-form input[type="email"], .login-form input[type="password"]{border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-top: 12px;margin-bottom: 5px;color: #000000;}
 .register-form form input[type="submit"], .login-form form input[type="submit"] {background-color: #407839;border: none;border-radius: 0;height: 50px;color: #ffffff; outline: none; margin-top: 12px; margin-bottom: 5px;}
 .register-form form p,.login-form form p.form-info {color: #000000;line-height: 50px;}
 .register-form form p a,.login-form form p a {color: rgb(30,65,113); text-decoration: underline;}
 .forgot-password a {color: rgb(30,65,113);text-transform: capitalize; margin: 8px 0px; display: inline-block;}
-button.show-password {position: absolute;top: 22px;right: 25px;background-color: transparent;border: none;
+span.show-password {position: absolute;top: 22px;right: 25px;background-color: transparent;border: none;cursor: pointer;
 outline: none;}
-button.show-password .fa-eye {font-size: 12px;}
+span.show-password .fa-eye {font-size: 12px;}
 /*Register page*/
 
 
