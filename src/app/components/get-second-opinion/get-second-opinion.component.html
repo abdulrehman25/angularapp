@@ -697,9 +697,11 @@
                 >
                 No need to pay now. Pay after results are ready.</label
               >
-              <small *ngFor="let scanTypeData of scanType; let i = index">{{scanTypeData}},</small>
-              <small *ngFor="let bodyData of bodyPart; let i = index">{{bodyData}},</small>
+<div class="requiredReports">
+  <small *ngFor="let scanTypeData of scanType; let i = index">{{scanTypeData}},</small>
+  <small *ngFor="let bodyData of bodyPart; let i = index">{{bodyData}},</small>
 
+</div>
               <div class="our-plans">
                 <div class="radio-item">
                   <input
