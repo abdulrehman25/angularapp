@@ -1,5 +1,17 @@
 @font-face {font-family: 'trademark';src: url('../fonts/trademark.woff2') format('woff2'),url('../fonts/trademark.woff') format('woff');font-weight: normal;font-style: normal;}
 
+@font-face {
+    font-family: 'WalsheimMedium';
+    src: url('../fonts/WalsheimMedium.eot');
+    src: local('GT Walsheim Pro Medium'), local('WalsheimMedium'),
+        url('../fonts/WalsheimMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WalsheimMedium.woff2') format('woff2'),
+        url('../fonts/WalsheimMedium.woff') format('woff'),
+        url('../fonts/WalsheimMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 *{margin: 0px; padding: 0px;}
 body{font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 0px; overflow-x: hidden; position: relative;}
 h1,h2,h3,h4 {font-family: 'Poppins', sans-serif;margin: 0px; padding: 0px; line-height: 30px; font-weight: 700;}
@@ -10,10 +22,10 @@ a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear 
 .secondry-navbar {width: 100%;height: auto;padding: 15px 0px;display: inline-block;}
 .secondry-navbar ul {justify-content: end;}
 .secondry-navbar ul li {list-style-type: none;margin-left: 40px;}
-.secondry-navbar ul li a {color: #234474;font-size: 14px;}
+.secondry-navbar ul li a {color: #234474;font-size: 14px;font-family: 'WalsheimMedium';}
 .secondry-navbar ul li a > i {color: #407839;}
 #siteNav ul.navbar-nav.mr-auto {justify-content: end;width: 100%;}
-#siteNav ul li a {color: #6c89b3; cursor: pointer;}
+#siteNav ul li a {color: #6c89b3; cursor: pointer; font-family: 'WalsheimMedium';}
 #siteNav ul li.active a {color: #407839;}
 #siteNav button.ddl-menu {background-color: transparent;border: none;outline: none;color: #6c89b3;padding-left: 0px;padding-right: 0px; margin-right: 5px;}
 .ddl-item {position: relative;display: flex;}
@@ -653,7 +665,7 @@ span.sidebar-item {padding-left: 5px;}
 /* user dashboard */
 
 select.language-selecter {border: 1px solid rgba(0,0,0,.1);padding: 4px 15px;
-font-size: 14px;letter-spacing: 1px;outline: none;box-shadow: none;}
+font-size: 14px;letter-spacing: 1px;outline: none;box-shadow: none;font-family: 'WalsheimMedium';}
 select.language-selecter:focus {outline: none;box-shadow: none;}
 /* language */
 
