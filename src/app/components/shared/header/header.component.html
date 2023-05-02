@@ -5,21 +5,23 @@
 				<ul class="d-flex">
 					<!-- <li><a routerLink="/register"><i class="fa-thin fa-user"></i> Register</a></li> -->
 					<li><a routerLink="/login"><i class="fa-thin fa-right-to-bracket"></i> Login</a></li>
-					<li>
+					<li appClickOutside (clickOutside)="clickedOutside()">
 						<!-- <select class="form-control language-selecter position-relative" #selectedLang (change)="switchLang(selectedLang.value)">
 						<option *ngFor="let language of languageList" [value]="language.languageCode"
 						[selected]="language.language === translate.currentLang" >
 						  {{ language.language.toUpperCase() }}
 						</option>
 					  	</select> -->
-						<button type="button" class="select-language-btn"><i class="flag-icon flag-icon-gb"></i> english</button>
+						<button type="button" class="select-language-btn" (click)="showHideDropdown()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
 
-						<div class="select-language-section">
+						<div class="select-language-section" *ngIf="showHide">
 							<ul>
-								<li class="mx-0"><i class="flag-icon flag-icon-de"></i> german</li>
-								<li class="mx-0"><i class="flag-icon flag-icon-sa"></i> arabic</li>
-								<li class="mx-0"><i class="flag-icon flag-icon-ru"></i> russian</li>
-								<li class="mx-0"><i class="flag-icon flag-icon-cn"></i> chinese</li>
+								<ng-container *ngFor="let language of languageList">
+								<li class="mx-0" (click)="switchLang(language)">
+									<i class="flag-icon flag-icon-{{language.countryCode}}"></i> 
+									{{ language.language.toUpperCase() }}
+								</li>
+							</ng-container>
 							</ul>
 						</div>
 					</li>
