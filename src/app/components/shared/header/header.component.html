@@ -5,12 +5,23 @@
 				<ul class="d-flex">
 					<!-- <li><a routerLink="/register"><i class="fa-thin fa-user"></i> Register</a></li> -->
 					<li><a routerLink="/login"><i class="fa-thin fa-right-to-bracket"></i> Login</a></li>
-					<li><select class="form-control language-selecter position-relative" #selectedLang (change)="switchLang(selectedLang.value)">
+					<li>
+						<!-- <select class="form-control language-selecter position-relative" #selectedLang (change)="switchLang(selectedLang.value)">
 						<option *ngFor="let language of languageList" [value]="language.languageCode"
 						[selected]="language.language === translate.currentLang" >
 						  {{ language.language.toUpperCase() }}
 						</option>
-					  </select></li>
+					  </select> -->
+					  <button type="button" class="select-languages"><i class="flag-icon flag-icon-ca"></i> english</button>
+					  <div class="lganguage-section">
+						<ul>
+							<li class="mx-0"><i class="flag-icon flag-icon-ca"></i> german</li>
+							<li class="mx-0"> arabic</li>
+							<li class="mx-0"> russian</li>
+							<li class="mx-0"> chinese</li>
+						</ul>
+					  </div>
+					</li>
 				</ul>
 			</div><!--secondry navbar-->
 			
