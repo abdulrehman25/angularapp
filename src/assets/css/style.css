@@ -19,7 +19,7 @@ div,p,ul,ol,li,figure,aside,figcaption,samp,span,dd {margin: 0px; padding: 0px; 
 a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear .4s; -webkit-transition: all linear .4s; -transform-transition: all linear .4s;}
 
 .site-header {position: absolute;top: 0;left: 0;z-index: 1111;width: 100%;height: auto;}
-.secondry-navbar {width: 100%;height: auto;padding: 15px 0px;display: inline-block;}
+.secondry-navbar {width: 100%;height: auto;padding: 15px 0px;display: inline-block; position: relative;}
 .secondry-navbar ul {justify-content: end;}
 .secondry-navbar ul li {list-style-type: none;margin-left: 40px;}
 .secondry-navbar ul li a {color: #234474;font-size: 14px;font-family: 'WalsheimMedium';}
@@ -54,6 +54,12 @@ button.navbar-toggler:focus {outline: none;box-shadow: none;}
 .primary-navbar.sticky-top {position: fixed;top: 0;left: 0;width: 100%;background-color: #ffffff;height: auto;z-index: 9999;}
 .primary-navbar.sticky-top #siteNav ul li a {padding: 0px 15px;}
 .primary-navbar.sticky-top #siteNav ul li .dropdown-menu a.dropdown-item {line-height: 28px;}
+
+.select-language-btn {background-color: #ffffff;border: none;padding: 5px 15px;border-radius: 8px;
+text-transform: capitalize;font-size: 14px;}
+.select-language-section {background-color: #ffffff;padding: 5px 15px;border-radius: 8px;position: relative;top: 2px;}
+.select-language-section ul li {text-transform: capitalize;font-size: 14px; cursor: pointer;}
+.select-language-section {background-color: #ffffff;padding: 5px 15px;border-radius: 8px;position: absolute;top: 55px;width: 120px;z-index: 11;left: auto;}
 /*site navbar*/
 
 
