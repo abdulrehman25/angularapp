@@ -146,7 +146,7 @@ import { FilterPipe } from './pipe/filter.pipe';
     AppointmentsComponent,
     PatientFeedbackComponent,
     BlogDetailsComponent,
-    FilterPipe
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

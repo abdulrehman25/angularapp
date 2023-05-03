@@ -7,6 +7,7 @@
 
     <div class="row">
         <form #myReportForm="ngForm" (ngSubmit)="addMyReportData()">
+            
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
                 <label class="d-block mb-3 text-capitalize">file title name</label>
                 <select class="form-control text-capitalize" name="title" [(ngModel)]="objectForMyReport.title" #title="ngModel" required>
@@ -17,13 +18,16 @@
                     <option value="last medical report">last medical report</option>
                     <option value="Sergical Operation procedure report">Sergical Operation procedure report</option>
                 </select>
+                <div *ngIf="title.touched && !title.valid" class="text-danger">
+                    This is required !!
+                </div>
             </div>
-            <div *ngIf="title.touched && !title.valid" class="text-danger">
-                This is required !!
-            </div>
+            
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
-                <label class="d-block mb-3">Upload your reports</label>
-                <input type="file" name="report" required (change)="selectReport($event)">
+                <label class="d-block mb-3">Upload your reports *</label>
+                <span *ngIf="report.touched || reportRequire" class="text-danger">This is required Field.<br></span>
+                <input type="file" name="report" [(ngModel)] ="objectForMyReport.report" #report="ngModel" required (change)="selectReport($event)">
+                
                 <span *ngIf="reportFileSizeError" class="text-danger">File Should be less than 2 mb.</span>
                 <input type="submit" value="upload report" class="btn btn-success text-capitalize">
             </div>
@@ -39,57 +43,24 @@
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <ul class="my-reports-listing">
-                <li class="position-relative">
-                    <label class="text-capitalize d-block mb-2">blood report</label>
-                    <div class="my-reports-blocks">
-                        <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="" class="img-fluid">
-                        <div class="page-layout-names">
-                            <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                            <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                            <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                        </div>
-                    </div>
-                </li>
-                <!-- list item -->
+                <ng-container>
+                    <div *ngFor="let item of titleArr">
+                            
+                        <li class="position-relative">
+                            <label class="text-capitalize d-block mb-2">{{item}}</label>
+                            <div *ngFor="let itemData of reportList[item]" class="my-reports-blocks">
+                                
+                                <img src="{{itemData}}" alt="" class="img-fluid">
+                                <div class="page-layout-names">
+                                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
+                                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
+                                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
+                                </div>
+                            </div>
+                        </li>
+                    </div> 
+                </ng-container>
 
-                <li class="position-relative">
-                    <label class="text-capitalize d-block mb-2">diagnostic report</label>
-                    <div class="my-reports-blocks">
-                        <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="" class="img-fluid">
-                        <div class="page-layout-names">
-                            <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                            <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                            <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                        </div>
-                    </div>
-                </li>
-                <!-- list item -->
-
-                <li class="position-relative">
-                    <label class="text-capitalize d-block mb-2">HIV report</label>
-                    <div class="my-reports-blocks">
-                        <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="" class="img-fluid">
-                        <div class="page-layout-names">
-                            <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                            <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                            <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                        </div>
-                    </div>
-                </li>
-                <!-- list item -->
-
-                <li class="position-relative">
-                    <label class="text-capitalize d-block mb-2">covid-19 report</label>
-                    <div class="my-reports-blocks">
-                        <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="" class="img-fluid">
-                        <div class="page-layout-names">
-                            <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                            <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                            <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                        </div>
-                    </div>
-                </li>
-                <!-- list item -->    
             </ul>
         </div>
     </div>
