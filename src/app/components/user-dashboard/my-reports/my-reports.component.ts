@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { MyReportService } from 'src/app/services/my-report.service';
+import { jsPDF } from "jspdf";
+import 'jspdf-autotable';
 
 @Component({
   selector: 'app-my-reports',
@@ -21,6 +23,7 @@ export class MyReportsComponent {
     this.userData = localStorage.getItem('user');
     this.getUserReports();
   }
+  
 
   getUserReports(){
     this.ngxLoader.start();
@@ -80,6 +83,45 @@ export class MyReportsComponent {
       }
     });
 
+  }
+
+
+  
+  getBase64Image(img: any) {
+    var canvas = document.createElement('canvas');
+    canvas.classList.add('myStyle');
+    console.log(img.width, 'x', img.height);
+    canvas.width = 446;
+    canvas.height = 631;
+    var ctx:any = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0);
+    var dataURL = canvas.toDataURL('image/png');
+    return { img: dataURL, width: canvas.width, height: canvas.height };
+  }
+
+
+  downLoadImageInPdf(id:number,reportName: any){
+    console.log("==id:==",id);
+    var base64 = document.getElementById('imageid');
+    let doc = new jsPDF('p', 'px', 'a4');
+    var width = doc.internal.pageSize;
+    console.log(width);
+
+    let imageData: any = this.getBase64Image(
+      document.getElementById('image'+id)
+    );
+
+    doc.addImage(
+      imageData.img,
+      'JPG',
+      10,
+      10,
+      imageData.width,
+      imageData.height
+    );
+    //doc.addPage();
+
+    doc.save(reportName+'.pdf');
   }
 
 }
