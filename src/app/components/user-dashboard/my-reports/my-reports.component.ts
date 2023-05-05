@@ -26,7 +26,6 @@ export class MyReportsComponent {
     this.ngxLoader.start();
     this.myReportService.getUserReports(JSON.parse(this.userData).id).subscribe((res:any)=>{
       if(res.status == '200'){
-        console.log(res.data);
         let spaghettiProperties = Object.keys(res.data);
         let neededArray = [];
         let i = 0;
@@ -35,14 +34,14 @@ export class MyReportsComponent {
             neededArray[i] = prop;
             i++;
         }
-        console.log("============",neededArray)
-        // let firstKey = Object.keys(res.data)[0]; // "plainKey"
-        // let firstValue = Object.values(res.data)[0]; // "plain value"
-        // console.log(firstKey);
-        // console.log(res.data[neededArray[0]]);
+       
         this.titleArr = neededArray;
         this.reportList = res.data;
         this.ngxLoader.stop();
+      }else{
+        this.ngxLoader.stop();
+        this.titleArr = [];
+        this.reportList = [];
       }
     });
   }
