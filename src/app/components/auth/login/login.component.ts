@@ -23,13 +23,11 @@ export class LoginComponent {
   loginUserData(){
     this.authService.loginUser(this.loginObj).subscribe((res:any)=>{
       console.log(res);
-      // console.log("res.data.is_admin ", typeof(!res.data.is_admin ), !res.data.is_admin);
       if(res.message==='success'){
         if(res.data.is_admin === "false"){
         localStorage.setItem('isUserLoggedin','true');
         localStorage.setItem('user',JSON.stringify(res.data));
         localStorage.setItem('userName',res.data.first_name);
-        // localStorage.setItem('isAdmin',res.data.is_admin);
         this._toastr.success('Logged In Successfully !','Logged In');
         this.router.navigate(['/userDashboard']);
         }else if (res.data.is_admin === "true") {
