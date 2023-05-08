@@ -78,6 +78,7 @@ import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { BlogDetailsComponent } from './components/resources/blog/blog-details/blog-details.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FilterPipe } from './pipe/filter.pipe';
+import { getBaseUrl } from "./config";
 
 @NgModule({
   declarations: [
@@ -168,7 +169,7 @@ import { FilterPipe } from './pipe/filter.pipe';
     NgxUiLoaderModule,
     NgxPaginationModule,
   ],
-  providers: [],
+  providers: [{ provide: "BASE_URL", useFactory: getBaseUrl }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

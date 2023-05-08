@@ -1,13 +1,14 @@
-import { Injectable } from '@angular/core';
+import { Injectable,Inject } from '@angular/core';
 import { HttpClient ,HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AdminService {
-  Api_Base = 'http://127.0.0.1:8000/api';
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient,@Inject("BASE_URL") private baseUrl: string) { }
+  
+  Api_Base = this.baseUrl;
 
   getUsersList(){
     return this.httpClient.get(`${this.Api_Base}/users_list`);
