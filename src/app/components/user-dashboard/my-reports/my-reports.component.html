@@ -48,13 +48,15 @@
                             
                         <li class="position-relative">
                             <label class="text-capitalize d-block mb-2">{{item}}</label>
-                            <div *ngFor="let itemData of reportList[item]" class="my-reports-blocks">
-                                
-                                <img src="{{itemData}}" alt="" class="img-fluid">
+                            <div *ngFor="let itemData of reportList[item]; let id=index" class="my-reports-blocks">
+                                {{itemData}}
+                                <!-- <img crossorigin="anonymous" crossOrigin="Anonymous" id="image{{id}}" [src]="itemData" alt="" class="img-fluid"> -->
+
+                                <img crossorigin="anonymous" crossOrigin="Anonymous" id="image{{id}}" src="https://akm-img-a-in.tosshub.com/indiatoday/559_102017023826.jpg?TZlWXro5W8Rj4VbO.MpENgo1F2MX93j" alt="" class="img-fluid">
                                 <div class="page-layout-names">
-                                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
+                                    <span class="page-formating"><img (click)="downLoadImageInPdf(id,item)" src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
                                     <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
+                                    <span class="downloading-this-file"><a (click)="downLoadImageInPdf(id,item)" title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
                                 </div>
                             </div>
                         </li>
@@ -70,3 +72,16 @@
 </div>
 <!-- row -->
 <!-- My Report Page -->
+
+<!-- <div class="container">
+	<div class="row">
+		 <div class="img-view-hideen">
+			<div class="ivh-item">
+			<img crossorigin="anonymous" id="img0" class="img-fluid" crossOrigin="Anonymous" [src]="image.url">
+		</div>
+		</div> 
+		<div class="col-md-12 mt-3">
+			<button (click)="download()" class="btn btn-primary">Download PDF</button>
+		</div>
+	</div>
+</div> -->
