@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable,Inject } from '@angular/core';
 import { HttpClient ,HttpHeaders} from '@angular/common/http';
 
 @Injectable({
@@ -7,8 +7,8 @@ import { HttpClient ,HttpHeaders} from '@angular/common/http';
 export class BookAppointmentService {
 
   requestOptions: any;
-  Api_Base = 'http://127.0.0.1:8000/api';
-  constructor(private httpClient:HttpClient) {
+
+  constructor(private httpClient:HttpClient,@Inject("BASE_URL") private baseUrl: string) {
     let auth_token = "9fJJ53VbEi6ZVLUe77L6QH0raJ7eWNoxUYYpeVKdP56YoYoirRivncTYBoRw";
 
     const headers = new HttpHeaders({
@@ -18,6 +18,7 @@ export class BookAppointmentService {
 
     this.requestOptions = { headers: headers };
   }
+  Api_Base = this.baseUrl;
 
   insertBookAppointmentData(data:any){
     return this.httpClient.post(`${this.Api_Base}/book-appointment`,data);
