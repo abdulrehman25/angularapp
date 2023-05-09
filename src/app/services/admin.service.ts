@@ -5,11 +5,6 @@ import { HttpClient ,HttpHeaders} from '@angular/common/http';
   providedIn: 'root'
 })
 export class AdminService {
-<<<<<<< Updated upstream
-=======
-  Api_Base = 'https://radiologycheck.com.185-178-193-44.225.hosttech.eu/radiologyCheck/api';
->>>>>>> Stashed changes
-
   constructor(private httpClient:HttpClient,@Inject("BASE_URL") private baseUrl: string) { }
   
   Api_Base = this.baseUrl;
