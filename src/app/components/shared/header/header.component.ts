@@ -14,7 +14,7 @@ export class HeaderComponent {
   languageList = [
     { language: 'English', languageCode: 'en', countryCode: 'gb' },
     { language: 'German', languageCode: 'de', countryCode: 'de' },
-    { language: 'Arabic', languageCode: 'ar', countryCode: 'sa' },
+    { language: 'Arabic', languageCode: 'ar', countryCode: '' },
     { language: 'Russian', languageCode: 'ru', countryCode: 'ru' },
     { language: 'Chinese', languageCode: 'zh', countryCode: 'cn' },
   ];
