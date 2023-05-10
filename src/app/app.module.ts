@@ -79,6 +79,7 @@ import { BlogDetailsComponent } from './components/resources/blog/blog-details/b
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FilterPipe } from './pipe/filter.pipe';
 import { getBaseUrl } from "./config";
+import { UserReportsComponent } from './components/admin/user-reports/user-reports.component';
 
 @NgModule({
   declarations: [
@@ -148,6 +149,7 @@ import { getBaseUrl } from "./config";
     PatientFeedbackComponent,
     BlogDetailsComponent,
     FilterPipe,
+    UserReportsComponent,
   ],
   imports: [
     BrowserModule,
