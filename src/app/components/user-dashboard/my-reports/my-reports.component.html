@@ -49,11 +49,10 @@
                         <li class="position-relative">
                             <label class="text-capitalize d-block mb-2">{{item}}</label>
                             <div *ngFor="let itemData of reportList[item]; let id=index" class="my-reports-blocks">
-                                {{itemData}}
                                 <!-- <img crossorigin="anonymous" crossOrigin="Anonymous" id="image{{id}}" [src]="itemData" alt="" class="img-fluid"> -->
                             
                                 <img crossorigin="anonymous" crossOrigin="Anonymous" id="image{{id}}" 
-                                src="https://akm-img-a-in.tosshub.com/indiatoday/559_102017023826.jpg?TZlWXro5W8Rj4VbO.MpENgo1F2MX93j" 
+                                [src]="itemData" 
                                 alt="" class="img-fluid">
                                 <div class="page-layout-names">s
                                     <span class="page-formating"><img (click)="downLoadImageInPdf(id,item)" src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>

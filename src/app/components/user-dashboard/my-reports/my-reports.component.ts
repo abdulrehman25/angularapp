@@ -73,8 +73,8 @@ export class MyReportsComponent {
     this.myReportService.uploadMyReport(formData).subscribe((res:any)=>{
       if (res.status == 'success') {
         this.ngxLoader.stop();
-        this._toastr.success('Report Updated Successfully !', 'Success');
-        this.router.navigate(['/userDashboard/userHome']);   
+        this._toastr.success('Report Updated Successfully!', 'Success');
+        this.router.navigate(['/userDashboard/myReports']);   
       }
       else{
         this.reportRequire = true;
