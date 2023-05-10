@@ -1,123 +1,162 @@
 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
     <h3 class="d-block text-capitalize">view patient's report</h3><hr>
     <div class="manage-profile-nav">
-        <form>
         <ol>
             <li>
-                <label>Name</label>
-                <input type="text" placeholder="Patient's Name" class="form-control" required/>
+                <span class="short-by-filter">Search by</span>
+                <span class="short-by-select">
+                    <form>
+                        <input type="search" placeholder="Username OR Patient ID">
+                    </form>
+                </span>
             </li>
             <!-- list item -->
 
             <li>
-                <label>Patient ID</label>
-                <input type="text" placeholder="Patient ID" class="form-control" required/>
-            </li>
-            <!-- list item -->
-
-            <li>
-                <label>Phone Number</label>
-                <input type="tel" placeholder="Patient's Phone" maxlength="12" class="form-control" required/>
-            </li>
-            <!-- list item -->
-
-            <li>
-                <label>&nbsp;</label>
-                <input type="submit" value="Find Report" class="form-control">
+                <span class="short-by-filter">Short by</span>
+                <span class="short-by-select">
+                    <form>
+                        <select>
+                            <option>-- Select --</option>
+                            <option>A to Z</option>
+                            <option>Z to A</option>
+                        </select>
+                    </form>
+                </span>
             </li>
             <!-- list item -->
         </ol>
-        </form>
     </div>
     <!-- manage profile navbar -->
 
     <div class="manage-profile-tabledata">
-        <p class="d-block bg-success text-white px-3 py-2">Mike's available reports are -</p>
-        <div class="view-report-admin">
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
+        <table class="table table-responsive table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Patient's Name</th>
+                    <th>Phone</th>
+                    <th>Email ID</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
 
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Sam</td>
+                    <td>+1 1111555588</td>
+                    <td>sam@test.com</td>
+                    <td>
+                        <a class="preview-btn" title="Preview">
+                            <i class="fa-regular fa-eye"></i>
                         </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
-
-
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
+                        <a class="edit-btn" title="Edit">
+                            <i class="fa-regular fa-pen-nib"></i>
                         </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
-
-
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
+                        <a class="erase-btn" title="Erase">
+                            <i class="fa-regular fa-trash-xmark"></i>
                         </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
+                    </td>
+                </tr>
+                <!-- table row -->
 
-
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
+                <tr>
+                    <td>02</td>
+                    <td>Cam</td>
+                    <td>+1 1111555588</td>
+                    <td>sam@test.com</td>
+                    <td>
+                        <a class="preview-btn" title="Preview">
+                            <i class="fa-regular fa-eye"></i>
                         </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
+                        <a class="edit-btn" title="Edit">
+                            <i class="fa-regular fa-pen-nib"></i>
+                        </a>
+                        <a class="erase-btn" title="Erase">
+                            <i class="fa-regular fa-trash-xmark"></i>
+                        </a>
+                    </td>
+                </tr>
+                <!-- table row -->
 
-        </div>
-        <!-- view report admin -->
+                <tr>
+                    <td>03</td>
+                    <td>Dam</td>
+                    <td>+1 1111555588</td>
+                    <td>sam@test.com</td>
+                    <td>
+                        <a class="preview-btn" title="Preview">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+                        <a class="edit-btn" title="Edit">
+                            <i class="fa-regular fa-pen-nib"></i>
+                        </a>
+                        <a class="erase-btn" title="Erase">
+                            <i class="fa-regular fa-trash-xmark"></i>
+                        </a>
+                    </td>
+                </tr>
+                <!-- table row -->
 
-        <div class="view-report-preview-enlarge">
-            <img src="../assets/images/patient-report.png" alt="" class="w-100">
-            <span class="loader"><img src="../assets/images/loader.gif" alt="" /></span>
-        </div>
-        <!-- view report preview -->
+                <tr>
+                    <td>04</td>
+                    <td>Pam</td>
+                    <td>+1 1111555588</td>
+                    <td>sam@test.com</td>
+                    <td>
+                        <a class="preview-btn" title="Preview">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+                        <a class="edit-btn" title="Edit">
+                            <i class="fa-regular fa-pen-nib"></i>
+                        </a>
+                        <a class="erase-btn" title="Erase">
+                            <i class="fa-regular fa-trash-xmark"></i>
+                        </a>
+                    </td>
+                </tr>
+                <!-- table row -->
+
+                <tr>
+                    <td>05</td>
+                    <td>Yam</td>
+                    <td>+1 1111555588</td>
+                    <td>sam@test.com</td>
+                    <td>
+                        <a class="preview-btn" title="Preview">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+                        <a class="edit-btn" title="Edit">
+                            <i class="fa-regular fa-pen-nib"></i>
+                        </a>
+                        <a class="erase-btn" title="Erase">
+                            <i class="fa-regular fa-trash-xmark"></i>
+                        </a>
+                    </td>
+                </tr>
+                <!-- table row -->
+            </tbody>
+
+            <tfoot>
+                <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </tfoot>
+        </table>
     </div>
-    <!-- manage profile tabledata -->
+    <!-- Manage Profile Tabledata -->
 </div>
 <!-- manage profile wrapper -->
