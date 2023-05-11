@@ -136,7 +136,7 @@
         
     .sidebar-tiny-blogs figure {max-width: 100%;}
     .blog-sidebar-section figure img {height: 250px;}
-    .sidebar-tiny-blogs p,.blog-sidebar-section strong, .blog-section .date {max-width: 100%;text-align: left;}
+    .sidebar-tiny-blogs p,.blog-sidebar-section strong {max-width: 100%;text-align: left;}
     .sidebar-tiny-blogs aside {text-align: left;}
         
     /*23 Mar*/
@@ -173,6 +173,8 @@
     .dashboard-layout-section.sidebar-active .dashboard-sidebar {width: 10%;}
     a.open-sidebar:hover, a.open-sidebar:focus {color: #ffffff;}
     /* for dashboar pages */
+
+    
     }/*1023*/
 
 
@@ -238,13 +240,14 @@
 
     .site-feature-banner.other-slide .feature-banner-caption {width: 92%;}
     .site-feature-banner.other-slide .feature-banner-caption {bottom: 20%; left: 40px;}
-    
-    /* inner pages */
+        /* inner pages */
 
     .testimonial-section ol li {width: 48%;}
-
     .dashboard-layout-section.sidebar-active .dashboard-sidebar {width: 8%;}
     /* for dashboard */
+
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 4rem;}
+    .register-form form p, .login-form form p.form-info {line-height: 20px;margin-block: 15px;}
     }/*1199*/
     
 
@@ -267,9 +270,12 @@
     li.nav-item.dropdown {float: right;  width: 100%; margin-right: -5px;}
     #siteNav .ddl-item li.nav-item.dropdown.show .dropdown-menu {overflow-y: scroll;max-height: 190px;width: 100%;max-width: 100vw;min-width: 85vw;margin-left: -125px;left: 0%;position: relative; margin-top: 15px;}
     #siteNav .dropdown-menu {margin-left: 0px;}
+    .banner-beneath-form {right: -12px;}
         
     .section-b {padding: 100px 0px 200px;}
     .section-b img {height: auto;margin-bottom: 100px;}
+
+    .section-d {padding: 80px 0 0;}
     
     .section-e {padding: 150px 0 80px;}
     .tab-direction-movement {flex-flow: column;}
@@ -289,7 +295,7 @@
     #testimonial-slider .item::before {left: 0px;}
         
         
-    .section-b h1 {padding-bottom: 20px;padding-top: 20px;}	
+    .section-b h1 {padding-bottom: 20px;padding-top: 20px; margin-top: 50px;}	
     .section-b h1::before {top: 20px;}	
     .section-c h2 {font-size: 24px;}
     .section-c ul li {width: 100%;}	
@@ -326,7 +332,7 @@
     .register-form, .login-form {margin-top: 25px;}
         
     /*22 Mar*/
-    .contact-form-section h6 {line-height: 30px;}
+    .contact-form-section h6 {line-height: 20px; padding: 15px 20px;}
     .contact-form-row label {width: 100%;}
     .contact-form-row input[type="text"], .contact-form-row input[type="email"], .contact-form-row input[type="tel"] {width: 100%;}
     .contact-form-row textarea {width: 100%;}
@@ -335,7 +341,7 @@
         
         
     /*23 Mar*/
-    .faq-form fieldset h4 {left: 50%;margin-left: -105px;}
+    .faq-form fieldset h4 {left: 50%;margin-left: 15px;}
     .faq-form mark {text-align: center;}
     .faq-form strong {line-height: 16px;display: inline-block;margin-bottom: 12px;}
         
@@ -355,7 +361,7 @@
     .site-feature-banner.other-slide .feature-banner-caption h1 small {line-height: 24px; padding-top: 12px;font-size: 16px;}
     .inner-pages h4 {line-height: 30px;font-size: 18px;}
     .inner-pages h3 {font-size: 24px; line-height: 32px;}
-    .inner-pages ul li {width: 100%;margin-bottom: 80px;}
+    .inner-pages ul li {width: 100%;margin-bottom: 5px;}
     .inner-pages h5 {margin-bottom: 15px;}
     .our-team {padding: 100px 10px;}
     .site-feature-banner.other-slide .feature-banner-caption h1 {font-size: 22px;color: #ffffff; background-image: url('../images/doctor-sign-white.png'); text-shadow: 1px 1px rgba(0,0,0,.75);}
@@ -377,6 +383,11 @@
     .myReport-page input[type="file"] {max-width: 100%;margin-bottom: 20px;}
     .give-feedback-page .col-xl-6 .d-flex {flex-direction: column;margin-bottom: 20px;}
     /* for dashboard */
+    
+    .inner-pages .testimonial-section ul {margin-bottom: 0px;}
+    .inner-pages .testimonial-section ul li {margin-bottom: 100px;}
+    .inner-pages .testimonial-section ul li:last-child {margin-bottom: 0px;}
+    .register-form form p, .login-form form p.form-info {line-height: 20px;}
     }/*767*/
     
     

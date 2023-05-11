@@ -20,7 +20,7 @@ a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear 
 
 .site-header {position: absolute;top: 0;left: 0;z-index: 1111;width: 100%;height: auto;}
 .secondry-navbar {width: 100%;height: auto;padding: 15px 0px;display: inline-block; position: relative;}
-.secondry-navbar ul {justify-content: end;}
+.secondry-navbar ul {justify-content: end; align-items: center;}
 .secondry-navbar ul li {list-style-type: none;margin-left: 40px;}
 .secondry-navbar ul li a {color: #234474;font-size: 14px;font-family: 'WalsheimMedium';}
 .secondry-navbar ul li a > i {color: #407839;}

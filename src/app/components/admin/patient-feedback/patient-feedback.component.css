@@ -20,3 +20,31 @@ text-align: center;border-radius: 100px;margin-inline: 3px;}
 .manage-profile-tabledata table tbody tr td:last-child a.erase-btn {background-color: #cb4040;
 color: #ffffff;font-size: 10px;width: 20px;height: 20px;display: inline-block;line-height: 20px;
 text-align: center;border-radius: 100px;margin-inline: 3px;}
+
+@media (max-width: 1023px){
+.manage-profile-nav ol{flex-direction: column; flex-wrap: wrap;}
+.manage-profile-nav ol li {margin-block: 5px;}
+.manage-profile-nav ol li input[type="search"]{max-width: 230px;min-width: 230px;}
+.manage-profile-nav ol li:first-child {width: 35%;}
+.manage-profile-nav ol li:nth-child(2) {width: 85%;}
+.manage-profile-nav ol li:last-child {width: 46%;}
+
+.manage-profile-tabledata {overflow-x: scroll;overflow-y: hidden;}
+.manage-profile-tabledata table{min-width: 720px;}
+}/*1023*/
+
+@media (min-width: 1024px) and (max-width: 1199px){
+.manage-profile-nav ol{ justify-content: space-between;}
+.manage-profile-nav ol li:first-child {width: 38%; justify-content: flex-start;}
+.manage-profile-nav ol li:nth-child(2) {width: 70%; justify-content: flex-start;}
+.manage-profile-nav ol li:nth-child(2)   input[type="search"] {min-width: 270px;}
+.manage-profile-nav ol li:last-child {width: 40%; justify-content: flex-start;}
+}/*1199*/
+
+@media (max-width: 767px){
+.manage-profile-nav ol li {flex-direction: column; margin-block: 5px;}
+.manage-profile-nav ol li:first-child {width: 100%; align-items: flex-start;}
+.manage-profile-nav ol li:nth-child(2) {width: 100%; align-items: flex-start;}
+.manage-profile-nav ol li:nth-child(2)   input[type="search"] {min-width: 270px;}
+.manage-profile-nav ol li:last-child {width: 100%; align-items: flex-start;}
+}/*767*/
