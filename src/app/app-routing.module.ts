@@ -77,7 +77,7 @@ const routes: Routes = [
         pathMatch: 'full',
       },
       { path: 'home', component: HomeComponent },
-      { path: 'about-us', component: AboutUsComponent },
+      // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may
       { path: 'abdominalRadiology', component: AbdominalAdiologyComponent },
       { path: 'prostateRadiology', component: ProstateRadiologyComponent },
       {
