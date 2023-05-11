@@ -178,7 +178,7 @@ const routes: Routes = [
       { path: 'manageProfile', component: ManageProfileComponent },
       { path: 'patientFeedback', component: PatientFeedbackComponent },
       { path: 'viewReports', component: ViewReportsComponent },
-      { path: 'userReports', component: UserReportsComponent },
+      { path: 'userReports/:id', component: UserReportsComponent },
     ],
   },
   { path: '**', component: NotFoundComponent },

@@ -1,196 +1,28 @@
 <h3 class="text-capitalize mb-2">my reports</h3>
-<div class="reports-vertically-wrapper mt-3">
-    <label class="text-capitalize d-block mb-2 w-100">Written Radiology Reports</label>
-    <ul class="my-reports-listing">
-        <li class="position-relative">
-            
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-    </ul>
+<div *ngIf="titleArr && titleArr.length === 0" class="reports-vertically-wrapper mt-3">
+    <label class="text-capitalize d-block mb-2 w-100">No record found...</label>
 </div>
-<!-- reports vertically wrapper -->
-
-
-
-
-
-
-<div class="reports-vertically-wrapper mt-3">
-    <label class="text-capitalize d-block mb-2 w-100">Current Lab Results</label>
+<div class="reports-vertically-wrapper mt-3" *ngFor="let item of titleArr">
+    <label class="text-capitalize d-block mb-2 w-100">{{item}}</label>
     <ul class="my-reports-listing">
-        <li class="position-relative">
-            
+        <li class="position-relative" *ngFor="let itemData of reportList[item]; let id=index">
+
             <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
+                <img crossorigin="anonymous" crossOrigin="Anonymous" id="image{{id}}"
+                    src="https://akm-img-a-in.tosshub.com/indiatoday/559_102017023826.jpg?TZlWXro5W8Rj4VbO.MpENgo1F2MX93j"
+                    alt="" class="img-fluid">
                 <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
+                    <span class="page-formating"><img (click)="downLoadImageInPdf(id,item)"
+                            src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
+                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i
+                                class="fa-regular fa-eye"></i></a></span>
+                    <span class="downloading-this-file"><a title="Download this File"
+                            (click)="downLoadImageInPdf(id,item)" href="javascript:;"><i
+                                class="fa-solid fa-down-to-bracket"></i></a></span>
                 </div>
             </div>
         </li>
-        <!-- list -->
 
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-    </ul>
-</div>
-<!-- reports vertically wrapper -->
-
-
-
-
-<div class="reports-vertically-wrapper mt-3">
-    <label class="text-capitalize d-block mb-2 w-100">Last Medical Report</label>
-    <ul class="my-reports-listing">
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-    </ul>
-</div>
-<!-- reports vertically wrapper -->
-
-
-
-
-<div class="reports-vertically-wrapper mt-3">
-    <label class="text-capitalize d-block mb-2 w-100">Sergical Operation Procedure Report</label>
-    <ul class="my-reports-listing">
-        <li class="position-relative">
-            
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
-
-        <li class="position-relative">
-            <div class="my-reports-blocks">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" id="" alt="" class="img-fluid">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a></span>
-                    <span class="downloading-this-file"><a title="Download this File" href="javascript:;"><i class="fa-solid fa-down-to-bracket"></i></a></span>
-                </div>
-            </div>
-        </li>
-        <!-- list -->
 
     </ul>
 </div>
-<!-- reports vertically wrapper -->

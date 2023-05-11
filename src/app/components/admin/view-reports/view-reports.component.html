@@ -1,12 +1,14 @@
 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-    <h3 class="d-block text-capitalize">view patient's report</h3><hr>
+    <h3 class="d-block text-capitalize">view patient's report</h3>
+    <hr>
     <div class="manage-profile-nav">
         <ol>
             <li>
-                <span class="short-by-filter">Search by</span>
+                <span class="short-by-filter">Search</span>
                 <span class="short-by-select">
                     <form>
-                        <input type="search" placeholder="Username OR Patient ID">
+                        <input type="search" name="search" [(ngModel)]="searchText"
+                            placeholder="Username OR Patient ID">
                     </form>
                 </span>
             </li>
@@ -15,22 +17,21 @@
             <li>
                 <span class="short-by-filter">Short by</span>
                 <span class="short-by-select">
-                    <form>
-                        <select>
-                            <option>-- Select --</option>
-                            <option>A to Z</option>
-                            <option>Z to A</option>
-                        </select>
-                    </form>
+                    <select [(ngModel)]="sortDir" (change)="onSortClick()">
+                        <option value="0">-- Select --</option>
+                        <option value="1">A to Z</option>
+                        <option value="-1">Z to A</option>
+                    </select>
                 </span>
             </li>
             <!-- list item -->
         </ol>
     </div>
-    <!-- manage profile navbar -->
+
 
     <div class="manage-profile-tabledata">
-        <table class="table table-responsive table-bordered table-hover">
+        <table class="table table-responsive table-bordered table-hover"
+            *ngIf="(userList | filter: searchText).length > 0; else noResults">
             <thead>
                 <tr>
                     <th>S.No</th>
@@ -42,121 +43,36 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>Sam</td>
-                    <td>+1 1111555588</td>
-                    <td>sam@test.com</td>
-                    <td>
-                        <a class="preview-btn" title="Preview">
-                            <i class="fa-regular fa-eye"></i>
-                        </a>
-                        <a class="edit-btn" title="Edit">
-                            <i class="fa-regular fa-pen-nib"></i>
-                        </a>
-                        <a class="erase-btn" title="Erase">
-                            <i class="fa-regular fa-trash-xmark"></i>
-                        </a>
-                    </td>
-                </tr>
-                <!-- table row -->
+                <tr
+                    *ngFor="let user of userList |filter: searchText |paginate: { itemsPerPage: 10, currentPage: p }; let i = index;">
+                    <td *ngIf="i < 9">0{{i+1}}</td>
+                    <td *ngIf="i >= 9">{{i+1}}</td>
+                    <td>{{user.first_name}} {{user.last_name}}</td>
 
-                <tr>
-                    <td>02</td>
-                    <td>Cam</td>
-                    <td>+1 1111555588</td>
-                    <td>sam@test.com</td>
+                    <td>{{user.phone}}</td>
+                    <td>{{user.email}}</td>
                     <td>
-                        <a class="preview-btn" title="Preview">
+                        <a class="preview-btn" title="View Report" [routerLink]="['/admin/userReports/', user.id]">
                             <i class="fa-regular fa-eye"></i>
-                        </a>
-                        <a class="edit-btn" title="Edit">
-                            <i class="fa-regular fa-pen-nib"></i>
-                        </a>
-                        <a class="erase-btn" title="Erase">
-                            <i class="fa-regular fa-trash-xmark"></i>
                         </a>
                     </td>
                 </tr>
-                <!-- table row -->
 
-                <tr>
-                    <td>03</td>
-                    <td>Dam</td>
-                    <td>+1 1111555588</td>
-                    <td>sam@test.com</td>
-                    <td>
-                        <a class="preview-btn" title="Preview">
-                            <i class="fa-regular fa-eye"></i>
-                        </a>
-                        <a class="edit-btn" title="Edit">
-                            <i class="fa-regular fa-pen-nib"></i>
-                        </a>
-                        <a class="erase-btn" title="Erase">
-                            <i class="fa-regular fa-trash-xmark"></i>
-                        </a>
-                    </td>
-                </tr>
-                <!-- table row -->
-
-                <tr>
-                    <td>04</td>
-                    <td>Pam</td>
-                    <td>+1 1111555588</td>
-                    <td>sam@test.com</td>
-                    <td>
-                        <a class="preview-btn" title="Preview">
-                            <i class="fa-regular fa-eye"></i>
-                        </a>
-                        <a class="edit-btn" title="Edit">
-                            <i class="fa-regular fa-pen-nib"></i>
-                        </a>
-                        <a class="erase-btn" title="Erase">
-                            <i class="fa-regular fa-trash-xmark"></i>
-                        </a>
-                    </td>
-                </tr>
-                <!-- table row -->
-
-                <tr>
-                    <td>05</td>
-                    <td>Yam</td>
-                    <td>+1 1111555588</td>
-                    <td>sam@test.com</td>
-                    <td>
-                        <a class="preview-btn" title="Preview">
-                            <i class="fa-regular fa-eye"></i>
-                        </a>
-                        <a class="edit-btn" title="Edit">
-                            <i class="fa-regular fa-pen-nib"></i>
-                        </a>
-                        <a class="erase-btn" title="Erase">
-                            <i class="fa-regular fa-trash-xmark"></i>
-                        </a>
-                    </td>
-                </tr>
-                <!-- table row -->
             </tbody>
 
-            <tfoot>
-                <nav aria-label="...">
-                    <ul class="pagination">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item active">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
+
+            <tfoot class="bg-white">
+                <tr>
+                    <td colspan="7">
+                        <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls>
+                    </td>
+                </tr>
             </tfoot>
+            <!-- tfooter -->
         </table>
+        <ng-template #noResults>
+            <p>No results found for "{{searchText}}".</p>
+        </ng-template>
     </div>
-    <!-- Manage Profile Tabledata -->
+
 </div>
-<!-- manage profile wrapper -->

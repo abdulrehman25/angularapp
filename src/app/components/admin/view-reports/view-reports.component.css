@@ -1,23 +1,112 @@
-.manage-profile-nav {width: 100%;height: auto;display: inline-block;position: relative; margin-bottom: 20px;}
-.manage-profile-nav ol {display: flex;justify-content: space-between;}
-.manage-profile-nav ol li:first-child {width: 43%;display: flex;justify-content: space-between;align-items: center;}
-.manage-profile-nav ol li input[type="search"] {max-width: 320px;min-width: 320px;outline: none;
-border: 1px solid rgba(0,0,0,.2);padding: 4px 5px;font-size: 14px;}
-.manage-profile-nav ol li:last-child {width: 22%;display: flex;justify-content: space-between;align-items: center;}
-.manage-profile-nav ol li:last-child select {outline: none;border: 1px solid rgba(0,0,0,.2);padding: 8px 5px;font-size: 14px;}
-.manage-profile-tabledata {width: 100%;height: auto;display: inline-block;background-color: #ffffff;
-position: relative;}
-.manage-profile-tabledata table {font-size: 14px; margin-bottom: 0px;}
-.manage-profile-tabledata table > thead {background-color: #1f4474;}
-.manage-profile-tabledata table > thead tr th {font-weight: 500;color: #ffffff;}
+.manage-profile-nav {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
 
-.manage-profile-tabledata tbody tr td > a.preview-btn {background-color: #1f4474;color: #fff;
-font-size: 10px;width: 20px;height: 20px;display: inline-block;line-height: 20px;text-align: center;
-border-radius: 100px;margin-inline: 3px; cursor: pointer;}
-.manage-profile-tabledata tbody tr td > a.erase-btn {background-color: #cb4040;color: #fff;
-font-size: 10px;width: 20px;height: 20px;display: inline-block;line-height: 20px;text-align: center;
-border-radius: 100px;margin-inline: 3px; cursor: pointer;}
-.manage-profile-tabledata tbody tr td > a.edit-btn {background-color: #50C878;color: #fff;font-size: 10px;width: 20px;height: 20px;display: inline-block;line-height: 20px;text-align: center;
-border-radius: 100px;margin-inline: 3px; cursor: pointer;}
-.manage-profile-tabledata table tfoot ul li a {font-size: 14px;}
+.manage-profile-nav ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manage-profile-nav ol li:first-child {
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-profile-nav ol li input[type="search"] {
+    max-width: 320px;
+    min-width: 320px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 4px 5px;
+    font-size: 14px;
+}
+
+.manage-profile-nav ol li:last-child {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-profile-nav ol li:last-child select {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 8px 5px;
+    font-size: 14px;
+}
+
+.manage-profile-tabledata {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.manage-profile-tabledata table {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.manage-profile-tabledata table>thead {
+    background-color: #1f4474;
+}
+
+.manage-profile-tabledata table>thead tr th {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.manage-profile-tabledata tbody tr td>a.preview-btn {
+    background-color: #1f4474;
+    color: #fff;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100px;
+    margin-inline: 3px;
+    cursor: pointer;
+}
+
+.manage-profile-tabledata tbody tr td>a.erase-btn {
+    background-color: #cb4040;
+    color: #fff;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100px;
+    margin-inline: 3px;
+    cursor: pointer;
+}
+
+.manage-profile-tabledata tbody tr td>a.edit-btn {
+    background-color: #50C878;
+    color: #fff;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100px;
+    margin-inline: 3px;
+    cursor: pointer;
+}
+
+.manage-profile-tabledata table tfoot ul li a {
+    font-size: 14px;
+}
+
 /* admin table navbar */
