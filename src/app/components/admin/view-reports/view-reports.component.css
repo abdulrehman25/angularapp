@@ -110,3 +110,23 @@
 }
 
 /* admin table navbar */
+
+@media (max-width: 1023px){
+.manage-profile-nav ol li input[type="search"]{max-width: 230px;min-width: 230px;}
+.manage-profile-nav ol li:first-child {width: 60%;}
+.manage-profile-nav ol li:last-child {width: 35%;}
+
+.manage-profile-tabledata {overflow-x: scroll;overflow-y: hidden;}
+.manage-profile-tabledata table{min-width: 720px;}
+}/*1023*/
+
+@media (min-width: 1024px) and (max-width: 1199px){
+.manage-profile-nav ol li:first-child {width: 50%;}
+}/*1199*/
+
+@media (max-width: 767px){
+.manage-profile-nav ol{flex-direction: column;}
+.manage-profile-nav ol li {flex-direction: column; margin-block: 15px;}
+.manage-profile-nav ol li:first-child {width: 100%; align-items: flex-start;}
+.manage-profile-nav ol li:last-child {width: 100%; align-items: flex-start;}
+}/*767*/
