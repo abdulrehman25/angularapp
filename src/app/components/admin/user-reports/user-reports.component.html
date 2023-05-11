@@ -1,8 +1,28 @@
-<h3>Hello, Admin</h3>
-<strong class="d-block py-2 my-2 text-white bg-success px-3 ">User Reports.</strong>
-<strong>Welcome to the user Reports .</strong>
+<h3 class="text-capitalize mb-2">my reports</h3>
+<div *ngIf="titleArr && titleArr.length === 0" class="reports-vertically-wrapper mt-3">
+    <label class="text-capitalize d-block mb-2 w-100">No record found...</label>
+</div>
+<div class="reports-vertically-wrapper mt-3" *ngFor="let item of titleArr">
+    <label class="text-capitalize d-block mb-2 w-100">{{item}}</label>
+    <ul class="my-reports-listing">
+        <li class="position-relative" *ngFor="let itemData of reportList[item]; let id=index">
 
-<a routerLink="userReports">
-    <span><i class="fa-regular fa-house"></i></span>
-    <span class="sidebar-item">User Report</span>
-</a>
+            <div class="my-reports-blocks">
+                <img crossorigin="anonymous" crossOrigin="Anonymous" id="image{{id}}"
+                    src="https://akm-img-a-in.tosshub.com/indiatoday/559_102017023826.jpg?TZlWXro5W8Rj4VbO.MpENgo1F2MX93j"
+                    alt="" class="img-fluid">
+                <div class="page-layout-names">
+                    <span class="page-formating"><img (click)="downLoadImageInPdf(id,item)"
+                            src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
+                    <span class="view-this-file"><a title="Preview" href="javascript:;"><i
+                                class="fa-regular fa-eye"></i></a></span>
+                    <span class="downloading-this-file"><a title="Download this File"
+                            (click)="downLoadImageInPdf(id,item)" href="javascript:;"><i
+                                class="fa-solid fa-down-to-bracket"></i></a></span>
+                </div>
+            </div>
+        </li>
+
+
+    </ul>
+</div>

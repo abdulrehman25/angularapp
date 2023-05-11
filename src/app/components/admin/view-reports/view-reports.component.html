@@ -1,123 +1,78 @@
 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-    <h3 class="d-block text-capitalize">view patient's report</h3><hr>
+    <h3 class="d-block text-capitalize">view patient's report</h3>
+    <hr>
     <div class="manage-profile-nav">
-        <form>
         <ol>
             <li>
-                <label>Name</label>
-                <input type="text" placeholder="Patient's Name" class="form-control" required/>
+                <span class="short-by-filter">Search</span>
+                <span class="short-by-select">
+                    <form>
+                        <input type="search" name="search" [(ngModel)]="searchText"
+                            placeholder="Username OR Patient ID">
+                    </form>
+                </span>
             </li>
             <!-- list item -->
 
             <li>
-                <label>Patient ID</label>
-                <input type="text" placeholder="Patient ID" class="form-control" required/>
-            </li>
-            <!-- list item -->
-
-            <li>
-                <label>Phone Number</label>
-                <input type="tel" placeholder="Patient's Phone" maxlength="12" class="form-control" required/>
-            </li>
-            <!-- list item -->
-
-            <li>
-                <label>&nbsp;</label>
-                <input type="submit" value="Find Report" class="form-control">
+                <span class="short-by-filter">Short by</span>
+                <span class="short-by-select">
+                    <select [(ngModel)]="sortDir" (change)="onSortClick()">
+                        <option value="0">-- Select --</option>
+                        <option value="1">A to Z</option>
+                        <option value="-1">Z to A</option>
+                    </select>
+                </span>
             </li>
             <!-- list item -->
         </ol>
-        </form>
     </div>
-    <!-- manage profile navbar -->
+
 
     <div class="manage-profile-tabledata">
-        <p class="d-block bg-success text-white px-3 py-2">Mike's available reports are -</p>
-        <div class="view-report-admin">
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
+        <table class="table table-responsive table-bordered table-hover"
+            *ngIf="(userList | filter: searchText).length > 0; else noResults">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Patient's Name</th>
+                    <th>Phone</th>
+                    <th>Email ID</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
 
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
+            <tbody>
+                <tr
+                    *ngFor="let user of userList |filter: searchText |paginate: { itemsPerPage: 10, currentPage: p }; let i = index;">
+                    <td *ngIf="i < 9">0{{i+1}}</td>
+                    <td *ngIf="i >= 9">{{i+1}}</td>
+                    <td>{{user.first_name}} {{user.last_name}}</td>
 
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
+                    <td>{{user.phone}}</td>
+                    <td>{{user.email}}</td>
+                    <td>
+                        <a class="preview-btn" title="View Report" [routerLink]="['/admin/userReports/', user.id]">
+                            <i class="fa-regular fa-eye"></i>
                         </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
+                    </td>
+                </tr>
+
+            </tbody>
 
 
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
-                        </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
-
-
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
-                        </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
-
-
-            <span class="view-report-file position-relative">
-                <img src="https://i.pinimg.com/originals/da/2e/db/da2edbf7c34fd73ed79784235e27aa29.png" alt="">
-                <div class="page-layout-names">
-                    <span class="page-formating"><img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt=""></span>
-
-                    <span class="view-this-file">
-                        <a title="Preview" href="javascript:;"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-
-                    <span class="downloading-this-file">
-                        <a href="../assets/images/patient-report.png" download title="Download this file">
-                            <i class="fa-solid fa-down-to-bracket"></i>
-                        </a>
-                    </span>
-                </div>
-            </span>
-            <!-- report 1 -->
-
-        </div>
-        <!-- view report admin -->
-
-        <div class="view-report-preview-enlarge">
-            <img src="../assets/images/patient-report.png" alt="" class="w-100">
-            <span class="loader"><img src="../assets/images/loader.gif" alt="" /></span>
-        </div>
-        <!-- view report preview -->
+            <tfoot class="bg-white">
+                <tr>
+                    <td colspan="7">
+                        <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls>
+                    </td>
+                </tr>
+            </tfoot>
+            <!-- tfooter -->
+        </table>
+        <ng-template #noResults>
+            <p>No results found for "{{searchText}}".</p>
+        </ng-template>
     </div>
-    <!-- manage profile tabledata -->
+
 </div>
-<!-- manage profile wrapper -->
