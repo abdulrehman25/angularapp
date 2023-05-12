@@ -21,4 +21,8 @@ export class AdminService {
   getUserReports(userId: number) {
     return this.httpClient.get(`${this.Api_Base}/get_user_report/${userId}`);
   }
+
+  getUsersFeedback() {
+    return this.httpClient.get(`${this.Api_Base}/get_users_feedback`);
+  }
 }
