@@ -7,9 +7,11 @@
   z-index: 1111;
   overflow: hidden;
 }
+
 body.appointment-page {
   overflow-y: hidden;
 }
+
 button.close-book-appointment-page {
   position: fixed;
   top: 0;
@@ -44,6 +46,7 @@ button.close-book-appointment-page {
   left: 0;
   z-index: 1;
 }
+
 .registerNow_step2 {
   text-align: center;
   height: 100vh;
@@ -58,6 +61,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step3 {
   text-align: center;
   height: 100vh;
@@ -72,6 +76,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step4 {
   text-align: center;
   height: 100vh;
@@ -86,6 +91,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step5 {
   text-align: center;
   height: 100vh;
@@ -100,6 +106,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step6 {
   text-align: center;
   height: 100vh;
@@ -114,6 +121,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step7 {
   text-align: center;
   height: 100vh;
@@ -128,6 +136,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step8 {
   text-align: center;
   height: 100vh;
@@ -143,6 +152,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step9 {
   text-align: center;
   height: 100vh;
@@ -158,6 +168,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step10 {
   text-align: center;
   height: 100vh;
@@ -173,6 +184,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step11 {
   text-align: center;
   height: 100vh;
@@ -188,6 +200,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step12 {
   text-align: center;
   height: 100vh;
@@ -203,6 +216,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step13 {
   text-align: center;
   height: 100vh;
@@ -218,6 +232,7 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
 }
+
 .registerNow_step14 {
   text-align: center;
   height: 100vh;
@@ -279,11 +294,13 @@ button.close-book-appointment-page {
   max-width: 300px;
   image-rendering: -webkit-optimize-contrast;
 }
+
 .registerNow_step1 h2 {
   padding: 50px 0px;
   color: #1e4171;
   font-weight: 400;
 }
+
 .registerNow_step1 strong {
   color: #000;
   display: block;
@@ -291,6 +308,7 @@ button.close-book-appointment-page {
   font-size: 20px;
   font-weight: 500;
 }
+
 /*.registerNow_step8 input[type="submit"],aside a.start-appoint-1 {background-color: #407839;border: 1px solid #407839;padding: 8px 20px;display: block;text-align: center;margin: 0px auto;color: #ffffff;text-transform: uppercase;letter-spacing: 2px;border-radius: 6px;font-weight: 700;outline: none; max-width: 300px;}*/
 
 .registerNow_step1 samp {
@@ -392,6 +410,7 @@ button.close-book-appointment-page {
 .registerNow_step10 ul li {
   list-style-type: none;
 }
+
 .registerNow_step10 ul li label.btn-success {
   font-size: 16px;
   color: #ffffff;
@@ -422,10 +441,12 @@ button.close-book-appointment-page {
   display: block;
   padding-bottom: 10px;
 }
+
 .registerNow_step12 .radio-item {
   position: relative;
   margin-bottom: 15px;
 }
+
 .registerNow_step12 .radio-item label {
   font-size: 16px;
   margin-bottom: 10px;
@@ -436,7 +457,8 @@ button.close-book-appointment-page {
   color: #407839;
   padding: 10px 10px 0px 10px;
 }
-.registerNow_step12 .radio-item input[type="radio"]:checked + label {
+
+.registerNow_step12 .radio-item input[type="radio"]:checked+label {
   color: #ffffff;
   padding: 10px 10px 0px 10px;
   font-size: 16px;
@@ -444,6 +466,7 @@ button.close-book-appointment-page {
   text-align: center;
   line-height: 16px;
 }
+
 .registerNow_step12 .radio-item input[type="radio"] {
   opacity: 0;
   width: 100%;
@@ -452,6 +475,7 @@ button.close-book-appointment-page {
   left: 0;
   top: 0;
 }
+
 .registerNow_step12 .radio-item label::before {
   content: "";
   display: inline-block;
@@ -467,7 +491,7 @@ button.close-book-appointment-page {
   z-index: -1;
 }
 
-.registerNow_step12 .radio-item input[type="radio"]:checked + label::before {
+.registerNow_step12 .radio-item input[type="radio"]:checked+label::before {
   border-radius: 11px;
   width: 100%;
   height: 100px;
@@ -500,64 +524,74 @@ button.close-book-appointment-page {
 .progress_1 {
   min-width: 8%;
 }
+
 .progress_2 {
   min-width: 18%;
 }
+
 .progress_3 {
   min-width: 25%;
 }
+
 .progress_4 {
   min-width: 40%;
 }
+
 .progress_5 {
   min-width: 45%;
 }
+
 .progress_6 {
   min-width: 50%;
 }
+
 .progress_7 {
   min-width: 60%;
 }
+
 .progress_8 {
   min-width: 70%;
 }
+
 .progress_9 {
   min-width: 78%;
 }
+
 .progress_10 {
   min-width: 85%;
 }
+
 .progress_11 {
   min-width: 95%;
 }
+
 .progress_12 {
   min-width: 100%;
 }
 
 span.progress-bar-increasing {
-  background: #9dd53a; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #9dd53a 0%,
-    #a1d54f 50%,
-    #407839 50%,
-    #7cbc0a 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #9dd53a 0%,
-    #a1d54f 50%,
-    #407839 50%,
-    #7cbc0a 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #9dd53a 0%,
-    #a1d54f 50%,
-    #407839 50%,
-    #7cbc0a 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+  background: #9dd53a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top,
+      #9dd53a 0%,
+      #a1d54f 50%,
+      #407839 50%,
+      #7cbc0a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,
+      #9dd53a 0%,
+      #a1d54f 50%,
+      #407839 50%,
+      #7cbc0a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,
+      #9dd53a 0%,
+      #a1d54f 50%,
+      #407839 50%,
+      #7cbc0a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0);
+  /* IE6-9 */
   display: inline-block;
   padding: 0px 15px;
   border-radius: 20px;
@@ -571,6 +605,7 @@ span.progress-bar-increasing {
   position: relative;
   margin-bottom: 30px;
 }
+
 .checkbox-wrapper label.check-wrap-label {
   font-size: 16px;
   font-weight: 500;
@@ -578,6 +613,7 @@ span.progress-bar-increasing {
   margin-left: 10px;
   position: relative;
 }
+
 .checkbox-wrapper input[type="checkbox"] {
   max-width: 100%;
   min-width: 100%;
@@ -588,6 +624,7 @@ span.progress-bar-increasing {
   cursor: pointer;
   z-index: 1111;
 }
+
 .checkbox-wrapper label.check-wrap-label::before {
   position: absolute;
   content: "";
@@ -598,9 +635,8 @@ span.progress-bar-increasing {
   top: 3px;
   border-radius: 4px;
 }
-.checkbox-wrapper
-  input[type="checkbox"]:checked
-  + label.check-wrap-label::before {
+
+.checkbox-wrapper input[type="checkbox"]:checked+label.check-wrap-label::before {
   background-color: #1e4171;
   border: 2px solid #1e4171;
   content: "\f00c";
@@ -617,12 +653,14 @@ span.progress-bar-increasing {
   justify-content: center;
   align-items: center;
 }
+
 .manage-1-place-wrapper .checkbox-wrapper {
   min-width: 50%;
   margin-bottom: 15px;
   margin-top: 15px;
   text-align: left;
 }
+
 .manage-1-place-wrapper .checkbox-wrapper input[type="checkbox"] {
   max-width: 90%;
   min-width: 90%;
@@ -634,6 +672,7 @@ span.progress-bar-increasing {
   z-index: 1111;
   height: 40px;
 }
+
 .manage-1-place-wrapper .checkbox-wrapper label.check-wrap-label::before {
   position: absolute;
   content: "";
@@ -645,6 +684,7 @@ span.progress-bar-increasing {
   border-radius: 4px;
   min-width: 180px;
 }
+
 .manage-1-place-wrapper .checkbox-wrapper label.check-wrap-label {
   font-size: 16px;
   font-weight: 500;
@@ -659,10 +699,7 @@ span.progress-bar-increasing {
   padding-right: 10px;
 }
 
-.manage-1-place-wrapper
-  .checkbox-wrapper
-  input[type="checkbox"]:checked
-  + label.check-wrap-label::before {
+.manage-1-place-wrapper .checkbox-wrapper input[type="checkbox"]:checked+label.check-wrap-label::before {
   background-color: #b9eddd;
   border: 1px solid #1e4171;
   content: "";
@@ -673,7 +710,7 @@ span.progress-bar-increasing {
 }
 
 label.check-wrap-label.mri-check {
-  background-image: url("../../../assets/images/register_now_select_icons/mri.svg");
+  background-image: url("../../../assets/images/register_now_select_icons/mri_icon.png");
   background-size: 32px;
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -681,7 +718,7 @@ label.check-wrap-label.mri-check {
 }
 
 label.check-wrap-label.ct-check {
-  background-image: url("../../../assets/images/register_now_select_icons/ct.svg");
+  background-image: url("../../../assets/images/register_now_select_icons/ct_icon.png");
   background-size: 32px;
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -689,7 +726,7 @@ label.check-wrap-label.ct-check {
 }
 
 label.check-wrap-label.pet-ct-check {
-  background-image: url("../../../assets/images/register_now_select_icons/ct.svg");
+  background-image: url("../../../assets/images/register_now_select_icons/pet_ct.png");
   background-size: 32px;
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -697,7 +734,7 @@ label.check-wrap-label.pet-ct-check {
 }
 
 label.check-wrap-label.xray-check {
-  background-image: url("../../../assets/images/register_now_select_icons/x-ray.svg");
+  background-image: url("../../../assets/images/register_now_select_icons/x_ray_icon.png");
   background-size: 32px;
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -705,7 +742,7 @@ label.check-wrap-label.xray-check {
 }
 
 label.check-wrap-label.ultrasound-check {
-  background-image: url("../../../assets/images/register_now_select_icons/ultrasound.svg");
+  background-image: url("../../../assets/images/register_now_select_icons/ultrasound.png");
   background-size: 32px;
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -713,12 +750,13 @@ label.check-wrap-label.ultrasound-check {
 }
 
 label.check-wrap-label.mammogram-check {
-  background-image: url("../../../assets/images/register_now_select_icons/mammogram.svg");
+  background-image: url("../../../assets/images/register_now_select_icons/mammogram_icon.png");
   background-size: 32px;
   background-repeat: no-repeat;
   background-position-x: 10px;
   background-position-y: 3px;
 }
+
 /*checkbox wrapper*/
 
 .manage-1-place-wrapper.scroll-here {
@@ -774,15 +812,11 @@ label.check-wrap-label.mammogram-check {
   font-weight: 700;
 }
 
-.manage-1-place-wrapper.scroll-here
-  .checkbox-wrapper
-  label.check-wrap-label:first-letter {
+.manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label:first-letter {
   text-transform: uppercase;
 }
 
-.manage-1-place-wrapper.scroll-here
-  .checkbox-wrapper
-  label.check-wrap-label::before {
+.manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label::before {
   position: absolute;
   content: "";
   max-width: 100px;
@@ -1030,27 +1064,31 @@ label.check-wrap-label.head-and-neck-rgans-check {
   text-align: left;
   padding-left: 20px;
 }
+
 .registerNow_step12 .radio-item label ul[type="square"] {
   font-size: 12px;
   text-align: left;
   padding-left: 20px;
 }
+
 /*registerNow page*/
 
 span.ng-star-inserted {
   display: block;
   padding-bottom: 8px;
 }
+
 .requiredReports {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
+
 .requiredReports small {
   margin-inline: 3px;
 }
+
 .step13-inner aside {
   justify-content: center;
 }
-
