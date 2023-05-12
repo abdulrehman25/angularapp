@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
+import { AdminService } from 'src/app/services/admin.service';
 
 @Component({
   selector: 'app-patient-feedback',
@@ -6,5 +10,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./patient-feedback.component.css']
 })
 export class PatientFeedbackComponent {
+  userFeedbackList: any;
+  p: number = 1;
+  sortDir = 0;
+  searchText: string = '';
+  constructor(private adminServices: AdminService, private _toastr: ToastrService, private ngxLoader: NgxUiLoaderService, private router: Router) {
+    this.getUsersFeedback();
+    //this.sortArr('first_name');
+  }
+
+  getUsersFeedback() {
+    this.ngxLoader.start();
+    this.adminServices.getUsersFeedback().subscribe((res: any) => {
+      console.log("entry");
+      if (res.status == '200') {
+        console.log('welcome');
+        this.userFeedbackList = res.data;
+        this.ngxLoader.stop();
+      }
+    });
+  }
+
+  onSortClick() {
+    this.sortArr('first_name');
+  }
+
+  sortArr(colName: any) {
+    console.log(colName);
+    this.userFeedbackList.sort((a: any, b: any) => {
+      a = a[colName].toLowerCase();
+      b = b[colName].toLowerCase();
+      return a.localeCompare(b) * this.sortDir;
+    });
+  }
 
 }
