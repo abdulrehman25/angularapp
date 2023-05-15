@@ -1,0 +1,21 @@
+ul.my-reports-listing {
+    display: flex;
+    flex-direction: revert;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+ul.my-reports-listing li {
+    list-style-type: none;
+    display: flex;
+    margin-inline-end: 0px;
+    flex-wrap: wrap;
+}
+
+.my-reports-blocks img.img-fluid {
+    min-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid rgba(0, 0, 0, .1);
+}

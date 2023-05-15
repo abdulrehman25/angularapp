@@ -43,12 +43,6 @@
               </ol>
             </div>
           </li>
-  
-          <li>
-            <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"
-              ><i class="fa-regular fa-bars"></i
-            ></a>
-          </li>
         </ul>
       </div>
     </div>
@@ -116,10 +110,14 @@
           </li>
           <!--list item-->
         </ul>
+
+        <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"
+            ><i class="fa-regular fa-arrow-right-arrow-left"></i></a>
       </div>
       <!-- dashboard sidebar -->
   
       <div class="dashboard-right-content">
+        
         <router-outlet></router-outlet>
       </div>
       <!-- dashboard right content -->

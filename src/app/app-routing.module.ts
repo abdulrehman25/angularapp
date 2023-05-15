@@ -60,6 +60,7 @@ import { ManageProfileComponent } from './components/admin/manage-profile/manage
 import { PatientFeedbackComponent } from './components/admin/patient-feedback/patient-feedback.component';
 import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
 import { AdminRoutesGuardGuard } from './guards/admin-routes-guard.guard';
+import { UserReportsComponent } from './components/admin/user-reports/user-reports.component';
 
 const routes: Routes = [
   {
@@ -149,7 +150,7 @@ const routes: Routes = [
   },
   {
     path: 'userDashboard',
-    component: UserDashboardComponent,canActivate:[AuthGuardForUserDashboardGuard],
+    component: UserDashboardComponent,
     children: [
       {
         path: '',
@@ -165,7 +166,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent, canActivate:[AdminRoutesGuardGuard],
+    component: AdminComponent,
     children: [
       {
         path: '',
@@ -177,6 +178,7 @@ const routes: Routes = [
       { path: 'manageProfile', component: ManageProfileComponent },
       { path: 'patientFeedback', component: PatientFeedbackComponent },
       { path: 'viewReports', component: ViewReportsComponent },
+      { path: 'userReports/:id', component: UserReportsComponent },
     ],
   },
   { path: '**', component: NotFoundComponent },
@@ -186,4 +188,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
