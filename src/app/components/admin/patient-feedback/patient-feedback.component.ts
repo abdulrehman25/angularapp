@@ -14,6 +14,9 @@ export class PatientFeedbackComponent {
   p: number = 1;
   sortDir = 0;
   searchText: string = '';
+  formObj: any = {
+    id: ''
+  }
   constructor(private adminServices: AdminService, private _toastr: ToastrService, private ngxLoader: NgxUiLoaderService, private router: Router) {
     this.getUsersFeedback();
     //this.sortArr('first_name');
@@ -41,6 +44,39 @@ export class PatientFeedbackComponent {
       a = a[colName].toLowerCase();
       b = b[colName].toLowerCase();
       return a.localeCompare(b) * this.sortDir;
+    });
+  }
+
+  approveFeedback(id: number) {
+    this.formObj.id = id;
+    this.ngxLoader.start();
+    this.adminServices.approveUserFeedback(this.formObj).subscribe((res: any) => {
+      if (res.status === '200') {
+        this.ngxLoader.stop();
+        this._toastr.success(res.data, 'Success');
+        this.router.navigate([`/admin/patientFeedback`])
+      }
+      else {
+        this.ngxLoader.stop();
+        this._toastr.success('Something went wrong', 'Error');
+      }
+    });
+
+  }
+
+  deleteFeedback(id: number) {
+    this.ngxLoader.start();
+    this.adminServices.deleteUserFeedback(id).subscribe((res: any) => {
+      if (res.status === '200') {
+        this.ngxLoader.stop();
+        this._toastr.success(res.data, 'Success');
+        this.router.navigate([`/admin/patientFeedback`])
+      }
+      else {
+        this.ngxLoader.stop();
+        this._toastr.success('Something went wrong', 'Error');
+      }
+
     });
   }
 
