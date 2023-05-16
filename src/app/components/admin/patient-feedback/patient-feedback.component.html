@@ -60,27 +60,32 @@
 
             <tbody>
                 <tr
-                    *ngFor="let user of userFeedbackList |filter: searchText |paginate: { itemsPerPage: 10, currentPage: p }; let i = index;">
+                    *ngFor="let feedback of userFeedbackList |filter: searchText |paginate: { itemsPerPage: 10, currentPage: p }; let i = index;">
                     <td *ngIf="i < 9">0{{i+1}}</td>
                     <td *ngIf="i >= 9">{{i+1}}</td>
-                    <td>{{ user.first_name }} {{ user.last_name}}</td>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.rating }} stars</td>
+                    <td>{{ feedback.first_name }} {{ feedback.last_name}}</td>
+                    <td>{{ feedback.email }}</td>
+                    <td>{{ feedback.rating }} stars</td>
                     <td>
-                        <p>{{ user.feedback }}</p>
+                        <p>{{ feedback.feedback }}</p>
                     </td>
-                    <td>
-                        <select>
+                    <td *ngIf="feedback.status === '1'; else disapproved">
+                        <span class="text text-success">Approved</span>
+                        <!-- <select>
                             <option value="">--Select--</option>
                             <option selected value="">Approved</option>
                             <option value="">Dispproved</option>
-                        </select>
+                        </select> -->
                     </td>
+                    <ng-template #disapproved>
+                        <span>Disapproved</span>
+                    </ng-template>
                     <td>
-                        <textarea>Thanks for the reply, Shane😀</textarea>
-                        <a href="javascript:;" title="Send" type="submit" class="edit-btn">
+
+                        <a *ngIf="feedback.status === '0';" href="javascript:;" title="Approve"
+                            (click)="approveFeedback(feedback.id)" class="edit-btn">
                             <i class="fa-regular fa-paper-plane"></i></a>
-                        <a href="javascript:;" title="Erase" class="erase-btn">
+                        <a href="javascript:;" (click)="deleteFeedback(feedback.id)" title="Erase" class="erase-btn">
                             <i class="fa-regular fa-trash-xmark"></i></a>
                     </td>
                 </tr>

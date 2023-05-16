@@ -25,4 +25,13 @@ export class AdminService {
   getUsersFeedback() {
     return this.httpClient.get(`${this.Api_Base}/get_users_feedback`);
   }
+
+  approveUserFeedback(userId: number) {
+    return this.httpClient.post(`${this.Api_Base}/approve_users_feeback`, userId);
+  }
+
+  deleteUserFeedback(userId: number) {
+    return this.httpClient.delete(`${this.Api_Base}/delete_users_feedback/${userId}`);
+  }
+
 }
