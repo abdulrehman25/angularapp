@@ -78,7 +78,7 @@ const routes: Routes = [
         pathMatch: 'full',
       },
       { path: 'home', component: HomeComponent },
-      { path: 'about-us', component: AboutUsComponent },
+      // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may
       { path: 'abdominalRadiology', component: AbdominalAdiologyComponent },
       { path: 'prostateRadiology', component: ProstateRadiologyComponent },
       {
@@ -150,7 +150,7 @@ const routes: Routes = [
   },
   {
     path: 'userDashboard',
-    component: UserDashboardComponent, canActivate: [AuthGuardForUserDashboardGuard],
+    component: UserDashboardComponent,
     children: [
       {
         path: '',
@@ -166,7 +166,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent, canActivate: [AdminRoutesGuardGuard],
+    component: AdminComponent,
     children: [
       {
         path: '',
