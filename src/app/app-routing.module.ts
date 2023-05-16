@@ -61,6 +61,8 @@ import { PatientFeedbackComponent } from './components/admin/patient-feedback/pa
 import { ViewReportsComponent } from './components/admin/view-reports/view-reports.component';
 import { AdminRoutesGuardGuard } from './guards/admin-routes-guard.guard';
 import { UserReportsComponent } from './components/admin/user-reports/user-reports.component';
+import { HomeTestComponent } from './components/home-test/home-test.component';
+import { InnerTestComponent } from './components/inner-test/inner-test.component';
 
 const routes: Routes = [
   {
@@ -78,6 +80,9 @@ const routes: Routes = [
         pathMatch: 'full',
       },
       { path: 'home', component: HomeComponent },
+      { path: 'home-test', component: HomeTestComponent },
+      { path: 'cd', component: InnerTestComponent },
+
       // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may
       { path: 'abdominalRadiology', component: AbdominalAdiologyComponent },
       { path: 'prostateRadiology', component: ProstateRadiologyComponent },
