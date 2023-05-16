@@ -81,7 +81,7 @@ const routes: Routes = [
       },
       { path: 'home', component: HomeComponent },
       { path: 'home-test', component: HomeTestComponent },
-      { path: 'cd', component: InnerTestComponent },
+      { path: 'inner-test', component: InnerTestComponent },
 
       // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may
       { path: 'abdominalRadiology', component: AbdominalAdiologyComponent },
