@@ -33,5 +33,7 @@ export class AdminService {
   deleteUserFeedback(userId: number) {
     return this.httpClient.delete(`${this.Api_Base}/delete_users_feedback/${userId}`);
   }
-
+  disApproveUserFeedback(userId: number) {
+    return this.httpClient.post(`${this.Api_Base}/dis_approve_users_feeback`, userId);
+  }
 }

@@ -54,7 +54,8 @@ export class PatientFeedbackComponent {
       if (res.status === '200') {
         this.ngxLoader.stop();
         this._toastr.success(res.data, 'Success');
-        this.router.navigate([`/admin/patientFeedback`])
+        this.getUsersFeedback();
+        //this.router.navigate([`/admin/patientFeedback`])
       }
       else {
         this.ngxLoader.stop();
@@ -64,13 +65,30 @@ export class PatientFeedbackComponent {
 
   }
 
+  disApproveFeedback(id: number) {
+    this.formObj.id = id;
+    this.ngxLoader.start();
+    this.adminServices.disApproveUserFeedback(this.formObj).subscribe((res: any) => {
+      if (res.status === '200') {
+        this.ngxLoader.stop();
+        this._toastr.success(res.data, 'Success');
+        this.getUsersFeedback();
+        //this.router.navigate([`/admin/patientFeedback`])
+      }
+      else {
+        this.ngxLoader.stop();
+        this._toastr.success('Something went wrong', 'Error');
+      }
+    });
+  }
+
   deleteFeedback(id: number) {
     this.ngxLoader.start();
     this.adminServices.deleteUserFeedback(id).subscribe((res: any) => {
       if (res.status === '200') {
         this.ngxLoader.stop();
         this._toastr.success(res.data, 'Success');
-        this.router.navigate([`/admin/patientFeedback`])
+        this.getUsersFeedback();
       }
       else {
         this.ngxLoader.stop();
