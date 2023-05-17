@@ -1,6 +1,14 @@
 @font-face {font-family: 'trademark';src: url('../fonts/trademark.woff2') format('woff2'),url('../fonts/trademark.woff') format('woff');font-weight: normal;font-style: normal;}
 
 @font-face {
+    font-family: 'vultures';
+    src: url('../fonts/vultures.woff2') format('woff2'),
+         url('../fonts/vultures.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'WalsheimMedium';
     src: url('../fonts/WalsheimMedium.eot');
     src: local('GT Walsheim Pro Medium'), local('WalsheimMedium'),
@@ -12,22 +20,48 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'WalsheimBold';
+    src: url('../fonts/WalsheimBold.eot');
+    src: local('Walsheim Bold'), local('WalsheimBold'),
+        url('../fonts/WalsheimBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WalsheimBold.woff2') format('woff2'),
+        url('../fonts/WalsheimBold.woff') format('woff'),
+        url('../fonts/WalsheimBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WalsheimRegular';
+    src: url('../fonts/WalsheimRegular.eot');
+    src: local('Walsheim Regular'), local('WalsheimRegular'),
+        url('../fonts/WalsheimRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WalsheimRegular.woff2') format('woff2'),
+        url('../fonts/WalsheimRegular.woff') format('woff'),
+        url('../fonts/WalsheimRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 *{margin: 0px; padding: 0px;}
-body{font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 0px; overflow-x: hidden; position: relative;}
-h1,h2,h3,h4 {font-family: 'Poppins', sans-serif;margin: 0px; padding: 0px; line-height: 30px; font-weight: 700;}
+body{font-family: 'WalsheimRegular'; font-size: 16px; line-height: 0px; overflow-x: hidden; position: relative;}
+h1,h2,h3,h4 {font-family: 'WalsheimBold';margin: 0px; padding: 0px; line-height: 30px; font-weight: 700;}
 div,p,ul,ol,li,figure,aside,figcaption,samp,span,dd {margin: 0px; padding: 0px; line-height: 28px;}
 a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear .4s; -webkit-transition: all linear .4s; -transform-transition: all linear .4s;}
 
 .site-header {position: absolute;top: 0;left: 0;z-index: 1111;width: 100%;height: auto;}
-.secondry-navbar {width: 100%;height: auto;padding: 15px 0px;display: inline-block; position: relative;}
+.secondry-navbar {width: 100%;height: auto;padding: 15px 0px 0px;display: inline-block; position: relative;}
 .secondry-navbar ul {justify-content: end; align-items: center;}
 .secondry-navbar ul li {list-style-type: none;margin-left: 40px;}
-.secondry-navbar ul li a {color: #234474;font-size: 14px;font-family: 'WalsheimMedium';}
+.secondry-navbar ul li a {color: #234474;font-size: 14px;font-family: 'WalsheimBold';}
 .secondry-navbar ul li a > i {color: #407839;}
 #siteNav ul.navbar-nav.mr-auto {justify-content: end;width: 100%;}
-#siteNav ul li a {color: #6c89b3; cursor: pointer; font-family: 'WalsheimMedium';}
-#siteNav ul li.active a {color: #407839;}
-#siteNav button.ddl-menu {background-color: transparent;border: none;outline: none;color: #6c89b3;padding-left: 0px;padding-right: 0px; margin-right: 5px;}
+#siteNav ul li a {color: #264478; cursor: pointer; font-family: 'WalsheimBold';}
+#siteNav ul li.active a {color: #427337;}
+#siteNav ul.navbar-nav li:last-child a {background-color: #427337;border-radius: 50px;color: #ffffff;
+padding-right: 20px;padding-left: 20px;text-transform: capitalize;font-family: 'WalsheimRegular';}
+#siteNav button.ddl-menu {background-color: transparent;border: none;outline: none;color: #264478;padding-left: 0px;padding-right: 0px; margin-right: 5px;}
 .ddl-item {position: relative;display: flex;}
 #siteNav ul span li .dropdown-menu {right: 0px;}
 .primary-navbar.sticky-top #siteNav button.ddl-menu {padding-top: 0px;padding-bottom: 0px;}
@@ -38,9 +72,10 @@ a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear 
 .dropdown-item:focus, .dropdown-item:hover { color: #ffffff; background-color: #407839;}
 #siteNav .dropdown-menu a.active {color: #ffffff;}
 .dropdown-item.active, .dropdown-item:active {background-color: #407839;} 
+.primary-navbar.sticky-top #siteNav button.ddl-menu::after {top: 10px;position: relative; right: 10px;}
 
 #siteNav .dropdown-menu {background-color: #ffffff;border-color: #234474;border-radius: 0; padding: 25px 0px;}
-#siteNav .dropdown-menu a {font-size: 14px;color: #234474;line-height: 20px; border-bottom: 1px solid rgba(0,0,0,.10);}
+#siteNav .dropdown-menu a {font-size: 14px;color: #234474;line-height: 20px; border-bottom: 1px solid rgba(0,0,0,.10);font-family: 'WalsheimRegular';}
 #siteNav .dropdown-menu a:last-child {border-bottom: none;}
 #siteNav .dropdown-menu a:hover {font-size: 14px; color: #ffffff;background-color: #407839;}
 .dropdown-item:focus, .dropdown-item:hover { color: #ffffff; background-color: #407839;}
@@ -52,11 +87,13 @@ button.navbar-toggler:focus {outline: none;box-shadow: none;}
 .navbar-brand figure img {max-width: 100%;image-rendering: -webkit-optimize-contrast;}
 .primary-navbar nav.primary-color {padding: .5rem 1rem;}
 .primary-navbar.sticky-top {position: fixed;top: 0;left: 0;width: 100%;background-color: #ffffff;height: auto;z-index: 9999;}
-.primary-navbar.sticky-top #siteNav ul li a {padding: 0px 15px;}
-.primary-navbar.sticky-top #siteNav ul li .dropdown-menu a.dropdown-item {line-height: 28px;}
+.primary-navbar.sticky-top #siteNav ul li a {padding: 8px 15px;}
+.primary-navbar.sticky-top #siteNav ul li .dropdown-menu a.dropdown-item {line-height: 28px;background-color: transparent;color: #000000;font-family: 'WalsheimRegular';border-radius: 0;
+border-bottom: 1px solid rgba(0,0,0,.1);padding: 0 15px;}
+#siteNav ul.navbar-nav span.ddl-item .show a {background-color: transparent;color: #234474;border-radius: 0;font-family: 'WalsheimRegular';}
 
 .select-language-btn {background-color: #ffffff;border: none;padding: 5px 15px;border-radius: 8px;
-text-transform: capitalize;font-size: 14px;}
+text-transform: capitalize;font-size: 14px;font-family: 'WalsheimBold'; color: #234474;}
 .select-language-section ul li {text-transform: capitalize;font-size: 14px; cursor: pointer;}
 .select-language-section {background-color: #ffffff;padding: 5px 15px;border-radius: 8px;position: absolute;top: 55px;width: 120px;z-index: 11;left: auto;}
 /*site navbar*/
@@ -265,17 +302,17 @@ transform: skewX(-15deg);z-index: -1;}
 
 
 
-.site-footer {width: 100%;height: auto;display: inline-block;background-color: #00182e;padding: 150px 0px 50px;border-top: 2px solid #ffffff;position: relative;background-image: url('../images/footer-background.png');background-position: center center;background-repeat: no-repeat;background-size: cover;}
-.site-footer::before {position: absolute;content: '';width: 0;height: 0;border-left: solid;border-bottom: 50px solid transparent;left: 0;
-top: -3px;border-left-color: #ffffff;border-left-width: 98.80vw;z-index: 11;}
+.site-footer {width: 100%;height: auto;display: inline-block;padding: 150px 0px 50px;border-top: 2px solid #ffffff;position: relative;background-image: url('../images/footer-background.png');background-position: center center;background-repeat: no-repeat;background-size: cover;background-blend-mode: multiply;background-color: rgb(32,57,102);}
+.site-footer::before {position: absolute;content: '';width: 0;height: 0;border-left: solid;border-bottom: 50px solid transparent;left: 0;top: -3px;border-left-color: #ffffff;border-left-width: 98.80vw;z-index: 11; display: none;}
 .social-media dd {margin-right: 15px;}
-.site-footer figure {margin-bottom: 30px; background-color: #ffffff; padding: 20px;}
+.site-footer figure {margin-bottom: 10px;padding: 0px 0px 20px;}
 .site-footer figure img {max-width: 100%;}
 .site-footer p.text-col {font-size: 14px;line-height: 20px;color: #dad7d7 !important;}
-.site-footer strong {font-size: 18px;color: #ffffff;text-transform: uppercase;font-weight: 500;margin-bottom: 15px;display: inline-block;}
+.site-footer strong {font-size: 22px;color: #ffffff;text-transform: capitalize;font-weight: 500;margin-bottom: 15px;display: inline-block;}
 .site-footer ul li {position: relative;list-style-type: none;padding-left: 15px;padding-bottom: 10px;}
 .site-footer ul li::before {position: absolute;content: '\f105';color: #ffffff;font-family: 'Font Awesome 5 Pro';left: 0;top: 0;}
 .site-footer ul li a {color: #dfdddd;}
+.social-media dd a {font-size: 2rem;}
 
 .site-footer ol li {position: relative;list-style-type: none;padding-left: 0px;padding-bottom: 10px; color:#dfdddd;}
 .site-footer ol li a {color: #dfdddd;}
