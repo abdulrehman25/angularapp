@@ -174,7 +174,7 @@
     a.open-sidebar:hover, a.open-sidebar:focus {color: #ffffff;}
     /* for dashboar pages */
 
-    
+    .primary-navbar .primary-color {background-color: #ffffff;}
     }/*1023*/
 
 
@@ -389,7 +389,7 @@
     .inner-pages .testimonial-section ul li:last-child {margin-bottom: 0px;}
     .register-form form p, .login-form form p.form-info {line-height: 20px;}
 
-    .primary-navbar .primary-color {background-color: #ffffff;}
+    
     .primary-navbar.sticky-top {box-sizing: border-box;}
     .primary-navbar.sticky-top #siteNav button.ddl-menu::after {top: -5px;position: relative;right: 15px;}
     .site-footer {padding: 70px 0px 0px;}
