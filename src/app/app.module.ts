@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CarouselModule } from 'ngx-owl-carousel-o'; 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -80,6 +80,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FilterPipe } from './pipe/filter.pipe';
 import { getBaseUrl } from "./config";
 import { UserReportsComponent } from './components/admin/user-reports/user-reports.component';
+import { HomeTestComponent } from './components/home-test/home-test.component';
+import { InnerTestComponent } from './components/inner-test/inner-test.component';
 
 @NgModule({
   declarations: [
@@ -150,6 +152,9 @@ import { UserReportsComponent } from './components/admin/user-reports/user-repor
     BlogDetailsComponent,
     FilterPipe,
     UserReportsComponent,
+    HomeTestComponent,
+    InnerTestComponent,
+
   ],
   imports: [
     BrowserModule,
