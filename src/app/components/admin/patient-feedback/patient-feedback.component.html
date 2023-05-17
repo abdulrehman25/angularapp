@@ -69,7 +69,7 @@
                     <td>
                         <p>{{ feedback.feedback }}</p>
                     </td>
-                    <td *ngIf="feedback.status === '1'; else disapproved">
+                    <td *ngIf="feedback.status === '1' || feedback.status === '0'; then thenBlock else disapproved">
                         <span class="text text-success">Approved</span>
                         <!-- <select>
                             <option value="">--Select--</option>
@@ -77,14 +77,22 @@
                             <option value="">Dispproved</option>
                         </select> -->
                     </td>
+                    <ng-template #thenBlock>
+                        <span *ngIf="feedback.status === '1'" class="text text-success">Approved</span>
+                        <span *ngIf="feedback.status === '0'">Disapproved</span>
+                    </ng-template>
                     <ng-template #disapproved>
-                        <span>Disapproved</span>
+                        <span>Un Approved</span>
                     </ng-template>
                     <td>
 
-                        <a *ngIf="feedback.status === '0';" href="javascript:;" title="Approve"
-                            (click)="approveFeedback(feedback.id)" class="edit-btn">
+                        <a *ngIf="feedback.status === '0' || feedback.status === null" href="javascript:;"
+                            title="Approve" (click)="approveFeedback(feedback.id)" class="edit-btn">
                             <i class="fa-regular fa-paper-plane"></i></a>
+
+                        <a href="javascript:;" (click)="disApproveFeedback(feedback.id)" title="Disapprove"
+                            class="erase-btn">
+                            <i class="fa-regular fa-hand-point-down"></i></a>
                         <a href="javascript:;" (click)="deleteFeedback(feedback.id)" title="Erase" class="erase-btn">
                             <i class="fa-regular fa-trash-xmark"></i></a>
                     </td>
