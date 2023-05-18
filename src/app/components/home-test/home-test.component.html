@@ -213,8 +213,31 @@
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <h3>Get Peace of <span>Mind</span></h3>
           </div>
-          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
 
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+            <owl-carousel-o [options]="customOptions" id="testimonial-slider">
+              <ng-container *ngFor="let slide of imgUrls">
+                <ng-template class="slide" carouselSlide [id]="slide.id">
+                  <div class="item">
+                    <p>
+                      Ut wisi enim ad minim veniam, quis laore est usus legentis in
+                      iis qui facit eorum nostrud exerci tation ulm hedi corper
+                      turet suscipit lobortis nisl aliquip erat volutpat autem vel
+                      eum iriure dolor in hendrerit in vulputate velit esse molestie
+                      consequat, vel illum dolore eu.
+                    </p>
+                    <ul>
+                      <li>
+                        <img [src]="slide.url" [alt]="slide.id" [title]="slide.id" />
+                      </li>
+                      <li>
+                        <h5>Mrs. Smith <small>seo</small></h5>
+                      </li>
+                    </ul>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
           </div>
         </div>
       </div>
