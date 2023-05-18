@@ -27,7 +27,7 @@ text-transform: capitalize;}
 /* home - section B */
 
 
-.home_section_c {width: 100%;height: auto;display: inline-block;position: relative;padding: 50px 0px;}
+.home_section_c {width: 100%;height: auto;display: inline-block;position: relative;padding: 0px 0px 100px;}
 .home_section_c figure {width: 300px;height: 300px;border-radius: 100%;overflow: hidden;margin: 0px auto;}
 .home_section_c figure img {width: 100%;height: 300px;object-fit: cover;object-position: top center;}
 .home_section_c h2 {color: #264478;padding-bottom: 10px;font-size: 50px;}
@@ -37,20 +37,25 @@ text-transform: capitalize;}
 
 
 .home_section_d {width: 100%;height: auto;display: inline-block;position: relative;padding: 50px 0px;}
-.home_section_d h2 {text-align: center;color: #264478;padding-bottom: 50px; text-transform: capitalize;}
-.home_section_d h2 span {color: #427337;}
-.home_section_d ul {text-align: center;display: flex;justify-content: space-around;align-items: center;}
-.home_section_d ul li {list-style-type: none;}
-.home_section_d ul li img {min-width: 175px;max-width: 200px;}
+.our-team h2 {text-align: center;color: #264478;padding-bottom: 50px;text-transform: capitalize;}
+.our-team h2 span {color: #427337;}
+.carousel-inner .col-xl-4.mt-5 {text-align: center;}
+.our-team .carousel-inner img {min-width: 175px;max-width: 200px;}
+.our-team span.fa.fa-chevron-left,
+.our-team span.fa.fa-chevron-right {background: #cbcbcb;font-size: 12px;border-radius: 50px;width: 30px;height: 30px;display: inline-block;}
 /* home - section D */
 
 
 .home_section_e {width: 100%;height: auto;display: inline-block;margin: 100px 0px 0px; position: relative;}
 .home_section_e h3 {text-align: left;color: #264478;padding-bottom: 50px; text-transform: capitalize;}
 .home_section_e h3 span {color: #427337;}
-.home_section_e img {width: 100%;height: 500px;object-fit: cover;object-position: center;}
+.home_section_e img {width: 100%;height: 625px;object-fit: cover;object-position: 0px -250px;}
 .above-testi-slider {position: absolute;top: 0;width: 85%;height: 100%;left: auto;z-index: 11;}
-.above-testi-slider h3 {padding-top: 100px;padding-bottom: 50px;}
+.above-testi-slider h3 {padding-top: 80px;padding-bottom: 30px;}
+#testimonial-slider .item {margin: 30px 200px 0px 30px;}
+#testimonial-slider .item::before {content: '\f10d';font-family: 'FontAwesome';font-size: 5rem;
+left: -25px;top: -10px;transform: unset;z-index: 0;}
+#testimonial-slider .item {padding: 40px;}
 /* home - section E */
 
 
@@ -71,7 +76,8 @@ padding: 0px 30px;font-size: 20px;}
 .home_section_c  h2{font-size: 40px;}
 .home_section_d  ul  li  img{min-width: 100px;max-width: 150px;}
 .subscribe-letter {top: -32px;width: 100%;margin-left: -360px;}
-
+.home_section_e  img{object-position: 0px 0px;}
+#testimonial-slider  .item{margin: 30px 30px 0px 30px;}
 }/*1023*/
 
 @media (min-width: 1024px) and (max-width: 1199px){
@@ -79,6 +85,8 @@ padding: 0px 30px;font-size: 20px;}
 .site-banner figure {padding: 0px 0px 0px 60px;}
 .site-banner  .banner-caption  h1{line-height: 40px; padding-bottom: 15px;}
 .subscribe-letter {width: 90%;margin-left: -440px;}
+.home_section_e  img{object-position: 0px 0px;}
+#testimonial-slider  .item{margin: 30px 30px 0px 30px;}
 }/*1199*/
 
 @media (max-width: 767px){
@@ -88,7 +96,15 @@ padding: 0px 30px;font-size: 20px;}
 .home_section_d  ul  li{margin-block: 15px;}
 .subscribe-letter{width: 100%;left: 0%;margin-left: 0px;box-sizing: border-box; padding: 0px 15px;}
 .subscribe-letter  input[type="submit"]{position: relative;right: 0px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;width: 100%;}
-.subscribe-letter {top: -70px;}
+.subscribe-letter {top: -70px;box-shadow: none;}
 .subscribe-letter  input[type="email"]{text-align: center;}
-
+.above-testi-slider{width: 100%;}
+.home_section_e  img{object-position: -400px 0px; height: 800px;}
+.home_section_e{margin: 0px 0px 0px;}
+.home_section_e  h3{text-align: center;}
+.banner-caption {bottom: 12%;}
 }/*767*/
+
+@media (min-width: 575px) and (max-width: 680px){
+.above-testi-slider {width: 80%;}    
+}
