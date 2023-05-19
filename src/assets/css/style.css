@@ -302,12 +302,12 @@ transform: skewX(-15deg);z-index: -1;}
 
 
 
-.site-footer {width: 100%;height: auto;display: inline-block;padding: 150px 0px 50px;border-top: 2px solid #ffffff;position: relative;background-image: url('../images/footer-background.png');background-position: center center;background-repeat: no-repeat;background-size: cover;background-blend-mode: multiply;background-color: rgb(32,57,102);}
+.site-footer {width: 100%;height: auto;display: inline-block;padding: 150px 0px 0px;border-top: 2px solid #ffffff;position: relative;background-image: url('../images/footer-background.png');background-position: center center;background-repeat: no-repeat;background-size: cover;background-blend-mode: multiply;background-color: rgb(32,57,102);}
 .site-footer::before {position: absolute;content: '';width: 0;height: 0;border-left: solid;border-bottom: 50px solid transparent;left: 0;top: -3px;border-left-color: #ffffff;border-left-width: 98.80vw;z-index: 11; display: none;}
 .social-media dd {margin-right: 15px;}
 .site-footer figure {margin-bottom: 10px;padding: 0px 0px 20px;}
 .site-footer figure img {max-width: 100%;}
-.site-footer p.text-col {font-size: 14px;line-height: 20px;color: #dad7d7 !important;}
+.site-footer p.text-col {font-size: 18px;line-height: 28px;color: #dad7d7 !important;}
 .site-footer strong {font-size: 22px;color: #ffffff;text-transform: capitalize;font-weight: 500;margin-bottom: 15px;display: inline-block;}
 .site-footer ul li {position: relative;list-style-type: none;padding-left: 15px;padding-bottom: 10px;}
 .site-footer ul li::before {position: absolute;content: '\f105';color: #ffffff;font-family: 'Font Awesome 5 Pro';left: 0;top: 0;}
