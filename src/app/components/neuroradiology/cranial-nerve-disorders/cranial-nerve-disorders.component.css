@@ -1,0 +1,269 @@
+.site-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.feature_picture {
+    position: relative;
+}
+
+.feature_picture::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ffffff 30px, transparent);
+}
+
+.feature_picture img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.inner-page-sidebar ul li {
+    list-style-type: none;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.inner-page-sidebar ul li a {
+    color: #5e5e5e;
+    font-weight: 600;
+}
+
+.sidebar-second-opinion-cta img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sidebar-second-opinion-cta .position-absolute {
+    top: 0;
+    padding: 30px;
+    left: 0;
+}
+
+.sidebar-second-opinion-cta .position-absolute h5 {
+    color: #264478;
+    font-family: 'WalsheimBold';
+    font-size: 18px;
+}
+
+.sidebar-second-opinion-cta .position-absolute h5 span {
+    color: #427337;
+}
+
+.position-absolute button[type="button"] {
+    background-color: #427337;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'WalsheimRegular';
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.inner-page-content .col-xl-9 h4 {
+    color: #264478;
+    padding-bottom: 15px;
+}
+
+.inner-page-content .col-xl-9 p {
+    font-size: 20px;
+    color: #5e5e5e;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.inner-page-content .col-xl-9 ol.d-flex {
+    margin-bottom: 20px;
+    flex-flow: wrap;
+}
+
+.inner-page-content .col-xl-9 ol.d-flex li {
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+    color: #5e5e5e;
+    width: 50%;
+    margin-block: 10px;
+    padding-left: 25px;
+}
+
+span.plus-icon {
+    position: relative;
+}
+
+span.plus-icon::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 5px;
+    background-color: #427337;
+    left: -20px;
+    top: 8px;
+}
+
+span.plus-icon::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 15px;
+    background-color: #427337;
+    left: -15px;
+    top: 3px;
+}
+
+.inner-page-content .col-xl-9 strong {
+    color: #427337;
+    font-size: 20px;
+    font-family: 'WalsheimBold';
+}
+
+.inner-page-content .col-xl-9 ol li {
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+    color: #5e5e5e;
+    width: 100%;
+    margin-block: 10px;
+    padding-left: 25px;
+}
+
+.inner-page-content .col-xl-9 img.border-radius-15 {
+    border-radius: 15px;
+}
+
+.subscribe-letter {
+    position: absolute;
+    top: -32px;
+    z-index: 1099;
+    width: 80%;
+    left: 50%;
+    margin-left: -470px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, .5);
+    border-radius: 50px;
+}
+
+.subscribe-letter input[type="email"] {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 100px;
+    padding: 0px 30px;
+    font-size: 20px;
+}
+
+.subscribe-letter input[type="submit"] {
+    position: absolute;
+    right: -1px;
+    height: 70px;
+    background-color: #427337;
+    padding: 0px 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    z-index: 11;
+}
+
+/* home - section F */
+
+@media (max-width: 1023px) {
+
+    /* for new banner */
+    .subscribe-letter {
+        top: -32px;
+        width: 100%;
+        margin-left: -360px;
+    }
+
+    .sidebar-second-opinion-cta .position-absolute {
+        padding: 15px;
+    }
+
+    .inner-page-content .col-xl-9 p {
+        font-size: 16px;
+    }
+
+    .inner-page-content .col-xl-9 ol.d-flex li {
+        font-size: 16px;
+    }
+}
+
+/*1023*/
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .subscribe-letter {
+        width: 90%;
+        margin-left: -440px;
+    }
+}
+
+/*1199*/
+
+@media (max-width: 767px) {
+    .subscribe-letter {
+        width: 100%;
+        left: 0%;
+        margin-left: 0px;
+        box-sizing: border-box;
+        padding: 0px 15px;
+        box-shadow: none;
+        border-radius: unset;
+    }
+
+    .subscribe-letter input[type="submit"] {
+        position: relative;
+        right: 0px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 100%;
+    }
+
+    .subscribe-letter {
+        top: -70px;
+    }
+
+    .subscribe-letter input[type="email"] {
+        text-align: center;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, .5);
+    }
+
+    .inner-page-content .container>.row {
+        flex-direction: column-reverse;
+    }
+
+    .feature_picture img {
+        min-height: 400px;
+    }
+
+    .inner-page-content .col-xl-9 ol.d-flex li {
+        width: 100%;
+    }
+
+    .inner-page-content .col-xl-9 img.border-radius-15 {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-second-opinion-cta .position-absolute {
+        padding: 50px 30px;
+        height: 100%;
+    }
+
+    .sidebar-second-opinion-cta .position-absolute h5 {
+        font-size: 28px;
+    }
+
+}
+
+/*767*/
