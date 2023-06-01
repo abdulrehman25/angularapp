@@ -39,9 +39,11 @@
 												reminders will be sent to this number.</small></label>
 										<input type="tel" name="phone_number" placeholder="Contact Number"
 											class="form-control" maxlength="12" pattern="^((\\+91-?)|0)?[0-9]{10}$"
-											required [(ngModel)]="registerObj.phone" #phone_number="ngModel" [ngClass]="{ 'is-invalid': registerData.submitted && phone_number.errors }">
+											required [(ngModel)]="registerObj.phone" #phone_number="ngModel"
+											[ngClass]="{ 'is-invalid': registerData.submitted && phone_number.errors }">
 
-										<div *ngIf="registerData.submitted && phone_number.errors" class="invalid-feedback">
+										<div *ngIf="registerData.submitted && phone_number.errors"
+											class="invalid-feedback">
 											<div *ngIf="phone_number.errors?.['required']">Contact
 												Number is required </div>
 											<div *ngIf="phone_number.errors?.['pattern']">This is not
@@ -52,8 +54,9 @@
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 										<label>patient's email address</label>
 										<input type="email" name="email" placeholder="E-mail ID" class="form-control"
-											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [(ngModel)]="registerObj.email" required
-											#email="ngModel" [ngClass]="{ 'is-invalid': registerData.submitted && email.errors }">
+											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+											[(ngModel)]="registerObj.email" required #email="ngModel"
+											[ngClass]="{ 'is-invalid': registerData.submitted && email.errors }">
 										<div *ngIf="registerData.submitted && email.errors" class="invalid-feedback">
 											<div *ngIf="email.errors?.['required']">Email is
 												required </div>
@@ -65,8 +68,9 @@
 
 									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 										<label>select issue</label>
-										<select class="form-control" name="radiology_type" required [(ngModel)]="registerObj.radiology_type"
-											#radiology_type="ngModel" [ngClass]="{ 'is-invalid': registerData.submitted && radiology_type.errors }">
+										<select class="form-control" name="radiology_type" required
+											[(ngModel)]="registerObj.radiology_type" #radiology_type="ngModel"
+											[ngClass]="{ 'is-invalid': registerData.submitted && radiology_type.errors }">
 											<option value="">--Select Option--</option>
 											<option value="Abdominal Radiology">Abdominal Radiology</option>
 											<option value="Prostate MRI">Prostate MRI</option>
@@ -78,20 +82,24 @@
 											<option value="Neuroradiology">Neuroradiology</option>
 											<option value="Oncological Radiology">Oncological Radiology</option>
 										</select>
-										<div *ngIf="registerData.submitted && radiology_type.errors" class="invalid-feedback">
+										<div *ngIf="registerData.submitted && radiology_type.errors"
+											class="invalid-feedback">
 											This is required !!
 										</div>
 									</div>
 
 									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 										<label>how to know about us</label>
-										<select class="form-control" name="contact_type" [(ngModel)]="registerObj.contact_type" required #contact_type="ngModel" [ngClass]="{ 'is-invalid': registerData.submitted && contact_type.errors }">
+										<select class="form-control" name="contact_type"
+											[(ngModel)]="registerObj.contact_type" required #contact_type="ngModel"
+											[ngClass]="{ 'is-invalid': registerData.submitted && contact_type.errors }">
 											<option value="">--Select Option--</option>
 											<option value="Telephone">Telephone</option>
 											<option value="E-mail">E-mail</option>
 											<option value="Skype/Zoom Call">Skype/Zoom Call</option>
 										</select>
-										<div *ngIf="registerData.submitted && contact_type.errors" class="invalid-feedback">
+										<div *ngIf="registerData.submitted && contact_type.errors"
+											class="invalid-feedback">
 											This is required !!
 										</div>
 									</div>
