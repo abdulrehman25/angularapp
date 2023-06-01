@@ -32,6 +32,10 @@
     z-index: 11;
 }
 
+.invalid-feedback {
+    padding-left: 30%;
+}
+
 /* home - section F */
 
 @media (max-width: 1023px) {
