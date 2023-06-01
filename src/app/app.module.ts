@@ -82,6 +82,10 @@ import { getBaseUrl } from "./config";
 import { UserReportsComponent } from './components/admin/user-reports/user-reports.component';
 import { HomeTestComponent } from './components/home-test/home-test.component';
 import { InnerTestComponent } from './components/inner-test/inner-test.component';
+import { CookiePolicyComponent } from './components/others/cookie-policy/cookie-policy.component';
+import { ImprintComponent } from './components/others/imprint/imprint.component';
+import { PrivacyPolicyComponent } from './components/others/privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 
 @NgModule({
   declarations: [
@@ -154,6 +158,10 @@ import { InnerTestComponent } from './components/inner-test/inner-test.component
     UserReportsComponent,
     HomeTestComponent,
     InnerTestComponent,
+    CookiePolicyComponent,
+    ImprintComponent,
+    PrivacyPolicyComponent,
+    TermsAndConditionsComponent,
 
   ],
   imports: [
