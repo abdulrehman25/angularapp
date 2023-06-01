@@ -623,6 +623,8 @@ margin: 0px auto 20px;}
 .inner-pages ul li {position: relative; list-style-type: none; width: 50%; padding-left: 30px;}
 .inner-pages ul li::before {position: absolute;content: '\f21e';font-family: 'Font Awesome 6 Pro';left: 0;top: 0;color: #407839;font-weight: 400;}
 
+.inner-pages ul ol li {width: 100%; padding-block: 0px 25px;}
+
 img.inner-page-right-picture {max-width: 450px;float: right;margin-bottom: 15px;margin-left: 15px;}
 img.inner-page-left-picture {max-width: 450px;float: left;margin-bottom: 15px;margin-right: 15px;}
 /*inner pages*/
