@@ -394,6 +394,8 @@
     .primary-navbar.sticky-top #siteNav button.ddl-menu::after {top: -5px;position: relative;right: 15px;}
     .site-footer {padding: 70px 0px 0px;}
     .site-footer .col-xl-4.px-5 {padding-left: 15px !important;}
+
+    .site-footer .col-md-12.col-sm-12.px-5 {padding-inline: 15px !important;}
     }/*767*/
     
     
