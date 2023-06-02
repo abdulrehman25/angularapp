@@ -364,7 +364,7 @@ background-repeat: no-repeat;background-position: left top;background-size: cont
 /*specialist areas*/
 
 
-.experience-training {width: 100%;height: auto;display: inline-block;padding: 0px 0px 100px;position: relative;background-color: #ffffff;}
+.experience-training {width: 100%;height: auto;display: inline-block;padding: 0px 0px 75px;position: relative;background-color: #ffffff;}
 .experience-training::before {position: absolute;content: '';width: 750px;height: 650px;background-image: url('../images/experience-training.jpg');background-repeat: no-repeat;background-size: cover;background-position: top center;}
 .experience-training .bg-white.p-5 {box-shadow: 0px 6px 70px rgba(0,0,0,.1); margin-top: 50px; position: relative;}
 .experience-training h3 {font-size: 28px;font-weight: 500;color: #1e4171;padding-bottom: 20px;margin-bottom: 20px;position: relative;}
@@ -377,10 +377,10 @@ background-repeat: no-repeat;background-position: left top;background-size: cont
 
 .qualiMember-section {width: 100%;height: auto;display: inline-block;padding: 150px 0 80px;position: relative;background-image: url('../images/qualimember-background.jpg');background-size: cover;background-repeat: no-repeat;background-position: right; background-blend-mode: multiply; background-color: #fafafa; margin-bottom: 80px;}
 
-.qualiMember-section::after {position: absolute;content: '';width: 0;height: 0;border-right: solid;border-left: 0px solid transparent;border-top: 100px solid transparent;left: 0;bottom: 0px;border-right-color: #ffffff;border-right-width: 98.80vw;z-index: 11;}
+/* .qualiMember-section::after {position: absolute;content: '';width: 0;height: 0;border-right: solid;border-left: 0px solid transparent;border-top: 100px solid transparent;left: 0;bottom: 0px;border-right-color: #ffffff;border-right-width: 98.80vw;z-index: 11;}
 
 .qualiMember-section::before {position: absolute;content: '';width: 0;height: 0;border-left: solid;border-bottom: 100px solid transparent;left: 0;
-top: 0px;border-left-color: #ffffff;border-left-width: 98.80vw;z-index: 11;}
+top: 0px;border-left-color: #ffffff;border-left-width: 98.80vw;z-index: 11;} */
 
 .qualiMember-section h3 {color: #1e4171;font-weight: 600;position: relative;padding-bottom: 20px;text-align: left;margin-bottom: 70px;}
 .qualiMember-section h3::before {position: absolute;content: '';width: 80px;height: 5px;background-color: #407839;left: 0;bottom: 0px;margin-left: 0px;}
@@ -418,9 +418,9 @@ top: 0px;border-left-color: #ffffff;border-left-width: 98.80vw;z-index: 11;}
 
 
 .news-and-events {width: 100%;height: auto;display: inline-block;position: relative;padding: 150px 0px 100px;background-color: #fafafa;}
-.news-and-events::before {position: absolute;content: '';width: 0;height: 0;border-left: solid;border-bottom: 100px solid transparent;left: 0;
-top: 0px;border-left-color: #ffffff;border-left-width: 98.8vw;z-index: 11;}
-.news-and-events::after {position: absolute;content: '';width: 0;height: 0;border-right: solid;border-left: 0px solid transparent;border-top: 100px solid transparent;left: 0;bottom: 0px;border-right-color: #ffffff;border-right-width: 98.8vw;z-index: 11;}
+/* .news-and-events::before {position: absolute;content: '';width: 0;height: 0;border-left: solid;border-bottom: 100px solid transparent;left: 0;
+top: 0px;border-left-color: #ffffff;border-left-width: 98.8vw;z-index: 11;} */
+/* .news-and-events::after {position: absolute;content: '';width: 0;height: 0;border-right: solid;border-left: 0px solid transparent;border-top: 100px solid transparent;left: 0;bottom: 0px;border-right-color: #ffffff;border-right-width: 98.8vw;z-index: 11;} */
 .news-and-events h3 {font-size: 28px;font-weight: 600;color: #1e4171;padding-bottom: 20px;margin-bottom: 20px;position: relative; text-align: center;}
 .news-and-events h3::before {position: absolute;content: '';width: 75px;height: 3px;background-color: #407839;bottom: 0;left: 50%;margin-left: -40px;}
 .news-and-events figure {position: relative; margin-bottom: 15px;}
