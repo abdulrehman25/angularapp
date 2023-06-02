@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./oncological-radiology.component.css']
 })
 export class OncologicalRadiologyComponent {
+  doYouWantSecondOpinionTextForEachComponent="Do you want an Oncological Radiology Second Opinion?";
 
 }

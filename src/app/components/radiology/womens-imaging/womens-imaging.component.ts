@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./womens-imaging.component.css']
 })
 export class WomensImagingComponent {
+  doYouWantSecondOpinionTextForEachComponent="Do you want a Women’s Imaging Second Opinion?";
 
 }

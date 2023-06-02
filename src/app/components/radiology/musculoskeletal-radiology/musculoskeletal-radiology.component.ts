@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./musculoskeletal-radiology.component.css']
 })
 export class MusculoskeletalRadiologyComponent {
+  doYouWantSecondOpinionTextForEachComponent="Do you want a Musculoskeletal Radiology Second Opinion?";
 
 }

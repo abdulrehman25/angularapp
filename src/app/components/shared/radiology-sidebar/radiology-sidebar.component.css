@@ -1,0 +1,75 @@
+
+.inner-page-sidebar ul li {
+    list-style-type: none;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.inner-page-sidebar ul li a {
+    color: #5e5e5e;
+    font-weight: 600;
+}
+
+.sidebar-second-opinion-cta img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sidebar-second-opinion-cta .position-absolute {
+    top: 0;
+    padding: 30px;
+    left: 0;
+}
+
+.sidebar-second-opinion-cta .position-absolute h5 {
+    color: #264478;
+    font-family: 'WalsheimBold';
+    font-size: 18px;
+}
+
+.sidebar-second-opinion-cta .position-absolute h5 span {
+    color: #427337;
+}
+
+.position-absolute button[type="button"] {
+    background-color: #427337;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'WalsheimRegular';
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+
+
+@media (max-width: 1023px) {
+    .sidebar-second-opinion-cta .position-absolute {
+        padding: 15px;
+    }
+}
+
+/*1023*/
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+
+/*1199*/
+
+@media (max-width: 767px) {
+
+    .sidebar-second-opinion-cta .position-absolute {
+        padding: 50px 30px;
+        height: 100%;
+    }
+
+    .sidebar-second-opinion-cta .position-absolute h5 {
+        font-size: 28px;
+    }
+
+}
+
+/*767*/
