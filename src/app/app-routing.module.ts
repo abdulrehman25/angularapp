@@ -63,6 +63,10 @@ import { AdminRoutesGuardGuard } from './guards/admin-routes-guard.guard';
 import { UserReportsComponent } from './components/admin/user-reports/user-reports.component';
 import { HomeTestComponent } from './components/home-test/home-test.component';
 import { InnerTestComponent } from './components/inner-test/inner-test.component';
+import { PrivacyPolicyComponent } from './components/others/privacy-policy/privacy-policy.component';
+import { CookiePolicyComponent } from './components/others/cookie-policy/cookie-policy.component';
+import { ImprintComponent } from './components/others/imprint/imprint.component';
+import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 
 const routes: Routes = [
   {
@@ -149,6 +153,10 @@ const routes: Routes = [
       { path: 'proBono', component: ProBonoComponent },
       { path: 'testimonial', component: TestimonialComponent },
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
+      { path: 'cookie-policy', component: CookiePolicyComponent },
+      { path: 'imprint', component: ImprintComponent },
+      { path: 'privacy-policy', component: PrivacyPolicyComponent },
+      { path: 'terms-and-condition', component: TermsAndConditionsComponent },
       { path: 'thankYou', component: ThankYouComponent },
       { path: 'error404', component: Error404Component },
     ],
