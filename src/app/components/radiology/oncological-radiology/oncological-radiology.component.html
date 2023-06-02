@@ -6,29 +6,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-					<div class="inner-page-sidebar">
-						<ul>
-							<li><a routerLink="/abdominalRadiology">Abdominal Radiology</a></li>
-							<li><a routerLink="/prostateRadiology">Prostate Radiology</a></li>
-							<li><a routerLink="/interventionalRadiologyGuidance">Interventional
-									Radiology Guidance</a></li>
-							<li><a routerLink="/womensImaging">Women's Imaging</a></li>
-							<li><a routerLink="/musculoskeletalRadiology">Musculoskeletal Radiology
-									with Sports injuries</a></li>
-							<li><a routerLink="/pediatricSportsInjuries">Pediatric Sports Injuries</a></li>
-							<li><a routerLink="/pediatricRadiology">Pediatric Radiology</a></li>
-							<li><a routerLink="/oncologicalRadiology">Oncological Radiology</a></li>
-						</ul>
-
-						<div class="sidebar-second-opinion-cta position-relative mt-5">
-							<img src="assets/images/sidebar-second-opinion.jpg" alt="" />
-							<div class="position-absolute">
-								<!-- <h5>Do you want an <span>Abdominal Radiology</span> Second Opinion?</h5> -->
-								<h5>{{"Do you want an Oncological Radiology Second Opinion?" | translate}}</h5>
-								<button class="btn" routerLink="/contact" type="button">contact us</button>
-							</div>
-						</div>
-					</div>
+					<app-radiology-sidebar [textFromParent]="doYouWantSecondOpinionTextForEachComponent"></app-radiology-sidebar>
 				</div>
 				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
 					<h4>{{"Why do you need an Oncological Radiology Second Opinion?" | translate}}</h4>
