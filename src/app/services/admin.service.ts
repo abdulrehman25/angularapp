@@ -6,6 +6,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class AdminService {
 
+
+
   constructor(private httpClient: HttpClient, @Inject("BASE_URL") private baseUrl: string) { }
 
   Api_Base = this.baseUrl;
