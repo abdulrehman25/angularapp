@@ -1,6 +1,51 @@
+.site_wrapper {
+    padding: 0px 0px 100px;
+}
+.site-banner {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 50px 0px 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.site-banner::before {
+    display: none;
+}
+
+.site-banner .banner-caption h1 {
+    color: #264478;
+    font-weight: 400;
+    font-family: 'WalsheimRegular';
+}
+
+.site-banner .banner-caption h1>span {
+    color: #427337;
+    font-family: 'WalsheimRegular';
+}
+
+.banner-caption p {
+    color: #5e5e5e;
+    padding-right: 22rem;
+    font-family: 'WalsheimRegular';
+}
+
+.banner-caption {
+    bottom: 20%;
+}
+
+.site-banner .banner-caption aside a {
+    background-color: #427337;
+    box-shadow: none;
+}
+
+.site-banner .banner-caption aside a:hover {
+    background-color: #264478;
+}
 .subscribe-letter {
     position: absolute;
-    top: -32px;
+    top: 65px;
     z-index: 1099;
     width: 80%;
     left: 50%;
@@ -42,6 +87,13 @@
         width: 100%;
         margin-left: -360px;
     }
+    .site-banner .banner-caption h1 {
+        line-height: 36px;
+        padding-bottom: 15px;
+    }
+    .banner-caption p {
+        padding-right: 0rem;
+    }
 }
 
 /*1023*/
@@ -50,6 +102,13 @@
     .subscribe-letter {
         width: 90%;
         margin-left: -440px;
+    }
+    .site-banner .banner-caption h1 {
+        line-height: 36px;
+        padding-bottom: 15px;
+    }
+    .banner-caption p {
+        padding-right: 0rem;
     }
 }
 
