@@ -87,6 +87,7 @@ import { ImprintComponent } from './components/others/imprint/imprint.component'
 import { PrivacyPolicyComponent } from './components/others/privacy-policy/privacy-policy.component';
 import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 import { RadiologySidebarComponent } from './components/shared/radiology-sidebar/radiology-sidebar.component';
+import { TumorComponent } from './components/brain/tumor/tumor.component';
 
 @NgModule({
   declarations: [
@@ -164,6 +165,7 @@ import { RadiologySidebarComponent } from './components/shared/radiology-sidebar
     PrivacyPolicyComponent,
     TermsAndConditionsComponent,
     RadiologySidebarComponent,
+    TumorComponent,
 
   ],
   imports: [

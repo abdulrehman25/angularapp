@@ -67,6 +67,7 @@ import { PrivacyPolicyComponent } from './components/others/privacy-policy/priva
 import { CookiePolicyComponent } from './components/others/cookie-policy/cookie-policy.component';
 import { ImprintComponent } from './components/others/imprint/imprint.component';
 import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
+import { TumorComponent } from './components/brain/tumor/tumor.component';
 
 const routes: Routes = [
   {
@@ -159,6 +160,7 @@ const routes: Routes = [
       { path: 'terms-and-condition', component: TermsAndConditionsComponent },
       { path: 'thankYou', component: ThankYouComponent },
       { path: 'error404', component: Error404Component },
+      { path: 'tumor', component: TumorComponent },
     ],
   },
   {
