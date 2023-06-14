@@ -44,8 +44,49 @@
     margin-top: 15px;
 }
 
+/*------ 13-06-2023 -------*/
+.sidebar-accordion > .card.main-card {
+margin:0 0 25px;
+}
+.sidebar-accordion > .card.main-card > .card-header {
+	background: #427337;
+}
+.sidebar-accordion > .card.main-card .card-header a {
+    color:#fff;
 
-
+}
+.sidebar-accordion > .card.main-card .card-body .card-header a {
+    color:#264478;
+}
+.sidebar-accordion > .card.main-card .card-body .card-body .card-header a {
+    font-size: medium;
+}
+.sidebar-accordion .mb-0 > a {
+    display: block;
+    position: relative;
+}
+.sidebar-accordion .mb-0 > a:after {
+    content: "\f078"; /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+}
+.sidebar-accordion .mb-0 > a[aria-expanded="true"]:after {
+    content: "\f077"; /* fa-chevron-up */
+}
+.card.main-card .card .card {
+	margin: 8px 0 0 10px;
+	background: #fff;
+	border: 0;
+}
+.card.main-card .card .card .card-header {
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+.sidebar-accordion .card .card-body a::after {
+	top: 0;
+}
 @media (max-width: 1023px) {
     .sidebar-second-opinion-cta .position-absolute {
         padding: 15px;

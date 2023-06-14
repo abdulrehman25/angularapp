@@ -154,7 +154,7 @@
     border: 10px solid #264478;box-shadow: 0px 0px 50px rgba(0,0,0,.15);
     position: relative;
 }
-.home_section_c figure::before {
+/**---.home_section_c figure::before {
     position: absolute;
     content: '';
     width: 150px;
@@ -176,7 +176,7 @@
     background-color: #427337;
     z-index: -1;
     border-radius: 100%;
-}
+}--*/
 .home_section_c figure img {
     width: 380px;
     height: 380px;
