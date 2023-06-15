@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./stroke-and-its-mimics.component.css']
 })
 export class StrokeAndItsMimicsComponent {
+  doYouWantSecondOpinionTextForEachComponent="Stroke and Its Mimics: Differential diagnosis";
 
 }

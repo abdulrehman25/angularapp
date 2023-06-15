@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./cranial-nerve-disorders.component.css']
 })
 export class CranialNerveDisordersComponent {
+  doYouWantSecondOpinionTextForEachComponent="Imaging Evaluation of Patients with Cranial Nerve Disorders";
 
 }

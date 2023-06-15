@@ -6,44 +6,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-					<div class="inner-page-sidebar">
-						<ul>
-							<li><a routerLink="/brainTumors">Differential Diagnosis of Intracranial Masses and Brain
-									Tumors</a></li>
-							<li><a routerLink="/backPain">Back Pain and Radiculopathy</a></li>
-							<li><a routerLink="/spinalTrauma">Spinal Trauma and Injuries</a></li>
-							<li><a routerLink="/brainAndSpine">Demyelinating Diseases of the CNS (Brain and Spine)</a>
-							</li>
-							<li><a routerLink="/dementiaAlzheimer">Dementia, Alzheimer &amp; Other Neurodegenerative
-									Disorders</a></li>
-							<li><a routerLink="/evaluationOfTinnitus">Evaluation of Tinnitus and Hearing Loss in the
-									Adult</a></li>
-							<li><a routerLink="/metabolicDisorders">Toxic and Metabolic Disorders of the brain</a></li>
-							<li><a routerLink="/epilepsyOrSeizures">Imaging the Patient with Epilepsy or Seizures</a>
-							</li>
-							<li><a routerLink="/cranialNerveDisorders">Imaging Evaluation of Patients with Cranial Nerve
-									Disorders</a></li>
-							<li><a routerLink="/hypophysis">Diseases of the Sella and Parasellar Region (Hypophysis)</a>
-							</li>
-							<li><a routerLink="/hydrocephalusAndCSF">Hydrocephalus and CSF Disorders (incl. Intracranial
-									Hyper- and Hypotension)</a></li>
-							<li><a routerLink="/strokeAndItsMimics">Stroke and Its Mimics: Differential diagnosis</a>
-							</li>
-							<li><a routerLink="/childWithAcuteNeurological">Child with Acute Neurological Emergency</a>
-							</li>
-							<li><a routerLink="/headTrauma">Head Trauma</a></li>
+					<app-radiology-sidebar [textFromParent]="doYouWantSecondOpinionTextForEachComponent"></app-radiology-sidebar>
 
-						</ul>
-
-						<div class="sidebar-second-opinion-cta position-relative mt-5">
-							<img src="assets/images/sidebar-second-opinion.jpg" alt="" />
-							<div class="position-absolute">
-								<!-- <h5>Do you want an <span>Abdominal Radiology</span> Second Opinion?</h5> -->
-								<h5>{{"Do you want an Abdominal Radiology Second Opinion?" | translate}}</h5>
-								<button class="btn" routerLink="/contact" type="button">contact us</button>
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
 					<h4>{{"introduction" | translate}}</h4>

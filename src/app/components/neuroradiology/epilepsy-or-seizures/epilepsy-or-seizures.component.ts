@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./epilepsy-or-seizures.component.css']
 })
 export class EpilepsyOrSeizuresComponent {
+  doYouWantSecondOpinionTextForEachComponent="Imaging the Patient with Epilepsy or Seizures";
 
 }

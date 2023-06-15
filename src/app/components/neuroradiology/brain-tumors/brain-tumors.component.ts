@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./brain-tumors.component.css']
 })
 export class BrainTumorsComponent {
+  doYouWantSecondOpinionTextForEachComponent="Differential Diagnosis of Intracranial Masses and Brain Tumors";
 
 }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./evaluation-of-tinnitus.component.css']
 })
 export class EvaluationOfTinnitusComponent {
+  doYouWantSecondOpinionTextForEachComponent="Evaluation of Tinnitus and Hearing Loss in the Adult";
 
 }

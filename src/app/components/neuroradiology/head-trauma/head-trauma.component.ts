@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./head-trauma.component.css']
 })
 export class HeadTraumaComponent {
+  doYouWantSecondOpinionTextForEachComponent="Head Trauma";
 
 }

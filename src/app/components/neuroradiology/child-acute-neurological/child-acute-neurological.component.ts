@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./child-acute-neurological.component.css']
 })
 export class ChildAcuteNeurologicalComponent {
+  doYouWantSecondOpinionTextForEachComponent="Child with Acute Neurological Emergency";
 
 }

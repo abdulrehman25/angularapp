@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./back-pain.component.css']
 })
 export class BackPainComponent {
-
+  doYouWantSecondOpinionTextForEachComponent="Back Pain and Radiculopathy";
 }

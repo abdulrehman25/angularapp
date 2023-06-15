@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./metabolic-disorders.component.css']
 })
 export class MetabolicDisordersComponent {
-
+  doYouWantSecondOpinionTextForEachComponent="Toxic and Metabolic Disorders of the brain";
 }
