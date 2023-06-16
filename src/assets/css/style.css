@@ -451,20 +451,66 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 .register-form form label {font-weight: 500;text-transform: capitalize;}
 .register-form form label > small {display: block; text-transform: none;}
 
-.registration-page, .login-page {width: 100%;height: auto;display: inline-block;padding-top: 200px;background-color: #f2f8fd;padding-bottom: 100px;}
+.registration-page, .login-page {width: 100%;height: auto;display: inline-block;padding-top: 200px;background-color: #fff;padding-bottom: 100px;}
 .register-form, .login-form {width: 100%;height: auto;position: relative;}
-.registration-page h1,.login-page h1 {color: rgb(30,65,113);text-transform: capitalize;padding-bottom: 50px;text-align: center;}
+.registration-page h1,.login-page h1 {color: #000;text-transform: capitalize;padding-bottom: 10px;text-align: center;font-size:25px;font-weight:400;}
 .register-form select {appearance: none; background-image: url('../images/angle-down.jpg'); background-repeat: no-repeat; background-position: right center;}
 .register-form select, .register-form input[type="text"], .register-form input[type="tel"], .register-form input[type="email"], .register-form input[type="password"] {border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-bottom: 20px;color: #000000;}
 
-.login-form input[type="text"],.login-form input[type="email"], .login-form input[type="password"]{border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-top: 12px;margin-bottom: 5px;color: #000000;}
-.register-form form input[type="submit"], .login-form form input[type="submit"] {background-color: #407839;border: none;border-radius: 0;height: 50px;color: #ffffff; outline: none; margin-top: 12px; margin-bottom: 5px;}
+.login-form input[type="text"],.login-form input[type="email"], .login-form input[type="password"]{background:#f9fafb;border: 1px solid rgba(0,0,0,.25);border-radius: 50px;height: 55px;margin-top: 12px;margin-bottom: 5px;color: #000000;padding:0 0 0 25px;}
+.register-form form input[type="submit"], .login-form form input[type="submit"] {background-color: #407839;border: none;border-radius: 50px;height: 55px;color: #ffffff; outline: none; margin-top: 12px; margin-bottom: 5px;}
 .register-form form p,.login-form form p.form-info {color: #000000;line-height: 50px;}
-.register-form form p a,.login-form form p a {color: rgb(30,65,113); text-decoration: underline;}
+.register-form form p a,.login-form form p a {color: #407839; }
+.forgot-password {text-align: right;}
 .forgot-password a {color: rgb(30,65,113);text-transform: capitalize; margin: 8px 0px; display: inline-block;}
 span.show-password {position: absolute;top: 22px;right: 25px;background-color: transparent;border: none;cursor: pointer;
 outline: none;}
 span.show-password .fa-eye {font-size: 12px;}
+.login-container {margin: 0 auto;max-width: 375px;}
+.text-center {text-align: center;}
+.socialmedia-login a {
+	border: 1px solid rgba(0,0,0,.25);
+	border-radius: 50px;
+	height: 55px;
+	margin-top: 12px;
+	margin-bottom: 5px;
+	color: #000000;
+	padding: 0 0 0 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    position: relative;
+    font-weight: bold;
+}
+.socialmedia-login a img {
+	max-width: 22px;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+}
+.line-border {
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+    margin: 25px 0 0;
+}
+.line-border::after {
+	border: 1px solid #F2F2F2;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	top: 12px;
+}
+.line-border span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	z-index: 999;
+	position: relative;
+}
 /*Register page*/
 
 
