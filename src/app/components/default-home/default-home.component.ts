@@ -6,7 +6,7 @@ import { Router, NavigationStart } from '@angular/router';
   styleUrls: ['./default-home.component.css']
 })
 export class DefaultHomeComponent {
-  showHead: boolean = false;
+  showHead: boolean = true;
   constructor(private router: Router) {
     router.events.forEach((event) => {
       if (event instanceof NavigationStart) {
