@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hypophysis.component.css']
 })
 export class HypophysisComponent {
+  doYouWantSecondOpinionTextForEachComponent="Diseases of the Sella and Parasellar Region  (Hypophysis)";
 
 }

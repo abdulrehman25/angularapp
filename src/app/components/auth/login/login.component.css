@@ -1,0 +1,14 @@
+footer {
+    display: none;
+}
+header {
+    display: none;
+}
+.login-footer {
+    text-align: center;
+    margin:100px 0 0;
+    font-size:12px;
+}
+.site-footer {
+	display: none;
+}

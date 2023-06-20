@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hydrocephalus-and-csf.component.css']
 })
 export class HydrocephalusAndCSFComponent {
+  doYouWantSecondOpinionTextForEachComponent="Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)";
 
 }

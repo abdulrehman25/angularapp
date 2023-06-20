@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./interventional-radiology-guidance.component.css']
 })
 export class InterventionalRadiologyGuidanceComponent {
-  doYouWantSecondOpinionTextForEachComponent="Do you want a Second Opinion on your Interventional Radiology Scans and Procedures?";
+  doYouWantSecondOpinionTextForEachComponent="Interventional Radiology Scans and Procedures";
   
 
 }

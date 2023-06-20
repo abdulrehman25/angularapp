@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pediatric-sports-injuries.component.css']
 })
 export class PediatricSportsInjuriesComponent {
-  doYouWantSecondOpinionTextForEachComponent="Do you want a Paediatric Sports Injury Second Opinion on your child’s scans?";
+  doYouWantSecondOpinionTextForEachComponent="Padiatric Sports Injury";
 
 }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./brain-and-spine.component.css']
 })
 export class BrainAndSpineComponent {
+  doYouWantSecondOpinionTextForEachComponent="Demyelinating Diseases of the CNS (Brain and Spine)";
 
 }

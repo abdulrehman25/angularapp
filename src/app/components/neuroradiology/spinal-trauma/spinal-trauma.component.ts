@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./spinal-trauma.component.css']
 })
 export class SpinalTraumaComponent {
+  doYouWantSecondOpinionTextForEachComponent="Spinal Trauma and Injuries";
 
 }

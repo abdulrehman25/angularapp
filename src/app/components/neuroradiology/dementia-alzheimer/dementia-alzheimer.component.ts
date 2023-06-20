@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./dementia-alzheimer.component.css']
 })
 export class DementiaAlzheimerComponent {
+  doYouWantSecondOpinionTextForEachComponent="Dementia, Alzheimer & Other Neurodegenerative Disorders";
 
 }
