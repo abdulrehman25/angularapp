@@ -451,7 +451,7 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 .register-form form label {font-weight: 500;text-transform: capitalize;}
 .register-form form label > small {display: block; text-transform: none;}
 
-.registration-page, .login-page {width: 100%;height: auto;display: inline-block;padding-top: 200px;background-color: #fff;padding-bottom: 100px;}
+.registration-page, .login-page {width: 100%;height: auto;display: inline-block;padding-top: 20px;background-color: #fff;padding-bottom: 0px;}
 .register-form, .login-form {width: 100%;height: auto;position: relative;}
 .registration-page h1,.login-page h1 {color: #000;text-transform: capitalize;padding-bottom: 10px;text-align: center;font-size:25px;font-weight:400;}
 .register-form select {appearance: none; background-image: url('../images/angle-down.jpg'); background-repeat: no-repeat; background-position: right center;}
