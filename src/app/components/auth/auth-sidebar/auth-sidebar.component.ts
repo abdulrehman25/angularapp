@@ -7,6 +7,12 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./auth-sidebar.component.css']
 })
 export class AuthSidebarComponent {
+  showPopUp: boolean = true;
+  showDiv: boolean = true;
+  closePopUp() {
+    this.showDiv = false;
+    console.log("clicked");
+  }
   imgUrls = [
     { id: '1', url: '../../../assets/images/testi-user.png' },
     { id: '2', url: '../../../assets/images/testi-user.png' },
