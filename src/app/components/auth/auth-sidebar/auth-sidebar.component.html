@@ -1,20 +1,21 @@
-<div class="auth-sidebar-col">
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="auth-sidebar-col" [hidden]="!showDiv">
+    <button type="button" class="close" (click)="closePopUp()" data-dismiss="modal">&times;</button>
     <owl-carousel-o [options]="customOptions2" id="information-slider">
         <ng-container *ngFor="let slide of imgUrls">
             <ng-template class="slide" carouselSlide [id]="slide.id">
-            <div class="item">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                <ul>
-                <!--<li>
+                <div class="item">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text</p>
+                    <ul>
+                        <!--<li>
                     <img [src]="slide.url" [alt]="slide.id" [title]="slide.id" />
                 </li>-->
-                <li>
-                    <h5><i>- Author's Name</i></h5>
-                </li>
-                </ul>
-            </div>
-            
+                        <li>
+                            <h5><i>- Author's Name</i></h5>
+                        </li>
+                    </ul>
+                </div>
+
             </ng-template>
         </ng-container>
     </owl-carousel-o>
@@ -28,8 +29,8 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-				<p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                
+                <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+
             </div>
         </div>
     </div>
