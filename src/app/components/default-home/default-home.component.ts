@@ -19,6 +19,10 @@ export class DefaultHomeComponent {
       }
     });
 
+    if (this.router.url == '/login' || this.router.url == '/register') {
+      this.showHead = false;
+    }
+
   }
 }
 
