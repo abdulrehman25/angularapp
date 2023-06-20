@@ -1,0 +1,43 @@
+
+.auth-sidebar-col {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: "";
+	height: 100vh;
+	width: 350px;
+    background: #759472;
+    background: -moz-linear-gradient(left,  #759472 0%, #67827b 100%);
+    background: -webkit-linear-gradient(left,  #759472 0%,#67827b 100%);
+    background: linear-gradient(to right,  #759472 0%,#67827b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#759472', endColorstr='#67827b',GradientType=1 );
+    padding:0 35px;
+}
+.auth-sidebar-col .close {
+	background: none;
+	border: 1px solid #fff;
+	float: right;
+	padding: 0px 5px;
+	color: #fff;
+	font-size: 30px;
+	margin: 25px 25px 0 0;
+	font-weight: normal;
+}
+.site-footer {
+	display: none;
+}
+#information-slider {
+	position: absolute;
+	bottom: 100px;
+	left: 50px;
+	right: 50px;
+}
+#information-slider .item {
+    color:#fff;
+    text-align: center;
+}
+#information-slider .item h5 {
+	font-size: 16px;
+	font-style: italic;
+}
