@@ -354,7 +354,7 @@ image-rendering: pixelated;}
 .site-feature-banner::before {position: absolute;content: '';width: 0;height: 0;border-right: solid;border-left: 0px solid transparent;border-top: 65px solid transparent;left: 0;bottom: -1px;border-right-color: #ffffff;border-right-width: 98.80vw;z-index: 11;}
 /*about us banner*/
 
-.specialist-areas {width: 100%;height: auto;display: inline-block;padding: 100px 0px;position: relative;background-color: #ffffff;background-image: url('../images/specialist-area-background.png');background-position: right center;background-repeat: no-repeat;background-size: 45%;}
+.specialist-areas {width: 100%;height: auto;display: inline-block;padding: 100px 0px;position: relative;background-color: #ffffff;background-image: url('../images/specialist-area-bg.png');background-position: right center;background-repeat: no-repeat;background-size: 45%;}
 .specialist-areas::before {position: absolute;content: '';width: 100px;height: 630px;background: url('../images/about-us-special-area-bg.png');
 background-repeat: no-repeat;background-position: left top;background-size: contain;}
 .specialist-areas h3 {font-size: 28px;font-weight: 600;color: #1e4171;padding-bottom: 20px;margin-bottom: 20px;position: relative;}
