@@ -7,7 +7,22 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+         url('../fonts/Gilroy-Light.woff') format('woff'),
+		 url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Gilroy-ExtraBold';
+    src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+		 url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'WalsheimMedium';
     src: url('../fonts/WalsheimMedium.eot');
@@ -50,17 +65,18 @@ h1,h2,h3,h4 {font-family: 'WalsheimBold';margin: 0px; padding: 0px; line-height:
 div,p,ul,ol,li,figure,aside,figcaption,samp,span,dd {margin: 0px; padding: 0px; line-height: 28px;}
 a,a:hover,a:focus {text-decoration: none; outline: none; transition: all linear .4s; -webkit-transition: all linear .4s; -transform-transition: all linear .4s;}
 
-.site-header {position: absolute;top: 0;left: 0;z-index: 1111;width: 100%;height: auto;}
-.secondry-navbar {width: 100%;height: auto;padding: 15px 0px 0px;display: inline-block; position: relative;}
+/*--.site-header {position: absolute;top: 0;left: 0;z-index: 1111;width: 100%;height: auto;}--*/
+.site-bannerimg { background: url('../images/N-home-banner-bg.png') no-repeat center top;}
+.secondry-navbar {width: 100%;height: auto;padding:0px;display: inline-block; position: relative;}
 .secondry-navbar ul {justify-content: end; align-items: center;}
 .secondry-navbar ul li {list-style-type: none;margin-left: 40px;}
 .secondry-navbar ul li a {color: #234474;font-size: 14px;font-family: 'WalsheimBold';}
 .secondry-navbar ul li a > i {color: #407839;}
-#siteNav ul.navbar-nav.mr-auto {justify-content: end;width: 100%;}
+#siteNav ul.navbar-nav.mr-auto {justify-content: center;width: 100%;}
 #siteNav ul li a {color: #264478; cursor: pointer; font-family: 'WalsheimBold';}
 #siteNav ul li.active a {color: #427337;}
-#siteNav ul.navbar-nav li:last-child a {background-color: #427337;border-radius: 50px;color: #ffffff;
-padding-right: 20px;padding-left: 20px;text-transform: capitalize;font-family: 'WalsheimRegular';}
+.common-button a {background-color: #427337;border-radius: 22px;color: #ffffff;padding: 12px 15px;text-transform: capitalize;font: bold 18px/25px 'WalsheimRegular';display: inline-block;}
+.grey-button-type {background: rgba(66, 115, 55, .1);display: inline;color: #427337;padding: 13px 20px;border-radius: 25px;font-weight: 700;}
 #siteNav button.ddl-menu {background-color: transparent;border: none;outline: none;color: #264478;padding-left: 0px;padding-right: 0px; margin-right: 5px;}
 .ddl-item {position: relative;display: flex;}
 #siteNav ul span li .dropdown-menu {right: 0px;}
@@ -83,9 +99,9 @@ padding-right: 20px;padding-left: 20px;text-transform: capitalize;font-family: '
 .dropdown-item.active, .dropdown-item:active {background-color: #407839;}
 button.navbar-toggler:focus {outline: none;box-shadow: none;}
 
-.navbar-dark .navbar-brand {min-width: 280px;max-width: 280px;}
+.navbar-dark .navbar-brand {min-width: 320px;max-width: 320px;}
 .navbar-brand figure img {max-width: 100%;image-rendering: -webkit-optimize-contrast;}
-.primary-navbar nav.primary-color {padding: .5rem 1rem;}
+.primary-navbar nav.primary-color {padding: 15px 0;}
 .primary-navbar.sticky-top {position: fixed;top: 0;left: 0;width: 100%;background-color: #ffffff;height: auto;z-index: 9999; box-shadow: 0px 0px 30px rgba(0,0,0,.08);}
 .primary-navbar.sticky-top #siteNav ul li a {padding: 8px 15px;}
 .primary-navbar.sticky-top #siteNav ul li .dropdown-menu a.dropdown-item {line-height: 28px;background-color: transparent;color: #000000;font-family: 'WalsheimRegular';border-radius: 0;
@@ -107,15 +123,14 @@ button.select-language-btn i.flag-icon.flag-icon- {width: 18.44px;height: 14px;b
 
 
 .site-banner {width: 100%;height: auto;background-color: #d7dfea;padding: 50px 0px 0px;position: relative;display: inline-block;}
-.site-banner figure {position: relative;padding: 0px 0px 0px 100px; text-align: right;}
-.site-banner figure img {width: 85%; height: auto;}
-.banner-caption {position: absolute;top: auto;bottom: 30%;width: 50%;height: auto;left: auto; text-align: left;}
-.site-banner .banner-caption h1 {color: #1e4171;line-height: 60px;font-weight: 600;}
+.site-banner figure {position: relative;padding:0px; text-align: left;}
+.site-banner figure img {max-width: 550px; height: auto;padding-top: 90px;}
+/*--.banner-caption {position: absolute;top: auto;bottom: 30%;width: 50%;height: auto;left: auto; text-align: left;}--*/
+.banner-caption {padding-top:80px;}
+.site-banner .banner-caption h1 {color: #252f4b;line-height: 60px;font-weight: 600;margin:30px 0;}
 .site-banner .banner-caption h1 > span {font-family: 'trademark';color: #407839;font-weight: normal;}
 .site-banner .banner-caption aside {margin-top: 30px;}
-.site-banner .banner-caption aside a {background-color: #407839;color: #ffffff;padding: 8px 20px;display: inline-block;border-radius: 100px;
-box-shadow: 0px 11px 35px #407839;}
-.site-banner .banner-caption aside a:hover,.site-banner .banner-caption aside a:focus {background-color: #1e4171;}
+
 .site-banner::before {position: absolute;content: '';width: 0;height: 0;border-right: solid;border-left: 0px solid transparent;border-top: 65px solid transparent;left: 0;bottom: 0;border-right-color: #ffffff;border-right-width: 98.80vw;z-index: 11;}
 /*site banner*/
 

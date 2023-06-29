@@ -9,7 +9,7 @@
 .site-banner {
     width: 100%;
     height: auto;
-    background-color: #ffffff;
+    background-color: #F2F4FF;
     padding: 0px;
     position: relative;
     display: inline-block;
@@ -17,11 +17,14 @@
 .site-banner::before {
     display: none;
 }
-
+.site-banner h1 {
+    font-size: 64px;
+line-height: 74px;
+}
 .site-banner .banner-caption h1 {
     color: #264478;
     font-weight: 400;
-    font-family: 'WalsheimRegular';
+    font-family: 'Gilroy-ExtraBold';
 }
 
 .site-banner .banner-caption h1>span {
@@ -30,9 +33,12 @@
 }
 
 .banner-caption p {
-    color: #5e5e5e;
-    padding-right: 22rem;
+    color: #73778c;
     font-family: 'WalsheimRegular';
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
 }
 
 .banner-caption {
