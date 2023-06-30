@@ -68,6 +68,10 @@ import { CookiePolicyComponent } from './components/others/cookie-policy/cookie-
 import { ImprintComponent } from './components/others/imprint/imprint.component';
 import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
+import { TheRoleOfSpecialistNeuroradioloComponent } from './components/resources/blog/the-role-of-specialist-neuroradiolo/the-role-of-specialist-neuroradiolo.component';
+import { ObtainingSecondOpinionComponent } from './components/resources/blog/obtaining-second-opinion/obtaining-second-opinion.component';
+import { LessonsLearnedFromComponent } from './components/resources/blog/lessons-learned-from/lessons-learned-from.component';
+import { RadiologistsReadAcrossComponent } from './components/resources/blog/radiologists-read-across/radiologists-read-across.component';
 
 const routes: Routes = [
   {
@@ -142,6 +146,10 @@ const routes: Routes = [
       { path: 'about', component: AboutComponent },
       { path: 'blog', component: BlogComponent },
       { path: 'blogDetails', component: BlogDetailsComponent },
+      { path: 'theRoleOfSpecialistNeuroradiol', component: TheRoleOfSpecialistNeuroradioloComponent },
+      { path: 'ObtainingSecondOpinion', component: ObtainingSecondOpinionComponent },
+      { path: 'LessonsLearnedFrom', component: LessonsLearnedFromComponent },
+      { path: 'RadiologistsReadAcross', component: RadiologistsReadAcrossComponent },
       { path: 'comparisonStudies', component: ComparisonStudiesComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'faq', component: FaqComponent },

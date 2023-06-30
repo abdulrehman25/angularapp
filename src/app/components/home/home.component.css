@@ -144,7 +144,7 @@
     padding: 0px 0px 100px;
 }
 
-.home_section_c figure {
+.home_section_c figure.profile_img {
     width: 400px;
     height: 400px;
     border-radius: 100%;
@@ -176,7 +176,7 @@
     z-index: -1;
     border-radius: 100%;
 }--*/
-.home_section_c figure img {
+.home_section_c figure.profile_img img {
     width: 380px;
     height: 380px;
     object-fit: cover;
@@ -237,7 +237,7 @@
 
 .our-team .carousel-inner img {
     min-width: 175px;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .our-team span.fa.fa-chevron-left,
@@ -431,22 +431,22 @@
 
 /*1199*/
 @media (max-width: 991px) {
-.home_section_c figure {
+.home_section_c figure.profile_img {
     width: 300px;
     height: 300px;
 }
-.home_section_c figure img {
+.home_section_c figure.profile_img img {
 	width: 280px;
 	height: 280px;
 }
 }
 @media (max-width: 767px) {
-    .home_section_c figure {
+    .home_section_c figure.profile_img {
         border-radius: 100%;
         width: 400px;
         height: 400px;
     }
-    .home_section_c figure img {
+    .home_section_c figure.profile_img img {
         width: 380px;
         height: 380px;
     }
@@ -519,12 +519,12 @@
     }
 }
 @media (max-width: 470px) {
-    .home_section_c figure {
+    .home_section_c figure.profile_img {
         border-radius: 100%;
         width: 300px;
         height: 300px;
     }
-    .home_section_c figure img {
+    .home_section_c figure.profile_img img {
         width: 280px;
         height: 280px;
     }
