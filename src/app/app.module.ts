@@ -89,6 +89,10 @@ import { TermsAndConditionsComponent } from './components/others/terms-and-condi
 import { RadiologySidebarComponent } from './components/shared/radiology-sidebar/radiology-sidebar.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sidebar.component';
+import { TheRoleOfSpecialistNeuroradioloComponent } from './components/resources/blog/the-role-of-specialist-neuroradiolo/the-role-of-specialist-neuroradiolo.component';
+import { ObtainingSecondOpinionComponent } from './components/resources/blog/obtaining-second-opinion/obtaining-second-opinion.component';
+import { LessonsLearnedFromComponent } from './components/resources/blog/lessons-learned-from/lessons-learned-from.component';
+import { RadiologistsReadAcrossComponent } from './components/resources/blog/radiologists-read-across/radiologists-read-across.component';
 
 @NgModule({
   declarations: [
@@ -168,6 +172,10 @@ import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sideba
     RadiologySidebarComponent,
     TumorComponent,
     AuthSidebarComponent,
+    TheRoleOfSpecialistNeuroradioloComponent,
+    ObtainingSecondOpinionComponent,
+    LessonsLearnedFromComponent,
+    RadiologistsReadAcrossComponent,
 
   ],
   imports: [
