@@ -1,5 +1,5 @@
 @media (min-width: 1920px){
-    .site-header .container {max-width: 1700px;}
+    /*--.site-header .container {max-width: 1700px;}--*/
     
     .right-picture-g-section figure {width: 700px;}	
     .right-picture-g-section figure img {height: 550px;object-fit: cover;}
@@ -16,7 +16,7 @@
     }/*1920*/
     
     @media (min-width: 1600px) and (max-width: 1680px){
-    .site-header .container {max-width: 1500px;}
+    /*--.site-header .container {max-width: 1500px;}--*/
     .site-feature-banner figure img {object-position: 0px -100px;}
     .experience-training::before {width: 950px;}
     .site-feature-banner::before {border-right-width: 100vw;}
