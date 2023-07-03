@@ -45,6 +45,8 @@ button.close-book-appointment-page {
   top: 0;
   left: 0;
   z-index: 1;
+  background: rgb(118,147,122);
+  background: linear-gradient(180deg, rgba(118,147,122,1) 13%, rgba(80,107,115,1) 100%);
 }
 
 .registerNow_step2 {

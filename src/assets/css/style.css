@@ -446,20 +446,26 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 /* Our teams section */
 
 
-.forms-layout {width: 100%;height: auto;display: inline-block;background-color: rgb(255,255,255);padding: 50px 15px;border-radius: 15px;background-image: url('../images/multiwaves.png');background-blend-mode: multiply;background-size: contain;background-repeat: no-repeat; background-position: top right 125px; border-top: 5px solid #407839;}
+.forms-layout {width: 100%;height: auto;display: inline-block;background-color: rgb(255,255,255);padding: 50px 15px;}
 .forms-layout h4 {color: rgb(30,65,113);font-weight: 500;}
 .register-form form label {font-weight: 500;text-transform: capitalize;}
 .register-form form label > small {display: block; text-transform: none;}
+.registration-page .forms-layout {padding: 0px 15px;}
+.login-footer {text-align: center;margin:50px 0 10px;font-size:12px;}
+.login-page .forms-layout {padding: 0px 15px;}
 
-.registration-page, .login-page {width: 100%;height: auto;display: inline-block;padding-top: 20px;background-color: #fff;padding-bottom: 0px;}
-.register-form, .login-form {width: 100%;height: auto;position: relative;}
+.registration-page, .login-page {width: 100%;height: auto;display: inline-block;padding-top: 100px;background-color: #fff;padding-bottom: 0px;}
+.login-form {width: 100%;height: auto;position: relative;}
+.register-form {width: 100%;height: auto;position: relative;max-width: 375px;margin:0 auto;}
 .registration-page h1,.login-page h1 {color: #000;text-transform: capitalize;padding-bottom: 10px;text-align: center;font-size:25px;font-weight:400;}
 .register-form select {appearance: none; background-image: url('../images/angle-down.jpg'); background-repeat: no-repeat; background-position: right center;}
-.register-form select, .register-form input[type="text"], .register-form input[type="tel"], .register-form input[type="email"], .register-form input[type="password"] {border: 1px solid rgba(0,0,0,.25);border-radius: 0;height: 50px;margin-bottom: 20px;color: #000000;}
+.register-form select, .register-form input[type="text"], .register-form input[type="tel"], .register-form input[type="email"], .register-form input[type="password"] {border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 0;height: 50px;margin-bottom: 20px;color: #000000;}
 
-.login-form input[type="text"],.login-form input[type="email"], .login-form input[type="password"]{background:#f9fafb;border: 1px solid rgba(0,0,0,.25);border-radius: 50px;height: 55px;margin-top: 12px;margin-bottom: 5px;color: #000000;padding:0 0 0 25px;}
+.login-form input[type="text"],.login-form input[type="email"], .login-form input[type="password"]{background:#f9fafb;border: 1px solid rgba(0,0,0,.25);border-radius: 50px;height: 55px;margin-top: 12px;margin-bottom: 5px;color: #000000;padding:0 0 0 65px;}
+.login_icon {position: absolute;left: 40px;top: 25px;font-size: 22px;color: #b7b7b7;}
+.register-form form input[type="text"],.register-form input[type="email"], .register-form form input[type="password"]{background:#f9fafb;border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 50px;height: 55px;margin-top: 12px;margin-bottom: 5px;color: #000000;padding:0 0 0 65px;}
 .register-form form input[type="submit"], .login-form form input[type="submit"] {background-color: #407839;border: none;border-radius: 50px;height: 55px;color: #ffffff; outline: none; margin-top: 12px; margin-bottom: 5px;}
-.register-form form p,.login-form form p.form-info {color: #000000;line-height: 50px;}
+.register-form form p,.login-form form p.form-info {color: #8e8e8e;line-height: 28px;margin-top: 15px;}
 .register-form form p a,.login-form form p a {color: #407839; }
 .forgot-password {text-align: right;}
 .forgot-password a {color: rgb(30,65,113);text-transform: capitalize; margin: 8px 0px; display: inline-block;}
@@ -511,7 +517,7 @@ span.show-password .fa-eye {font-size: 12px;}
 	z-index: 999;
 	position: relative;
 }
-/*Register page*/
+/*-- Register page --*/
 
 
 .specialist-areas.contact-info-section{background-image: none; padding-bottom: 0px;}

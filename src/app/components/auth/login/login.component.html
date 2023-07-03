@@ -19,6 +19,7 @@
 									(ngSubmit)="loginData.form.valid && loginUserData()">
 									<div class="row">
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+											<span class="login_icon"><i class="fa-light fa-user"></i></span>
 											<input type="email" placeholder="Enter your email" class="form-control"
 												name="email" [(ngModel)]="loginObj.email" required #email="ngModel"
 												[ngClass]="{ 'is-invalid': loginData.submitted && email.errors }">
@@ -29,6 +30,7 @@
 										</div>
 
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 position-relative">
+											<span class="login_icon"><i class="fa-light fa-lock"></i></span>
 											<input [type]="!fieldTextType ? 'text' : 'password'"
 												placeholder="Enter your password" name="password" class="form-control"
 												[(ngModel)]="loginObj.password" required #password="ngModel"
@@ -101,7 +103,7 @@
 			</div>
 
 		</div>
-		<app-auth-sidebar></app-auth-sidebar>
+		<app-auth-sidebar class="sidebar-section"></app-auth-sidebar>
 	</div><!--registration and login page-->
 
 </div><!--site wrapper-->
