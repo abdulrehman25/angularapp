@@ -1,14 +1,3 @@
-footer {
-    display: none;
-}
-header {
-    display: none;
-}
-.login-footer {
-    text-align: center;
-    margin:100px 0 0;
-    font-size:12px;
-}
-.site-footer {
-	display: none;
+.login-form .col-xl-12.col-lg-12.col-md-12.col-sm-12 {
+	position: relative;
 }

@@ -6,7 +6,7 @@
 	bottom: 0;
 	content: "";
 	min-height: 100%;
-	height:100%;
+	height:100VH;
 	width: 350px;
     background: #759472;
     background: -moz-linear-gradient(left,  #759472 0%, #67827b 100%);

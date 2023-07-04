@@ -4,18 +4,19 @@
 			<div class="row">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 					<h1>Sign Up</h1>
+					<p class="text-center">NO CREDIT CARD REQUIRED!</p>
 				</div>
 			</div>
 
 			<div class="forms-layout">
 				<div class="row">
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 						<figure><img src="../../../../assets/images/dr-ali-rehman.png" class="img-fluid" alt="" />
 						</figure>
-					</div>
+					</div>-->
 
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-						<h4 class="mb-4">Let's protect yourself..</h4>
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						
 						<div class="register-form">
 
 							<form name="form" #registerData="ngForm"
@@ -24,8 +25,8 @@
 
 								<div class="row">
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-										<label>patient's full name</label>
-										<input type="text" placeholder="First Name" class="form-control" name="name"
+										<span class="login_icon"><i class="fa-light fa-user"></i></span>
+										<input type="text" placeholder="Enter your name" class="form-control" name="name"
 											required [(ngModel)]="registerObj.name" #name="ngModel"
 											[ngClass]="{ 'is-invalid': registerData.submitted && name.errors }" />
 
@@ -34,7 +35,7 @@
 										</div>
 									</div>
 
-									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<!--<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 										<label>patient's contact number <small>Notifications for appointment and
 												reminders will be sent to this number.</small></label>
 										<input type="tel" name="phone_number" placeholder="Contact Number"
@@ -49,11 +50,11 @@
 											<div *ngIf="phone_number.errors?.['pattern']">This is not
 												a valid Contact Number</div>
 										</div>
-									</div>
+									</div>-->
 
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-										<label>patient's email address</label>
-										<input type="email" name="email" placeholder="E-mail ID" class="form-control"
+										<span class="login_icon"><i class="fa-light fa-envelope"></i></span>
+										<input type="email" name="email" placeholder="Enter your email" class="form-control"
 											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 											[(ngModel)]="registerObj.email" required #email="ngModel"
 											[ngClass]="{ 'is-invalid': registerData.submitted && email.errors }">
@@ -66,7 +67,7 @@
 
 									</div>
 
-									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+									<!--<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 										<label>select issue</label>
 										<select class="form-control" name="radiology_type" required
 											[(ngModel)]="registerObj.radiology_type" #radiology_type="ngModel"
@@ -102,10 +103,11 @@
 											class="invalid-feedback">
 											This is required !!
 										</div>
-									</div>
+									</div>-->
 
-									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-										<input type="password" name="password" placeholder="Password"
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<span class="login_icon"><i class="fa-light fa-lock"></i></span>
+										<input type="password" name="password" placeholder="Enter your password"
 											class="form-control" [(ngModel)]="registerObj.password" required
 											minlength="8" maxlength="20" #password="ngModel"
 											[ngClass]="{ 'is-invalid': registerData.submitted && password.errors }" />
@@ -122,8 +124,9 @@
 
 									</div>
 
-									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-										<input type="password" name="confirmPassword" placeholder="Re-type Password"
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<span class="login_icon"><i class="fa-light fa-lock"></i></span>
+										<input type="password" name="confirmPassword" placeholder="Re-Enter your password"
 											class="form-control" required ngModel #confirmPassword="ngModel"
 											[ngClass]="{ 'is-invalid': registerData.submitted && confirmPassword.errors }" />
 
@@ -138,29 +141,37 @@
 										</div>
 
 									</div>
-
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-										<input type="submit" value="Create Account" class="form-control">
+										<p class="form-info"><input type="checkbox" id="" name="" value=""> I agree to the medidoc <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
 									</div>
 
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-										<p class="form-info">Already have an account? <a routerLink="/login">Log in</a>
+										<input type="submit" value="Sign Up" class="form-control">
+									</div>
+
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<p class="form-info text-center">Already have an account? <a routerLink="/login">Sign In</a>
 										</p>
 									</div>
 								</div><!--row-->
 							</form>
 						</div>
+						<div class="login-footer">
+							© 2021. - 2025 All Rights Reserved. RadiologyCheck.com
+						</div>
 					</div>
 				</div><!--row-->
 			</div><!--forms layout-->
+
 		</div>
+		<app-auth-sidebar class="sidebar-section"></app-auth-sidebar>
 	</div><!--registration and login page-->
 
 
 
 
 
-	<div class="section-j">
+	<!--<div class="section-j">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -181,7 +192,7 @@
 				</div>
 			</div>
 		</div>
-	</div><!--section j-->
+	</div>-->
 
 
 </div><!--site wrapper-->
