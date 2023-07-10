@@ -9,7 +9,7 @@
           <div class="registerNow_step1">
             <div class="step1-inner">
               <a id="stp1"></a>
-              <figure><img src="assets/images/logo2.png" alt="" /></figure>
+              <figure><img src="assets/images/white-logo.png" alt="" /></figure>
               <h2>{{addClass === 'registerNow_step2'}}</h2>
               <aside>
                 <a
@@ -31,6 +31,7 @@
           >
             <div class="step2-inner">
               <a id="stp2"></a>
+             
               <label>What is your e-mail?</label>
               <div *ngIf="email.touched && !email.valid" class="text-danger">
                 <p *ngIf="email.errors?.['required']">Email is a required field!</p>
