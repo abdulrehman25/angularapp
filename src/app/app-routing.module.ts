@@ -73,6 +73,10 @@ import { ObtainingSecondOpinionComponent } from './components/resources/blog/obt
 import { LessonsLearnedFromComponent } from './components/resources/blog/lessons-learned-from/lessons-learned-from.component';
 import { RadiologistsReadAcrossComponent } from './components/resources/blog/radiologists-read-across/radiologists-read-across.component';
 import { TeamMemberSonkeComponent } from './components/resources/our-team/team-member-sonke/team-member-sonke.component';
+import { DrAliComponent } from './components/resources/our-team/dr-ali/dr-ali.component';
+import { MarwanKoussyComponent } from './components/resources/our-team/marwan-koussy/marwan-koussy.component';
+import { NedelinaSlavovaComponent } from './components/resources/our-team/nedelina-slavova/nedelina-slavova.component';
+import { FrankBenschComponent } from './components/resources/our-team/frank-bensch/frank-bensch.component';
 
 const routes: Routes = [
   {
@@ -159,8 +163,13 @@ const routes: Routes = [
         component: GuidanceRadiologyTrainingComponent,
       },
       { path: 'ourTeam', component: OurTeamComponent },
-      { path: 'primaryReads', component: PrimaryReadsComponent },
+      { path: 'DrAli', component: DrAliComponent },
+      { path: 'MarwanKoussy', component: MarwanKoussyComponent },
       { path: 'MemberSonke', component: TeamMemberSonkeComponent },
+      { path: 'NedelinaSlavova', component: NedelinaSlavovaComponent },
+      { path: 'FrankBensch', component: FrankBenschComponent },
+
+      { path: 'primaryReads', component: PrimaryReadsComponent },
       { path: 'proBono', component: ProBonoComponent },
       { path: 'testimonial', component: TestimonialComponent },
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },

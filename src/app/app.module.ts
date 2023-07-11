@@ -94,6 +94,9 @@ import { ObtainingSecondOpinionComponent } from './components/resources/blog/obt
 import { LessonsLearnedFromComponent } from './components/resources/blog/lessons-learned-from/lessons-learned-from.component';
 import { RadiologistsReadAcrossComponent } from './components/resources/blog/radiologists-read-across/radiologists-read-across.component';
 import { TeamMemberSonkeComponent } from './components/resources/our-team/team-member-sonke/team-member-sonke.component';
+import { MarwanKoussyComponent } from './components/resources/our-team/marwan-koussy/marwan-koussy.component';
+import { NedelinaSlavovaComponent } from './components/resources/our-team/nedelina-slavova/nedelina-slavova.component';
+import { FrankBenschComponent } from './components/resources/our-team/frank-bensch/frank-bensch.component';
 
 @NgModule({
   declarations: [
@@ -178,6 +181,9 @@ import { TeamMemberSonkeComponent } from './components/resources/our-team/team-m
     LessonsLearnedFromComponent,
     RadiologistsReadAcrossComponent,
     TeamMemberSonkeComponent,
+    MarwanKoussyComponent,
+    NedelinaSlavovaComponent,
+    FrankBenschComponent,
 
   ],
   imports: [
