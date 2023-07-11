@@ -93,6 +93,7 @@ import { TheRoleOfSpecialistNeuroradioloComponent } from './components/resources
 import { ObtainingSecondOpinionComponent } from './components/resources/blog/obtaining-second-opinion/obtaining-second-opinion.component';
 import { LessonsLearnedFromComponent } from './components/resources/blog/lessons-learned-from/lessons-learned-from.component';
 import { RadiologistsReadAcrossComponent } from './components/resources/blog/radiologists-read-across/radiologists-read-across.component';
+import { TeamMemberSonkeComponent } from './components/resources/our-team/team-member-sonke/team-member-sonke.component';
 
 @NgModule({
   declarations: [
@@ -176,6 +177,7 @@ import { RadiologistsReadAcrossComponent } from './components/resources/blog/rad
     ObtainingSecondOpinionComponent,
     LessonsLearnedFromComponent,
     RadiologistsReadAcrossComponent,
+    TeamMemberSonkeComponent,
 
   ],
   imports: [

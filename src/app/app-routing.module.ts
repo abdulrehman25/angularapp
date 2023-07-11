@@ -72,6 +72,7 @@ import { TheRoleOfSpecialistNeuroradioloComponent } from './components/resources
 import { ObtainingSecondOpinionComponent } from './components/resources/blog/obtaining-second-opinion/obtaining-second-opinion.component';
 import { LessonsLearnedFromComponent } from './components/resources/blog/lessons-learned-from/lessons-learned-from.component';
 import { RadiologistsReadAcrossComponent } from './components/resources/blog/radiologists-read-across/radiologists-read-across.component';
+import { TeamMemberSonkeComponent } from './components/resources/our-team/team-member-sonke/team-member-sonke.component';
 
 const routes: Routes = [
   {
@@ -159,6 +160,7 @@ const routes: Routes = [
       },
       { path: 'ourTeam', component: OurTeamComponent },
       { path: 'primaryReads', component: PrimaryReadsComponent },
+      { path: 'MemberSonke', component: TeamMemberSonkeComponent },
       { path: 'proBono', component: ProBonoComponent },
       { path: 'testimonial', component: TestimonialComponent },
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
