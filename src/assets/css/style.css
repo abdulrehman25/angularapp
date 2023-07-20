@@ -442,7 +442,9 @@ box-shadow: 0px 11px 35px #407839;min-width: 210px;border: 1px solid #407839;pos
 .our-team h4, .our-team strong{text-align: center; margin-bottom: 18px; display: block;}
 .our-team p {text-align: center;}
 .blue-text{color: #6c89b3;}
-.our-team .social-media {border-bottom: #efefef solid 1px;margin-bottom: 18px; padding-bottom: 18px;}
+.our-team .social-media {margin-top: 18px;}
+.our-team .social-media a:hover {color:#fff;}
+
 /* Our teams section */
 
 
