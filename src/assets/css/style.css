@@ -620,6 +620,12 @@ margin: 0px auto 20px;}
 /*book an appointment page*/
 
 
+/*pricing page css start*/
+.pricing-section {width: 100%;height: auto;display: inline-block;padding: 100px 0 80px;position: relative;background-image: url('../images/qualimember-background.jpg');background-size: cover;background-repeat: no-repeat;background-position: right; background-blend-mode: multiply; background-color: #fafafa; margin-bottom: 80px;}
+.pricing-section h3 {color: #1e4171;font-weight: 600;position: relative;padding-bottom: 20px;text-align: center;margin-bottom: 30px;}
+.pricing-section h3::before {position: absolute;content: '';width: 80px;height: 5px;background-color: #407839;left: 0;right:0;bottom: 0px;margin: 0px auto;}
+/*pricing page css end*/
+
 
 /*uttam css code*/
 /*-------Abdominal Radiology page css start--------*/.innerpage-content-leftside {width: 100%;height: auto;display: inline-block;padding: 50px 0px;position: relative;background-color: #ffffff;}

@@ -97,6 +97,7 @@ import { TeamMemberSonkeComponent } from './components/resources/our-team/team-m
 import { MarwanKoussyComponent } from './components/resources/our-team/marwan-koussy/marwan-koussy.component';
 import { NedelinaSlavovaComponent } from './components/resources/our-team/nedelina-slavova/nedelina-slavova.component';
 import { FrankBenschComponent } from './components/resources/our-team/frank-bensch/frank-bensch.component';
+import { PricingComponent } from './components/resources/pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -184,6 +185,7 @@ import { FrankBenschComponent } from './components/resources/our-team/frank-bens
     MarwanKoussyComponent,
     NedelinaSlavovaComponent,
     FrankBenschComponent,
+    PricingComponent,
 
   ],
   imports: [
