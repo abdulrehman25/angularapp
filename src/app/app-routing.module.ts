@@ -77,6 +77,7 @@ import { DrAliComponent } from './components/resources/our-team/dr-ali/dr-ali.co
 import { MarwanKoussyComponent } from './components/resources/our-team/marwan-koussy/marwan-koussy.component';
 import { NedelinaSlavovaComponent } from './components/resources/our-team/nedelina-slavova/nedelina-slavova.component';
 import { FrankBenschComponent } from './components/resources/our-team/frank-bensch/frank-bensch.component';
+import { PricingComponent } from './components/resources/pricing/pricing.component';
 
 const routes: Routes = [
   {
@@ -149,6 +150,7 @@ const routes: Routes = [
       },
       { path: 'headTrauma', component: HeadTraumaComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'pricing', component: PricingComponent },
       { path: 'blog', component: BlogComponent },
       { path: 'blogDetails', component: BlogDetailsComponent },
       { path: 'theRoleOfSpecialistNeuroradiol', component: TheRoleOfSpecialistNeuroradioloComponent },
