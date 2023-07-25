@@ -1,120 +1,108 @@
-<header>
-	<div class="site-header">
-		<div class="container">
-			<div class="row">
-			<div class="secondry-navbar" style="display: none;">
-				<ul class="d-flex">
-					<!-- <li><a routerLink="/register"><i class="fa-thin fa-user"></i> Register</a></li> -->
-					<li><a routerLink="/login"><i class="fa-thin fa-right-to-bracket"></i> Sign in</a></li>
-					<li appClickOutside (clickOutside)="clickedOutside()">
-						<!-- <select class="form-control language-selecter position-relative" #selectedLang (change)="switchLang(selectedLang.value)">
-						<option *ngFor="let language of languageList" [value]="language.languageCode"
-						[selected]="language.language === translate.currentLang" >
-						  {{ language.language.toUpperCase() }}
-						</option>
-					  	</select> -->
-						<button type="button" class="select-language-btn" (click)="showHideDropdown()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
-
-						<div class="select-language-section" *ngIf="showHide">
-							<ul class="countryFlags">
-								<ng-container *ngFor="let language of languageList">
-								<li class="mx-0" (click)="switchLang(language)">
-									<i class="flag-icon flag-icon-{{language.countryCode}}"></i> 
-									{{ language.language.toUpperCase() }}
-								</li>
-							</ng-container>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div><!--secondry navbar-->
-			
-			<div class="primary-navbar">
-				<nav class="navbar navbar-expand-lg navbar-dark primary-color">
-					<a class="navbar-brand" href="#"><figure><img src="assets/images/logo-new.png" alt="" /></figure></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-
-                  <div class="collapse navbar-collapse" id="siteNav">
-                      <ul class="navbar-nav mr-auto">
-						  <li class="nav-item active">
-						  <a class="nav-link" href="#">Home</a>
-						  </li>
-							
-						  <li class="nav-item dropdown">
-						  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						  aria-haspopup="true" aria-expanded="false">Radiology</a>
-						  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							  <a class="dropdown-item" routerLink="/abdominalRadiology">{{"Abdominal Radiology" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/prostateRadiology">{{"Prostate Radiology" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/interventionalRadiologyGuidance">{{"Interventional Radiology Guidance" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/womensImaging">{{"Women's Imaging" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/musculoskeletalRadiology">{{"Musculoskeletal Radiology with Sports injuries" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/pediatricSportsInjuries">{{"Pediatric Sports Injuries" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/pediatricRadiology">{{"Pediatric Radiology" | translate}}</a>
-							  <a class="dropdown-item" routerLink="/oncologicalRadiology">{{"Oncological Radiology" | translate}}</a>
+<div data-w-id="3ca07088-2575-7aa4-eeb5-22a9724ae23f" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+	<div class="container">
+	  <div class="navbar-wrapper">
+		<div class="navbar-left-content">
+		  <a href="index.html" aria-current="page" class="navbar-logo-wrapper w-nav-brand w--current"><img src="../../../../assets/images/new_homepage/Asset-3.png" loading="lazy" width="320" sizes="(max-width: 479px) 100vw, (max-width: 991px) 320px, (max-width: 1919px) 17vw, 251.765625px" srcset="images/Asset-3-p-500.png 500w, images/Asset-3-p-800.png 800w, images/Asset-3-p-1080.png 1080w, images/Asset-3-p-1600.png 1600w, images/Asset-3.png 3334w" alt="" class="navbar-logo-image"></a>
+		  <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+			<a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+			<a href="about-us.html" class="nav-link w-nav-link">About</a>
+			<div data-hover="false" data-delay="0" class="menu-dropdown-wrapper-2 w-dropdown">
+			  <div class="dropdown-toggle-page w-dropdown-toggle">
+				<div class="dropdown-toggle-text-block">Our Services</div><img src="../../../../assets/images/new_homepage/Dropdown-Arrow.svg" loading="lazy" alt="" class="dropdown-toggle-arrow">
+			  </div>
+			  <nav class="dropdown-column-wrapper w-dropdown-list">
+				<div class="dropdown-column-single-wrapper">
+				  <div class="w-layout-grid dropdown-grid">
+					<div id="w-node-_55fb8a07-6a61-c0c2-514a-b3a96fb7a62c-724ae23f" class="dropdown-singel-wrapper">
+					  <div class="dropdown-title-wrapper">
+						<h1 class="dropdown-title">Radiology</h1>
+					  </div>
+					  <div class="dropdown-menu-wrapper">
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Abdominal Radiology</div>
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Prostate Radiology</div>
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Interventional Radiology</div>
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Women&#x27;s Imaging</div>
+						  <div class="cms-tag">
+							<div class="dropdown-menu-text-arrow"></div>
+							<div class="cms-nav-badge">NEW</div>
 						  </div>
-						  </li>
-						  
-						  <span class="ddl-item">
-						  <li><a class="nav-link" routerLink="/neuroradiology">{{"Neuroradiology" | translate}}</a></li>
-
-						  <li class="nav-item dropdown">
-						  <button class="nav-link dropdown-toggle ddl-menu" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						  aria-haspopup="true" aria-expanded="false"></button>
-
-						  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							  <a class="dropdown-item" routerLink="/brainTumors">Differential Diagnosis of Intracranial Masses and Brain Tumors</a>
-							  <a class="dropdown-item" routerLink="/backPain">Back Pain and Radiculopathy</a>
-							  <a class="dropdown-item" routerLink="/spinalTrauma">Spinal Trauma and Injuries</a>
-							  <a class="dropdown-item" routerLink="/brainAndSpine">Demyelinating Diseases of the CNS (Brain and Spine)</a>
-							  <a class="dropdown-item" routerLink="/dementiaAlzheimer">Dementia, Alzheimer &amp; Other Neurodegenerative Disorders</a>
-							  <a class="dropdown-item" routerLink="/evaluationOfTinnitus">Evaluation of Tinnitus and Hearing Loss in the Adult</a>
-							  <a class="dropdown-item" routerLink="/metabolicDisorders">Toxic and Metabolic Disorders of the brain</a>
-							  <a class="dropdown-item" routerLink="/epilepsyOrSeizures">Imaging the Patient with Epilepsy or Seizures</a>
-							  <a class="dropdown-item" routerLink="/cranialNerveDisorders">Imaging Evaluation of Patients with Cranial Nerve Disorders</a>
-							  <!--<a class="dropdown-item" routerLink="/hypophysis">Diseases of the Sella and Parasellar Region  (Hypophysis)</a>-->
-							  <a class="dropdown-item" routerLink="/hydrocephalusAndCSF">Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)</a>
-							  <a class="dropdown-item" routerLink="/strokeAndItsMimics">Stroke and Its Mimics: Differential diagnosis</a>
-							  <!--<a class="dropdown-item" routerLink="/childWithAcuteNeurological">Child with Acute Neurological Emergency</a>-->
-							  <a class="dropdown-item" routerLink="/headTrauma">Head Trauma</a>
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Pediatric Radiology</div>
+						</a>
+						<a href="radiologies-services.html" class="more-temple w-inline-block">
+						  <div>See More</div>
+						  <div class="more-temple-boder"></div>
+						</a>
+					  </div>
+					</div>
+					<div class="dropdown-singel-wrapper">
+					  <div class="dropdown-title-wrapper">
+						<h1 class="dropdown-title">Neuroradiology</h1>
+					  </div>
+					  <div class="dropdown-menu-wrapper mt60">
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Differential Diagnosis of Intracranial Masses and Brain Tumors</div>
+						</a>
+						<a href="pricing.html" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Back Pain and Radiculopathy</div>
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Spinal Trauma and Injuries</div>
+						  <div class="cms-tag">
+							<div class="dropdown-menu-text-arrow"></div>
+							<div class="cms-nav-badge">NEW</div>
 						  </div>
-						  </li>
-						</span>
-						  
-						  <li class="nav-item dropdown">
-						  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						  aria-haspopup="true" aria-expanded="false">Resources</a>
-						  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							  <a class="dropdown-item" routerLink="about">About</a>
-							  <a class="dropdown-item" routerLink="ourTeam">Our Team</a>
-							  <a class="dropdown-item" routerLink="proBono">Pro Bono</a>
-							  <a class="dropdown-item" routerLink="primaryReads">Primary reads</a>
-							  <a class="dropdown-item" routerLink="comparisonStudies">Comparison studies</a>
-							  <a class="dropdown-item" routerLink="faq">FAQ</a>
-							  <!-- <a class="dropdown-item" routerLink="guidanceRadiologyTraining">Guidance of radiology training</a> -->
-							  <a class="dropdown-item" routerLink="contact">Contact</a>
-							  <a class="dropdown-item" routerLink="blog">Blog</a>
-							  <a class="dropdown-item" routerLink="testimonial">Testimonial</a>
-						  </div>
-						  </li>
-						  
-						  <!-- <li class="nav-item">
-						  <a class="nav-link" routerLink="/register">Register/Login</a>
-						  </li> -->
-                      </ul>
-                  </div>
-				  <div class="common-button"><a class="nav-link register-my-account" routerLink="/GetSecondOpinion">Get a second opinion</a></div>
-                  <!-- Collapsible content -->
-
-                </nav>
-                <!--/.Navbar-->
-			</div><!--primary navbar-->
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Brain and Spine</div>
+						</a>
+						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
+						  <div>Head Trauma</div>
+						</a>
+						<a href="neuroradiology.html" class="more-temple w-inline-block">
+						  <div>See More</div>
+						  <div class="more-temple-boder"></div>
+						</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </nav>
+			</div> 
+			<div data-hover="false" data-delay="0" class="dropdown-wrapper w-dropdown">
+			  <div class="dropdown-toggle w-dropdown-toggle">
+				<div>Resources</div><img src="images/Dropdown-Arrow.svg" loading="lazy" alt="" class="dropdown-arrow">
+			  </div>
+			  <nav class="dropdown-list w-dropdown-list">
+				<a href="doctors.html" class="dropdown-link mb0 w-dropdown-link">Our Team</a>
+				<a href="template-pages/license.html" class="dropdown-link mb0 w-dropdown-link">Pro Bono</a>
+				<a href="contact-us.html" class="dropdown-link mb0 w-dropdown-link">Contact</a>
+			  </nav>
 			</div>
+			<div class="primary-button-navbar mobile">
+			  <a href="get-second-opinion.html" class="primary-button w-button">Get Second Opinion</a>
+			</div>
+		  </nav>
 		</div>
-
-	</div><!--site header-->
-</header><!--site header-->
-
-
+		<div class="navbar-right-content">
+		  <div class="navbar-button-wrapper">
+			<div class="primary-button-navbar desktop">
+			  <a href="get-second-opinion.html" target="_blank" class="primary-button w-button">Get Second Opinion</a>
+			</div>
+		  </div>
+		  <div class="menu-button w-nav-button">
+			<div class="hamburger-menu-bar top"></div>
+			<div class="hamburger-menu-bar bottom"></div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
