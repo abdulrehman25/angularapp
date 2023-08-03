@@ -1,0 +1,122 @@
+
+
+/* Footer section */
+
+.footer-contact-wrap {
+    grid-column-gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.footer-bottom-content {
+    text-align: center;
+    border-top: 1px solid #3e3c5d;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-info-text {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-info-text-link.one {
+    color: #fd523e;
+}
+
+.footer-info-text-link.two {
+    color: #3c59f2;
+}
+
+ 
+
+.footer-menu-grid {
+    grid-column-gap: 100px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1.5fr 2.1fr;
+}
+
+
+
+.footer-menu-title-wrapper {
+    margin-bottom: 35px;
+}
+
+.footer-menu-title {
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.footer-menu-text-link {
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: block;
+} 
+.footer-icon-link-block {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fa brands 400", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    display: flex;
+}
+
+.footer-menu-wrapper {
+    width: 880px;
+}
+
+
+.footer-details-icon-wrapper {
+    grid-column-gap: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.footer-details-text-wrapper {
+    margin-bottom: 30px;
+}
+
+.footer-details-paragraph-text {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.footer-logo-link-block {
+    margin-bottom: 25px;
+}
+
+.footer-details-wrapper {
+    width: 355px;
+}
+
+.footer-top-content {
+    justify-content: space-between;
+    padding-bottom: 80px;
+    display: flex;
+}
+.footer-section {
+    background-image: url("../images/Footer-Bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 440px;
+}
+
+.footer-contact-wrap.last {
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+ 
