@@ -386,6 +386,7 @@ img {
 }
 
 
+
 .dropdown-grid {
     grid-column-gap: 30px;
     grid-template-rows: auto;
