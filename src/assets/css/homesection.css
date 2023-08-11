@@ -610,11 +610,7 @@
     margin-bottom: 42px;
 }
 
-.primary-button.colored-bg {
-    color: #427337;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(#fff, #fff);
-}
+
 
 .h5-light {
     color: #fff;

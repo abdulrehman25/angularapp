@@ -139,7 +139,7 @@ img {
 } 
 
  
-.primary-button {
+.primary-button { 
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(#427337, #427337);
@@ -152,6 +152,11 @@ img {
 }
 .primary-button:hover {
     background-image: linear-gradient(#000, #000), linear-gradient(340deg, #2b4aee, #556ff6);
+}
+.primary-button.colored-bg {
+    color: #427337;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(#fff, #fff);
 }
 
 

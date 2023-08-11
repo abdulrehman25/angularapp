@@ -51,9 +51,9 @@ export class HomeComponent {
 
   customOptions: OwlOptions = {
     loop: true,
-    autoplay: true,
+    autoplay: false,
     center: true,
-    dots: false,
+    margin : 30,
     autoHeight: true,
     autoWidth: true,
     responsive: {
@@ -61,11 +61,30 @@ export class HomeComponent {
         items: 1,
       },
       600: {
-        items: 1,
+        items: 3,
       },
       1000: {
-        items: 1,
+        items: 5,
       },
     },
+  };
+
+
+    customOptions2: OwlOptions = {
+      items: 2,
+    loop: true,
+    autoplay: false,
+    center: true,
+    autoHeight: true,
+    dots: false,
+    margin : 10,
+    responsive:{
+      0:{
+           items:1,
+       },
+      600:{
+           items:2,
+       }
+    }
   };
 }
