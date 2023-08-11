@@ -5,15 +5,16 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="sidebar_right">
+      <p>{{stepIndex}}</p>
+        <div class="sidebar_right" *ngIf="addClass !== ''">
           <ul id="progressbar">
-              <li class="active" id="confirm"><span>Step 1 <strong>Sign up</strong></span></li>
-              <li id="confirm"><span>Step 2 <strong>Verification</strong></span></li>
-              <li id="confirm"><span>Step 3 <strong>Type of Scan</strong></span></li>
-              <li id="confirm"><span>Step 4 <strong>Part of the body</strong></span></li>
-              <li id="confirm"><span>Step 5 <strong>Upload documents</strong></span></li>
-              <li id="confirm"><span>Step 6 <strong>Select Package</strong></span></li>
-              <li id="confirm"><span>Step 7 <strong>Success</strong></span></li>
+              <li  [ngClass]="{'active': stepIndex >=2}" id="confirm"><span>Step 1 <strong>Sign up</strong></span></li>
+              <li [ngClass]="{'active': stepIndex >=3}" id="confirm"><span>Step 2 <strong>Verification</strong></span></li>
+              <li [ngClass]="{'active': stepIndex >=4}" id="confirm"><span>Step 3 <strong>Type of Scan</strong></span></li>
+              <li [ngClass]="{'active': stepIndex >=5}" id="confirm"><span>Step 4 <strong>Part of the body</strong></span></li>
+              <li [ngClass]="{'active': stepIndex >=6}" id="confirm"><span>Step 5 <strong>Upload documents</strong></span></li>
+              <li [ngClass]="{'active': stepIndex >=7}" id="confirm"><span>Step 6 <strong>Select Package</strong></span></li>
+              <li id="confirm" [ngClass]="{'active': stepIndex >=8}"><span>Step 7 <strong>Success</strong></span></li>
           </ul>
       </div>
         <form #getSecondOpinion="ngForm" (ngSubmit)="addSecondOpinionData()" id="msform">
@@ -49,25 +50,45 @@
                             <div class="center_col signup_col">
                               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                   <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-user"></i></span>
-                                  <input type="text" name="uname" placeholder="Enter your name">
+                                  <input type="text" name="uname" placeholder="Enter your name" [(ngModel)]="formObj.first_name" #first_name="ngModel"
+                                  [ngClass]="{ 'is-invalid': first_name.errors }" required >
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                   <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-envelope"></i></span>
-                                  <input type="email" name="email" placeholder="Enter your email">     
+                                  <input type="email" name="email" [(ngModel)]="formObj.email"
+                                  #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="Enter your email">     
                                 </div>  
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                   <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-lock"></i></span>                 
-                                  <input type="password" name="pwd" placeholder="Enter your password">
+                                  <input type="password" name="password" [(ngModel)]="formObj.password" required 
+                                  minlength="8" maxlength="20" #password="ngModel"
+                                  [ngClass]="{ 'is-invalid':password.errors }" placeholder="Enter your password">
                               </div>
+
+                              <div *ngIf="email.touched && !email.valid" class="text-danger">
+                                <p *ngIf="email.errors?.['required']">Email is a required field!</p>
+                                  <p *ngIf="email.errors?.['pattern']">This is not a valid Email!!!</p>
+                              </div>
+
+                              <div *ngIf="password.touched && password.errors" class="text-danger">
+                                  <div *ngIf="password.errors['required']">Password is required</div>
+                                  <div *ngIf="password.errors['minlength']">
+                                    Password must be at least 8 characters
+                                  </div>
+                                  <div *ngIf="password.errors['maxlength']">
+                                    Password must not exceed 20 characters
+                                  </div>
+                               </div>
+
                             </div>
                     </div>
-                </div> <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step3', '3')"                >
+                </div> <input *ngIf="first_name.valid && email.valid && password.valid" type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step3', '3')"                >
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_1">8%</span>
-            </div>
+            </div> -->
           </div>
           <!--step2-->
 
@@ -86,19 +107,25 @@
                             <div class="center_col signup_col">
                               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                   <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-user"></i></span>
-                                  <input type="text" placeholder="Verification code" name="code" minlength="6" maxlength="6" required="" ng-reflect-required="" ng-reflect-minlength="6" ng-reflect-maxlength="6" ng-reflect-name="code" ng-reflect-model="" class="ng-pristine ng-invalid ng-touched">
+                                  <input type="text" placeholder="Verification code" name="code" [(ngModel)]="formObj.code" 
+                                  minlength="6" maxlength="6" #code="ngModel"
+                                  required  ng-reflect-required="" ng-reflect-minlength="6" ng-reflect-maxlength="6" ng-reflect-name="code" ng-reflect-model="" class="ng-pristine ng-invalid ng-touched">
                                 </div> 
+                            </div>
+
+                            <div *ngIf="code.touched && code.errors" class="text-danger">
+                              <div *ngIf="code.errors['required']">Code is required</div>
                             </div>
                         </div> 
                 </div>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step2', '2')"/>
-                <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step4', '4')"/>
+                <input *ngIf="code.valid" type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step4', '4')"/>
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_2">18%</span>
-            </div>
+            </div> -->
           </div>
           <!--step3-->
 
@@ -124,7 +151,7 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
                             <div class="manage-1-place-wrapper">                        						
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('MRI')" (change)="onChange('MRI', $event)" />
                     <label class="check-wrap-label mri-check text-uppercase">
                       <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_MRI.png" alt="">
                     </label>
@@ -132,7 +159,7 @@
                   </div><!--mri-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('CT')" (change)="onChange('CT', $event)"/>
                     <label class="check-wrap-label ct-check text-uppercase">
                       <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_CT.png" alt="">
                     </label>
@@ -140,7 +167,7 @@
                   </div><!--ct-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('pet-ct')" (change)="onChange('pet-ct', $event)" />
                     <label class="check-wrap-label pet-ct-check text-uppercase">
                       <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_PET-CT.png" alt="">
                     </label>
@@ -148,7 +175,7 @@
                   </div><!--pet ct-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('x-ray')" (change)="onChange('x-ray', $event)"/>
                     <label class="check-wrap-label xray-check text-uppercase">
                       <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_X-RAY.png" alt="">
                     </label>
@@ -156,7 +183,7 @@
                   </div><!--x ray-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('ultrasound')" (change)="onChange('ultrasound', $event)"/>
                     <label class="check-wrap-label ultrasound-check text-uppercase">
                       <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_ULTRASOUND.png" alt="">
                     </label>
@@ -164,7 +191,7 @@
                   </div><!--ultrasound-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('mammogram')" (change)="onChange('mammogram', $event)"/>
                     <label class="check-wrap-label mammogram-check text-uppercase">
                       <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_MAMMOGRAM.png" alt="">
                     </label>
@@ -175,14 +202,14 @@
               </div>
             </div>
               </div>
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step4', '4')"/>
-                <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step5', '5')"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step3', '3')"/>
+                <input *ngIf="formObj.type_of_scan.length > 0" type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step5', '5')"/>
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_3">25%</span>
-            </div>
+            </div> -->
           </div>
           <!--step4-->
 
@@ -208,7 +235,7 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
                             <div class="manage-1-place-wrapper scroll-here">							
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Airways')" (change)="setBodyPartArr('Airways', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Airways.png" alt="">
                     </label>
@@ -216,7 +243,7 @@
                   </div><!--Leg-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Arm')" (change)="setBodyPartArr('Arm', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Arm.png" alt="">
                     </label>
@@ -224,7 +251,7 @@
                   </div><!--Back-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Bile Duct')" (change)="setBodyPartArr('Bile Duct', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Bile Duct.png" alt="">
                     </label>
@@ -232,7 +259,7 @@
                   </div><!--Stomach-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Bone Spine (cervical, thoracic, lumbar, sacral)')" (change)="setBodyPartArr('Bone Spine (cervical, thoracic, lumbar, sacral)', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Bone Spine.png" alt="">
                     </label>
@@ -240,7 +267,7 @@
                   </div><!--Colon-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Chest Radiology')" (change)="setBodyPartArr('Chest Radiology', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Chest Radiology.png" alt="">
                     </label>
@@ -248,7 +275,7 @@
                   </div><!--Small intestine-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Colon')" (change)="setBodyPartArr('Colon', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Colon.png" alt="">
                     </label>
@@ -256,7 +283,7 @@
                   </div><!--Reproductive-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Elbow')" (change)="setBodyPartArr('Elbow', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Elbow.png" alt="">
                     </label>
@@ -264,7 +291,7 @@
                   </div><!--Esophagus-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Esophagus')" (change)="setBodyPartArr('Esophagus', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Esophagus.png" alt="">
                     </label>
@@ -272,7 +299,7 @@
                   </div><!--Spleen-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Foot')" (change)="setBodyPartArr('Foot', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Foot.png" alt="">
                     </label>
@@ -280,7 +307,7 @@
                   </div><!--Liver-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Footjoint / Ankle')" (change)="setBodyPartArr('Footjoint / Ankle', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Footjoint-Ankle.png" alt="">
                     </label>
@@ -288,7 +315,7 @@
                   </div><!--Bile Duct-->
                       
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Hand')" (change)="setBodyPartArr('Hand', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Hand.png" alt="">
                     </label>
@@ -296,7 +323,7 @@
                   </div><!--Pancreas-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Handjoint')" (change)="setBodyPartArr('Handjoint', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Handjoint.png" alt="">
                     </label>
@@ -304,7 +331,7 @@
                   </div><!--Prostata-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Head and Neck Organs')" (change)="setBodyPartArr('Head and Neck Organs', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Head and Neck Organs.png" alt="">
                     </label>
@@ -312,7 +339,7 @@
                   </div><!--Woman organs-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Heart')" (change)="setBodyPartArr('Heart', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Heart.png" alt="">
                     </label>
@@ -320,7 +347,7 @@
                   </div><!--Chest Radiology-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Hip')" (change)="setBodyPartArr('Hip', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Hip.png" alt="">
                     </label>
@@ -328,7 +355,7 @@
                   </div><!--Lung-->
                        
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Knee')" (change)="setBodyPartArr('Knee', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Knee.png" alt="">
                     </label>
@@ -336,7 +363,7 @@
                   </div><!--Airways-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Liver')" (change)="setBodyPartArr('Liver', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Liver.png" alt="">
                     </label>
@@ -344,7 +371,7 @@
                   </div><!--Heart-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Lung')" (change)="setBodyPartArr('Lung', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Lung.png" alt="">
                     </label>
@@ -352,7 +379,7 @@
                   </div><!--Musculoskeletal Radiology-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Musculoskeletal Radiology')" (change)="setBodyPartArr('Musculoskeletal Radiology', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Musculoskeletsl Radiology.png" alt="">
                     </label>
@@ -360,7 +387,7 @@
                   </div><!--Shoulder-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Neuroradiology')" (change)="setBodyPartArr('Neuroradiology', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Neuroradiology.png" alt="">
                     </label>
@@ -368,7 +395,7 @@
                   </div><!--Arm-->
                        
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Pancreas')" (change)="setBodyPartArr('Pancreas', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Pancreas.png" alt="">
                     </label>
@@ -376,7 +403,7 @@
                   </div><!--Elbow-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Pelvis')" (change)="setBodyPartArr('Pelvis', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Pelvis.png" alt="">
                     </label>
@@ -384,7 +411,7 @@
                   </div><!--Handjoint-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Prostata')" (change)="setBodyPartArr('Prostata', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Prostata.png" alt="">
                     </label>
@@ -392,7 +419,7 @@
                   </div><!--Hand-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Shoulder')" (change)="setBodyPartArr('Shoulder', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Shoulder.png" alt="">
                     </label>
@@ -400,7 +427,7 @@
                   </div><!--Hip-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Small intestine')" (change)="setBodyPartArr('Small intestine', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Small Intestie.png" alt="">
                     </label>
@@ -408,7 +435,7 @@
                   </div><!--Pelvis-->
                       
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Spine')" (change)="setBodyPartArr('Spine', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Spine.png" alt="">
                     </label>
@@ -416,7 +443,7 @@
                   </div><!--Knee-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Spleen')" (change)="setBodyPartArr('Spleen', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Spleen.png" alt="">
                     </label>
@@ -424,7 +451,7 @@
                   </div><!--Footjoint / Ankle-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Stomach')" (change)="setBodyPartArr('Stomach', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Stomach.png" alt="">
                     </label>
@@ -432,7 +459,7 @@
                   </div><!--Foot-->
                   
                   <div class="checkbox-wrapper">
-                    <input type="checkbox" required name="abc" id="" />
+                    <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Woman organs')" (change)="setBodyPartArr('Woman organs', $event)" />
                     <label class="check-wrap-label text-lowercase">
                       <img src="../../../assets/images/register_now_select_icons/set icon 4_Woman Organs .png" alt="">
                     </label>
@@ -442,14 +469,14 @@
               </div>
                     </div>
                 </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step5', '5')"/>
-                  <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step6', '6')"/>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step4', '4')"/>
+                  <input *ngIf="formObj.what_part_of_body.length > 0" type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step6', '6')"/>
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>	
             </fieldset>
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_4">40%</span>
-            </div>
+            </div> -->
           </div>
           <!--step5-->
 
@@ -472,28 +499,33 @@
                     <li>
                       <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-paperclip"></i></span>
                       <label for="inputFieldScan" class="btn btn-success">Scan</label>
-                      <input type="file" id="inputFieldScan" class="d-none">
+                      <span *ngIf="scanfile">{{scanfile?.name | slice:0:10 }}...</span>
+                      <input type="file" id="inputFieldScan" class="d-none" (change)="selectScan($event)">
+                      <span *ngIf="scanFileSizeError" class="text-danger">File Should be less than 5 mb.</span>
                     </li>
-                    
+
                     <li>
                       <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-paperclip"></i></span>
                       <label for="inputFieldReport" class="btn btn-success">Report</label>
-                      <input type="file" id="inputFieldReport" class="d-none">
+                      <span *ngIf="reportfile">{{reportfile?.name | slice:0:10 }}...</span>
+                      <input type="file" id="inputFieldReport" class="d-none" (change)="selectReport($event)">
+                      <span *ngIf="reportFileSizeError" class="text-danger">File Should be less than 5 mb.</span>
+
                     </li>
                   </ul>
-                  <textarea placeholder="Enter your message" ></textarea>
+                  <textarea placeholder="Enter your message" name="comment" [(ngModel)]="formObj.comment" #comment="ngModel" required ></textarea>
                 </div>
               </div>
                     </div>
                 </div>
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous"  (click)="showDiv('registerNow_step6', '6')" />
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"  (click)="showDiv('registerNow_step5', '5')" />
                 <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step7', '7')"/>
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_5">45%</span>
-            </div>
+            </div> -->
           </div>
           <!--step6-->
 
@@ -514,7 +546,8 @@
                         <div class="registerNow_step12 package_col">
                             <div class="our-plans">
                   <div class="radio-item">
-                  <input type="radio" id="select1" name="select1" value="select1" checked="checked">
+                  <input type="radio" id="select1" name="select1" value="1"  checked=[true]
+                  [(ngModel)]="formObj.selected_package" required #selected_package="ngModel">
                     <label for="select1">
                       <p class="text-center">Express, 399 EUR</p>
                       <ul type="square">
@@ -525,7 +558,9 @@
                   </div>
               
                   <div class="radio-item">
-                  <input type="radio" id="select2" name="select1" value="select2">
+                  <input type="radio" id="select2"  name="select1"
+                  value="2"
+                  [(ngModel)]="formObj.selected_package" required #selected_package="ngModel">
                     <label for="select1">
                       <p class="text-center">Premium, 249 EUR</p>
                       <ul type="square">
@@ -536,7 +571,9 @@
                   </div>
               
                   <div class="radio-item">
-                  <input type="radio" id="select3" name="select1" value="select3">
+                  <input type="radio" id="select3"   name="select1"
+                  value="3"
+                  [(ngModel)]="formObj.selected_package" required #selected_package="ngModel">
                     <label for="select1">
                       <p class="text-center">Basic, 199 EUR</p>
                       <ul type="square">
@@ -550,14 +587,14 @@
                     </div>
                 </div>
             </div>
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step7', '7')"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step6', '6')"/>
                 <input type="button" name="next" class="next action-button" value="Submit" (click)="showDiv('registerNow_step8', '8')"/>
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_6">50%</span>
-            </div>
+            </div> -->
           </div>
           <!--step7-->
 
@@ -578,7 +615,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-7 text-center">
                                     <h5 class="text-center">Your form has been submitted. We will review shortly!</h5>
-                                    <input type="button" name="next" class="next action-button" value="Finish:" />
+                                    <input type="submit"  class="next action-button" value="Finish:" />
                                 </div>
                             </div>
                         </div>
@@ -587,488 +624,12 @@
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>               
             </div>
-            <div class="progress-bar-layer">
+            <!-- <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_7">60%</span>
-            </div>
+            </div> -->
           </div>
           <!--step8-->
 
-          <div
-            *ngIf="addClass === 'registerNow_step9'"
-            [style]="divStyle"
-            class="registerNow_step9"
-            class="registerNow_step9"
-          >
-            <div class="step9-inner">
-              <a id="stp9"></a>
-              <label>What part of the body?</label>
-
-              <div class="manage-1-place-wrapper scroll-here">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Leg')" (change)="setBodyPartArr('Legg', $event)"/>
-                  <label class="check-wrap-label leg-check text-lowercase"
-                    >Leg</label
-                  >
-                </div>
-                <!--Leg-->
-
-                <!-- <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Back')" (change)="setBodyPartArr('Back', $event)" />
-                  <label
-                    class="check-wrap-label human-back-check text-lowercase"
-                    >Back</label
-                  >
-                </div> -->
-                <!--Back-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Stomach')" (change)="setBodyPartArr('Stomach', $event)" />
-                  <label class="check-wrap-label stomach-check text-lowercase"
-                    >Stomach</label
-                  >
-                </div>
-                <!--Stomach-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Colon')" (change)="setBodyPartArr('Colon', $event)" />
-                  <label class="check-wrap-label colon-check text-lowercase"
-                    >Colon</label
-                  >
-                </div>
-                <!--Colon-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Small intestine')" (change)="setBodyPartArr('Small intestine', $event)" />
-                  <label
-                    class="check-wrap-label small-intestine-check text-lowercase"
-                    >Small intestine</label
-                  >
-                </div>
-                <!--Small intestine-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Reproductive Organs')" (change)="setBodyPartArr('Reproductive Organs', $event)" />
-                  <label
-                    class="check-wrap-label reproductive-organs-check text-lowercase"
-                    >Reproductive Organs</label
-                  >
-                </div>
-                <!--Reproductive-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Esophagus')" (change)="setBodyPartArr('Esophagus', $event)" />
-                  <label class="check-wrap-label esophagus-check text-lowercase"
-                    >Esophagus</label
-                  >
-                </div>
-                <!--Esophagus-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Spleen')" (change)="setBodyPartArr('Spleen', $event)" />
-                  <label class="check-wrap-label spleen-check text-lowercase"
-                    >Spleen</label
-                  >
-                </div>
-                <!--Spleen-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Liver')" (change)="setBodyPartArr('Liver', $event)" />
-                  <label class="check-wrap-label liver-check text-lowercase"
-                    >Liver</label
-                  >
-                </div>
-                <!--Liver-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Bile Duct')" (change)="setBodyPartArr('Bile Duct', $event)" />
-                  <label class="check-wrap-label bile-duct-check text-lowercase"
-                    >Bile Duct</label
-                  >
-                </div>
-                <!--Bile Duct-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Pancreas')" (change)="setBodyPartArr('Pancreas', $event)" />
-                  <label class="check-wrap-label pancreas-check text-lowercase"
-                    >Pancreas</label
-                  >
-                </div>
-                <!--Pancreas-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Prostata')" (change)="setBodyPartArr('Prostata', $event)" />
-                  <label class="check-wrap-label prostata-check text-lowercase"
-                    >Prostata</label
-                  >
-                </div>
-                <!--Prostata-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Woman organs')" (change)="setBodyPartArr('Woman organs', $event)" />
-                  <label
-                    class="check-wrap-label woman-organs-check text-lowercase"
-                    >Woman organs</label
-                  >
-                </div>
-                <!--Woman organs-->
-
-                <!-- <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Chest Radiology')" (change)="setBodyPartArr('Chest Radiology', $event)" />
-                  <label
-                    class="check-wrap-label chest-radiology-check text-lowercase"
-                    >Chest Radiology</label
-                  >
-                </div> -->
-                <!--Chest Radiology-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Lung')" (change)="setBodyPartArr('Lung', $event)" />
-                  <label class="check-wrap-label lung-check text-lowercase"
-                    >Lung</label
-                  >
-                </div>
-                <!--Lung-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Airways')" (change)="setBodyPartArr('Airways', $event)" />
-                  <label class="check-wrap-label airways-check text-lowercase"
-                    >Airways</label
-                  >
-                </div>
-                <!--Airways-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Heart')" (change)="setBodyPartArr('Heart', $event)" />
-                  <label class="check-wrap-label heart-check text-lowercase"
-                    >Heart</label
-                  >
-                </div>
-                <!--Heart-->
-
-                <!-- <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Musculoskeletal Radiology')" (change)="setBodyPartArr('Musculoskeletal Radiology', $event)" />
-                  <label
-                    class="check-wrap-label musculoskeletal-radiology-check text-lowercase"
-                    >Musculoskeletal Radiology</label
-                  >
-                </div> -->
-                <!--Musculoskeletal Radiology-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Shoulder')" (change)="setBodyPartArr('Shoulder', $event)" />
-                  <label class="check-wrap-label shoulder-check text-lowercase"
-                    >Shoulder</label
-                  >
-                </div>
-                <!--Shoulder-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Arm')" (change)="setBodyPartArr('Arm', $event)" />
-                  <label class="check-wrap-label arm-check text-lowercase"
-                    >Arm</label
-                  >
-                </div>
-                <!--Arm-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Elbow')" (change)="setBodyPartArr('Elbow', $event)" />
-                  <label class="check-wrap-label elbow-check text-lowercase"
-                    >Elbow</label
-                  >
-                </div>
-                <!--Elbow-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Handjoint')" (change)="setBodyPartArr('Handjoint', $event)" />
-                  <label class="check-wrap-label handjoint-check text-lowercase"
-                    >Handjoint</label
-                  >
-                </div>
-                <!--Handjoint-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Hand')" (change)="setBodyPartArr('Hand', $event)" />
-                  <label class="check-wrap-label hand-check text-lowercase"
-                    >Hand</label
-                  >
-                </div>
-                <!--Hand-->
-
-                <!-- <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Hip')" (change)="setBodyPartArr('Hip', $event)" />
-                  <label class="check-wrap-label hip-check text-lowercase"
-                    >Hip</label
-                  >
-                </div> -->
-                <!--Hip-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Pelvis')" (change)="setBodyPartArr('Pelvis', $event)" />
-                  <label class="check-wrap-label pelvis-check text-lowercase"
-                    >Pelvis/Hip</label
-                  >
-                </div>
-                <!--Pelvis-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Knee')" (change)="setBodyPartArr('Knee', $event)" />
-                  <label class="check-wrap-label knee-check text-lowercase"
-                    >Knee</label
-                  >
-                </div>
-                <!--Knee-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Footjoint / Ankle')" (change)="setBodyPartArr('Footjoint / Ankle', $event)" />
-                  <label
-                    class="check-wrap-label footjoint_ankle-check text-lowercase"
-                    >Footjoint / Ankle</label
-                  >
-                </div>
-                <!--Footjoint / Ankle-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Foot')" (change)="setBodyPartArr('Foot', $event)" />
-                  <label class="check-wrap-label foot-check text-lowercase"
-                    >Foot</label
-                  >
-                </div>
-                <!--Foot-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Bone Spine (cervical, thoracic, lumbar, sacral)')" (change)="setBodyPartArr('Bone Spine (cervical, thoracic, lumbar, sacral)', $event)" />
-                  <label
-                    class="check-wrap-label bone-spine-check text-lowercase"
-                    >Back / Bone Spine</label
-                  >
-                </div>
-                <!--Bone Spine (cervical, thoracic, lumbar, sacral)-->
-
-                <!-- <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Neuroradiology')" (change)="setBodyPartArr('Neuroradiology', $event)" />
-                  <label
-                    class="check-wrap-label neuroradiology-check text-lowercase"
-                    >Neuroradiology</label
-                  >
-                </div> -->
-
-                <!--Neuroradiology-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Brain')" (change)="setBodyPartArr('Brain', $event)" />
-                  <label class="check-wrap-label brain-check text-lowercase"
-                    >Brain</label
-                  >
-                </div>
-                <!--Brain-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Spine')" (change)="setBodyPartArr('Spine', $event)" />
-                  <label class="check-wrap-label spineback-check text-lowercase"
-                    >Spine</label
-                  >
-                </div>
-                <!--Spine -->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="body-part" id="" [checked]="selectedBodyPart('Head and Neck Organs')" (change)="setBodyPartArr('Head and Neck Organs', $event)" />
-                  <label
-                    class="check-wrap-label head-and-neck-rgans-check text-lowercase"
-                    >Head and Neck Organs</label
-                  >
-                </div>
-                <!--Head and Neck Organs -->
-              </div>
-              <!--manage 1 place wrapper-->
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step8', '8')" class="start-appoint-1 back5">back</a>
-                <a *ngIf="formObj.what_part_of_body.length > 0" href="javascript:;"
-                (click)="showDiv('registerNow_step10', '10')" class="start-appoint-1 page9">next</a>
-              </aside>
-            </div>
-            <div class="progress-bar-layer">
-              <span class="progress-bar-increasing progress_8">70%</span>
-            </div>
-          </div>
-          <!--step9-->
-
-          <div
-            *ngIf="addClass === 'registerNow_step10'"
-            [style]="divStyle"
-            class="registerNow_step10"
-            class="registerNow_step10"
-          >
-            <div class="step10-inner">
-              <a id="stp10"></a>
-              <label
-                ><strong class="text-capitalize d-block pb-3">upload</strong> my
-                scans and reports.</label
-              >
-              <ul>
-                <li>
-                  <label for="inputFieldScan" class="btn btn-success">Scan</label>
-                  <span *ngIf="scanfile">{{scanfile?.name | slice:0:10 }}...</span>
-                  <input type="file" id="inputFieldScan" class="d-none" (change)="selectScan($event)"/>
-                </li>
-                <span *ngIf="scanFileSizeError" class="text-danger">File Should be less than 5 mb.</span>
-
-                <li>
-                  <label for="inputFieldReport" class="btn btn-success"
-                    >Report</label
-                  >
-                  <span *ngIf="reportfile">{{reportfile?.name | slice:0:10 }}...</span>
-                  <input type="file" id="inputFieldReport" class="d-none" (change)="selectReport($event)" />
-                  <span *ngIf="reportFileSizeError" class="text-danger">File Should be less than 5 mb.</span>
-
-                </li>
-              </ul>
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step9', '9')" class="start-appoint-1 back4">back</a>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step11', '11')" class="start-appoint-1 page10">next</a>
-              </aside>
-            </div>
-            <div class="progress-bar-layer">
-              <span class="progress-bar-increasing progress_9">78%</span>
-            </div>
-          </div>
-          <!--step10-->
-
-          <div
-            *ngIf="addClass === 'registerNow_step11'"
-            [style]="divStyle"
-            class="registerNow_step11"
-            class="registerNow_step11"
-          >
-            <div class="step11-inner">
-              <a id="stp11"></a>
-              <label>Add your comments.</label>
-              <textarea name="comment" [(ngModel)]="formObj.comment" #comment="ngModel" required></textarea>
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step10', '10')" class="start-appoint-1 back3">back</a>
-                <a *ngIf="comment.valid" href="javascript:;"
-                (click)="showDiv('registerNow_step12', '12')" class="start-appoint-1 page11">next</a>
-              </aside>
-            </div>
-            <div class="progress-bar-layer">
-              <span class="progress-bar-increasing progress_10">85%</span>
-            </div>
-          </div>
-          <!--step11-->
-
-          <div
-            *ngIf="addClass === 'registerNow_step12'"
-            [style]="divStyle"
-            class="registerNow_step12"
-            class="registerNow_step12"
-          >
-            <div class="step12-inner">
-              <a id="stp12"></a>
-              <label
-                ><strong class="text-capitalize d-block pb-3"
-                  >Select a bundle that suites you best.</strong
-                >
-                No need to pay now. Pay after results are ready.</label
-              >
-<div class="requiredReports">
-  <small *ngFor="let scanTypeData of scanType; let i = index">{{scanTypeData}},</small>
-  <small *ngFor="let bodyData of bodyPart; let i = index">{{bodyData}},</small>
-
-</div>
-              <div class="our-plans">
-                <div class="radio-item">
-                  <input
-                    type="radio"
-                    id="select1"
-                    name="select1"
-                    value="1"
-                    checked=[true]
-                    [(ngModel)]="formObj.selected_package" required #selected_package="ngModel"
-                  />
-                  <label for="select1">
-                    <p class="text-center">Express, 399 EUR</p>
-                    <ul type="square">
-                      <li>Express result in 2 hours</li>
-                      <li>Unlimited video-phone support for 1 year</li>
-                    </ul>
-                  </label>
-                </div>
-
-                <div class="radio-item">
-                  <input
-                    type="radio"
-                    id="select2"
-                    name="select1"
-                    value="2"
-                    [(ngModel)]="formObj.selected_package" required #selected_package="ngModel"
-                  />
-                  <label for="select1">
-                    <p class="text-center">Premium, 249 EUR</p>
-                    <ul type="square">
-                      <li>Result in 24 hours</li>
-                      <li>Unlimited support for 1 year</li>
-                    </ul>
-                  </label>
-                </div>
-
-                <div class="radio-item">
-                  <input
-                    type="radio"
-                    id="select3"
-                    name="select1"
-                    value="3"
-                    [(ngModel)]="formObj.selected_package" required #selected_package="ngModel"
-                  />
-                  <label for="select1">
-                    <p class="text-center">Basic, 199 EUR</p>
-                    <ul type="square">
-                      <li>Result in 24 hours</li>
-                      <li>Support for 1 week</li>
-                    </ul>
-                  </label>
-                </div>
-              </div>
-              <!--our plans-->
-
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step11', '11')" class="start-appoint-1 back2">back</a>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step13', '13')" class="start-appoint-1 page12">next</a>
-              </aside>
-            </div>
-            <div class="progress-bar-layer">
-              <span class="progress-bar-increasing progress_11">95%</span>
-            </div>
-          </div>
-          <!--step12-->
-
-          <div
-            *ngIf="addClass === 'registerNow_step13'"
-            [style]="divStyle"
-            class="registerNow_step13"
-            class="registerNow_step13"
-          >
-            <div class="step13-inner">
-              <a id="stp13"></a>
-              <label
-                >All done. We will get back to you during next 24 hours.</label
-              >
-              <aside>
-                <input type="submit" class="start-appoint-1 btn btn-success" value="Finish" />
-                <!-- <a href="javascript:;" class="start-appoint-1 btn btn-success"
-                  >Finish</a
-                > -->
-              </aside>
-            </div>
-            <div class="progress-bar-layer mt-2">
-              <span class="progress-bar-increasing progress_12">100%</span>
-            </div>
-          </div>
-          <!--step10-->
         </form>
       </div>
     </div>

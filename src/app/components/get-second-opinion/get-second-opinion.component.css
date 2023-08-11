@@ -50,7 +50,7 @@ button.close-book-appointment-page {
 .registerNow_step2 {
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: auto;
   background-color: #ffffff;
   background-blend-mode: multiply;
   background-image: url("../../../assets/images/wave-bg.png");
@@ -65,7 +65,7 @@ button.close-book-appointment-page {
 .registerNow_step3 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-color: #ffffff;
   background-blend-mode: multiply;
   background-image: url("../../../assets/images/wave-bg.png");
@@ -80,7 +80,7 @@ button.close-book-appointment-page {
 .registerNow_step4 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-color: #ffffff;
   background-blend-mode: multiply;
   background-image: url("../../../assets/images/wave-bg.png");
@@ -95,7 +95,7 @@ button.close-book-appointment-page {
 .registerNow_step5 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-color: #ffffff;
   background-blend-mode: multiply;
   background-image: url("../../../assets/images/wave-bg.png");
@@ -110,7 +110,7 @@ button.close-book-appointment-page {
 .registerNow_step6 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-color: #ffffff;
   background-blend-mode: multiply;
   background-image: url("../../../assets/images/wave-bg.png");
@@ -125,7 +125,7 @@ button.close-book-appointment-page {
 .registerNow_step7 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-color: #ffffff;
   background-blend-mode: multiply;
   background-image: url("../../../assets/images/wave-bg.png");
@@ -140,7 +140,7 @@ button.close-book-appointment-page {
 .registerNow_step8 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   /* display: table; */
   background-color: #ffffff;
   background-blend-mode: multiply;
@@ -156,7 +156,7 @@ button.close-book-appointment-page {
 .registerNow_step9 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   /* display: table; */
   background-color: #ffffff;
   background-blend-mode: multiply;
@@ -172,7 +172,7 @@ button.close-book-appointment-page {
 .registerNow_step10 {
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: auto;
   /* display: table; */
   background-color: #ffffff;
   background-blend-mode: multiply;

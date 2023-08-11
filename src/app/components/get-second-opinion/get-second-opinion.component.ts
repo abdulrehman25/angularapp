@@ -20,6 +20,7 @@ export class GetSecondOpinionComponent {
   showRegisterNowPage:boolean = true;
   addClass:string='';
   divStyle:string ='';
+  stepIndex:any;
   scanFileSizeError:boolean=false;
   reportFileSizeError:boolean=false;
   formObj:GetSecondOpenion = {
@@ -51,11 +52,12 @@ export class GetSecondOpinionComponent {
   showDiv(divClass:string,styleIndex:string){
     this.addClass = divClass;
     this.divStyle = `z-index : ${styleIndex}`;
-    // if(this.addClass == 'registerNow_step4'){
+    this.stepIndex = styleIndex;
+    // if(this.addClass == 'registerNow_step3'){
     //   this.sendVerificationCode();
     // }
 
-    // if(this.addClass == 'registerNow_step5'){
+    // if(this.addClass == 'registerNow_step4'){
     //   this.validateCode();
     // }
   }
@@ -106,6 +108,7 @@ export class GetSecondOpinionComponent {
 
 
   onChange(scan:string, event: any) {
+    console.log('scan',scan)
     if(event.target.checked){
       const index = this.scanType.indexOf(scan);
       if (index == -1) { 
@@ -177,6 +180,8 @@ export class GetSecondOpinionComponent {
   }
 
   addSecondOpinionData(){
+
+    console.log('submit_data')
 
     var formData = new FormData();
     var formData = new FormData();

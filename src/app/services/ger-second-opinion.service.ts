@@ -22,6 +22,8 @@ export class GerSecondOpinionService {
   }
 
   updateUserDetails(data:any){
+
+    console.log('data',data)
     return this.httpClient.post(`${this.Api_Base}/update_user`,data);
   }
 
