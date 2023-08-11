@@ -51,13 +51,13 @@ export class GetSecondOpinionComponent {
   showDiv(divClass:string,styleIndex:string){
     this.addClass = divClass;
     this.divStyle = `z-index : ${styleIndex}`;
-    if(this.addClass == 'registerNow_step4'){
-      this.sendVerificationCode();
-    }
+    // if(this.addClass == 'registerNow_step4'){
+    //   this.sendVerificationCode();
+    // }
 
-    if(this.addClass == 'registerNow_step5'){
-      this.validateCode();
-    }
+    // if(this.addClass == 'registerNow_step5'){
+    //   this.validateCode();
+    // }
   }
 
   async sendVerificationCode(){

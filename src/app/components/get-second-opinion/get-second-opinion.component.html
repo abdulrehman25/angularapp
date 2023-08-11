@@ -5,20 +5,33 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <form #getSecondOpinion="ngForm" (ngSubmit)="addSecondOpinionData()">
+        <div class="sidebar_right">
+          <ul id="progressbar">
+              <li class="active" id="confirm"><span>Step 1 <strong>Sign up</strong></span></li>
+              <li id="confirm"><span>Step 2 <strong>Verification</strong></span></li>
+              <li id="confirm"><span>Step 3 <strong>Type of Scan</strong></span></li>
+              <li id="confirm"><span>Step 4 <strong>Part of the body</strong></span></li>
+              <li id="confirm"><span>Step 5 <strong>Upload documents</strong></span></li>
+              <li id="confirm"><span>Step 6 <strong>Select Package</strong></span></li>
+              <li id="confirm"><span>Step 7 <strong>Success</strong></span></li>
+          </ul>
+      </div>
+        <form #getSecondOpinion="ngForm" (ngSubmit)="addSecondOpinionData()" id="msform">
           <div class="registerNow_step1">
             <div class="step1-inner">
               <a id="stp1"></a>
-              <figure><img src="images/logo2.png" alt="" /></figure>
-              <h2>Get a second opinion today {{addClass === 'registerNow_step2'}}</h2>
+              <figure><img src="assets/images/white-logo.png" alt="" /></figure>
               <aside>
                 <a
                   href="javascript:;"
                   (click)="showDiv('registerNow_step2', '2')"
                   class="start-appoint-1 page1"
-                  >get started</a
+                  >Get Second Opinion</a
                 >
               </aside>
+              <div class="login-footer">
+                © 2021. - 2025 All Rights Reserved. RadiologyCheck.com
+              </div>
             </div>
           </div>
           <!--step1-->
@@ -27,28 +40,30 @@
             class="registerNow_step2"
           >
             <div class="step2-inner">
-              <a id="stp2"></a>
-              <label>What is your e-mail?</label>
-              <div *ngIf="email.touched && !email.valid" class="text-danger">
-                <p *ngIf="email.errors?.['required']">Email is a required field!</p>
-                  <p *ngIf="email.errors?.['pattern']">This is not a valid Email!!!</p>
-              </div>
-              <input type="text" placeholder="Your email" name="email" [(ngModel)]="formObj.email"
-              #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
-              <aside>
-                <a
-                  href="javascript:;"
-                  (click)="showDiv('registerNow_step1', '1')"
-                  class="start-appoint-1 back12"
-                  >back</a
-                >
-                <a *ngIf="email.valid"
-                  href="javascript:;"
-                  (click)="showDiv('registerNow_step3', '3')"
-                  class="start-appoint-1 page2"
-                  >next</a
-                >
-              </aside>
+              <fieldset style="position: relative; opacity: 1;">
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="fs-title">What's your name?</h1>
+                        </div>                            
+                            <div class="center_col signup_col">
+                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                  <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-user"></i></span>
+                                  <input type="text" name="uname" placeholder="Enter your name">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                  <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-envelope"></i></span>
+                                  <input type="email" name="email" placeholder="Enter your email">     
+                                </div>  
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                  <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-lock"></i></span>                 
+                                  <input type="password" name="pwd" placeholder="Enter your password">
+                              </div>
+                            </div>
+                    </div>
+                </div> <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step3', '3')"                >
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
+            </fieldset>
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_1">8%</span>
@@ -62,43 +77,24 @@
             class="registerNow_step3"
           >
             <div class="step3-inner">
-              <a id="stp3"></a>
-              <label
-                ><strong class="text-capitalize d-block pb-3">password</strong>
-                Create a pasword to protect all your personal
-                informations.</label
-              >
-              <div *ngIf="password.touched && password.errors" class="text-danger">
-                <div *ngIf="password.errors['required']">Password is required</div>
-                <div *ngIf="password.errors['minlength']">
-                  Password must be at least 8 characters
+              <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="fs-title">Please, verify your email.</h1>
+                        </div>                            
+                            <div class="center_col signup_col">
+                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                  <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-user"></i></span>
+                                  <input type="text" placeholder="Verification code" name="code" minlength="6" maxlength="6" required="" ng-reflect-required="" ng-reflect-minlength="6" ng-reflect-maxlength="6" ng-reflect-name="code" ng-reflect-model="" class="ng-pristine ng-invalid ng-touched">
+                                </div> 
+                            </div>
+                        </div> 
                 </div>
-                <div *ngIf="password.errors['maxlength']">
-                  Password must not exceed 20 characters
-                </div>
-              </div>
-              <input
-                type="password"
-                placeholder="Make Your Password"
-                name="password"
-                [(ngModel)]="formObj.password" required
-                minlength="8" maxlength="20" #password="ngModel"
-                [ngClass]="{ 'is-invalid':password.errors }"
-              />
-              <aside>
-                <a
-                  href="javascript:;"
-                  (click)="showDiv('registerNow_step2', '2')"
-                  class="start-appoint-1 back11"
-                  >back</a
-                >
-                <a *ngIf="password.valid"
-                  href="javascript:;"
-                  (click)="showDiv('registerNow_step4', '4')"
-                  class="start-appoint-1 page3"
-                  >next</a
-                >
-              </aside>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step2', '2')"/>
+                <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step4', '4')"/>
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
+            </fieldset>
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_2">18%</span>
@@ -113,29 +109,76 @@
             class="registerNow_step4"
           >
             <div class="step4-inner">
-              <a id="stp4"></a>
-              <label>Please, verify your email.</label>
-              <div *ngIf="code.touched && code.errors" class="text-danger">
-                <div *ngIf="code.errors['required']">Code is required</div>
+              <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="fs-title">Type of Scan</h1>
+                        </div>
+                        <div class="search_barcol signup_col">
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                              <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-search"></i></span>
+                              <input type="search" id="gsearch" name="gsearch"  placeholder="Find a type of scan">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                            <div class="manage-1-place-wrapper">                        						
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label mri-check text-uppercase">
+                      <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_MRI.png" alt="">
+                    </label>
+                    Mri
+                  </div><!--mri-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label ct-check text-uppercase">
+                      <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_CT.png" alt="">
+                    </label>
+                    Ct
+                  </div><!--ct-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label pet-ct-check text-uppercase">
+                      <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_PET-CT.png" alt="">
+                    </label>
+                    Pet-ct
+                  </div><!--pet ct-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label xray-check text-uppercase">
+                      <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_X-RAY.png" alt="">
+                    </label>
+                    X-ray
+                  </div><!--x ray-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label ultrasound-check text-uppercase">
+                      <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_ULTRASOUND.png" alt="">
+                    </label>
+                    Ultrasound
+                  </div><!--ultrasound-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label mammogram-check text-uppercase">
+                      <img src="../../../assets/images/register_now_select_icons/Radiology-Check-set-2_MAMMOGRAM.png" alt="">
+                    </label>
+                    Mammogram
+                  </div><!--mammogram-->
+                  
+                </div><!--manage 1 place wrapper-->
               </div>
-              <input type="text" placeholder="Verification code" name="code" [(ngModel)]="formObj.code" 
-              minlength="6" maxlength="6" #code="ngModel"
-              required />
-
-              <aside>
-                <a
-                  href="javascript:;"
-                  (click)="showDiv('registerNow_step3', '3')"
-                  class="start-appoint-1 back10"
-                  >back</a
-                >
-                <a *ngIf="code.valid"
-                  href="javascript:;"
-                  (click)="showDiv('registerNow_step5', '5')"
-                  class="start-appoint-1 page4"
-                  >next</a
-                >
-              </aside>
+            </div>
+              </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step4', '4')"/>
+                <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step5', '5')"/>
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
+            </fieldset>
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_3">25%</span>
@@ -150,19 +193,259 @@
             class="registerNow_step5"
           >
             <div class="step5-inner">
-              <a id="stp5"></a>
-              <label>What's your name?</label>
-              <div *ngIf="first_name.touched && first_name.errors" class="text-danger">
-                <div *ngIf="first_name.errors['required']">First name is required</div>
+              <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="fs-title">Part of the body</h1>
+                        </div>
+                        <div class="search_barcol signup_col">
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                              <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-search"></i></span>
+                              <input type="search" id="gsearch" name="gsearch"  placeholder="Find a type of scan">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                            <div class="manage-1-place-wrapper scroll-here">							
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Airways.png" alt="">
+                    </label>
+                    Airways
+                  </div><!--Leg-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Arm.png" alt="">
+                    </label>
+                    Arm
+                  </div><!--Back-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Bile Duct.png" alt="">
+                    </label>
+                    Bile Duct
+                  </div><!--Stomach-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Bone Spine.png" alt="">
+                    </label>
+                    Bone Spine
+                  </div><!--Colon-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Chest Radiology.png" alt="">
+                    </label>
+                    Chest Radiology
+                  </div><!--Small intestine-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Colon.png" alt="">
+                    </label>
+                    Colon
+                  </div><!--Reproductive-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Elbow.png" alt="">
+                    </label>
+                    Elbow
+                  </div><!--Esophagus-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Esophagus.png" alt="">
+                    </label>
+                    Esophagus
+                  </div><!--Spleen-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Foot.png" alt="">
+                    </label>
+                    Foot
+                  </div><!--Liver-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Footjoint-Ankle.png" alt="">
+                    </label>
+                    Footjoint Ankle
+                  </div><!--Bile Duct-->
+                      
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Hand.png" alt="">
+                    </label>
+                    Hand
+                  </div><!--Pancreas-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Handjoint.png" alt="">
+                    </label>
+                    Hand joint
+                  </div><!--Prostata-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Head and Neck Organs.png" alt="">
+                    </label>
+                    Head and Neck Organs
+                  </div><!--Woman organs-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Heart.png" alt="">
+                    </label>
+                    Heart
+                  </div><!--Chest Radiology-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Hip.png" alt="">
+                    </label>
+                    Hip
+                  </div><!--Lung-->
+                       
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Knee.png" alt="">
+                    </label>
+                    Knee
+                  </div><!--Airways-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Liver.png" alt="">
+                    </label>
+                    Liver
+                  </div><!--Heart-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Lung.png" alt="">
+                    </label>
+                    Lung
+                  </div><!--Musculoskeletal Radiology-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Musculoskeletsl Radiology.png" alt="">
+                    </label>
+                    Musculoskeletsl Radiology
+                  </div><!--Shoulder-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Neuroradiology.png" alt="">
+                    </label>
+                    Neuroradiology
+                  </div><!--Arm-->
+                       
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Pancreas.png" alt="">
+                    </label>
+                    Pancreas
+                  </div><!--Elbow-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Pelvis.png" alt="">
+                    </label>
+                    Pelvis
+                  </div><!--Handjoint-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Prostata.png" alt="">
+                    </label>
+                    Prostata
+                  </div><!--Hand-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Shoulder.png" alt="">
+                    </label>
+                    Shoulder
+                  </div><!--Hip-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Small Intestie.png" alt="">
+                    </label>
+                    Small Intestie
+                  </div><!--Pelvis-->
+                      
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Spine.png" alt="">
+                    </label>
+                    Spine
+                  </div><!--Knee-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Spleen.png" alt="">
+                    </label>
+                    Spleen
+                  </div><!--Footjoint / Ankle-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Stomach.png" alt="">
+                    </label>
+                    Stomach
+                  </div><!--Foot-->
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" required name="abc" id="" />
+                    <label class="check-wrap-label text-lowercase">
+                      <img src="../../../assets/images/register_now_select_icons/set icon 4_Woman Organs .png" alt="">
+                    </label>
+                    Woman Organs
+                  </div><!--Bone Spine (cervical, thoracic, lumbar, sacral)-->							
+                </div><!--manage 1 place wrapper-->
               </div>
-              <input type="text" placeholder="First name" name="first_name" [(ngModel)]="formObj.first_name" #first_name="ngModel"
-              [ngClass]="{ 'is-invalid': first_name.errors }" required />
-              <aside>
-                <!-- <a href="javascript:;"
-                (click)="showDiv('registerNow_step4', '4')" class="start-appoint-1 back9">back</a> -->
-                <a *ngIf="first_name.valid" href="javascript:;"
-                (click)="showDiv('registerNow_step6', '6')" class="start-appoint-1 page5">next</a>
-              </aside>
+                    </div>
+                </div>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step5', '5')"/>
+                  <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step6', '6')"/>
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>	
+            </fieldset>
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_4">40%</span>
@@ -177,19 +460,36 @@
             class="registerNow_step6"
           >
             <div class="step6-inner">
-              <a id="stp6"></a>
-              <label>What's your surname?</label>
-              <div *ngIf="last_name.touched && last_name.errors" class="text-danger">
-                <div *ngIf="last_name.errors['required']">Sur name is required</div>
+              <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="fs-title">Upload documents</h1>
+                      </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                          <div class="center_col ud-col">
+                            <ul>
+                    <li>
+                      <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-paperclip"></i></span>
+                      <label for="inputFieldScan" class="btn btn-success">Scan</label>
+                      <input type="file" id="inputFieldScan" class="d-none">
+                    </li>
+                    
+                    <li>
+                      <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-paperclip"></i></span>
+                      <label for="inputFieldReport" class="btn btn-success">Report</label>
+                      <input type="file" id="inputFieldReport" class="d-none">
+                    </li>
+                  </ul>
+                  <textarea placeholder="Enter your message" ></textarea>
+                </div>
               </div>
-              <input type="text" placeholder="Sur name" name="last_name" [(ngModel)]="formObj.last_name" #last_name="ngModel"
-              [ngClass]="{ 'is-invalid': last_name.errors }" required />
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step5', '5')" class="start-appoint-1 back8">back</a>
-                <a *ngIf="last_name.valid" href="javascript:;"
-                (click)="showDiv('registerNow_step7', '7')" class="start-appoint-1 page6">next</a>
-              </aside>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"  (click)="showDiv('registerNow_step6', '6')" />
+                <input type="button" name="next" class="next action-button" value="Next" (click)="showDiv('registerNow_step7', '7')"/>
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
+            </fieldset>
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_5">45%</span>
@@ -204,39 +504,56 @@
             class="registerNow_step7"
           >
             <div class="step7-inner">
-              <a id="stp7"></a>
-              <label>What's your phone number?</label>
-              <small
-                >We will send you a notification then a report will be
-                ready.</small
-              >
-              <div *ngIf="phone.touched && phone.errors" class="text-danger">
-                <div *ngIf="phone.errors?.['required']">Contact
-                  Number is required </div>
-                <div *ngIf="phone.errors?.['pattern']">This is not
-                  a valid Contact Number</div>
+              <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="fs-title">Select Package</h1>
+                      </div>
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="registerNow_step12 package_col">
+                            <div class="our-plans">
+                  <div class="radio-item">
+                  <input type="radio" id="select1" name="select1" value="select1" checked="checked">
+                    <label for="select1">
+                      <p class="text-center">Express, 399 EUR</p>
+                      <ul type="square">
+                        <li>Express result in 2 hours</li>
+                        <li>Unlimited video-phone support for 1 year</li>
+                      </ul>
+                    </label>
+                  </div>
+              
+                  <div class="radio-item">
+                  <input type="radio" id="select2" name="select1" value="select2">
+                    <label for="select1">
+                      <p class="text-center">Premium, 249 EUR</p>
+                      <ul type="square">
+                        <li>Result in 24 hours</li>
+                        <li>Unlimited support for 1 year</li>
+                      </ul>
+                    </label>
+                  </div>
+              
+                  <div class="radio-item">
+                  <input type="radio" id="select3" name="select1" value="select3">
+                    <label for="select1">
+                      <p class="text-center">Basic, 199 EUR</p>
+                      <ul type="square">
+                        <li>Result in 24 hours</li>
+                        <li>Support for 1 week</li>
+                      </ul>
+                    </label>
+                  </div>
+                </div><!--our plans-->
               </div>
-              <input
-                type="tel"
-                placeholder="Your contact"
-                maxlength="12"
-                name="phone"
-                pattern="^((\\+91-?)|0)?[0-9]{10}$"
-								[(ngModel)]="formObj.phone" #phone="ngModel"
-                required
-              />
-              <div class="checkbox-wrapper">
-                <input type="checkbox" required name="body-part" id="body-part" />
-                <label class="check-wrap-label text-capitalize"
-                  >i agree terms &amp; conditions.</label
-                >
-              </div>
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step6', '6')" class="start-appoint-1 back7">back</a>
-                <a *ngIf="phone.valid"  href="javascript:;"
-                (click)="showDiv('registerNow_step8', '8')" class="start-appoint-1 page7">next</a>
-              </aside>
+                    </div>
+                </div>
+            </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step7', '7')"/>
+                <input type="button" name="next" class="next action-button" value="Submit" (click)="showDiv('registerNow_step8', '8')"/>
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
+            </fieldset>
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_6">50%</span>
@@ -251,66 +568,24 @@
             class="registerNow_step8"
           >
             <div class="step8-inner">
-              <a id="stp8"></a>
-              <label>What type of scan do you want to check?</label>
-              <div class="manage-1-place-wrapper">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('MRI')" (change)="onChange('MRI', $event)" />
-                  <label class="check-wrap-label mri-check text-uppercase"
-                    >mri</label
-                  >
+              <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                      <div class="center_col finsih-col">
+                            <div class="text-center"><i class="fa-light fa-check"></i></div>
+                            
+                            <h2 class="text-center"><strong>SUCCESS !</strong></h2> <br> 
+                            <div class="row justify-content-center">
+                                <div class="col-7 text-center">
+                                    <h5 class="text-center">Your form has been submitted. We will review shortly!</h5>
+                                    <input type="button" name="next" class="next action-button" value="Finish:" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--mri-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('CT')" (change)="onChange('CT', $event)"/>
-                  <label class="check-wrap-label ct-check text-uppercase"
-                    >ct</label
-                  >
-                </div>
-                <!--ct-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('pet-ct')" (change)="onChange('pet-ct', $event)" />
-                  <label class="check-wrap-label pet-ct-check text-uppercase"
-                    >pet-ct</label
-                  >
-                </div>
-                <!--pet ct-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('x-ray')" (change)="onChange('x-ray', $event)"/>
-                  <label class="check-wrap-label xray-check text-uppercase"
-                    >x-ray</label
-                  >
-                </div>
-                <!--x ray-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('ultrasound')" (change)="onChange('ultrasound', $event)"/>
-                  <label
-                    class="check-wrap-label ultrasound-check text-uppercase"
-                    >ultrasound</label
-                  >
-                </div>
-                <!--ultrasound-->
-
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" required name="scan-type" id="" [checked]="checkSelectedValue('mammogram')" (change)="onChange('mammogram', $event)"/>
-                  <label class="check-wrap-label mammogram-check text-uppercase"
-                    >mammogram</label
-                  >
-                </div>
-                <!--mammogram-->
-              </div>
-              <!--manage 1 place wrapper-->
-
-              <aside>
-                <a href="javascript:;"
-                (click)="showDiv('registerNow_step7', '7')" class="start-appoint-1 back6">back</a>
-                <a *ngIf="formObj.type_of_scan.length > 0" href="javascript:;"
-                (click)="showDiv('registerNow_step9', '9')" class="start-appoint-1 page8">next</a>
-              </aside>
+                <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
+            </fieldset>               
             </div>
             <div class="progress-bar-layer">
               <span class="progress-bar-increasing progress_7">60%</span>
