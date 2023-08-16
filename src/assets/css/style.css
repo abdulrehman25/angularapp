@@ -132,7 +132,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-link {
     color: #73778c;
-    margin-right: 20px;
     padding: 0;
     font-size: 18px;
     font-weight: 400;
@@ -315,15 +314,7 @@ img {
 }
 
 .navbar {
-    background-color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: fixed;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
-    right: 0%;
-    box-shadow: 0 1px 80px rgba(45, 40, 40, .1);
+
 }
 
 
@@ -455,6 +446,46 @@ h1 {
     top: 0;
 }
 
+/*-- new header css 16-07 --*/
+
+.main_header {
+	background: #fff;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	box-shadow: 0 1px 80px rgba(45, 40, 40, .1);
+	z-index: 9;
+	width: 100%;
+	display: flex;
+}
+.main_header .container {
+display: flex;
+}
+.main_header .container .navbar {
+box-shadow: none;
+}
+.main_header .container .dropdown-menu .row {
+	width: 100%;
+}
+.main_header .container .dropdown-menu a {
+	display: block;
+	margin: 10px 0;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	color: #73778c !important;
+	line-height: 20px;
+    display: flex;
+}
+.main_header .container  .primary-button {text-decoration: none;}
+.main_header .container h5{
+    font-size: 24px;
+    line-height: 28px;
+    margin:0 0 28px !important;
+}
 /* Banner section  */
 .banner-section {
     padding-top: 150px;
