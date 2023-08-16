@@ -1,0 +1,211 @@
+.month-order-col{
+    padding-left: 75px;
+    }
+    .widget-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 1px solid #e1e1e1;
+        position: absolute;
+        left: 0;
+    }
+    .widget-img img {
+        width: 100%;
+    }
+    .chartjs-render-monitor {
+        width: 100% !important;
+    }
+    
+    .app-main .app-main__inner {
+        background: #f7faf5;
+    }
+    .vertical-nav-menu li a.mm-active {
+        color: #fff;
+        background: #334b2a;
+        font-weight: 700;
+    }
+    .vertical-nav-menu li a.mm-active .fa {
+        opacity: 1;
+    }
+    .vertical-nav-menu li a:hover {
+        background: #334b2a;
+        text-decoration: none;
+        color: #fff;
+    }
+    .vertical-nav-menu li a:hover .fa {
+        opacity: 1 !important;
+    }
+    .btn-info.dropdown-toggle {
+        color: #000;
+        background-color: #f5f5f7;
+        border-color: #f5f5f7;
+    }
+    .app-sidebar .scrollbar-sidebar {
+        margin-top: 20px;
+    }
+    .vertical-nav-menu li {
+        margin: 12px 0;
+    }
+    
+    
+    /*-- Css client Management page --*/
+    
+    .cm-section table thead th{
+        background: #f5f5f7; 
+    }
+    .cm-section a .fa.fa-file-text {
+        font-size: 20px;
+        color: #353535;
+        margin: 0 10px 0 0;
+    }
+    
+    
+    /*-- Css Orders Management page --*/
+    .om-fliter {
+        display: flex;
+        padding: 0;
+    }
+    .om-fliter li {
+        list-style: none;
+        margin: 0 20px 0 0;
+    }
+    .om-fliter li .btn.btn-light {
+        background: #fff;
+    }
+    .om-fliter li .btn.btn-light:hover {
+      background: #f7faf5;
+      color: #334b2a;
+      border-color:#334b2a;
+    }
+    .om-section table thead th{
+        background: #f5f5f7; 
+    }
+    
+    .om-section table a .fa.fa-eye {
+        font-size: 20px;
+        color: #353535;
+        margin: 0 10px 0 0;
+    }
+    .icon-click {
+        margin: 0 7px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .sb-content-id {
+        position: relative;
+    }
+    .sd-content-assign {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #ffe4e1;
+        border-radius: 15px;
+        padding: 5px 15px;
+        font-size: 12px;
+        border: 1px solid #ffc7c0;
+    }
+    /*-- slidebox css--*/
+    .slide_box {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #0003;
+        z-index: 99;
+        left: 0;
+        right: 0;
+    }
+    .sb-content {
+        background: #fff;
+        width: 350px;
+        float: right;
+        height: 100%;
+        padding: 25px;
+    }
+    .slide_close {
+        float: right;
+        background: #fff;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 20px 10px 0 0;
+        cursor: pointer;
+    }
+    .sb-content-price {
+        margin: 15px 0 0;
+    }
+    .sb-content-price h3 {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sb-content-table {
+        background: #f5f5f7;
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+    }
+    .sb-content-table tr td {
+        padding: 5px;
+    }
+    .sb-content-table tr td h5, .sb-content-table tr td p {
+        margin: 0;
+        padding: 0;
+    }
+    .sb-content-table tr td h5 {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .sb-content-result {
+        width: 100%;
+        margin: 5px 0 0;
+    }
+    .sb-content-result tr {
+        background: #f7faf5;
+        border-radius: 5px;
+        border-top: 5px solid #fff;
+    }
+    .sb-content-result tr td {
+      padding: 7px;
+    }
+    .sb-content-result tr td a, .sb-content-result tr td .fa { 
+        color: #405e34;
+    }
+    /*--- Revenue page css --*/
+    .d-flex {
+        display: flex;
+        justify-content: end;
+    }
+    .revenue_total {
+        background: #fff;
+        padding: 20px;
+        margin: 0 0 25px;
+        border-radius: 5px;
+        border: 1px solid #eee;
+    }
+    .revenue_total p {
+        margin: 0;
+    }
+    .revenue_total h3 {color: #334b2a;}
+    .border-right {
+        border-right: 1px solid #ccc;
+    }
+    .revenue_total .col-md-3 {
+        text-align: center;
+    }
+    @media only screen and (max-width: 470px){
+    .sb-content {
+        background: #fff;
+        width: 270px;
+        float: right;
+        height: 100%;
+        padding: 25px;
+    }
+    }
+    
