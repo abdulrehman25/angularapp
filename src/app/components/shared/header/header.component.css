@@ -1556,9 +1556,7 @@ img {
     grid-template-columns: 1fr 2fr;
     grid-auto-flow: column;
 }
-
-
-div{display: block;}
+ 
 .dropdown-menu-wrapper.mt60 {
     margin-top: 0;
 }
@@ -1652,4 +1650,3 @@ div{display: block;}
 .w-nav-overlay [data-nav-menu-open]{
     top: 0;
 }
- 
