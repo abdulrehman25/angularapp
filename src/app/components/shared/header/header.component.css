@@ -187,7 +187,17 @@ img {
 .navbar-collapse.collapse.in {
     display: block !important;
 }
-
+.navbar-left-content {
+	width: calc(100% - 250px);
+}
+.main_header .container .navbar {
+	box-shadow: none;
+	width: 100%;
+}
+.navbar-expand-md .navbar-collapse {
+	margin: 0 auto;
+	max-width: 475px;
+}
 .fa-angle-down {
     padding-left: 10px;
 }

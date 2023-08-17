@@ -1385,7 +1385,7 @@ img {
     transform: translate(-50%, -50%);
 }
 .banner-swz-col {
-	z-index: 9;
+	z-index: 2;
 	position: absolute;
 	bottom: 50px;
 	right: 0px;
