@@ -1303,6 +1303,7 @@ img {
 .banner-wrapper {
     align-items: center;
     display: flex;
+    position: relative;
 }
 .banner-text-wrapper {
     width: 500px;
@@ -1382,6 +1383,19 @@ img {
     left: 50%;
     right: auto;
     transform: translate(-50%, -50%);
+}
+.banner-swz-col {
+	z-index: 9;
+	position: absolute;
+	bottom: 50px;
+	right: 0px;
+    font-size:36px;
+    font-weight: bold;
+    color: #252f4b;
+    background: #fff;
+    border-radius: 7px;
+    border:1px solid #ccc;
+    padding:30px;
 }
 /* Banner section  */
 
@@ -2287,8 +2301,40 @@ img {
     font-family: "Fa solid 900", sans-serif;
     font-size: 22px;
 }
+.accordion .accordion-item, .accordion .accordion-item h2.accordion-header, .accordion .accordion-item button {
+	background: transparent;
+}
+.accordion .accordion-item .accordion-button:focus {
+	border-color: none !important;
+	box-shadow: none !important;
+}
+.accordion .accordion-item {
+	margin: 0 0 30px;
+    border:1px solid rgba(178, 183, 187, .4);
+    border-radius: 10px;
+}
+.accordion .accordion-item button h3 {
+    font-size:27px;
+    line-height: 32px;
+    color:#252f4b;
+    font-weight: 500;
+}
+.accordion-item button span {
+	background: rgba(60, 89, 242, .1);
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	font-size: 28px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #3c59f2;
+	margin: 0 25px 0 5px;
+}
+.accordion .accordion-item button:after {
 
-
+}
 /* Blogs section */
 .blog-slider-arrow {
     width: 100px;
