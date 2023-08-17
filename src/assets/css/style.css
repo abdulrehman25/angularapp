@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-left-content {
     align-items: center;
-    display: flex;
+    display: inline-flex;
 }
 .w-nav-brand {
     position: relative;
@@ -167,9 +167,13 @@ img {
     margin-right: auto;
     z-index: 900;
 }
-.navbar-right-content, .navbar-contact-wrapper {
+.navbar-contact-wrapper {
     align-items: center;
     display: flex;
+}
+.navbar-right-content {
+    float: right;
+margin: 31px 0 0;
 }
 .navbar-button-wrapper {
     align-items: center;
@@ -461,9 +465,7 @@ h1 {
 	width: 100%;
 	display: flex;
 }
-.main_header .container {
-display: flex;
-}
+
 .main_header .container .navbar {
 box-shadow: none;
 }
