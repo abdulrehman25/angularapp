@@ -92,7 +92,9 @@ h2 {
     font-weight: 700;
     line-height: 58px;
 }
-
+h2.features-section-title {
+    color: #264478;
+}
 h3 {
     color: #252f4b;
     margin-top: 0;
@@ -137,24 +139,6 @@ img {
     vertical-align: middle;
     display: inline-block;
 } 
-
-
- 
-.primary-button {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(#427337, #427337);
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    transition: all .45s cubic-bezier(.25, .46, .45, .94);
-}
-.primary-button:hover {
-    background-image: linear-gradient(#000, #000), linear-gradient(340deg, #2b4aee, #556ff6);
-}
-
 
 @media screen and (max-width: 991px){
 .w-nav-overlay {
@@ -1346,8 +1330,8 @@ img {
 }
 .banner-heading {
     margin-bottom: 30px;
-    font-size: 60px;
-    line-height: 74px;
+    font-size: 55px;
+    line-height: 70px;
 }
 .banner-wrapper .primary-button {
 	border-radius: 18px;
@@ -1535,7 +1519,9 @@ img {
 .features-single-wrapper:hover .features-image-wrapper {
     background-color: rgba(66, 115, 55, 0.1);
 }
-
+.features-single-wrapper:hover h3 {
+	color: rgb(66, 115, 55);
+}
 .features-title {
     margin-bottom: 20px;
     font-size: 32px;
@@ -1938,6 +1924,7 @@ img {
     color: #427337;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(#fff, #fff);
+    border-radius: 20px;
 }
 
 .h5-light {
@@ -2313,11 +2300,15 @@ img {
     border:1px solid rgba(178, 183, 187, .4);
     border-radius: 10px;
 }
-.accordion .accordion-item button h3 {
+.accordion .accordion-item button h5 {
     font-size:27px;
     line-height: 32px;
     color:#252f4b;
     font-weight: 500;
+    
+}
+.font-fam2 {
+    font-family: "Inter";
 }
 .accordion-item button span {
 	background: rgba(60, 89, 242, .1);
