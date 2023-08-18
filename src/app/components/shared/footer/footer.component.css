@@ -161,7 +161,9 @@ img {
     grid-auto-columns: 1fr;
     display: grid;
 }
-
+.footer-contact-text-block {
+	color: rgba(255, 255, 255, .7);
+}
 
 @media screen and (max-width: 991px){
 .w-nav-overlay {
