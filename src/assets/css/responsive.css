@@ -178,6 +178,9 @@
     /* for dashboar pages */
 
     .primary-navbar .primary-color {background-color: #ffffff;}
+    .footer-menu-grid {
+        grid-column-gap: 0px;
+    }
     }/*1023*/
 
 

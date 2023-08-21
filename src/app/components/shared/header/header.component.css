@@ -225,7 +225,8 @@ img {
 #dropdown-menu1 {
     position: absolute;
     left: 200px;
-width: 820px;
+    max-width: 820px;
+    width: 100%;
 }
 
 #dropdown-menu2 {
@@ -253,7 +254,14 @@ width: 820px;
 .dropdown-item:hover {
     background-color: inherit;
 }
-
+@media (max-width: 991px) {
+#dropdown-menu1 {
+	left: 0;
+	width: 100%;
+	right: 0;
+	margin: 0 auto;
+}
+}
 @media (max-width: 767px) {
     .main_header {
         position: relative;
