@@ -7,7 +7,10 @@
   z-index: 1111;
   overflow: hidden;
 }
-
+.register-now-page .container {
+	width: 100%;
+	max-width: 100%;
+}
 body.appointment-page {
   overflow-y: hidden;
 }
@@ -16,14 +19,19 @@ button.close-book-appointment-page {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #1e4171;
-  border: 1px solid #1e4171;
+  background-color: transparent;
+  border: 1px solid #fff;
   width: 50px;
   height: 50px;
   z-index: 1111;
   color: #ffffff;
 }
-
+.login-footer {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	margin: 50px 0 0;
+}
 .register-now-page aside {
   display: inline-flex !important;
   margin-inline: 15px;
@@ -35,12 +43,9 @@ button.close-book-appointment-page {
   height: 100vh;
   width: 100%;
   display: table;
-  background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(118,147,122);
+  background: linear-gradient(180deg, rgba(118,147,122,1) 13%, rgba(80,107,115,1) 100%);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -50,13 +55,8 @@ button.close-book-appointment-page {
 .registerNow_step2 {
   text-align: center;
   height: 100vh;
-  width: auto;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -65,13 +65,8 @@ button.close-book-appointment-page {
 .registerNow_step3 {
   text-align: center;
   height: 100vh;
-  width: auto;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,13 +75,8 @@ button.close-book-appointment-page {
 .registerNow_step4 {
   text-align: center;
   height: 100vh;
-  width: auto;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -95,13 +85,8 @@ button.close-book-appointment-page {
 .registerNow_step5 {
   text-align: center;
   height: 100vh;
-  width: auto;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -110,13 +95,8 @@ button.close-book-appointment-page {
 .registerNow_step6 {
   text-align: center;
   height: 100vh;
-  width: auto;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -125,13 +105,8 @@ button.close-book-appointment-page {
 .registerNow_step7 {
   text-align: center;
   height: 100vh;
-  width: auto;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -140,14 +115,8 @@ button.close-book-appointment-page {
 .registerNow_step8 {
   text-align: center;
   height: 100vh;
-  width: auto;
-  /* display: table; */
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -156,14 +125,8 @@ button.close-book-appointment-page {
 .registerNow_step9 {
   text-align: center;
   height: 100vh;
-  width: auto;
-  /* display: table; */
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -172,14 +135,8 @@ button.close-book-appointment-page {
 .registerNow_step10 {
   text-align: center;
   height: 100vh;
-  width: auto;
-  /* display: table; */
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -188,15 +145,8 @@ button.close-book-appointment-page {
 .registerNow_step11 {
   text-align: center;
   height: 100vh;
-  width: 100%;
-  /* display: table; */
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
   top: 0;
   left: 0;
 }
@@ -204,14 +154,8 @@ button.close-book-appointment-page {
 .registerNow_step12 {
   text-align: center;
   height: 100vh;
-  width: 100%;
-  /* display: table; */
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -220,14 +164,8 @@ button.close-book-appointment-page {
 .registerNow_step13 {
   text-align: center;
   height: 100vh;
-  width: 100%;
-  /* display: table; */
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -236,14 +174,8 @@ button.close-book-appointment-page {
 .registerNow_step14 {
   text-align: center;
   height: 100vh;
-  width: 100%;
-  display: table;
+  width:calc(100% - 350px);
   background-color: #ffffff;
-  background-blend-mode: multiply;
-  background-image: url("../../../assets/images/wave-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -291,7 +223,7 @@ button.close-book-appointment-page {
 }
 
 .registerNow_step1 figure img {
-  max-width: 300px;
+  max-width: 500px;
   image-rendering: -webkit-optimize-contrast;
 }
 
@@ -308,7 +240,16 @@ button.close-book-appointment-page {
   font-size: 20px;
   font-weight: 500;
 }
-
+.start-appoint-1.page1 {
+	display: block;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 275px;
+	margin: 0 auto;
+	padding: 14px 10px;
+	border-radius: 50px;
+	text-decoration: navajowhite;
+}
 /*.registerNow_step8 input[type="submit"],aside a.start-appoint-1 {background-color: #407839;border: 1px solid #407839;padding: 8px 20px;display: block;text-align: center;margin: 0px auto;color: #ffffff;text-transform: uppercase;letter-spacing: 2px;border-radius: 6px;font-weight: 700;outline: none; max-width: 300px;}*/
 
 .registerNow_step1 samp {
@@ -328,7 +269,6 @@ button.close-book-appointment-page {
   color: #000000;
   font-size: 20px;
   outline: none;
-  text-align: center;
   text-transform: capitalize;
   font-weight: 300;
   background-color: transparent;
@@ -386,7 +326,10 @@ button.close-book-appointment-page {
   padding: 15px 0px;
   margin-bottom: 20px;
 }
-
+.registerNow_step6  .ud-col li label {
+	font-size: 16px !important;
+	color: #666 !important;
+}
 .registerNow_step6 input[type="text"],
 .registerNow_step7 input[type="tel"] {
   border-top: none;
@@ -462,7 +405,7 @@ button.close-book-appointment-page {
   color: #ffffff;
   padding: 10px 10px 0px 10px;
   font-size: 16px;
-  min-width: 420px;
+  min-width: 350px;
   text-align: center;
   line-height: 16px;
 }
@@ -1116,6 +1059,7 @@ span.ng-star-inserted {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 3;
   }
   
   #msform {
@@ -1516,10 +1460,48 @@ span.ng-star-inserted {
   /*-- End Form CSS --*/
   
   /*-- responsive CSS --*/
+  @media only screen and (max-width: 1150px){
+  .sidebar_right {
+        width: 250px;
+        padding: 0 15px;
+        z-index: 9;
+  }
+  .registerNow_step2,
+  .registerNow_step3,
+  .registerNow_step4,
+  .registerNow_step5,
+  .registerNow_step6,
+  .registerNow_step7,
+  .registerNow_step8,
+  .registerNow_step9,
+  .registerNow_step10,
+  .registerNow_step11,
+  .registerNow_step12,
+  .registerNow_step13,
+  .registerNow_step14 {
+      width: calc(100% - 250px);
+  } 
+  }
   @media only screen and (max-width: 991px){
+.registerNow_step2,
+.registerNow_step3,
+.registerNow_step4,
+.registerNow_step5,
+.registerNow_step6,
+.registerNow_step7,
+.registerNow_step8,
+.registerNow_step9,
+.registerNow_step10,
+.registerNow_step11,
+.registerNow_step12,
+.registerNow_step13,
+.registerNow_step14 {
+    width: 75%;
+    }
   .sidebar_right {
     width: 250px;
     padding: 0 15px;
+    z-index: 9;
   }
   .manage-1-place-wrapper.scroll-here {
     width: 490px;
