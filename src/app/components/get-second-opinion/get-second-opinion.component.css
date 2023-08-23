@@ -17,8 +17,8 @@ body.appointment-page {
 
 button.close-book-appointment-page {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 25px;
   background-color: transparent;
   border: 1px solid #fff;
   width: 50px;
@@ -1318,6 +1318,9 @@ span.ng-star-inserted {
     border-radius: 50%;
     margin: 0 auto 20px;
   }
+  .ud-col ul {
+    padding: 0;
+  }
   .ud-col ul li {
     list-style: none;
     position: relative;
@@ -1482,7 +1485,7 @@ span.ng-star-inserted {
       width: calc(100% - 250px);
   } 
   }
-  @media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px){
 .registerNow_step2,
 .registerNow_step3,
 .registerNow_step4,
@@ -1510,13 +1513,98 @@ span.ng-star-inserted {
     font-size: 12px;
   }
   }
+
   @media only screen and (max-width: 767px){
-  .sidebar_right {
-    width: 100%;
-    position: relative;
-    height: auto;
-    padding: 50px 15px 0;
+  .registerNow_step1 figure img {
+    max-width: 300px;
   }
+  .registerNow_step2,
+  .registerNow_step3,
+  .registerNow_step4,
+  .registerNow_step5,
+  .registerNow_step6,
+  .registerNow_step7,
+  .registerNow_step8,
+  .registerNow_step9,
+  .registerNow_step10,
+  .registerNow_step11,
+  .registerNow_step12,
+  .registerNow_step13,
+  .registerNow_step14 {
+    width: calc(100% - 145px);
+  }
+  .sidebar_right {
+    padding: 50px 5px 0;
+    width: 150px;
+   }
+   #progressbar {
+    padding:0;
+    font-size: 12px;
+   }
+   #progressbar li::before {
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  #progressbar li::after {
+    left: 12px;
+  }
+  #progressbar #confirm::before {
+    font-size: 6px;
+  }
+  #progressbar li span {
+    margin: 0px 0 0 15px;
+  }
+  #progressbar li span strong {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  #progressbar #confirm.active::before {
+    font-size: 14px;
+  }
+
+  /*-- name section --*/
+  .center_col {
+    max-width: 250px;
+  }
+  #msform input, #msform textarea {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+  }
+  #msform .signup_col input {
+    height: 45px;
+    padding: 0 0 0 40px;
+  }
+  .login_icon {
+    left: 30px;
+    font-size: 18px;
+  }
+
+
+
+/*-- type of scan --*/
+  .manage-1-place-wrapper {
+    width: 250px;
+  }
+  #msform .checkbox-wrapper input {
+    height: 55px;
+  }
+  .manage-1-place-wrapper .checkbox-wrapper label.check-wrap-label {
+    line-height: 55px;
+    height: 55px;
+  }
+  .manage-1-place-wrapper .checkbox-wrapper label.check-wrap-label::before {
+    height: 57px;
+    min-width: 67px;
+  }
+  #msform .checkbox-wrapper {
+    font-size: 12px;
+  }
+
+
+
   #msform {
     margin: 50px 0;
     width: 100%;
@@ -1525,8 +1613,40 @@ span.ng-star-inserted {
     width: 90%;
     margin: 0 auto;
   }
+
+  /*-- part of body --*/
+  .manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label {
+    font-size: 10px;
+    height: 70px;
+  }
+  .manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label::before {
+    height: 69px;
+  }
+
+
+/*-- upload document --*/
+.ud-col textarea {
+	height: 80px;
+	padding: 0 !important;
+	width: 100% !important;
+	text-align: left;
+	line-height: 55px;
+	max-width: 200px;
+}
+.ud-col ul li .btn-success {
+	height: 40px;
+	margin-top: 12px;
+	color: #000000;
+	padding: 0 0 0 30px;
+	width: 100%;
+	line-height: 40px;
+	max-width: 200px;
+	font-size: 13px !important;
+}
+
+/*-- section css --*/
   .package_col {
-    max-width: 300px;
+    max-width: 250px;
     display: block;
     width: 100%;
   }
@@ -1537,4 +1657,106 @@ span.ng-star-inserted {
     min-width: 31%;
     max-width: 31%;
   }
+
+  button.close-book-appointment-page {
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  #msform h1 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+  #msform .action-button-previous {
+    width: 90px;
+    padding: 10px 5px;
+    margin: 20px 5px 10px 0px;
+    line-height: 14px;
+  }
+  #msform .action-button {
+    width: 90px;
+    padding: 10px 5px;
+    margin:20px 0px 10px 5px;
+    line-height: 14px;
+  }
+  .step8-inner h2 {
+    font-size: 20px;
+  }
+  .step8-inner h5 {
+    font-size: 15px;
+  }
+  }
+  @media only screen and (max-width: 470px){
+    .sidebar_right {
+      width: 100px;
+    }
+    .registerNow_step2,
+    .registerNow_step3,
+    .registerNow_step4,
+    .registerNow_step5,
+    .registerNow_step6,
+    .registerNow_step7,
+    .registerNow_step8,
+    .registerNow_step9,
+    .registerNow_step10,
+    .registerNow_step11,
+    .registerNow_step12,
+    .registerNow_step13,
+    .registerNow_step14 {
+      width: calc(100% - 97px);
+    }
+    .register-now-page aside {
+      width: 100%;
+    }
+    #progressbar li {
+      font-size: 12px;
+    }
+    #progressbar li span {
+      margin: 0px 0 0 8px;
+    }
+    #progressbar li span strong {
+      font-size: 8px;
+      line-height: 10px;
+    }
+    #progressbar #confirm.active::before {
+      font-size: 12px;
+    }
+    #progressbar li::before {
+      width: 20px;
+      height: 20px;
+      line-height: 14px;
+      font-size: 12px;
+    }
+    #progressbar li::after {
+      left: 9px;
+    }
+    #msform h1 {
+      font-size: 16px;
+      line-height: 18px;
+      margin: 0;
+    }
+    #msform .checkbox-wrapper {
+      font-size: 12px;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+    .package_col .radio-item label ul[type="square"] {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .package_col .radio-item input[type="radio"]:checked + label::before {
+      height: 100%;
+    }
+    .manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label {
+      height: 60px;
+    }
+    .manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label::before {
+      height: 59px;
+    }
+    .text-danger {
+      font-size: 12px;
+      text-align: center;
+    }
   }
