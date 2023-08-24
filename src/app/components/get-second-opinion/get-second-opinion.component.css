@@ -1100,7 +1100,7 @@ span.ng-star-inserted {
       font-family: montserrat;
       color: #2C3E50;
       background-color: #ECEFF1;
-      font-size: 16px;
+      font-size: 15px;
       letter-spacing: 1px
   }
   
@@ -1274,7 +1274,7 @@ span.ng-star-inserted {
   /*-- Form CSS start --*/
   .center_col {
     margin: 0 auto;
-    max-width: 350px;
+    max-width: 400px;
   }
   #msform .signup_col input {
     background: #f9fafb;
@@ -1284,7 +1284,7 @@ span.ng-star-inserted {
     margin-top: 12px;
     margin-bottom: 5px;
     color: #000000;
-    padding: 0 0 0 65px;
+    padding: 0 0 0 55px;
   }
   #msform h1 {
     color: #000;
@@ -1460,6 +1460,9 @@ span.ng-star-inserted {
     margin: 0 auto 30px;
     max-width: 350px;
   }
+  .text-danger {
+    text-align: center;
+  }
   /*-- End Form CSS --*/
   
   /*-- responsive CSS --*/
@@ -1602,8 +1605,6 @@ span.ng-star-inserted {
   #msform .checkbox-wrapper {
     font-size: 12px;
   }
-
-
 
   #msform {
     margin: 50px 0;
@@ -1757,6 +1758,5 @@ span.ng-star-inserted {
     }
     .text-danger {
       font-size: 12px;
-      text-align: center;
     }
   }
