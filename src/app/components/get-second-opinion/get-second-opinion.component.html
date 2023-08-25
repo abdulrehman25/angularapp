@@ -144,8 +144,7 @@
                         </div>
                         <div class="search_barcol signup_col">
                           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                              <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-search"></i></span>
-                              <input type="search" id="gsearch" name="gsearch"  placeholder="Find a type of scan">
+                            <p>{{ scanType.toString() }}</p>
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
@@ -228,8 +227,8 @@
                         </div>
                         <div class="search_barcol signup_col">
                           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                              <span _ngcontent-vtn-c18="" class="login_icon"><i class="fa-light fa-search"></i></span>
-                              <input type="search" id="gsearch" name="gsearch"  placeholder="Find a type of scan">
+                              <p>{{ bodyPart.toString() }}</p>
+
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
@@ -588,7 +587,7 @@
                 </div>
             </div>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous" (click)="showDiv('registerNow_step6', '6')"/>
-                <input type="button" name="next" class="next action-button" value="Submit" (click)="showDiv('registerNow_step8', '8')"/>
+                <input type="button" name="next" class="next action-button" value="Submit" (click)="showDiv('registerNow_step8', '8')">
                 <div class="footer-text">© 2021. - 2025 All Rights Reserved. RadiologyCheck.com</div>
             </fieldset>
             </div>

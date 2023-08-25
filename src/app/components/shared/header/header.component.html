@@ -2,10 +2,10 @@
 	<div class="container">
 	  <div class="navbar-wrapper">
 		<div class="navbar-left-content">
-		  <a href="index.html" aria-current="page" class="navbar-logo-wrapper w-nav-brand w--current"><img src="../../../../assets/images/new_homepage/Asset-3.png" loading="lazy" width="320" sizes="(max-width: 479px) 100vw, (max-width: 991px) 320px, (max-width: 1919px) 17vw, 251.765625px" srcset="images/Asset-3-p-500.png 500w, images/Asset-3-p-800.png 800w, images/Asset-3-p-1080.png 1080w, images/Asset-3-p-1600.png 1600w, images/Asset-3.png 3334w" alt="" class="navbar-logo-image"></a>
+		  <a routerLink="/home" aria-current="page" class="navbar-logo-wrapper w-nav-brand w--current"><img src="../../../../assets/images/new_homepage/Asset-3.png" loading="lazy" width="320" sizes="(max-width: 479px) 100vw, (max-width: 991px) 320px, (max-width: 1919px) 17vw, 251.765625px" srcset="images/Asset-3-p-500.png 500w, images/Asset-3-p-800.png 800w, images/Asset-3-p-1080.png 1080w, images/Asset-3-p-1600.png 1600w, images/Asset-3.png 3334w" alt="" class="navbar-logo-image"></a>
 		  <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
-			<a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
-			<a href="about-us.html" class="nav-link w-nav-link">About</a>
+			<a routerLink="/" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+			<a routerLink="/about" class="nav-link w-nav-link">About</a>
 			<div data-hover="false" data-delay="0" class="menu-dropdown-wrapper-2 w-dropdown">
 			  <div class="dropdown-toggle-page w-dropdown-toggle">
 				<div class="dropdown-toggle-text-block">Our Services</div><img src="../../../../assets/images/new_homepage/Dropdown-Arrow.svg" loading="lazy" alt="" class="dropdown-toggle-arrow">
@@ -67,7 +67,7 @@
 						<a href="#" class="dropdown-menu-text-link-wrapper w-inline-block">
 						  <div>Head Trauma</div>
 						</a>
-						<a href="neuroradiology.html" class="more-temple w-inline-block">
+						<a routerLink="/neuroradiology" class="more-temple w-inline-block">
 						  <div>See More</div>
 						  <div class="more-temple-boder"></div>
 						</a>
@@ -82,20 +82,20 @@
 				<div>Resources</div><img src="../../../../assets/images/new_homepage/Dropdown-Arrow.svg" loading="lazy" alt="" class="dropdown-toggle-arrow">
 			  </div>
 			  <nav class="dropdown-list w-dropdown-list">
-				<a href="doctors.html" class="dropdown-link mb0 w-dropdown-link">Our Team</a>
-				<a href="template-pages/license.html" class="dropdown-link mb0 w-dropdown-link">Pro Bono</a>
-				<a href="contact-us.html" class="dropdown-link mb0 w-dropdown-link">Contact</a>
+				<a routerLink="/ourTeam" class="dropdown-link mb0 w-dropdown-link">Our Team</a>
+				<a routerLink="/proBono" class="dropdown-link mb0 w-dropdown-link">Pro Bono</a>
+				<a routerLink="/contact"class="dropdown-link mb0 w-dropdown-link">Contact</a>
 			  </nav>
 			</div>
 			<div class="primary-button-navbar mobile">
-			  <a href="get-second-opinion.html" class="primary-button w-button">Get Second Opinion</a>
+			  <a routerLink="/GetSecondOpinion" class="primary-button w-button">Get Second Opinion</a>
 			</div>
 		  </nav>
 		</div>
 		<div class="navbar-right-content">
 		  <div class="navbar-button-wrapper">
 			<div class="primary-button-navbar desktop">
-			  <a href="get-second-opinion.html" target="_blank" class="primary-button w-button">Get Second Opinion</a>
+			  <a routerLink="/GetSecondOpinion" target="_blank" class="primary-button w-button">Get Second Opinion</a>
 			</div>
 		  </div>
 		  <div class="menu-button w-nav-button">
@@ -118,10 +118,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.html" aria-current="page" class="nav-link current">Home</a>
+                        <a routerLink="/" aria-current="page" class="nav-link current">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about-us.html" class="nav-link w-nav-link">About</a>
+                        <a routerLink="/about" class="nav-link w-nav-link">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services<span class="fa fa-angle-down"></span></a>
@@ -164,7 +164,7 @@
                                                   </a>
                                                   <a href="#">Brain and Spine</a>
                                                   <a href="#">Head Trauma</a>
-                                                  <a href="neuroradiology.html">See More <div class="more-temple-boder"></div></a>
+                                                  <a routerLink="/neuroradiology" >See More <div class="more-temple-boder"></div></a>
                                             </div>
                                         </div>
                                     </div>
@@ -190,7 +190,7 @@
         <div class="navbar-right-content">
             <div class="navbar-button-wrapper">
             <div class="primary-button-navbar desktop">
-                <a href="GetSecondOpinion" target="_blank" class="primary-button w-button">Get Second Opinion</a>
+                <a routerLink="/GetSecondOpinion" class="primary-button w-button">Get Second Opinion</a>
             </div>
             </div>
             <div class="menu-button w-nav-button">

@@ -53,14 +53,13 @@ export class GetSecondOpinionComponent {
     this.addClass = divClass;
     this.divStyle = `z-index : ${styleIndex}`;
     this.stepIndex = styleIndex;
-    if(this.addClass == 'registerNow_step3'){
-      this.sendVerificationCode();
-    }
-    else if(this.addClass == 'registerNow_step4'){
-      this.validateCode();
-    }else if(this.addClass == 'registerNow_step8'){
-      this.submitData();
-    }
+    // if(this.addClass == 'registerNow_step3'){
+    //   this.sendVerificationCode();
+    // }
+
+    // if(this.addClass == 'registerNow_step4'){
+    //   this.validateCode();
+    // }
   }
 
   async sendVerificationCode(){
@@ -97,8 +96,8 @@ export class GetSecondOpinionComponent {
         });
       }
       if (res.status == 404) {
-        this.addClass = 'registerNow_step3';
-        this.divStyle = `z-index : 3`;
+        this.addClass = 'registerNow_step4';
+        this.divStyle = `z-index : 4`;
         console.log(res);
         this.ngxLoader.stop();
         this._toastr.error(res.message.code, 'Error');
@@ -123,7 +122,7 @@ export class GetSecondOpinionComponent {
       }
     }
     this.formObj.type_of_scan = this.scanType;
-    console.log('scabtypes',this.scanType);
+    console.log(this.scanType);
   }
 
   setBodyPartArr(bodyname:string, event:any){
@@ -180,9 +179,11 @@ export class GetSecondOpinionComponent {
     }
   }
 
-  submitData(){
+  addSecondOpinionData(){
+
     console.log('submit_data')
 
+    var formData = new FormData();
     var formData = new FormData();
     if(this.scanfile != undefined){
       formData.append("scan", this.scanfile, this.scanfile.name);
@@ -193,6 +194,8 @@ export class GetSecondOpinionComponent {
     formData.append("id", this.formObj.id);
     formData.append("email", this.formObj.email);
     formData.append("first_name", this.formObj.first_name);
+    formData.append("last_name", this.formObj.last_name);
+    formData.append("phone", this.formObj.phone);
     formData.append("type_of_scan", this.formObj.type_of_scan);
     formData.append("what_part_of_body", this.formObj.what_part_of_body);
     formData.append("comment", this.formObj.comment);
@@ -204,17 +207,14 @@ export class GetSecondOpinionComponent {
       if (res.status == 200) {
         this.ngxLoader.stop();
         this._toastr.success('Completed !', 'Success');
+        this.showRegisterNowPage = false;
+        this.router.navigate(['/']);        
       }
       else{
         this._toastr.error('Something wend wrong ! Please try again..','Error');
       }
     });
-  }
 
-
-  addSecondOpinionData(){
-       this.showRegisterNowPage = false;
-       this.router.navigate(['/']);        
   }
   
 }
