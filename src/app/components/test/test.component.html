@@ -11,12 +11,13 @@
                         [formGroup]="stripeTest"
                         [elementsOptions]="elementsOptions"
                         >
-                         <input type="hidden" formControlName="amount" >   
-                        <input type="text" formControlName="customer_name"/>
+    
+                        <input formControlName="name" />
+                        <input formControlName="amount" />
                         <ngx-stripe-card-number [options]="cardOptions"></ngx-stripe-card-number>
                         <ngx-stripe-card-expiry [options]="cardOptions"></ngx-stripe-card-expiry>
                         <ngx-stripe-card-cvc [options]="cardOptions"></ngx-stripe-card-cvc>
-                        <button [disabled]='stripeTest.invalid'  type="submit" (click)="pay()">
+                        <button type="submit">
                             PAY
                         </button>
                         </div>
