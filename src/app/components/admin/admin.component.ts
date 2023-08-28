@@ -10,6 +10,7 @@ export class AdminComponent {
 
   showProfile:boolean= false;
   toggleDashboardSidebar:boolean= false;
+  showAdminHead: boolean = true;
   userName:string | null='';
 
   constructor(private router:Router){}

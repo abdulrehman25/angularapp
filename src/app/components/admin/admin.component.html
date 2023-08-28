@@ -1,128 +1,148 @@
-<div class="dashboard-section">
-    <div class="dashboard-navbar">
-      <div class="site-logo"><img src="../assets/images/logo2.png" alt="" /></div>
-      <div class="site-navbar-options">
-        <ul>
-          <li class="position-relative">
-            <a href="javascript:;"> <i class="fa-regular fa-envelope"></i></a>
-            <div class="get-notify">4</div>
-          </li>
-  
-          <li class="position-relative">
-            <a href="javascript:;"> <i class="fa-regular fa-bell"></i></a>
-            <div class="get-notify">2</div>
-          </li>
-          <li appClickOutside (clickOutside)="clickedOutside()">
-            <a href="javascript:;" class="profile-picture">
-              <!-- <img src="../assets/images/testi-user.png" alt="" /> -->
-              <h5>
-               {{userName}}
-                <button clickOutside (click)="openProfileBar()">
-                  <i class="fa-light fa-angle-down"></i>
-                </button>
-              </h5>
-            </a>
-            <div class="profile-bar">
-              <ol *ngIf="showProfile">
-                <!-- <li>
-                  <a class="pointer" (click)="redirectAndClose('userProfile')"
-                    ><i class="fa-regular fa-user"></i> update profile</a
-                  >
-                </li>
-                <li>
-                  <a class="pointer" (click)="redirectAndClose('myReports')"
-                    ><i class="fa-regular fa-prescription-bottle-pill"></i> my
-                    reports</a
-                  >
-                </li> -->
-                <li>
-                  <a class="pointer" (click)="logOut()"
-                    ><i class="fa-regular fa-arrow-right-to-arc"></i> log out</a
-                  >
-                </li>
-              </ol>
-            </div>
-          </li>
-        </ul>
+<div class="app-header header-shadow">
+  <div class="app-header__logo">
+      <div class="header__pane ml-auto">
+          <div>
+              <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                  <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                  </span>
+              </button>
+          </div>
       </div>
-    </div>
+      <div class="logo-src"><a href="#"><img src="./images/logo2.png" alt="" /></a></div>
+  </div>
+  <div class="app-header__mobile-menu">
+      <div>
+          <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+              <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+              </span>
+          </button>
+      </div>
+  </div>
+  <div class="app-header__menu">
+      <span>
+          <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+              <span class="btn-icon-wrapper">
+                  <i class="fa fa-ellipsis-v fa-w-6"></i>
+              </span>
+          </button>
+      </span>
+  </div>    <div class="app-header__content">
+      <div class="app-header-left">
+          <div class="search-wrapper">
+              <div class="input-holder">
+                  <input type="text" class="search-input" placeholder="Type to search">
+                  <button class="search-icon"><span></span></button>
+              </div>
+              <button class="close"></button>
+          </div>       
+      </div>
+      <div class="app-header-right">
+          <div class="header-btn-lg pr-0">
+              <div class="widget-content p-0">
+                  <div class="widget-content-wrapper">
+                      <div class="widget-content-left">
+                          <div class="btn-group">
+                              <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                  <img width="42" class="rounded-circle" src="../../../assets/images/home-profile-img.png" alt="">
+                                  <i class="fa fa-chevron-down"></i>
+                              </a>
+                              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                  <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                  <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                  <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                  <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                  <div tabindex="-1" class="dropdown-divider"></div>
+                                  <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="widget-content-left  ml-3 header-user-info">
+                          <div class="widget-heading">
+                              Dr Ali Rahman
+                          </div>
+                          <div class="widget-subheading">
+                              M.Sc., EBR, ESNR, ESSR
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>        </div>
+  </div>
+</div>        
     <!-- dashboard navbar -->
   
-    <div
-      class="dashboard-layout-section"
-      [ngClass]="{ 'sidebar-active': toggleDashboardSidebar }"
-    >
-      <div class="dashboard-sidebar">
-        <ul>
-          <li>
-            <a routerLink="adminHome">
-              <span><i class="fa-regular fa-house"></i></span>
-              <span class="sidebar-item">Home</span>
-            </a>
-          </li>
-          <!--list item-->
-  
-          <li>
-            <a routerLink="manageProfile">
-              <span><i class="fa-regular fa-user"></i></span>
-              <span class="sidebar-item">Manage Profile</span>
-            </a>
-          </li>
-          <!--list item-->
-  
-          <li>
-            <a routerLink="viewReports">
-              <span><i class="fa-regular fa-heart"></i></span>
-              <span class="sidebar-item">View Patient's Reports</span>
-            </a>
-          </li>
-          <!--list item-->
-  
-          <!-- <li>
-            <a routerLink="appointments">
-              <span><i class="fa-regular fa-notes-medical"></i></span>
-              <span class="sidebar-item">Appointments</span>
-            </a>
-          </li> -->
-          <!--list item-->
-  
-          <li>
-            <a routerLink="patientFeedback">
-              <span><i class="fa-regular fa-calendar"></i></span>
-              <span class="sidebar-item">Patient feedback</span>
-            </a>
-          </li>
-          <!--list item-->
-  
-          <!-- <li>
-            <a routerLink="giveFeedback">
-              <span><i class="fa-regular fa-comment-quote"></i></span>
-              <span class="sidebar-item">give feedback</span>
-            </a>
-          </li> -->
-          <!--list item-->
-  
-          <li>
-            <a class="pointer">
-              <span><i class="fa-regular fa-right-from-bracket"></i></span>
-              <span class="sidebar-item" (click)="logOut()">log out</span>
-            </a>
-          </li>
-          <!--list item-->
-        </ul>
-
-        <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"
-            ><i class="fa-regular fa-arrow-right-arrow-left"></i></a>
+    <div class="app-main">
+            <!-- dashboard sidebar -->
+      <div class="app-sidebar sidebar-shadow">
+          <div class="app-header__logo">
+              <div class="logo-src"></div>
+              <div class="header__pane ml-auto">
+                  <div>
+                      <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                          <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                          </span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="app-header__mobile-menu">
+              <div>
+                  <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                      <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                      </span>
+                  </button>
+              </div>
+          </div>
+          <div class="app-header__menu">
+              <span>
+                  <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                      <span class="btn-icon-wrapper">
+                          <i class="fa fa-ellipsis-v fa-w-6"></i>
+                      </span>
+                  </button>
+              </span>
+          </div>    
+          <div class="scrollbar-sidebar">
+              <div class="app-sidebar__inner">
+                  <ul class="vertical-nav-menu">
+                      <li>
+                          <a href="index.html" class="mm-active">
+                              <i class="fa fa-table-cells-large"></i>
+                              Dashboard
+                          </a>
+                      </li>
+                      <li>
+                          <a href="client-management.html" class="">
+                              <i class="fa fa-user"></i>
+                              Client Management
+                          </a>
+                      </li>
+                      <li>
+                          <a href="order-management.html" class="">
+                              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                              Orders Management
+                          </a>
+                      </li>
+                      <li>
+                          <a href="revenue.html" class="">
+                              <i class="fa fa-sack-dollar"></i>
+                              Revenue
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-      <!-- dashboard sidebar -->
-  
-      <div class="dashboard-right-content">
-        
-        <router-outlet></router-outlet>
+      <div class="app-main__outer">
+          <div class="app-main__inner">
+            <router-outlet></router-outlet>
+          </div>   
       </div>
-      <!-- dashboard right content -->
-    </div>
+</div>
     <!-- dashboard layout section -->
-  </div>
   <!-- dashboard section -->
   
