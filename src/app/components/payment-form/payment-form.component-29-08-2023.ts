@@ -1,11 +1,10 @@
 import { Component, OnInit, ViewChild, ɵConsole } from '@angular/core';
 import { FormGroup, FormBuilder, Validators,  } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { PaymentService } from 'src/app/services/payment.service';
-import { PackageService } from 'src/app/services/package.service';
 import { StripeService, StripeCardNumberComponent } from 'ngx-stripe';
 import {
   StripeCardElementOptions,
@@ -20,11 +19,6 @@ import {
 })
 export class PaymentFormComponent {
   @ViewChild(StripeCardNumberComponent) card: StripeCardNumberComponent;
-
-  packageId : number = 0;
-  packageName : string = '';
-  amount: number = 0;
-  customerObject : any = '';
 
   cardOptions: StripeCardElementOptions = {
     style: {
@@ -48,58 +42,34 @@ export class PaymentFormComponent {
   stripeTest: FormGroup;
 
   constructor(
-    public activatedRoute: ActivatedRoute,
     private http: HttpClient,
     private router:Router,
     private ngxLoader: NgxUiLoaderService,
     private fb: FormBuilder,
     private stripeService: StripeService,
-    private packageService:PackageService,
     private paymentService:PaymentService,
     private _toastr:ToastrService
   ) {}
 
   ngOnInit(): void {
-
-
     this.stripeTest = this.fb.group({
       customer_name:  [null, [Validators.required]],
-      customer_email:  [null, [Validators.required]],
-      amount:  [''],
-
+      amount: [50]
     });
-    this.activatedRoute.params.subscribe(params => {
-      console.log('params',params['id'])
-      this.packageService.get(params['id']).subscribe((res: any) => {
-        if (res.status) {
-          this.packageName = res.data.name;
-          this.packageId = res.data.id;
-          this.amount = res.data.price;
-          this.stripeTest.get("amount").setValue(res.data.price);
-
-        }
-    });
-  });
-  console.log('amts', this.amount)
-
-  
   }
 
 
   pay(): void {
     var formData = new FormData();
     const name = this.stripeTest.get('customer_name').value;
-    this.customerObject= JSON.stringify({'name': this.stripeTest.get('customer_name').value, 'email': this.stripeTest.get('customer_email').value});
-    console.log('customerobj',this.customerObject)
     this.stripeService
       .createToken(this.card.element, { name })
       .subscribe((result) => {
         if (result.token) {
-          console.log('token',result.token.id);
+          // Use the token
+          console.log(result.token.id);
           formData.append("stripeToken",result.token.id);
           formData.append("amount",this.stripeTest.get('amount').value);
-          formData.append("product",JSON.stringify({'name' : this.packageName, 'id' : this.packageId}));
-          formData.append("customer",this.customerObject);
           this.paymentService.makePayment(formData).subscribe((res: any) => {
             if (res.status) {
               this.ngxLoader.stop();

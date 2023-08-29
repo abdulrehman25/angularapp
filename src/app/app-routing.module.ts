@@ -89,7 +89,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'home-test', component: HomeTestComponent },
       { path: 'inner-test', component: InnerTestComponent },
-      { path: 'payment', component: PaymentFormComponent },
+      { path: 'payment/:id', component: PaymentFormComponent },
       { path: 'payment-confirmation', component: PaymentConfirmationComponent },
 
       // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may

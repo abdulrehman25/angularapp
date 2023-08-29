@@ -2,8 +2,8 @@
     <div class="row">
             <div class="stripeForm border rounded shadow">
                     <div class="mt-4 mb-5 stripe-header">
-                        <h5>Subscription Plan: Test Package Monthly</h5>
-                        <h5>Subscription Amount: $20</h5>
+                        <h5>Subscription Plan: {{packageName}}</h5>
+                        <h5>Subscription Amount: Eur {{amount}}</h5>
                     </div>
                     <div class="mt-5 mb-5">
                         <div 
@@ -11,8 +11,9 @@
                         [formGroup]="stripeTest"
                         [elementsOptions]="elementsOptions"
                         >
-                         <input type="hidden" formControlName="amount" >   
-                        <input type="text" formControlName="customer_name"/>
+                         <input type="hidden" formControlName="amount" value={{amount}}/>   
+                        <input type="text" placeholder="customer_name" formControlName="customer_name"/>
+                        <input type="email" placeholder="customer_email" formControlName="customer_email"/>
                         <ngx-stripe-card-number [options]="cardOptions"></ngx-stripe-card-number>
                         <ngx-stripe-card-expiry [options]="cardOptions"></ngx-stripe-card-expiry>
                         <ngx-stripe-card-cvc [options]="cardOptions"></ngx-stripe-card-cvc>
