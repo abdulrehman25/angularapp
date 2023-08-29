@@ -11,15 +11,29 @@
                         [formGroup]="stripeTest"
                         [elementsOptions]="elementsOptions"
                         >
-                         <input type="hidden" formControlName="amount" value={{amount}}/>   
-                        <input type="text" placeholder="customer_name" formControlName="customer_name"/>
-                        <input type="email" placeholder="customer_email" formControlName="customer_email"/>
-                        <ngx-stripe-card-number [options]="cardOptions"></ngx-stripe-card-number>
-                        <ngx-stripe-card-expiry [options]="cardOptions"></ngx-stripe-card-expiry>
-                        <ngx-stripe-card-cvc [options]="cardOptions"></ngx-stripe-card-cvc>
-                        <button [disabled]='stripeTest.invalid'  type="submit" (click)="pay()">
+                            <input type="hidden" class="form-control" formControlName="amount" value={{amount}}/>   
+                        <div class="col-md-4 mt-4">
+                            <input type="text" class="form-control" placeholder="customer_name" formControlName="customer_name"/>
+                         </div>
+                        <div class="col-md-4 mt-4">
+                            <input type="email" class="form-control" placeholder="customer_email" formControlName="customer_email"/>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                        <ngx-stripe-card-number [options]="cardOptions" className="cardElements"
+                        ></ngx-stripe-card-number>
+                         </div>
+                         <div class="col-md-4 mt-4">
+                        <ngx-stripe-card-expiry [options]="cardOptions" className="cardElements"></ngx-stripe-card-expiry>
+                         </div>
+                         <div class="col-md-4 mt-4">
+                             <ngx-stripe-card-cvc [options]="cardOptions" className="cardElements"></ngx-stripe-card-cvc>
+                         </div>
+                         <div class="col-md-4 mt-4">
+                        <button [disabled]='stripeTest.invalid'  type="submit" className="primary-button w-button" (click)="pay()">
                             PAY
                         </button>
+                    </div>
+
                         </div>
                     </div>
             </div>
