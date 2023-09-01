@@ -70,6 +70,39 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 }
+/*-- language css --*/
+.secondry-navbar ul li {
+    list-style: none;
+    position: relative;
+}
+.secondry-navbar ul li button.select-language-btn {
+    background: transparent;
+    width: 130px;
+    margin: 20px 0 0;
+    border: 0;
+}
+.select-language-section {
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 160px;
+    top:60px;
+    left:12px;
+}
+.select-language-section ul {
+    margin: 0;
+    padding: 0;
+}
+.select-language-section li {
+    list-style: none;
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 2px;
+    font-weight: normal;
+}
+/*-- end language css --*/
 h1 {
     color: #252f4b;
     margin-top: 0;
