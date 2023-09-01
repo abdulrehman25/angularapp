@@ -89,6 +89,9 @@ import { TermsAndConditionsComponent } from './components/others/terms-and-condi
 import { RadiologySidebarComponent } from './components/shared/radiology-sidebar/radiology-sidebar.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sidebar.component';
+import { NgxStripeModule } from 'ngx-stripe';
+import { PaymentFormComponent } from './components/payment-form/payment-form.component';
+import { PaymentConfirmationComponent } from './components/payment-confirmation/payment-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -168,15 +171,16 @@ import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sideba
     RadiologySidebarComponent,
     TumorComponent,
     AuthSidebarComponent,
-
+    PaymentFormComponent,
+    PaymentConfirmationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
     CommonModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     CarouselModule,
     ToastrModule.forRoot(),
@@ -189,6 +193,7 @@ import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sideba
     }),
     NgxUiLoaderModule,
     NgxPaginationModule,
+   NgxStripeModule.forRoot('pk_test_51Mjk9kEnkPTKRYXTTOWeEJ6EDvF9s8cfi4eFdwFoDx1Q3ZapvlGp69OaZQVpmdKPXsih2iW1HCp3xQBmUx4ZwWBZ00H1XV1s83'),
   ],
   providers: [{ provide: "BASE_URL", useFactory: getBaseUrl }],
   bootstrap: [AppComponent]

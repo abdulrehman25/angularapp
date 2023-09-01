@@ -1,1 +1,43 @@
-<p>payment-form works!</p>
+<div class="container payment_section">
+    <div class="row">
+            <div class="stripeForm border rounded shadow">
+                    <div class="mt-4 mb-5 stripe-header">
+                        <h5>Subscription Plan: {{packageName}}</h5>
+                        <h5>Subscription Amount: Eur {{amount}}</h5>
+                    </div>
+                    <div class="mt-5 mb-5">
+                        <div 
+                        ngxStripeCardGroup
+                        [formGroup]="stripeTest"
+                        [elementsOptions]="elementsOptions"
+                        >
+                            <input type="hidden" class="form-control" formControlName="amount" value={{amount}}/>   
+                        <div class="col-md-4 mt-4">
+                            <input type="text" class="form-control" placeholder="customer_name" formControlName="customer_name"/>
+                         </div>
+                        <div class="col-md-4 mt-4">
+                            <input type="email" class="form-control" placeholder="customer_email" formControlName="customer_email"/>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                        <ngx-stripe-card-number [options]="cardOptions" className="cardElements"
+                        ></ngx-stripe-card-number>
+                         </div>
+                         <div class="col-md-4 mt-4">
+                        <ngx-stripe-card-expiry [options]="cardOptions" className="cardElements"></ngx-stripe-card-expiry>
+                         </div>
+                         <div class="col-md-4 mt-4">
+                             <ngx-stripe-card-cvc [options]="cardOptions" className="cardElements"></ngx-stripe-card-cvc>
+                         </div>
+                         <div class="col-md-4 mt-4">
+                        <button [disabled]='stripeTest.invalid'  type="submit" className="primary-button w-button" (click)="pay()">
+                            PAY
+                        </button>
+                    </div>
+
+                        </div>
+                    </div>
+            </div>
+         
+    </div>
+
+</div>

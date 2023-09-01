@@ -1,0 +1,29 @@
+<div class="container payment_section">
+    <div class="row">
+            <div class="stripeForm border rounded shadow">
+                    <div class="mt-4 mb-5 stripe-header">
+                        <h5>Subscription Plan: Test Package Monthly</h5>
+                        <h5>Subscription Amount: $20</h5>
+                    </div>
+                    <div class="mt-5 mb-5">
+                        <div 
+                        ngxStripeCardGroup
+                        [formGroup]="stripeTest"
+                        [elementsOptions]="elementsOptions"
+                        >
+    
+                        <input formControlName="name" />
+                        <input formControlName="amount" />
+                        <ngx-stripe-card-number [options]="cardOptions"></ngx-stripe-card-number>
+                        <ngx-stripe-card-expiry [options]="cardOptions"></ngx-stripe-card-expiry>
+                        <ngx-stripe-card-cvc [options]="cardOptions"></ngx-stripe-card-cvc>
+                        <button type="submit">
+                            PAY
+                        </button>
+                        </div>
+                    </div>
+            </div>
+         
+    </div>
+
+</div>
