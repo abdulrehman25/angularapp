@@ -68,7 +68,6 @@ import { CookiePolicyComponent } from './components/others/cookie-policy/cookie-
 import { ImprintComponent } from './components/others/imprint/imprint.component';
 import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
-import { PaymentFormComponent } from './components/payment-form/payment-form.component';
 import { PaymentConfirmationComponent } from './components/payment-confirmation/payment-confirmation.component';
 
 const routes: Routes = [
@@ -89,7 +88,6 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'home-test', component: HomeTestComponent },
       { path: 'inner-test', component: InnerTestComponent },
-      { path: 'payment/:id', component: PaymentFormComponent },
       { path: 'payment-confirmation', component: PaymentConfirmationComponent },
 
       // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may

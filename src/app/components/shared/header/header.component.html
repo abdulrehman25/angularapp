@@ -186,17 +186,23 @@
                 </ul>
             </div>
         </nav>
+		<div class="secondry-navbar">
+			<ul>
+				<li>
+				<button type="button" class="select-language-btn" (click)="showHideDropdown()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
 
-		<button type="button" class="select-language-btn" (click)="showHideDropdown()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
-
-		<div class="select-language-section" *ngIf="showHide">
-			<ul class="countryFlags">
-				<ng-container *ngFor="let language of languageList">
-				<li class="mx-0" (click)="switchLang(language)">
-					<i class="flag-icon flag-icon-{{language.countryCode}}"></i> 
-					{{ language.language.toUpperCase() }}
-				</li>
-			</ng-container>
+				<div class="select-language-section" *ngIf="showHide">
+					<ul class="countryFlags">
+						<ng-container *ngFor="let language of languageList">
+						<li class="mx-0" (click)="switchLang(language)">
+							<i class="flag-icon flag-icon-{{language.countryCode}}"></i> 
+							{{ language.language.toUpperCase() }}
+						</li>
+					</ng-container>
+					</ul>
+				</div>
+			</li>
+			<li><button type="button" class="log_butto"><i class="fas fa-user"></i> Login </button></li>
 			</ul>
 		</div>
         </div>
