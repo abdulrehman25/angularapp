@@ -9,7 +9,9 @@
     position: relative;
     display: inline-block;
 }
-
+.site-banner img {
+	width: 100%;
+}
 .site-banner::before {
     display: none;
 }
@@ -32,7 +34,12 @@
 }
 
 .banner-caption {
-    bottom: 20%;
+	bottom: 20%;
+	position: absolute;
+	max-width: 1350px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 
 .site-banner .banner-caption aside a {
