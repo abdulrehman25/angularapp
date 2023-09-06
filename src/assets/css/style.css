@@ -488,6 +488,9 @@ box-shadow: none;
     line-height: 28px;
     margin:0 0 28px !important;
 }
+.site_wrapper {
+    padding-top: 100px;
+}
 @media screen and (max-width: 991px){
 .w-nav-overlay {
     height: 100vh!important;
