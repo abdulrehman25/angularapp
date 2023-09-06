@@ -238,6 +238,64 @@
 	padding-bottom: 5px;
 	font-size: 16px;
 }
+.experience-training::before {
+	width: 1100px;
+}
+
+.qualiMember-section {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding: 150px 0 80px;
+	position: relative;
+	background-image: url('../../../../assets/images/qualimember-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-blend-mode: multiply;
+	background-color: #fafafa;
+	margin-bottom: 80px;
+}
+.position-relative.qualiMember-item {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 38px 81px rgb(0 0 0 / 10%);
+	min-height: 300px;
+	width: 100%;
+	background-image: url('../../../../assets/images/quality-mark.png');
+	background-position: top 15px right 15px;
+	background-repeat: no-repeat;
+	background-size: 12%;
+}
+.position-relative.qualiMember-item.membership {
+	background-image: url('../../../../assets/images/membership-association.png');
+	background-position: top 15px right 15px;
+	background-repeat: no-repeat;
+	background-size: 16%;
+}
+.position-relative.qualiMember-item h4 {
+	font-size: 28px;
+	font-weight: 500;
+	color: #1e4171;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.position-relative.qualiMember-item small {
+	color: #1e4171;
+	font-weight: 600;
+	font-size: 18px;
+}
+.position-relative.qualiMember-item p {
+	color: #545555;
+}
+.position-relative.qualiMember-item.membership {
+	background-image: url('../../../../assets/images/membership-association.png');
+	background-position: top 15px right 15px;
+	background-repeat: no-repeat;
+	background-size: 16%;
+}
 /* home - section F */
 
 @media (max-width: 1023px) {
