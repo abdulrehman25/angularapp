@@ -9,13 +9,20 @@
     position: relative;
     display: inline-block;
 }
-.site-banner img {
-	width: 100%;
-}
+
 .site-banner::before {
     display: none;
 }
 
+.site-banner figure {
+	position: relative;
+	padding: 0px 0px 0px 100px;
+	text-align: right;
+}
+.site-banner figure img {
+	width: 85%;
+	height: auto;
+}
 .site-banner .banner-caption h1 {
     color: #264478;
     font-weight: 400;
@@ -34,9 +41,17 @@
 }
 
 .banner-caption {
-	bottom: 20%;
+    bottom: 20%;
 }
-
+.banner-caption {
+	bottom: 20%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 1320px;
+	text-align: left;
+}
 .site-banner .banner-caption aside a {
     background-color: #427337;
     box-shadow: none;
@@ -78,6 +93,23 @@
     font-size: 18px;
     z-index: 11;
 }
+.intro-dr-rehman h3 {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1e4171;
+	padding-bottom: 20px;
+	margin: 50px 0px;
+	position: relative;
+}
+.intro-dr-rehman h3::before {
+	position: absolute;
+	content: '';
+	width: 75px;
+	height: 3px;
+	background-color: #407839;
+	bottom: 0;
+	left: 0;
+}
 .intro-dr-rehman p {
 	padding-bottom: 15px;
     text-align: justify;
@@ -92,20 +124,52 @@
 .intro-dr-rehman p br {
 	margin-bottom: 20px;
 }
-/*-- new css 6-09-2023 --*/
-.banner-caption {
+.specialist-areas {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding: 100px 0px;
+	position: relative;
+	background-color: #ffffff;
+	/*--background-image: url("../../../../assets/images/specialist-area-bg.png");--*/
+    
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 45%;
+}
+.specialist-areas::before {
 	position: absolute;
-	max-width: 1350px;
-	margin: 0 auto;
+	content: '';
+	width: 100px;
+	height: 630px;
+    /*--background: url("../../../../assets/images/about-us-special-area-bg.png");--*/
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
+.specialist-areas h3 {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1e4171;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.specialist-areas ul li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 15px;
+}
+.specialist-areas ul li::before {
+	position: absolute;
+	content: '\f105';
+	font-family: 'Font Awesome 6 Pro';
 	left: 0;
-	right: 0;
+	top: 0;
+	color: #1e4171;
 }
-.intro-dr-rehman {
-	padding: 100px 0;
-}
-h3 {
-    color:#264478;
-}
+
+
 /* home - section F */
 
 @media (max-width: 1023px) {
