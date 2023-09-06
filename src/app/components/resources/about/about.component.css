@@ -35,11 +35,6 @@
 
 .banner-caption {
 	bottom: 20%;
-	position: absolute;
-	max-width: 1350px;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
 }
 
 .site-banner .banner-caption aside a {
@@ -96,6 +91,20 @@
 }
 .intro-dr-rehman p br {
 	margin-bottom: 20px;
+}
+/*-- new css 6-09-2023 --*/
+.banner-caption {
+	position: absolute;
+	max-width: 1350px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.intro-dr-rehman {
+	padding: 100px 0;
+}
+h3 {
+    color:#264478;
 }
 /* home - section F */
 
