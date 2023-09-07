@@ -343,6 +343,17 @@ color: rgba(0,0,0,.5);
 .secondry-navbar .select-language-section li .flag-icon {
 	margin: 0 5px 0 0;
 }
+.secondry-navbar ul.countryFlags li:nth-child(3)::before {
+	position: absolute;
+	content: '';
+	width: 18.44px;
+	height: 14px;
+	background-image: url('../../../../assets/images/arabic-world.jpg');
+	background-size: cover;
+	top: 7px;
+	left: 0px;
+	border: 1px solid rgba(0,0,0,.10);
+}
 /*-- end language css --*/
 .log_butto {
 	background: #fff;
