@@ -192,6 +192,8 @@
     #siteNav ul li a {font-size: 14px;}
     .site-banner::before {border-top: 80px solid transparent;border-right-width: 100vw;}
     .site-banner figure img {width: 100%;}
+    .site-banner .banner-caption h1 {padding-bottom: 15px;font-size: 45px;line-height: 60px;}
+    .site-banner .banner-caption p {padding-right: 0rem !important;}
     .section-d dd {padding: 0px 10rem;}
     .section-b img {width: 100%;}
     .section-b p {line-height: 30px;}
@@ -257,11 +259,19 @@
     }/*1199*/
     
 
-
+    @media (max-width: 1024px){
+        .site-banner {padding-left: 0 !important;}
+        .site-banner figure img {width: 100%;}
+        .site-banner .banner-caption h1 {padding-bottom: 15px;font-size: 30px;line-height: 40px;}
+        .site-banner .banner-caption p {padding-right: 0rem !important;}
+        .banner-caption {bottom: 30%;}
+        .primary-button {padding: 5px 10px;font-size: 12px;}
+    }
 
     @media (max-width: 991px){
     .navbar-left-content {width: 100% !important;}
     }
+
 
 
     @media (max-width: 767px){

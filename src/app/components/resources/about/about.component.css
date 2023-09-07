@@ -1,13 +1,13 @@
 .site_wrapper {
-    padding: 0px 0px 100px;
+	padding: 0px 0px 100px;
 }
 .site-banner {
-    width: 100%;
-    height: auto;
-    background-color: #ffffff;
-    padding: 50px 0px 0px;
-    position: relative;
-    display: inline-block;
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	padding: 50px 0px 0px;
+	position: relative;
+	display: inline-block;
 }
 
 .site-banner::before {
@@ -490,13 +490,6 @@ font-size: 16px;
         width: 100%;
         margin-left: -360px;
     }
-    .site-banner .banner-caption h1 {
-        line-height: 36px;
-        padding-bottom: 15px;
-    }
-    .banner-caption p {
-        padding-right: 0rem;
-    }
     .intro-dr-rehman p figure {
         max-width: 400px;
         min-width: 400px;
@@ -512,13 +505,6 @@ font-size: 16px;
     .subscribe-letter {
         width: 90%;
         margin-left: -440px;
-    }
-    .site-banner .banner-caption h1 {
-        line-height: 36px;
-        padding-bottom: 15px;
-    }
-    .banner-caption p {
-        padding-right: 0rem;
     }
     .intro-dr-rehman p figure {
         margin-bottom: 20px;

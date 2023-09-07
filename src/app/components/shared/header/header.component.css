@@ -321,7 +321,7 @@ color: rgba(0,0,0,.5);
 	padding: 20px;
 	border: 0;
 	border-radius: 10px;
-	width: 200px;
+	width: 150px;
 	top: 35px;
 	left: 12px;
 	box-shadow: 1px 1px 20px rgba(6, 21, 96, .1);
@@ -337,6 +337,7 @@ color: rgba(0,0,0,.5);
     margin: 0 0 8px;
     font-weight: normal;
     display: block;
+    cursor: pointer;
     
 }
 .secondry-navbar .select-language-section li .flag-icon {
