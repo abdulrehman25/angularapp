@@ -52,8 +52,8 @@
     .navbar-expand-md .navbar-collapse {max-width: 100% !important; }
     .site-banner {padding: 50px 0px 100px;}
     .site-banner figure img {width: 100%; height: 600px; object-fit: cover;}
-    .site-banner figure {padding: 0px 0px 0px 40px; height: 500px;}
-    .site-banner::before {border-top: 100px solid transparent;border-right-width: 100vw;}
+    .site-banner figure {padding: 0px; height: 500px;}
+    .banner-caption {padding-left:40px;}
     .banner-beneath-form h4 {font-size: 16px;padding-top: 18px;}
     .banner-beneath-form form input[type="submit"] {font-size: 10px;height: 38px;}
         
@@ -86,7 +86,7 @@
     .tab-direction-movement .tab-content .our-represantative-logos dd {max-width: 250px;min-width: 250px;height: 110px;margin: 5px 0px;}
     /*sec e*/
         
-    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 2rem;}
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 2rem !important;}
     .section-g::after {width: 100%;height: 100%;}
     .right-picture-g-section {position: relative;right: 0px;display: inline-block;width: 100%;margin-top: 50px;margin-left: 15px;}
         
@@ -181,6 +181,9 @@
     .footer-menu-grid {
         grid-column-gap: 0px;
     }
+    .p-t-100 {
+        padding-top: 20px;
+    }
     }/*1023*/
 
 
@@ -254,8 +257,9 @@
     .dashboard-layout-section.sidebar-active .dashboard-sidebar {width: 8%;}
     /* for dashboard */
 
-    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 4rem;}
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 4rem !important;}
     .register-form form p, .login-form form p.form-info {line-height: 20px;margin-block: 15px;}
+
     }/*1199*/
     
 
@@ -266,6 +270,7 @@
         .site-banner .banner-caption p {padding-right: 0rem !important;}
         .banner-caption {bottom: 30%;}
         .primary-button {padding: 5px 10px;font-size: 12px;}
+        .site-banner figure {height: auto;}
     }
 
     @media (max-width: 991px){
@@ -303,7 +308,7 @@
         
     .section-f {padding-bottom: 100px;}
     .section-f .position-relative ol.d-flex, .section-j .position-relative ol.d-flex {flex-flow: column;}
-    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 0rem;margin-bottom: 30px;}
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 0rem !important;margin-bottom: 30px;}
     .right-picture-g-section figure {width: 100%;}	
     .section-g {padding: 100px 0px 0px;}
     .section-g ul li p {padding-right: 0rem;}
@@ -415,25 +420,57 @@
     .site-footer .col-md-12.col-sm-12.px-5 {padding-inline: 15px !important;}
 
 
-
-    .site-banner {
-        padding: 0 !important;
+    .banner-caption {
+        width: 100%;
+        padding: 0px 15px;
+      }
+    .site-banner .banner-caption h1 {
+        line-height: 36px;
+        padding-bottom: 15px;
     }
-    .site-banner figure {
-        padding: 0 !important;
+    .banner-caption p {
+        padding-right: 0rem;
+    }
+    .site-banner::before {
+        display: none;
     }
     .site-banner figure img {
-        width: 100% !important;
-            object-position: 0;
+        height: 600px;
     }
-    .banner-caption {
-        position: relative !important;
-        bottom: 0 !important;
-        width:100% !important;
-        top:25px !important;
+
+    .subscribe-letter {
+        top: 0;
+        position: inherit;
+        max-width: 300px;
+        box-shadow: none;
+    }
+
+    .subscribe-letter input[type="submit"] {
+        position: relative;
+        right: 0px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .subscribe-letter input[type="email"] {
+        text-align: center;
+        box-shadow: none;
+        border-radius: 0;
+        border: 1px solid #ccc;
+        margin: 10px 0;
     }
     }/*767*/
     
+@media (max-width: 590px) {
+    .site-banner figure img {
+        height: 400px;
+    }
+  .site-banner figure img {
+    object-position: 0px 0px;
+
+  }
+}
     
     
     
