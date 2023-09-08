@@ -52,8 +52,8 @@
     .navbar-expand-md .navbar-collapse {max-width: 100% !important; }
     .site-banner {padding: 50px 0px 100px;}
     .site-banner figure img {width: 100%; height: 600px; object-fit: cover;}
-    .site-banner figure {padding: 0px 0px 0px 40px; height: 500px;}
-    .site-banner::before {border-top: 100px solid transparent;border-right-width: 100vw;}
+    .site-banner figure {padding: 0px; height: 500px;}
+    .banner-caption {padding-left:40px;}
     .banner-beneath-form h4 {font-size: 16px;padding-top: 18px;}
     .banner-beneath-form form input[type="submit"] {font-size: 10px;height: 38px;}
         
@@ -180,6 +180,9 @@
     .primary-navbar .primary-color {background-color: #ffffff;}
     .footer-menu-grid {
         grid-column-gap: 0px;
+    }
+    .p-t-100 {
+        padding-top: 20px;
     }
     }/*1023*/
 
@@ -417,24 +420,24 @@
     .site-footer .col-md-12.col-sm-12.px-5 {padding-inline: 15px !important;}
 
 
-
-    .site-banner {
-        padding: 0 !important;
+    .banner-caption {
+        width: 100%;
+        padding: 0px 15px;
+      }
+    .site-banner .banner-caption h1 {
+        line-height: 36px;
+        padding-bottom: 15px;
     }
-    .site-banner figure {
-        padding: 0 !important;
-        height: auto;
+    .banner-caption p {
+        padding-right: 0rem;
+    }
+    .site-banner::before {
+        display: none;
     }
     .site-banner figure img {
-        width: 100% !important;
-            object-position: 0;
+        height: 600px;
     }
-    .banner-caption {
-        position: relative !important;
-        bottom: 0 !important;
-        width:100% !important;
-        top:25px !important;
-    }
+
     .subscribe-letter {
         top: 0;
         position: inherit;
@@ -459,6 +462,15 @@
     }
     }/*767*/
     
+@media (max-width: 590px) {
+    .site-banner figure img {
+        height: 400px;
+    }
+  .site-banner figure img {
+    object-position: 0px 0px;
+
+  }
+}
     
     
     
