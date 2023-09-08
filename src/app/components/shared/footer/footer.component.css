@@ -164,7 +164,10 @@ img {
 .footer-contact-text-block {
 	color: rgba(255, 255, 255, .7);
 }
-
+.footer-contact-text-block a {
+    text-decoration: none;
+	color: rgba(255, 255, 255, .7);
+}
 /* Footer section */
 
 .footer-contact-wrap {

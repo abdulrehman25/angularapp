@@ -13,7 +13,15 @@
 .site-banner::before {
     display: none;
 }
-
+.site-banner figure {
+	position: relative;
+	padding: 0px 0px 0px 100px;
+	text-align: right;
+}
+.site-banner figure img {
+	width: 85%;
+	height: auto;
+}
 .site-banner .banner-caption h1 {
     color: #264478;
     font-weight: 400;
@@ -32,7 +40,13 @@
 }
 
 .banner-caption {
-    bottom: 20%;
+	position: absolute;
+	top: auto;
+	bottom: 20%;
+	width: 50%;
+	height: auto;
+	left: auto;
+	text-align: left;
 }
 
 .site-banner .banner-caption aside a {

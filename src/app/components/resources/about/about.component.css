@@ -1,13 +1,13 @@
 .site_wrapper {
-    padding: 0px 0px 100px;
+	padding: 0px 0px 100px;
 }
 .site-banner {
-    width: 100%;
-    height: auto;
-    background-color: #ffffff;
-    padding: 50px 0px 0px;
-    position: relative;
-    display: inline-block;
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	padding: 50px 0px 0px;
+	position: relative;
+	display: inline-block;
 }
 
 .site-banner::before {
@@ -335,13 +335,14 @@ font-size: 16px;
 .section-f .position-relative ol li aside a, .section-j .position-relative ol li aside a {
 	background-color: #407839;
 	color: #ffffff;
-	padding: 8px 20px;
+	padding: 11px 20px;
 	display: inline-block;
-	border-radius: 100px;
-	box-shadow: 0px 11px 35px #407839;
-	min-width: 250px;
-	border: 1px solid #407839;
+	border-radius: 20px;
+	min-width: 215px;
 	text-align: center;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 18px;
 }
 .about-how-do-steps {
 	width: 100%;
@@ -381,7 +382,7 @@ font-size: 16px;
 .about-how-do-steps ul.d-flex.list-inline.justify-content-center li {
 	position: relative;
 }
-.about-how-do-steps ul.d-flex.list-inline.justify-content-center li:first-child::before {
+/*--.about-how-do-steps ul.d-flex.list-inline.justify-content-center li::before {
 	position: absolute;
 	content: '\f007';
 	width: 46px;
@@ -395,16 +396,17 @@ font-size: 16px;
 	background-color: #ffffff;
 	color: #407839;
 	font-size: 20px;
-}
+}--*/
 .about-how-do-steps ul.d-flex.list-inline.justify-content-center li aside a {
 	background-color: #407839;
-	padding: 15px 50px 15px 65px;
+	padding: 12px 30px 12px 20px;
 	display: inline-block;
 	margin: 0px 15px;
-	border-radius: 50px;
+	border-radius: 20px;
 	text-transform: uppercase;
 	color: #ffffff;
-	box-shadow: 0px 11px 35px rgb(64 114 57 / 50%);
+	text-decoration: none;
+	font-weight: 600;
 }
 .about-how-do-steps ul.d-flex.list-inline.justify-content-center li aside a i {
 	position: relative;
@@ -488,13 +490,6 @@ font-size: 16px;
         width: 100%;
         margin-left: -360px;
     }
-    .site-banner .banner-caption h1 {
-        line-height: 36px;
-        padding-bottom: 15px;
-    }
-    .banner-caption p {
-        padding-right: 0rem;
-    }
     .intro-dr-rehman p figure {
         max-width: 400px;
         min-width: 400px;
@@ -510,13 +505,6 @@ font-size: 16px;
     .subscribe-letter {
         width: 90%;
         margin-left: -440px;
-    }
-    .site-banner .banner-caption h1 {
-        line-height: 36px;
-        padding-bottom: 15px;
-    }
-    .banner-caption p {
-        padding-right: 0rem;
     }
     .intro-dr-rehman p figure {
         margin-bottom: 20px;
