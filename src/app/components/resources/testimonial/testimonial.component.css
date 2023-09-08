@@ -57,13 +57,21 @@
 .site-banner .banner-caption aside a:hover {
     background-color: #264478;
 }
-.t-section ol {
+.t-section ol, .t-section ul {
 	padding: 0;
 }
 .t-section ol li {
 	width: 47%;
 	display: inline-block;
 	margin: 13px 1% 0 0;
+}
+.t-section ul li {
+	display: block;
+	width: 100%;
+	margin: 26px 0;
+	background: #f7f7f7;
+	padding: 25px;
+	border: 1px solid #e1e1e1;
 }
 
 /* home - section F */
