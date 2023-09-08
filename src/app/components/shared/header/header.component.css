@@ -346,11 +346,18 @@ color: rgba(0,0,0,.5);
 .secondry-navbar ul.countryFlags li:nth-child(3)::before {
 	position: absolute;
 	content: '';
-	width: 18.44px;
-	height: 14px;
+	width: 19px;
+	height: 15px;
 	background-image: url('../../../../assets/images/arabic-world.jpg');
 	background-size: cover;
 	top: 7px;
+	left: 0px;
+	border: 1px solid rgba(0,0,0,.10);
+}
+button.select-language-btn i.flag-icon.flag-icon- {
+	background-image: url('../../../../assets/images/arabic-world.jpg');
+	background-size: cover;
+	top: 1px;
 	left: 0px;
 	border: 1px solid rgba(0,0,0,.10);
 }
@@ -423,6 +430,9 @@ color: rgba(0,0,0,.5);
     .secondry-navbar {
         width: 100%;
         text-align: center;
+    }
+    .secondry-navbar ul.countryFlags li:nth-child(3)::before {
+        left: 11px;
     }
 }
 
