@@ -86,7 +86,7 @@
     .tab-direction-movement .tab-content .our-represantative-logos dd {max-width: 250px;min-width: 250px;height: 110px;margin: 5px 0px;}
     /*sec e*/
         
-    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 2rem;}
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 2rem !important;}
     .section-g::after {width: 100%;height: 100%;}
     .right-picture-g-section {position: relative;right: 0px;display: inline-block;width: 100%;margin-top: 50px;margin-left: 15px;}
         
@@ -254,8 +254,9 @@
     .dashboard-layout-section.sidebar-active .dashboard-sidebar {width: 8%;}
     /* for dashboard */
 
-    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 4rem;}
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 4rem !important;}
     .register-form form p, .login-form form p.form-info {line-height: 20px;margin-block: 15px;}
+
     }/*1199*/
     
 
@@ -266,6 +267,7 @@
         .site-banner .banner-caption p {padding-right: 0rem !important;}
         .banner-caption {bottom: 30%;}
         .primary-button {padding: 5px 10px;font-size: 12px;}
+        .site-banner figure {height: auto;}
     }
 
     @media (max-width: 991px){
@@ -303,7 +305,7 @@
         
     .section-f {padding-bottom: 100px;}
     .section-f .position-relative ol.d-flex, .section-j .position-relative ol.d-flex {flex-flow: column;}
-    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 0rem;margin-bottom: 30px;}
+    .section-f .position-relative ol li p, .section-j .position-relative ol li p {padding-right: 0rem !important;margin-bottom: 30px;}
     .right-picture-g-section figure {width: 100%;}	
     .section-g {padding: 100px 0px 0px;}
     .section-g ul li p {padding-right: 0rem;}
@@ -421,6 +423,7 @@
     }
     .site-banner figure {
         padding: 0 !important;
+        height: auto;
     }
     .site-banner figure img {
         width: 100% !important;
@@ -431,6 +434,28 @@
         bottom: 0 !important;
         width:100% !important;
         top:25px !important;
+    }
+    .subscribe-letter {
+        top: 0;
+        position: inherit;
+        max-width: 300px;
+        box-shadow: none;
+    }
+
+    .subscribe-letter input[type="submit"] {
+        position: relative;
+        right: 0px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .subscribe-letter input[type="email"] {
+        text-align: center;
+        box-shadow: none;
+        border-radius: 0;
+        border: 1px solid #ccc;
+        margin: 10px 0;
     }
     }/*767*/
     
