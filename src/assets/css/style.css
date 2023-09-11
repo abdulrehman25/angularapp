@@ -496,7 +496,7 @@ box-shadow: none;
 .subscribe-letter {
     position: absolute;
     top: 65px;
-    z-index: 1;
+    z-index: 2 !important;
     width: 80%;
     left: 0;
     right:0;
@@ -586,7 +586,9 @@ box-shadow: none;
 .site-banner .banner-caption aside a:hover {
     background-color: #264478;
 }
-
+.home_section_f {
+	margin-top: 70px;
+}
 
 
 
