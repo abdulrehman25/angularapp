@@ -497,7 +497,8 @@ box-shadow: none;
     position: absolute;
     top: 65px;
     z-index: 2 !important;
-    width: 80%;
+    width: 100%;
+    max-width: 800px;
     left: 0;
     right:0;
     margin: 0px auto;
@@ -609,7 +610,15 @@ h3.heading_strip::before {
 	bottom: 0;
 	left: 0;
 }
-
+.social-media dd a {
+	font-size: 2rem;
+}
+.our-team .social-media a{
+	color: #ffffffb5;
+}
+.our-team .social-media a:hover {
+	color: #fff;
+}
 /*-- Team member image animation --*/
 .our-team .col-lg-3 figure img {
     height: 300px;
@@ -660,7 +669,7 @@ h3.heading_strip::before {
 	margin: 15px 0 0 !important;
 	display: inline-block;
 }
-.our-team .flip-box a.flip-box-but, .our-team  .flip-box2 a.flip-box-but{color:#fff;}
+.our-team .flip-box a.flip-box-but, .our-team  .flip-box2 a.flip-box-but{color:#fff;text-decoration: none;}
 .flip-box {
     background-color: transparent;
     width: 100%;
@@ -690,7 +699,7 @@ h3.heading_strip::before {
   }
   
   .flip-box-front {
-    background-color: #fafafa;
+    background-color: #fff;
     color: #000;
   }
   
@@ -707,9 +716,14 @@ h3.heading_strip::before {
   }
 
   /*-- end team member animation --*/
+
 /*-- end our team page css--*/
-
-
+.sidebar-accordion a {
+	text-decoration: none;
+}
+.footer-contact-text-block a {
+	word-break: break-all;
+}
 
 @media screen and (max-width: 991px){
 .w-nav-overlay {
