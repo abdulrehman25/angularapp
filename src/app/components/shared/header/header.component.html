@@ -143,9 +143,16 @@
                                                     </div>
                                                 </a>
                                                 <a routerLink="/pediatricRadiology">Pediatric Radiology</a>
-                                                <a href="#">See More
-                                                    <div class="more-temple-boder"></div>
-                                                </a>
+                                                <div style="cursor: pointer;" (mouseover)="seeMore()"> {{!showPages ? "See More..." : "See Less..."}}
+                                                    <div class="more-temple-boder" >
+													</div>
+                                                </div>
+												<ng-container *ngIf="showPages">
+												<a routerLink="/musculoskeletalRadiology">Musculoskeletal Radiology</a>
+												<a routerLink="/pediatricSportsInjuries">Pediatric Sports Injuries</a>
+												<a routerLink="/oncologicalRadiology">Oncological Radiology</a>
+												</ng-container>
+
                                             </div>
                                         </div>
                                     </div>
@@ -164,7 +171,8 @@
                                                   </a>
                                                   <a routerLink="/brainAndSpine">Brain and Spine</a>
                                                   <a routerLink="/headTrauma">Head Trauma</a>
-                                                  <a routerLink="/neuroradiology" >See More <div class="more-temple-boder"></div></a>
+                                                  <!-- <a routerLink="/neuroradiology" >See More <div class="more-temple-boder"></div></a> -->
+                                                  <div style="cursor: pointer;" (mouseover)="seeMore()"> {{!showPages ? "See More..." : "See Less..."}}<div class="more-temple-boder"></div></div>
                                             </div>
                                         </div>
                                     </div>
