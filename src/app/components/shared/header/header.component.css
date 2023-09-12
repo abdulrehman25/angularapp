@@ -434,6 +434,18 @@ button.select-language-btn i.flag-icon.flag-icon- {
     .secondry-navbar ul.countryFlags li:nth-child(3)::before {
         left: 11px;
     }
+    .dropdown-menu {
+        margin-top: 0px;
+        padding: 0;
+        border-radius: 0px;
+        box-shadow:none;
+        margin: 0 !important;
+    }
+    .main_header .container h5 {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 5px 0 10px !important;
+    }
 }
 
 @media (max-width: 550px) {

@@ -496,8 +496,9 @@ box-shadow: none;
 .subscribe-letter {
     position: absolute;
     top: 65px;
-    z-index: 1;
-    width: 80%;
+    z-index: 2 !important;
+    width: 100%;
+    max-width: 800px;
     left: 0;
     right:0;
     margin: 0px auto;
@@ -586,12 +587,177 @@ box-shadow: none;
 .site-banner .banner-caption aside a:hover {
     background-color: #264478;
 }
+.home_section_f {
+	margin-top: 70px;
+}
 
+/*-- our team page css--*/
 
+.heading_strip {
+	font-size: 48px;
+	font-weight: 700;
+	color: #1e4171;
+	padding-bottom: 20px;
+	margin: 0px 0 50px;
+	position: relative;
+    text-align: center;
+}
+.heading_strip::before {
+	position: absolute;
+	content: '';
+	width: 75px;
+	height: 3px;
+	background-color: #407839;
+	bottom: 0;
+    right:0;
+    margin:0 auto;
+	left: 0;
+}
+.social-media dd a {
+	font-size: 2rem;
+}
+.our-team figure img {
+	height: 400px;
+	object-fit: cover;
+	border: 10px solid #ffffff;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+}
+.our-team .social-media a{
+	color: #ffffffb5;
+}
+.our-team .social-media a:hover {
+	color: #fff;
+}
+/*-- Team member image animation --*/
+.our-team .col-lg-3 figure img {
+    height: 300px;
+}
+.flip-box2 {
+    width:100%;
+    height: 500px;
+    perspective: 1000px;
+}
+.flip-box2-inner {
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+.flip-box2:hover .flip-box2-inner {
+    transform: rotateY(180deg);
+}
+.flip-box2-front, .flip-box2-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-box2-front {
+    color: #000;
+}
+.flip-box2-back {
+    background-color: #1e4171;
+    color: white;
+    transform: rotateY(180deg);
+    height: 100%;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .our-team .flip-box a.flip-box-but, .our-team .flip-box2 a.flip-box-but {
+	color: #fff;
+	background: #427337;
+	padding: 1px 20px 2px;
+	border-radius: 25px;
+	font-size: 14px;
+	margin: 15px 0 0 !important;
+	display: inline-block;
+}
+.our-team .flip-box a.flip-box-but, .our-team  .flip-box2 a.flip-box-but{color:#fff;text-decoration: none;}
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 450px;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .flip-box-back {
+    background-color: #1e4171;
+    color: white;
+    transform: rotateY(180deg);
+    height: 100%;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
+  /*-- end team member animation --*/
 
-
-
+/*-- end our team page css--*/
+.sidebar-accordion a {
+	text-decoration: none;
+}
+.footer-contact-text-block a {
+	word-break: break-all;
+}
+/*-- our services sub main --*/
+.services-col {
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid rgba(178, 183, 187, .2);
+	border-radius: 20px;
+	padding: 25px 25px 0;
+    margin: 0 0 30px;
+}
+.services-col:hover {
+    box-shadow: 1px 1px 20px rgba(6, 21, 96, .1);
+}
+.services-col h3 {
+	font-size: 20px;
+	line-height: 30px;
+	margin: 15px 10px;
+	color: #000;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.services-col a {
+    text-decoration: none;
+}
 @media screen and (max-width: 991px){
 .w-nav-overlay {
     height: 100vh!important;

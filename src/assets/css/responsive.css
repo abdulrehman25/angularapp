@@ -385,7 +385,6 @@
     .inner-pages h3 {font-size: 24px; line-height: 32px;}
     .inner-pages ul li {width: 100%;margin-bottom: 5px;}
     .inner-pages h5 {margin-bottom: 15px;}
-    .our-team {padding: 100px 10px;}
     .site-feature-banner.other-slide .feature-banner-caption h1 {font-size: 22px;color: #ffffff; background-image: url('../images/doctor-sign-white.png'); text-shadow: 1px 1px rgba(0,0,0,.75);}
     .site-feature-banner .feature-banner-caption aside {text-align: center;}
     /* inner pages */
@@ -430,6 +429,10 @@
     }
     .banner-caption p {
         padding-right: 0rem;
+    }
+    .site-banner {
+        padding-bottom: 20px;
+        padding-top:0;
     }
     .site-banner::before {
         display: none;

@@ -143,16 +143,8 @@
                                                     </div>
                                                 </a>
                                                 <a routerLink="/pediatricRadiology">Pediatric Radiology</a>
-                                                <div style="cursor: pointer;" (mouseover)="seeMoreRadiology()"> {{!showRadiologyPages ? "See More..." : "See Less..."}}
-                                                    <div class="more-temple-boder" >
-													</div>
-                                                </div>
-												<ng-container *ngIf="showRadiologyPages">
-												<a routerLink="/musculoskeletalRadiology">Musculoskeletal Radiology</a>
-												<a routerLink="/pediatricSportsInjuries">Pediatric Sports Injuries</a>
-												<a routerLink="/oncologicalRadiology">Oncological Radiology</a>
-												</ng-container>
-
+                                                <a routerLink="/radiology">See More<div class="more-temple-boder"></div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
