@@ -8,7 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   showHide: boolean = false;
-  showPages: boolean = false;
+  showRadiologyPages: boolean = false;
+  showNueRadiologyPages: boolean = false;
   selectedLanguage = 'English';
   selectedLanguageCode = 'gb';
   selectedCountryCode = 'gb';
@@ -44,7 +45,10 @@ export class HeaderComponent {
   clickedOutside(){
     this.showHide=false;
   }
-  seeMore(){
-    this.showPages=!this.showPages;
+  seeMoreRadiology(){
+    this.showRadiologyPages=!this.showRadiologyPages;
+  }
+  seeMoreNeuroradiology(){
+    this.showNueRadiologyPages=!this.showNueRadiologyPages;
   }
 }

@@ -143,11 +143,11 @@
                                                     </div>
                                                 </a>
                                                 <a routerLink="/pediatricRadiology">Pediatric Radiology</a>
-                                                <div style="cursor: pointer;" (mouseover)="seeMore()"> {{!showPages ? "See More..." : "See Less..."}}
+                                                <div style="cursor: pointer;" (mouseover)="seeMoreRadiology()"> {{!showRadiologyPages ? "See More..." : "See Less..."}}
                                                     <div class="more-temple-boder" >
 													</div>
                                                 </div>
-												<ng-container *ngIf="showPages">
+												<ng-container *ngIf="showRadiologyPages">
 												<a routerLink="/musculoskeletalRadiology">Musculoskeletal Radiology</a>
 												<a routerLink="/pediatricSportsInjuries">Pediatric Sports Injuries</a>
 												<a routerLink="/oncologicalRadiology">Oncological Radiology</a>
@@ -171,8 +171,10 @@
                                                   </a>
                                                   <a routerLink="/brainAndSpine">Brain and Spine</a>
                                                   <a routerLink="/headTrauma">Head Trauma</a>
-                                                  <!-- <a routerLink="/neuroradiology" >See More <div class="more-temple-boder"></div></a> -->
-                                                  <div style="cursor: pointer;" (mouseover)="seeMore()"> {{!showPages ? "See More..." : "See Less..."}}<div class="more-temple-boder"></div></div>
+                                                  <a routerLink="/neuroradiology" >See More <div class="more-temple-boder"></div></a>
+                                                  <!-- <div style="cursor: pointer;" (mouseover)="seeMoreNeuroradiology()"> {{!showNueRadiologyPages ? "See More..." : "See Less..."}}
+													<div class="more-temple-boder"></div>
+												</div> -->
                                             </div>
                                         </div>
                                     </div>
