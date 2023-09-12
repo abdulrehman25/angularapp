@@ -89,6 +89,7 @@ import { TermsAndConditionsComponent } from './components/others/terms-and-condi
 import { RadiologySidebarComponent } from './components/shared/radiology-sidebar/radiology-sidebar.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sidebar.component';
+import { RadiologyComponent } from './components/radiology/radiology/radiology.component';
 
 @NgModule({
   declarations: [
@@ -168,6 +169,7 @@ import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sideba
     RadiologySidebarComponent,
     TumorComponent,
     AuthSidebarComponent,
+    RadiologyComponent,
   ],
   imports: [
     BrowserModule,

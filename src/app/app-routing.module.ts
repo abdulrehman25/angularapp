@@ -68,6 +68,7 @@ import { CookiePolicyComponent } from './components/others/cookie-policy/cookie-
 import { ImprintComponent } from './components/others/imprint/imprint.component';
 import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
+import { RadiologyComponent } from './components/radiology/radiology/radiology.component';
 
 const routes: Routes = [
   {
@@ -89,6 +90,7 @@ const routes: Routes = [
       { path: 'inner-test', component: InnerTestComponent },
 
       // { path: 'about-us', component: AboutUsComponent }, //comenting on 11th may
+      { path: 'radiology', component: RadiologyComponent },
       { path: 'abdominalRadiology', component: AbdominalAdiologyComponent },
       { path: 'prostateRadiology', component: ProstateRadiologyComponent },
       {
