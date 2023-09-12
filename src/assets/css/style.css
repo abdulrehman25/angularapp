@@ -593,16 +593,16 @@ box-shadow: none;
 
 /*-- our team page css--*/
 
-h3.heading_strip {
-	font-size: 28px;
-	font-weight: 600;
+.heading_strip {
+	font-size: 48px;
+	font-weight: 700;
 	color: #1e4171;
 	padding-bottom: 20px;
-	margin: 50px 0px;
+	margin: 0px 0 50px;
 	position: relative;
     text-align: center;
 }
-h3.heading_strip::before {
+.heading_strip::before {
 	position: absolute;
 	content: '';
 	width: 75px;
@@ -733,7 +733,31 @@ h3.heading_strip::before {
 .footer-contact-text-block a {
 	word-break: break-all;
 }
-
+/*-- our services sub main --*/
+.services-col {
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid rgba(178, 183, 187, .2);
+	border-radius: 20px;
+	padding: 25px 25px 0;
+    margin: 0 0 30px;
+}
+.services-col:hover {
+    box-shadow: 1px 1px 20px rgba(6, 21, 96, .1);
+}
+.services-col h3 {
+	font-size: 20px;
+	line-height: 30px;
+	margin: 15px 10px;
+	color: #000;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.services-col a {
+    text-decoration: none;
+}
 @media screen and (max-width: 991px){
 .w-nav-overlay {
     height: 100vh!important;

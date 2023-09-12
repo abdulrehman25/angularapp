@@ -1567,7 +1567,7 @@ input.w-button {
     font-size: 18px;
     font-weight: 600;
 }
-
+/*-- animation css */
 .reveal{
 position: relative;
 transition: 1s all ease;
@@ -1580,11 +1580,18 @@ transition: 1s all ease;
     transform: translateX(150px);
     opacity: 0;
 }
+.testimonial-section.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+}
 .reveal.animation-active{
 opacity: 1;
 transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
 transform-style: preserve-3d;
 }
+
+/*-- end animation css --*/
+
 /*-- responsive css --*/
 @media screen and (max-width: 1300px){
 .services-title-wrap h3 {
