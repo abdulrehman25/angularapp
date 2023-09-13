@@ -3,9 +3,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-
 body {
     color: #73778c;
     font-family: Inter, sans-serif;
@@ -70,11 +67,20 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 }
-
+ol {
+    padding-left: 0;
+}
 .p-t-100 {
     padding-top: 100px;
 }
-
+span.plus-icon::before {
+	width: 14px !important;
+	height: 4px !important;
+}
+span.plus-icon::after {
+	width: 4px !important;
+	height: 14px !important;
+}
 .container {
     max-width: 1350px;
     margin-left: auto;
