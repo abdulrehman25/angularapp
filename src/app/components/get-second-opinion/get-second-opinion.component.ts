@@ -84,7 +84,7 @@ export class GetSecondOpinionComponent {
     this.ngxLoader.start();
     this.getSecondOpinionService.validateVerificationCode(this.formObj).subscribe((res:any)=>{
       if (res.status == 200) {
-        console.log(res);
+        // console.log(res);
         this.ngxLoader.stop();
         this._toastr.success('Code Verified !', 'Success');
 
@@ -99,7 +99,7 @@ export class GetSecondOpinionComponent {
       if (res.status == 404) {
         this.addClass = 'registerNow_step3';
         this.divStyle = `z-index : 3`;
-        console.log(res);
+        // console.log(res);
         this.ngxLoader.stop();
         this._toastr.error(res.message.code, 'Error');
 
@@ -109,7 +109,7 @@ export class GetSecondOpinionComponent {
 
 
   onChange(scan:string, event: any) {
-    console.log('scan',scan)
+    // console.log('scan',scan)
     if(event.target.checked){
       const index = this.scanType.indexOf(scan);
       if (index == -1) { 
@@ -123,7 +123,7 @@ export class GetSecondOpinionComponent {
       }
     }
     this.formObj.type_of_scan = this.scanType;
-    console.log('scabtypes',this.scanType);
+    // console.log('scabtypes',this.scanType);
   }
 
   setBodyPartArr(bodyname:string, event:any){
@@ -143,7 +143,7 @@ export class GetSecondOpinionComponent {
   }
   
   checkSelectedValue(data:string){
-    console.log("check",data);
+    // console.log("check",data);
     let ref = this.scanType.indexOf(data); 
     if (ref > -1) { 
       return true;
@@ -154,7 +154,7 @@ export class GetSecondOpinionComponent {
    }
 
   selectedBodyPart(data:string){
-    console.log("check",data);
+    // console.log("check",data);
     let ref = this.bodyPart.indexOf(data); 
     if (ref > -1) { 
       return true;
@@ -181,7 +181,7 @@ export class GetSecondOpinionComponent {
   }
 
   submitData(){
-    console.log('submit_data')
+    // console.log('submit_data')
 
     var formData = new FormData();
     if(this.scanfile != undefined){

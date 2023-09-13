@@ -1077,7 +1077,8 @@ span.ng-star-inserted {
       width: 100%;
       margin: 0;
       padding-bottom: 20px;
-      position: relative
+      position: relative;
+      overflow-y: scroll;
   }
   
   .form-card {
@@ -1293,6 +1294,7 @@ span.ng-star-inserted {
     text-align: center;
     font-size: 25px;
     font-weight: 400;
+    margin-top:50px;
   }
   .login_icon {
     position: absolute;
@@ -1457,12 +1459,19 @@ span.ng-star-inserted {
   .manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label::before {border: 0;}
   .manage-1-place-wrapper.scroll-here .checkbox-wrapper label.check-wrap-label {margin-bottom: 10px;}
   .search_barcol {
-    margin: 0 auto 30px;
+    margin: 0 auto 10px;
     max-width: 350px;
   }
   .text-danger {
     text-align: center;
   }
+  /* .scanType_selected_item{
+    white-space: nowrap;
+  }
+  .scanType_selected_item ng-container {
+    display: inline-block;
+    margin-right: 10px;
+  } */
   /*-- End Form CSS --*/
   
   /*-- responsive CSS --*/
