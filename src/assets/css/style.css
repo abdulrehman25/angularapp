@@ -175,17 +175,19 @@ img {
     margin-right: auto;
     z-index: 900;
 }
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 .navbar-contact-wrapper {
     align-items: center;
     display: flex;
 }
 .navbar-right-content {
     float: right;
-margin: 31px 0 0;
+margin: 37px 0 0;
 }
 .navbar-button-wrapper {
     align-items: center;
-    margin-left: 20px;
     display: flex;
 }
 .primary-button {
