@@ -1,4 +1,31 @@
-{
+{   
+    "Herader section":"Herader section",
+    "Home":"Дом",
+    "About":"информация о нас",
+    "Our Services":"Наши услуги",
+    "Radiology":"Общая радиология",
+    "Abdominal Radiology":"Абдоминальная радиология",
+    "Prostate Radiology":"Радиология предстательной железы",
+    "Interventional Radiology":"интервенционная радиология",
+    "Radiology of thoracic/lung organs":"Радиология органов грудной клетки",
+    "Women’s Imaging":"Женская диагностика",
+    "Pediatric Radiology":"Педиатрическая радиология",
+    "See more":"узнать больше",
+    "Musculoskeletal Radiology":"Рентгенология опорно-двигательной системы",
+    "Pediatric Sports Injury":"Спортивные травмы у детей",
+    "Oncological Radiology":"Онкологическая радиология",
+    "Radiology":"",
+    "Radiology":"",
+    "Radiology":"",
+    "Radiology":"",
+    "Resources":"Ресурсы",
+    "Login":"Логин",
+    "Get Second Opinion":"Получить второе мнение",
+
+    "Footer section": "Footer section",
+
+
+
     "Dr Ali Rahman": "Доктор Али Рахман",
     "Introduction":"Вступление",
     "proBonoP1":"When it comes to healthcare, obtaining a correct diagnosis is crucial in ensuring appropriate treatment and care. However, due to the complex nature of medical conditions, misdiagnosis can occur and lead to harmful consequences for patients. This is where a second opinion proves to be handy.",
