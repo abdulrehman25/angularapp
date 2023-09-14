@@ -399,6 +399,11 @@ button.select-language-btn i.flag-icon.flag-icon- {
 	right: 0;
 	margin: 0 auto;
 }
+.navbar-right-content {
+	margin: 0 auto 14px;
+	max-width: 260px;
+	float: none;
+}
 }
 @media (max-width: 767px) {
     .main_header {

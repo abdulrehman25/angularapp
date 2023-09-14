@@ -770,9 +770,6 @@ box-shadow: none;
 .w-nav-overlay {
     height: 100vh!important;
 }
-.primary-button-navbar.desktop {
-    display: none;
-}
 .menu-dropdown-wrapper-2 {
     margin-bottom: 20px;
     display: block;
@@ -1198,6 +1195,9 @@ box-shadow: none;
 
 
 @media screen and (max-width:767px){
+    .primary-button-navbar.desktop {
+        display: none;
+    }
     .nav-link {
         margin-bottom: 0;
         margin-right: 0;
