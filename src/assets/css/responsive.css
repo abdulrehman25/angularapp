@@ -275,6 +275,8 @@
 
     @media (max-width: 991px){
     .navbar-left-content {width: 100% !important;}
+    .footer-details-wrapper {width: auto !important;}
+    .footer-menu-wrapper {width: 100% !important;}
     }
 
 

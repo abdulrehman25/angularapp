@@ -766,6 +766,24 @@ box-shadow: none;
 .services-col a {
     text-decoration: none;
 }
+
+.contact-info-section h3 {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1e4171;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.contact-info-section h3::before {
+	position: absolute;
+	content: '';
+	width: 75px;
+	height: 3px;
+	background-color: #407839;
+	bottom: 0;
+	left: 0;
+}
 @media screen and (max-width: 991px){
 .w-nav-overlay {
     height: 100vh!important;
@@ -1055,6 +1073,7 @@ box-shadow: none;
 .about-section {
     padding-top: 100px;
     padding-bottom: 400px;
+    overflow: hidden;
 }
 
 .testimonial-section {
