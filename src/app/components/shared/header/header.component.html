@@ -76,7 +76,7 @@
 				  </div>
 				</div>
 			  </nav>
-			</div> 
+			</div>
 			<div data-hover="false" data-delay="0" class="dropdown-wrapper w-dropdown">
 			  <div class="dropdown-toggle w-dropdown-toggle">
 				<div>Resources</div><img src="../../../../assets/images/new_homepage/Dropdown-Arrow.svg" loading="lazy" alt="" class="dropdown-toggle-arrow">
@@ -131,8 +131,8 @@
                                     <div class="col-md-4">
                                         <div class="row d-flex tab">
                                             <div class="d-flex flex-column">
-                                                <h5 class="mb-0">{{"Radiology" | translate}}</h5>                                                   
-                                                
+                                                <h5 class="mb-0">{{"Radiology" | translate}}</h5>
+
                                                 <a routerLink="/abdominalRadiology">Abdominal Radiology</a>
                                                 <a routerLink="/prostateRadiology">Prostate Radiology</a>
                                                 <a routerLink="/interventionalRadiologyGuidance">Interventional Radiology</a>
@@ -151,8 +151,8 @@
                                     <div class="col-md-8">
                                         <div class="row d-flex tab">
                                             <div class="d-flex flex-column">
-                                                <h5 class="mb-0">{{"Neuroradiology" | translate}}</h5>                                                   
-                                                
+                                                <h5 class="mb-0">{{"Neuroradiology" | translate}}</h5>
+
                                                 <a routerLink="/brainTumors">Differential Diagnosis of Intracranial Masses and Brain Tumors</a>
                                                 <a routerLink="/backPain">Back Pain and Radiculopathy</a>
                                                 <a routerLink="/spinalTrauma">Spinal Trauma and Injuries
@@ -171,7 +171,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </li>
@@ -205,7 +205,7 @@
 					<ul class="countryFlags">
 						<ng-container *ngFor="let language of languageList">
 						<li class="mx-0" (click)="switchLang(language)">
-							<i class="flag-icon flag-icon-{{language.countryCode}}"></i> 
+							<i class="flag-icon flag-icon-{{language.countryCode}}"></i>
 							{{ language.language.toUpperCase() }}
 						</li>
 					</ng-container>
@@ -218,7 +218,7 @@
         <div class="navbar-right-content">
             <div class="navbar-button-wrapper">
             <div class="primary-button-navbar desktop">
-				<a routerLink="#" class="primary-button log_butto"><i class="fas fa-user"></i> Login </a>
+				<a routerLink="/login" class="primary-button log_butto"><i class="fas fa-user"></i> Login </a>
 				<a routerLink="/GetSecondOpinion" class="primary-button w-button">Get Second Opinion</a>
             </div>
             </div>

@@ -67,13 +67,13 @@
 //     this.getSecondOpinionService.generateVerificationCode(this.formObj).subscribe((res: any) => {
 //       if (res.status == 200) {
 //         this.ngxLoader.stop();
-//         this._toastr.success('A verification code sent on your mail !', 'Verification Code');       
+//         this._toastr.success('A verification code sent on your mail !', 'Verification Code');
 //       }
 //       if (res.status == 'error'){
-//         this.ngxLoader.stop(); 
-//         this._toastr.error(res.data, 'Error');   
+//         this.ngxLoader.stop();
+//         this._toastr.error(res.data, 'Error');
 //         this.addClass = 'registerNow_step2';
-//         this.divStyle = `z-index : 2`;    
+//         this.divStyle = `z-index : 2`;
 
 //       }
 //     });
@@ -106,19 +106,26 @@
 //     });
 //   }
 
+//   onChange(scan:string, event: any) {
+//     console.log('scan',scan)
+//     if(event.target.checked){
+//       const index = this.scanType.indexOf(scan);
+//       if (index == -1) {
+//         this.scanType.push(scan);
+//       }
 
 //   onChange(scan:string, event: any) {
 //     console.log('scan',scan)
 //     if(event.target.checked){
 //       const index = this.scanType.indexOf(scan);
-//       if (index == -1) { 
+//       if (index == -1) {
 //         this.scanType.push(scan);
 //       }
 
 //     }else{
 //       const index = this.scanType.indexOf(scan);
-//       if (index > -1) { 
-//         this.scanType.splice(index, 1); 
+//       if (index > -1) {
+//         this.scanType.splice(index, 1);
 //       }
 //     }
 //     this.formObj.type_of_scan = this.scanType;
@@ -128,23 +135,23 @@
 //   setBodyPartArr(bodyname:string, event:any){
 //     if(event.target.checked){
 //       const index = this.bodyPart.indexOf(bodyname);
-//       if (index == -1) { 
+//       if (index == -1) {
 //         this.bodyPart.push(bodyname);
 //       }
 //     }else{
 //       const index = this.bodyPart.indexOf(bodyname);
-//       if (index > -1) { 
-//         this.bodyPart.splice(index, 1); 
+//       if (index > -1) {
+//         this.bodyPart.splice(index, 1);
 //       }
 //     }
 //     this.formObj.what_part_of_body = this.bodyPart;
 
 //   }
-  
+
 //   checkSelectedValue(data:string){
 //     console.log("check",data);
-//     let ref = this.scanType.indexOf(data); 
-//     if (ref > -1) { 
+//     let ref = this.scanType.indexOf(data);
+//     if (ref > -1) {
 //       return true;
 //     }
 //     else {
@@ -154,8 +161,8 @@
 
 //   selectedBodyPart(data:string){
 //     console.log("check",data);
-//     let ref = this.bodyPart.indexOf(data); 
-//     if (ref > -1) { 
+//     let ref = this.bodyPart.indexOf(data);
+//     if (ref > -1) {
 //       return true;
 //     }
 //     else {
@@ -208,7 +215,7 @@
 //         this.ngxLoader.stop();
 //         this._toastr.success('Completed !', 'Success');
 //         this.showRegisterNowPage = false;
-//         this.router.navigate(['/']);        
+//         this.router.navigate(['/']);
 //       }
 //       else{
 //         this._toastr.error('Something wend wrong ! Please try again..','Error');
@@ -216,5 +223,5 @@
 //     });
 
 //   }
-  
+
 // }
