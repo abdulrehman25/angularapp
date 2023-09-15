@@ -281,6 +281,13 @@ img {
     background-size: cover;
     padding-top: 440px;
 }
+.footer-section-except-homepage {
+    background-image: url("../../../../assets/images/Footer-Bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+}
 
 .footer-contact-wrap.last {
     align-items: flex-start;
