@@ -642,16 +642,7 @@ img {
     position: absolute;
 }
 
-.process-work-shape {
-    z-index: 2;
-    background-color: #3c59f2;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    transform: translate(0, -100%);
-}
+
 
 .process-work-single-two:hover {
     background-color: #3c59f2;
@@ -1592,10 +1583,33 @@ opacity: 1;
 transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
 transform-style: preserve-3d;
 }
-.process-work-single-two.reveal.animation-active {
-  background:red;
 
+
+
+.process-work-shape {
+  z-index: 2;
+  background-color: #3c59f2;
+  position: absolute;
+  top: -100px;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+ transition: all 3s ease;
 }
+.process-work-single-two.reveal.animation-active .process-work-shape.one {
+	transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  top:0;
+}
+.process-work-single-two.reveal.animation-active .process-work-image-one.one {
+  opacity: 0;
+}
+.work-chart-main-two.reveal.animation-active {
+	transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  top:0;
+}
+
 /*-- end animation css --*/
 .blog-section img {
 	width: auto;
