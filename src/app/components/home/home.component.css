@@ -544,8 +544,6 @@ img {
     left: 0%;
     right: auto;
 }
-
-
 .work-chart-boder-three {
     width: 2px;
     height: 100%;
@@ -1585,13 +1583,19 @@ opacity: 0;
     transform: translateY(150px);
     opacity: 0;
 }
-
+.process-work-single-two.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+}
 .reveal.animation-active {
 opacity: 1;
 transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
 transform-style: preserve-3d;
 }
+.process-work-single-two.reveal.animation-active {
+  background:red;
 
+}
 /*-- end animation css --*/
 .blog-section img {
 	width: auto;
