@@ -71,11 +71,11 @@ import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { RadiologyComponent } from './components/radiology/radiology/radiology.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: '',
+  //   redirectTo: '',
+  //   pathMatch: 'full',
+  // },
   {
     path: '',
     component: DefaultHomeComponent,

@@ -1,5 +1,5 @@
 <footer>
-	<div class="footer-section">
+	<div [ngClass]="{'footer-section':isHomePage, 'footer-section-except-homepage':!isHomePage}" >
 		<div class="container">
 		  <div class="footer-wrapper">
 			<div class="footer-top-content">
