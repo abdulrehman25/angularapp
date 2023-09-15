@@ -1036,8 +1036,6 @@ span.ng-star-inserted {
   justify-content: center;
 }
 
-
-
 /* Form CSS Start */
 
 /*-- Right sidebar CSS --*/
@@ -1076,7 +1074,7 @@ span.ng-star-inserted {
       box-sizing: border-box;
       width: 100%;
       margin: 0;
-      padding-bottom: 20px;
+      padding: 20px;
       position: relative;
       overflow-y: scroll;
   }
