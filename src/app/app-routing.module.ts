@@ -69,6 +69,7 @@ import { ImprintComponent } from './components/others/imprint/imprint.component'
 import { TermsAndConditionsComponent } from './components/others/terms-and-conditions/terms-and-conditions.component';
 import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { RadiologyComponent } from './components/radiology/radiology/radiology.component';
+import { PricingComponent } from './components/resources/pricing/pricing.component';
 
 const routes: Routes = [
   // {
@@ -155,6 +156,7 @@ const routes: Routes = [
       { path: 'primaryReads', component: PrimaryReadsComponent },
       { path: 'proBono', component: ProBonoComponent },
       { path: 'testimonial', component: TestimonialComponent },
+      { path: 'pricing', component: PricingComponent },
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
       { path: 'cookie-policy', component: CookiePolicyComponent },
       { path: 'imprint', component: ImprintComponent },
