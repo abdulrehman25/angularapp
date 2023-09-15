@@ -30,11 +30,9 @@
 					  <h3 class="footer-menu-title">Quick Links</h3>
 					</div>
 					<div class="footer-menu-single">
-					  <a href="/" aria-current="page" class="footer-menu-text-link w--current">Home</a>
-					  <a href="/about" class="footer-menu-text-link">About Us</a>
-					  <a href="#" class="footer-menu-text-link">Radiology</a>
-					  <a href="/neuroradiology" class="footer-menu-text-link">Neuroradiology</a>
-					  <a href="/contact" class="footer-menu-text-link mb0">Contact Us</a>
+					  <a routerLink="/" aria-current="page" class="footer-menu-text-link w--current">Home</a>
+					  <a routerLink="/about" class="footer-menu-text-link">About Us</a>
+					  <a routerLink="/contact" class="footer-menu-text-link mb0">Contact Us</a>
 					</div>
 				  </div>
 				  <div class="footer-menu-single-wrapper">
@@ -42,10 +40,12 @@
 					  <h3 class="footer-menu-title">Services</h3>
 					</div>
 					<div class="footer-menu-single">
-					  <a href="https://johamedi.webflow.io/services/surgery" class="footer-menu-text-link">Surgery</a>
+						<a routerLink="/radiology" class="footer-menu-text-link">Radiology</a>
+						<a routerLink="/neuroradiology" class="footer-menu-text-link">Neuroradiology</a>  
+					  <!-- <a href="https://johamedi.webflow.io/services/surgery" class="footer-menu-text-link">Surgery</a>
 					  <a href="https://johamedi.webflow.io/services/pulmonology" class="footer-menu-text-link">Pulmonology</a>
 					  <a href="https://johamedi.webflow.io/services/neurology" class="footer-menu-text-link">Neurology</a>
-					  <a href="https://johamedi.webflow.io/services/orthopedics" class="footer-menu-text-link mb0">Orthopedics</a>
+					  <a href="https://johamedi.webflow.io/services/orthopedics" class="footer-menu-text-link mb0">Orthopedics</a> -->
 					</div>
 				  </div>
 				  <div class="footer-menu-single-wrapper">
@@ -53,9 +53,14 @@
 					  <h3 class="footer-menu-title">Resources</h3>
 					</div>
 					<div class="footer-menu-single">
-					  <a href="faq.html" class="footer-menu-text-link">FAQ</a>
-					  <a href="template-pages/license.html" class="footer-menu-text-link">License</a>
-					  <a href="template-pages/changelog.html" class="footer-menu-text-link mb0">Changelog</a>
+						<a class="footer-menu-text-link" routerLink="/ourTeam">Our Team</a>
+						<a class="footer-menu-text-link" routerLink="/proBono">Pro Bono</a>
+						<a class="footer-menu-text-link" routerLink="/testimonial">Testimonials</a>
+						<a class="footer-menu-text-link" routerLink="/#">Pricing</a>
+						<a class="footer-menu-text-link" routerLink="/contact">Contact</a>
+						<a class="footer-menu-text-link" routerLink="/faq">FAQ</a>
+					  <!-- <a href="template-pages/license.html" class="footer-menu-text-link">License</a>
+					  <a href="template-pages/changelog.html" class="footer-menu-text-link mb0">Changelog</a> -->
 					</div>
 				  </div>
 				  <div class="footer-menu-single-wrapper">
