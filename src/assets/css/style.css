@@ -602,7 +602,7 @@ box-shadow: none;
 /*-- our team page css--*/
 
 .heading_strip {
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: 700;
 	color: #1e4171;
 	padding-bottom: 20px;
@@ -1055,6 +1055,7 @@ box-shadow: none;
 .about-section {
     padding-top: 100px;
     padding-bottom: 400px;
+    overflow: hidden;
 }
 
 .testimonial-section {

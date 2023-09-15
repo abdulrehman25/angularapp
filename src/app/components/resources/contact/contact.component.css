@@ -53,6 +53,23 @@
 	text-transform: capitalize;
 	margin-right: 20px;
 }
+.contact-info-section h2 {
+	font-size: 40px;
+	font-weight: 600;
+	color: #1e4171;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.contact-info-section h2::before {
+	position: absolute;
+	content: '';
+	width: 75px;
+	height: 3px;
+	background-color: #407839;
+	bottom: 0;
+	left: 0;
+}
 
 /* home - section F */
 
