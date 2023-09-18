@@ -141,52 +141,11 @@ span.plus-icon::after {
 .inner-page-content .col-xl-9 img.border-radius-15 {
     border-radius: 15px;
 }
-
-.subscribe-letter {
-    position: absolute;
-    top: -32px;
-    z-index: 1099;
-    width: 80%;
-    left: 50%;
-    margin-left: -470px;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, .5);
-    border-radius: 50px;
-}
-
-.subscribe-letter input[type="email"] {
-    width: 100%;
-    height: 70px;
-    border: none;
-    border-radius: 100px;
-    padding: 0px 30px;
-    font-size: 20px;
-}
-
-.subscribe-letter input[type="submit"] {
-    position: absolute;
-    right: -1px;
-    height: 70px;
-    background-color: #427337;
-    padding: 0px 30px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: none;
-    color: #ffffff;
-    font-size: 18px;
-    z-index: 11;
-}
-
 /* home - section F */
 
 @media (max-width: 1023px) {
 
     /* for new banner */
-    .subscribe-letter {
-        top: -32px;
-        width: 100%;
-        margin-left: -360px;
-    }
-
     .sidebar-second-opinion-cta .position-absolute {
         padding: 15px;
     }
@@ -202,43 +161,9 @@ span.plus-icon::after {
 
 /*1023*/
 
-@media (min-width: 1024px) and (max-width: 1199px) {
-    .subscribe-letter {
-        width: 90%;
-        margin-left: -440px;
-    }
-}
-
 /*1199*/
 
 @media (max-width: 767px) {
-    .subscribe-letter {
-        width: 100%;
-        left: 0%;
-        margin-left: 0px;
-        box-sizing: border-box;
-        padding: 0px 15px;
-        box-shadow: none;
-        border-radius: unset;
-    }
-
-    .subscribe-letter input[type="submit"] {
-        position: relative;
-        right: 0px;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        width: 100%;
-    }
-
-    .subscribe-letter {
-        top: -70px;
-    }
-
-    .subscribe-letter input[type="email"] {
-        text-align: center;
-        box-shadow: 0px 15px 30px rgba(0, 0, 0, .5);
-    }
-
     .inner-page-content .container>.row {
         flex-direction: column-reverse;
     }

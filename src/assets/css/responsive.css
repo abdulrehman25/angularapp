@@ -448,6 +448,7 @@
         position: inherit;
         max-width: 300px;
         box-shadow: none;
+        margin-bottom: 50px;
     }
 
     .subscribe-letter input[type="submit"] {

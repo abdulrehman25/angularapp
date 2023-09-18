@@ -503,7 +503,7 @@ box-shadow: none;
 }
 .subscribe-letter {
     position: absolute;
-    top: 65px;
+    top: -32px;
     z-index: 2 !important;
     width: 100%;
     max-width: 800px;
