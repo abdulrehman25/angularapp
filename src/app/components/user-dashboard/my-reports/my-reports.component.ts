@@ -21,7 +21,7 @@ export class MyReportsComponent {
   titleArr: any;
   constructor(private ngxLoader: NgxUiLoaderService, private _toastr: ToastrService, private router: Router, private myReportService: MyReportService) {
     this.userData = localStorage.getItem('user');
-    this.getUserReports();
+    //this.getUserReports();
   }
 
 

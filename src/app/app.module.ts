@@ -91,6 +91,9 @@ import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { AuthSidebarComponent } from './components/auth/auth-sidebar/auth-sidebar.component';
 import { RadiologyComponent } from './components/radiology/radiology/radiology.component';
 import { PricingComponent } from './components/resources/pricing/pricing.component';
+import { ClientManagementComponent } from './components/admin/client-management/client-management.component';
+import { OrdersManagementComponent } from './components/admin/orders-management/orders-management.component';
+import { RevenueComponent } from './components/admin/revenue/revenue.component';
 
 @NgModule({
   declarations: [
@@ -172,6 +175,9 @@ import { PricingComponent } from './components/resources/pricing/pricing.compone
     AuthSidebarComponent,
     RadiologyComponent,
     PricingComponent,
+    ClientManagementComponent,
+    OrdersManagementComponent,
+    RevenueComponent,
   ],
   imports: [
     BrowserModule,

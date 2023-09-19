@@ -405,77 +405,48 @@
     .three-report-graph .rounded ol li img.img-fluid {height: 180px;}
     .myReport-page input[type="file"] {max-width: 100%;margin-bottom: 20px;}
     .give-feedback-page .col-xl-6 .d-flex {flex-direction: column;margin-bottom: 20px;}
+    .auth-sidebar-col {
+        display: none !important;
+    }
+    .checkbox-wrapper {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .checkbox-wrapper ul {
+        margin-bottom: 0;
+    }
     /* for dashboard */
     
     .inner-pages .testimonial-section ul {margin-bottom: 0px;}
     .inner-pages .testimonial-section ul li {margin-bottom: 100px;}
     .inner-pages .testimonial-section ul li:last-child {margin-bottom: 0px;}
     .register-form form p, .login-form form p.form-info {line-height: 20px;}
-
     
     .primary-navbar.sticky-top {box-sizing: border-box;}
     .primary-navbar.sticky-top #siteNav button.ddl-menu::after {top: -5px;position: relative;right: 15px;}
     .site-footer {padding: 70px 0px 0px;}
     .site-footer .col-xl-4.px-5 {padding-left: 15px !important;}
-
     .site-footer .col-md-12.col-sm-12.px-5 {padding-inline: 15px !important;}
 
+    .banner-caption {width: 100%;padding: 0px 15px;}
+    .site-banner .banner-caption h1 {line-height: 36px;padding-bottom: 15px;}
+    .banner-caption p {padding-right: 0rem;}
+    .site-banner {padding-bottom: 20px;padding-top:0;}
+    .site-banner::before {display: none;}
+    .site-banner figure img {height: 600px;}
+    /*-- inner page banner --*/
+    .subscribe-letter {top: 0;position: inherit;max-width: 300px;box-shadow: none;margin-bottom: 50px;}
+    .subscribe-letter input[type="submit"] {position: relative;right: 0px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;width: 100%;
+    border-radius: 0;}
+    .subscribe-letter input[type="email"] {text-align: center;box-shadow: none;border-radius: 0;border: 1px solid #ccc;margin: 10px 0;}
+    /*-- subscribe section --*/
 
-    .banner-caption {
-        width: 100%;
-        padding: 0px 15px;
-      }
-    .site-banner .banner-caption h1 {
-        line-height: 36px;
-        padding-bottom: 15px;
-    }
-    .banner-caption p {
-        padding-right: 0rem;
-    }
-    .site-banner {
-        padding-bottom: 20px;
-        padding-top:0;
-    }
-    .site-banner::before {
-        display: none;
-    }
-    .site-banner figure img {
-        height: 600px;
-    }
 
-    .subscribe-letter {
-        top: 0;
-        position: inherit;
-        max-width: 300px;
-        box-shadow: none;
-        margin-bottom: 50px;
-    }
-
-    .subscribe-letter input[type="submit"] {
-        position: relative;
-        right: 0px;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        width: 100%;
-        border-radius: 0;
-    }
-    .subscribe-letter input[type="email"] {
-        text-align: center;
-        box-shadow: none;
-        border-radius: 0;
-        border: 1px solid #ccc;
-        margin: 10px 0;
-    }
     }/*767*/
     
 @media (max-width: 590px) {
-    .site-banner figure img {
-        height: 400px;
-    }
-  .site-banner figure img {
-    object-position: 0px 0px;
-
-  }
+    .site-banner figure img {height: 400px;}
+  .site-banner figure img {object-position: 0px 0px;}
 }
     
     
