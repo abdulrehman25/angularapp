@@ -408,6 +408,13 @@
     .auth-sidebar-col {
         display: none !important;
     }
+    .checkbox-wrapper {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .checkbox-wrapper ul {
+        margin-bottom: 0;
+    }
     /* for dashboard */
     
     .inner-pages .testimonial-section ul {margin-bottom: 0px;}

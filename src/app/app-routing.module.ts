@@ -180,7 +180,7 @@ const routes: Routes = [
       { path: 'userProfile', component: UserProfileComponent },
       { path: 'myReports', component: MyReportsComponent },
       { path: 'giveFeedback', component: GiveFeedbackComponent },
-      { path: 'bookAppointment', component: BookAppointmentComponent },
+      { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
     ],
   },
   {
