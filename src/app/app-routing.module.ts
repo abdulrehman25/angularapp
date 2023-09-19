@@ -70,6 +70,9 @@ import { TermsAndConditionsComponent } from './components/others/terms-and-condi
 import { TumorComponent } from './components/brain/tumor/tumor.component';
 import { RadiologyComponent } from './components/radiology/radiology/radiology.component';
 import { PricingComponent } from './components/resources/pricing/pricing.component';
+import { ClientManagementComponent } from './components/admin/client-management/client-management.component';
+import { OrdersManagementComponent } from './components/admin/orders-management/orders-management.component';
+import { RevenueComponent } from './components/admin/revenue/revenue.component';
 
 const routes: Routes = [
   // {
@@ -198,6 +201,9 @@ const routes: Routes = [
       { path: 'patientFeedback', component: PatientFeedbackComponent },
       { path: 'viewReports', component: ViewReportsComponent },
       { path: 'userReports/:id', component: UserReportsComponent },
+      { path: 'clientmanagement', component: ClientManagementComponent },
+      { path: 'ordersmanagement', component: OrdersManagementComponent },
+      { path: 'revenue', component: RevenueComponent },
     ],
   },
   { path: '**', component: NotFoundComponent },

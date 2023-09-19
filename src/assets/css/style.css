@@ -971,17 +971,16 @@ padding-left: 75px;
 	background: #f7faf5;
 }
 .vertical-nav-menu li a.mm-active {
-	color: #fff;
-	background: #334b2a;
-	font-weight: 700;
+	color: #fff !important;
+	background: #334b2a !important;
 }
 .vertical-nav-menu li a.mm-active .fa {
 	opacity: 1;
 }
 .vertical-nav-menu li a:hover {
-	background: #334b2a;
-	text-decoration: none;
-	color: #fff;
+	background: #334b2a !important;
+	text-decoration: none !important;
+	color: #fff !important;
 }
 .vertical-nav-menu li a:hover .fa {
 	opacity: 1 !important;
