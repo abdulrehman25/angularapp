@@ -1165,7 +1165,7 @@ padding-left: 75px;
 	max-width: 600px;
 	margin: 0 auto;
 	background: #f6f6f6;
-	padding: 30px 25px 25px;
+	padding: 30px 25px 15px;
 	border: 1px solid rgba(0,0,0,.10);
 	border-radius: 15px;
 }
@@ -1202,6 +1202,15 @@ padding-left: 75px;
 	color: #ffffff;
 	line-height: 40px;
     display: block;
+}
+.payment-form form span input.primary-button {
+	width: auto;
+	height: auto;
+	border: 0;
+	margin: 10px auto 0;
+	text-align: center;
+	display: block;
+	padding: 10px 25px;
 }
 /*-- End Payment form CSS --*/
 
