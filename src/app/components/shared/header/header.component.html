@@ -137,10 +137,10 @@
                                                 <a routerLink="/prostateRadiology">{{"Header Prostate Radiology" | translate}}</a>
                                                 <a routerLink="/interventionalRadiologyGuidance">{{"Header Interventional Radiology" | translate}}</a>
                                                 <a routerLink="/womensImaging">{{"Header Women’s Imaging" | translate}}
-                                                    <div class="cms-tag">
+                                                    <!-- <div class="cms-tag">
                                                       <div class="dropdown-menu-text-arrow"></div>
                                                       <div class="cms-nav-badge">{{"Header NEW" | translate}}</div>
-                                                    </div>
+                                                    </div> -->
                                                 </a>
                                                 <a routerLink="/pediatricRadiology">{{"Header Pediatric Radiology" | translate}}</a>
                                                 <a routerLink="/radiology">{{"Header See more" | translate}}<div class="more-temple-boder"></div>
@@ -156,10 +156,10 @@
                                                 <a routerLink="/brainTumors">{{"Header Differential Diagnosis of Intracranial Masses and Brain Tumors" | translate}}</a>
                                                 <a routerLink="/backPain">{{"Header Back Pain and Radiculopathy" | translate}}</a>
                                                 <a routerLink="/spinalTrauma">{{"Header Spinal Trauma and Injuries" | translate}}
-                                                    <div class="cms-tag">
+                                                    <!-- <div class="cms-tag">
                                                       <div class="dropdown-menu-text-arrow"></div>
                                                       <div class="cms-nav-badge">{{"Header NEW" | translate}}</div>
-                                                    </div>
+                                                    </div> -->
                                                   </a>
                                                   <a routerLink="/brainAndSpine">{{"Header Brain and Spine" | translate}}</a>
                                                   <a routerLink="/headTrauma">{{"Header Head Trauma" | translate}}</a>
@@ -198,7 +198,7 @@
         </nav>
 		<div class="secondry-navbar">
 			<ul>
-				<li>
+				<li appClickOutside (clickOutside)="clickedOutside()">
 				<button type="button" class="select-language-btn" (click)="showHideDropdown()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
 
 				<div class="select-language-section" *ngIf="showHide">
