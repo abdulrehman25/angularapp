@@ -10,6 +10,7 @@ export class HeaderComponent {
   showHide: boolean = false;
   showRadiologyPages: boolean = false;
   showNueRadiologyPages: boolean = false;
+  EnglishCSS: boolean = false;
   GermanCSS : boolean = false;
   RussianCSS : boolean = false;
   ArabicCSS : boolean = false;
@@ -44,29 +45,40 @@ export class HeaderComponent {
       this.selectedCountryCode = clickedLanguage.countryCode;
       this.translate.use(clickedLanguage.languageCode);
       this.showHide=false;
+      if(this.selectedLanguage === "English"){
+        this.EnglishCSS = true;
+        this.GermanCSS = false;
+        this.ArabicCSS = false;
+        this.RussianCSS = false;
+        this.ChineseCSS = false;
+      }
       if(this.selectedLanguage === "German"){
         this.GermanCSS = true;
         this.ArabicCSS = false;
         this.RussianCSS = false;
         this.ChineseCSS = false;
+        this.EnglishCSS = false;
       }
       if(this.selectedLanguage === "Arabic"){
         this.ArabicCSS = true;
         this.GermanCSS = false;
         this.RussianCSS = false;
         this.ChineseCSS = false;
+        this.EnglishCSS = false;
       }
       if(this.selectedLanguage === "Russian"){
         this.RussianCSS = true;
         this.ArabicCSS = false;
         this.GermanCSS = false;
         this.ChineseCSS = false;
+        this.EnglishCSS = false;
       }
       if(this.selectedLanguage === "Chinese"){
         this.ChineseCSS = true;
         this.ArabicCSS = false;
         this.GermanCSS = false;
         this.RussianCSS = false;
+        this.EnglishCSS = false;
       }
       // console.log("this.selectedLanguage",this.selectedLanguage)
       // console.log("this.ChineseCSS",this.ChineseCSS)
