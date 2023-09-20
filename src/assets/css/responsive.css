@@ -186,11 +186,6 @@
     }
     }/*1023*/
 
-
-
-
-
-    
     @media (min-width: 1024px) and (max-width: 1199px){
     #siteNav ul li a {font-size: 14px;}
     .site-banner::before {border-top: 80px solid transparent;border-right-width: 100vw;}
@@ -277,12 +272,14 @@
     .navbar-left-content {width: 100% !important;}
     .footer-details-wrapper {width: auto !important;}
     .footer-menu-wrapper {width: 100% !important;}
+    .main_header .secondry-navbar .select-language-section {left: inherit;right: 0;}
     }
 
 
 
     @media (max-width: 767px){
     .dropdown {display: inline-grid;}
+    li.nav-item.dropdown .dropdown-menu.show {margin-left: 11px !important;}
     .navbar-dark .navbar-brand {min-width: 220px;max-width: 220px;}
     #siteNav .dropdown-menu {overflow-y: scroll;max-height: 200px;}
     #siteNav .dropdown-menu a {white-space: pre-wrap; border-bottom: 1px solid rgba(255,255,255,.25); line-height: 30px;}
@@ -448,12 +445,6 @@
     .site-banner figure img {height: 400px;}
   .site-banner figure img {object-position: 0px 0px;}
 }
-    
-    
-    
-    
-    
-    
     
     
     
