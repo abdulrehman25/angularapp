@@ -94,6 +94,7 @@ import { PricingComponent } from './components/resources/pricing/pricing.compone
 import { ClientManagementComponent } from './components/admin/client-management/client-management.component';
 import { OrdersManagementComponent } from './components/admin/orders-management/orders-management.component';
 import { RevenueComponent } from './components/admin/revenue/revenue.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -178,6 +179,7 @@ import { RevenueComponent } from './components/admin/revenue/revenue.component';
     ClientManagementComponent,
     OrdersManagementComponent,
     RevenueComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,

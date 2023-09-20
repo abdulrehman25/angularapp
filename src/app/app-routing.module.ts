@@ -73,6 +73,7 @@ import { PricingComponent } from './components/resources/pricing/pricing.compone
 import { ClientManagementComponent } from './components/admin/client-management/client-management.component';
 import { OrdersManagementComponent } from './components/admin/orders-management/orders-management.component';
 import { RevenueComponent } from './components/admin/revenue/revenue.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 const routes: Routes = [
   // {
@@ -161,6 +162,7 @@ const routes: Routes = [
       { path: 'testimonial', component: TestimonialComponent },
       { path: 'pricing', component: PricingComponent },
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
+      { path: 'payment', component: PaymentComponent },
       { path: 'cookie-policy', component: CookiePolicyComponent },
       { path: 'imprint', component: ImprintComponent },
       { path: 'privacy-policy', component: PrivacyPolicyComponent },
