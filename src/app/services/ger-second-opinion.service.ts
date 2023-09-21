@@ -26,5 +26,7 @@ export class GerSecondOpinionService {
     console.log('data',data)
     return this.httpClient.post(`${this.Api_Base}/update_user`,data);
   }
-
+  payment(data:any){
+    return this.httpClient.post(`${this.Api_Base}/make_payment`,data);
+  }
 }
