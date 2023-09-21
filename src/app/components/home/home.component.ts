@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { BookAppointment } from 'src/app/models/book-appointment';
 import { Router } from '@angular/router';
 import { BookAppointmentService } from 'src/app/services/book-appointment.service';
 import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-home',
@@ -25,8 +26,24 @@ export class HomeComponent {
 
   today = new Date().toISOString().slice(0, 10);
 
-  constructor(private router: Router , private bookAppointmentDataService:BookAppointmentService, private _toastr: ToastrService) {  }
-
+  constructor(private router: Router , private bookAppointmentDataService:BookAppointmentService, private _toastr: ToastrService, private renderer: Renderer2) {  }
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    this.revealElements();
+  }
+  revealElements() {
+    const reveals = document.querySelectorAll(".reveal");
+    const windowHeight = window.innerHeight;
+    const elementVisible = 150;
+    reveals.forEach((element:Element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      if (elementTop < windowHeight - elementVisible) {
+        this.renderer.addClass(element, "animation-active");
+      } else {
+        this.renderer.removeClass(element, "animation-active");
+      }
+    });
+  }
   addBookAppointmentData(){
     this.bookAppointmentDataService.insertBookAppointmentData(this.objectForBookingAppointment).subscribe((res:any)=>{
       if(res.status === 'success'){
@@ -88,7 +105,7 @@ export class HomeComponent {
     }
   };
 }
-function reveal() {
+/*--function reveal() {
   var reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -102,4 +119,4 @@ function reveal() {
     }
   }
 }
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);--*/
