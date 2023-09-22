@@ -41,11 +41,12 @@ export class GetSecondOpinionComponent {
   };
   myForm: any;
   paymentObject = {
-    amount: 399,
-    customer_id: 'test1',
-    user_email: '',
-    transaction_id: '',
-    status: 'success',
+    amount: 0,
+    name: '',
+    customer_id: '',
+    email: '',
+    stripeToken: '',
+    package_name: '',
     package_id: this.formObj.selected_package,
   };
 
@@ -68,70 +69,26 @@ export class GetSecondOpinionComponent {
   }
 
   showDiv(divClass: string, styleIndex: string) {
-    console.log('before condition');
     if (divClass !== 'registerNow_step8') {
-      console.log('inside condition', divClass);
       this.addClass = divClass;
       this.divStyle = `z-index : ${styleIndex}`;
       this.stepIndex = styleIndex;
     }
     if (divClass == 'registerNow_step8') {
-      // this.submitData();
       if (this.formObj.selected_package === '1') {
+        this.paymentObject.amount = 399;
+        this.paymentObject.package_name = 'Express, 399 EUR';
         this.makePayment(399);
-        if (
-          this.stripeResponseObj?.id !== 'undefined' &&
-          this.stripeResponseObj?.id !== '' &&
-          this.stripeResponseObj?.id !== null
-        ) {
-          console.log('this.stripeResponseObj?.id', this.stripeResponseObj?.id);
-          this.paymentObject.amount=399;
-          this.paymentObject.user_email=this.formObj.email;
-          this.paymentObject.transaction_id=this.stripeResponseObj?.id;
-          this.paymentObject.transaction_id=this.formObj.selected_package;
-          this.submitData();
-          this.addClass = divClass;
-          this.divStyle = `z-index : ${styleIndex}`;
-          this.stepIndex = styleIndex;
-        }
       }
       if (this.formObj.selected_package === '2') {
+        this.paymentObject.amount = 249;
+        this.paymentObject.package_name = 'Premium, 249 EUR';
         this.makePayment(249);
-        if (
-          this.stripeResponseObj?.id !== 'undefined' &&
-          this.stripeResponseObj?.id !== '' &&
-          this.stripeResponseObj?.id !== null
-        ) {
-          console.log('this.stripeResponseObj?.id', this.stripeResponseObj?.id);
-          this.paymentObject.amount=399;
-          this.paymentObject.user_email=this.formObj.email;
-          this.paymentObject.transaction_id=this.stripeResponseObj?.id;
-          this.paymentObject.transaction_id=this.formObj.selected_package;
-
-          this.submitData();
-          this.addClass = divClass;
-          this.divStyle = `z-index : ${styleIndex}`;
-          this.stepIndex = styleIndex;
-        }
       }
-      if (
-        this.stripeResponseObj?.id !== 'undefined' &&
-        this.stripeResponseObj?.id !== '' &&
-        this.stripeResponseObj?.id !== null
-      ) {
+      if (this.formObj.selected_package === '3') {
+        this.paymentObject.amount = 199;
+        this.paymentObject.package_name = 'Basic, 199 EUR';
         this.makePayment(199);
-        if (this.stripeResponseObj.id !== 'undefined') {
-          console.log('this.stripeResponseObj?.id', this.stripeResponseObj?.id);
-          this.paymentObject.amount=399;
-          this.paymentObject.user_email=this.formObj.email;
-          this.paymentObject.transaction_id=this.stripeResponseObj?.id;
-          this.paymentObject.transaction_id=this.formObj.selected_package;
-
-          this.submitData();
-          this.addClass = divClass;
-          this.divStyle = `z-index : ${styleIndex}`;
-          this.stepIndex = styleIndex;
-        }
       }
     }
 
@@ -268,8 +225,7 @@ export class GetSecondOpinionComponent {
   }
 
   submitData() {
-    // console.log('submit_data')
-
+    console.log('submit function called');
     let formData = new FormData();
     if (this.scanfile != undefined) {
       formData.append('scan', this.scanfile, this.scanfile.name);
@@ -291,14 +247,26 @@ export class GetSecondOpinionComponent {
       .updateUserDetails(formData)
       .subscribe((res: any) => {
         if (res.status == 200) {
+          this.paymentObject.name = res.data.first_name;
+          this.paymentObject.email = res.data.email;
+          this.paymentObject.customer_id =
+            res.data.first_name + '_' + res.data.id;
           this.sendDataToBackendForPayment();
           this.ngxLoader.stop();
           this._toastr.success('Completed !', 'Success');
+          this.addClass = 'registerNow_step8';
+          this.divStyle = `z-index : 8`;
+          this.stepIndex = "8";
+
         } else {
           this._toastr.error(
             'Something wend wrong ! Please try again..',
             'Error'
           );
+          this.addClass = 'registerNow_step7';
+          this.divStyle = `z-index : 7`;
+          this.stepIndex = "7";
+
         }
       });
   }
@@ -308,20 +276,29 @@ export class GetSecondOpinionComponent {
     this.router.navigate(['/']);
   }
 
-  sendDataToBackendForPayment(){
-    this.getSecondOpinionService.payment(this.paymentObject).subscribe((response:any)=>{
-      console.log("response", response)
-    })
+  sendDataToBackendForPayment() {
+    this.getSecondOpinionService
+      .payment(this.paymentObject)
+      .subscribe((response: any) => {
+        console.log('response', response);
+      });
   }
 
   makePayment(amount: any) {
     const paymentHandler = (<any>window).StripeCheckout.configure({
       key: this.stripeAPIKey,
       locale: 'auto',
-      token: function (stripeToken: any) {
-        console.log(stripeToken);
+      token: (stripeToken: any) => {
         this.stripeResponseObj = stripeToken;
-        alert('Stripe token generated!');
+        if (
+          stripeToken.id !== 'undefined' &&
+          stripeToken.id !== '' &&
+          stripeToken.id !== null
+        ) {
+          this.paymentObject.stripeToken = stripeToken.id;
+          alert('Stripe token generated!');
+          this.submitData();
+        }
       },
     });
     paymentHandler.open({
@@ -343,7 +320,6 @@ export class GetSecondOpinionComponent {
           key: this.stripeAPIKey,
           locale: 'auto',
           token: function (stripeToken: any) {
-            console.log(stripeToken);
             alert('Payment has been successfull!');
           },
         });
