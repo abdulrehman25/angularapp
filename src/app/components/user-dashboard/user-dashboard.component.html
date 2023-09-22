@@ -46,12 +46,12 @@
 
   <div class="dashboard-layout-section" [ngClass]="{ 'sidebar-active': toggleDashboardSidebar }">
     <div class="dashboard-sidebar">
-      <a href="javascript:;" class="open-sidebar" (click)="openSideBar()"><i
-          class="fa-regular fa-arrow-right-arrow-left"></i></a>
+      <a href="javascript:;" class="open-sidebar" (click)="openSideBar()">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i></a>
       <ul>
         <li>
           <a routerLink="userHome">
-            <span><i class="fa-regular fa-house"></i></span>
+            <span><i class="fa-solid fa-house"></i></span>
             <span class="sidebar-item">dashboard</span>
           </a>
         </li>
@@ -59,7 +59,7 @@
 
         <li>
           <a routerLink="userProfile">
-            <span><i class="fa-regular fa-user"></i></span>
+            <span><i class="fa-solid fa-user"></i></span>
             <span class="sidebar-item">user profile</span>
           </a>
         </li>
@@ -75,7 +75,7 @@
 
         <li>
           <a routerLink="myReports">
-            <span><i class="fa-regular fa-notes-medical"></i></span>
+            <span><i class="fa-solid fa-file-medical"></i></span>
             <span class="sidebar-item">my reports</span>
           </a>
         </li>
@@ -83,7 +83,7 @@
 
         <li>
           <a routerLink="GetSecondOpinion">
-            <span><i class="fa-regular fa-calendar"></i></span>
+            <span><i class="fa-solid fa-calendar-days"></i></span>
             <span class="sidebar-item"> Get A Second Opinion</span>
           </a>
         </li>
@@ -91,7 +91,7 @@
 
         <li>
           <a routerLink="giveFeedback">
-            <span><i class="fa-regular fa-comment-quote"></i></span>
+            <span><i class="fa-solid fa-comment-dots"></i></span>
             <span class="sidebar-item">give feedback</span>
           </a>
         </li>
@@ -99,7 +99,7 @@
 
         <li>
           <a class="pointer" (click)="logOut()">
-            <span><i class="fa-regular fa-right-from-bracket"></i></span>
+            <span><i class="fa-solid fa-right-from-bracket"></i></span>
             <span class="sidebar-item">log out</span>
           </a>
         </li>
