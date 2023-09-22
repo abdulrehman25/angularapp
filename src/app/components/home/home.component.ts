@@ -120,3 +120,18 @@ export class HomeComponent {
   }
 }
 window.addEventListener("scroll", reveal);--*/
+function reveall() {
+  var reveal2s = document.querySelectorAll(".reveal2");
+  for (var i = 0; i < reveal2s.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveal2s[i].getBoundingClientRect().top;
+    var elementVisible = 300;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveal2s[i].classList.add("animation-active2");
+    } else {
+      reveal2s[i].classList.remove("animation-active2");
+    }
+  }
+}
+window.addEventListener("scroll", reveall);

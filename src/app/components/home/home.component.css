@@ -608,9 +608,7 @@ img {
     display: block;
     position: absolute;
 }
-.process-work-single-two:hover {
-    background-color: #3c59f2;
-}
+
 .process-work-boder {
     width: 2px;
     height: 70px;
@@ -669,13 +667,13 @@ img {
 
 
 /*-- Start process section animation --*/
-.process-work-section .reveal{
+.process-work-section .reveal2{
   position: relative;
   transition: 1s all ease;
   transform: translateY(0px);
   opacity: 1;
 }
-.process-work-section .reveal.animation-active {
+.process-work-section .reveal2.animation-active {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
   transform-style: preserve-3d;
@@ -694,72 +692,73 @@ img {
   right: 0%;
  transition: all 3s ease;
 }
-.process-work-single-two.reveal.animation-active .process-work-shape.one {
+.process-work-single-two.reveal2.animation-active2 .process-work-shape.one {
 	transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
   transform-style: preserve-3d;
   top:0;
 }
-.process-work-single-two.reveal.animation-active .process-work-image-one.one {
+.process-work-single-two.reveal2.animation-active2 .process-work-image-one.one {
   opacity: 0;
 }
 
-.process-work-single-two.reveal.animation-active .process-work-shape.two {
+.process-work-single-two.reveal2.animation-active2 .process-work-shape.two {
 	transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
   transform-style: preserve-3d;
   top:0;
 }
-.process-work-single-two.reveal.animation-active .process-work-image-one.two {
+.process-work-single-two.reveal2.animation-active2 .process-work-image-one.two {
   opacity: 0;
 }
-.process-work-single-two.reveal.animation-active .process-work-shape.three {
+.process-work-single-two.reveal2.animation-active2 .process-work-shape.three {
 	transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
   transform-style: preserve-3d;
   top:0;
 }
-.process-work-single-two.reveal.animation-active .process-work-image-one.three {
+.process-work-single-two.reveal2.animation-active2 .process-work-image-one.three {
   opacity: 0;
 }
-.process-work-single-two.reveal.animation-active .process-work-shape.four {
+.process-work-single-two.reveal2.animation-active2 .process-work-shape.four {
 	transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
   transform-style: preserve-3d;
   top:0;
 }
-.process-work-single-two.reveal.animation-active .process-work-image-one.four {
+.process-work-single-two.reveal2.animation-active2 .process-work-image-one.four {
   opacity: 0;
 }
-
-.process-work-section .reveal.animation-active .work-chart-boder.one, .process-work-section .reveal.animation-active .work-chart-boder.five {
+.process-work-section .reveal2.animation-active2 .work-chart-boder.one, .process-work-section .reveal2.animation-active2 .work-chart-boder.five {
 	width: 2px;
 	height: 98%;
   height:100%;
   outline: 2px dotted #73778c;
 }
-.process-work-section .reveal.animation-active .work-chart-number.one{
+.process-work-section .reveal2.animation-active2 .work-chart-number.one{
+  animation: circle_fade 1s ease-in-out; 
+  background-color: #3c59f2;
+  color:#fff;
+}
+.process-work-section .reveal2.animation-active2 .work-chart-number.two{
+  animation: circle_fade 1s ease-in-out; 
+  background-color: #3c59f2;
+  color:#fff;
+}
+.process-work-section .reveal2.animation-active2 .work-chart-number.three{
   animation: circle_fade .2s ease; 
   background-color: #3c59f2;
   color:#fff;
 }
-.process-work-section .reveal.animation-active .work-chart-number.two{
-  animation: circle_fade .2s ease; 
-  background-color: #3c59f2;
-  color:#fff;
-}
-.process-work-section .reveal.animation-active .work-chart-number.three{
-  animation: circle_fade .2s ease; 
-  background-color: #3c59f2;
-  color:#fff;
-}
-.process-work-section .reveal.animation-active .work-chart-number.four{
+.process-work-section .reveal2.animation-active2 .work-chart-number.four{
   animation: circle_fade .2s ease; 
   background-color: #3c59f2;
   color:#fff;
 }
 @keyframes circle_fade {  
-  from {  
-      opacity:0;  
-  }  
-
-  to {  
+  0% {  
+      opacity:.3;  
+  } 
+  50% {  
+    opacity:.6;  
+  }
+  100% {  
       opacity:1;  
   }  
 }
