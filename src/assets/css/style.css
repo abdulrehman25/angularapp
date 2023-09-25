@@ -681,7 +681,7 @@ box-shadow: none;
     height: 535px;
     perspective: 1000px;
 }
-.flip-box2 h4 {
+.flip-box2 .flip-box2-back h4 {
     color:#fff;
 }
 .flip-box2-inner {
@@ -732,7 +732,7 @@ box-shadow: none;
     height: 450px;
     perspective: 1000px;
   }
-  .flip-box h4 {
+  .flip-box .flip-box-back h4 {
     color: #fff;
   }
   .flip-box-inner {
