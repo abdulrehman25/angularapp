@@ -120,9 +120,16 @@
                     <li class="nav-item">
                         <a routerLink="/" aria-current="page" class="nav-link current">{{"Header Home" | translate}}</a>
                     </li>
-                    <li class="nav-item">
+					<li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header About" | translate}}<span class="fa fa-angle-down"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" routerLink="/about">{{"Header About" | translate}}</a>
+                          <a class="dropdown-item" routerLink="/ourTeam">{{"Header Our Team" | translate}}</a>
+                        </div>
+                      </li>
+                    <!-- <li class="nav-item">
                         <a routerLink="/about" class="nav-link w-nav-link">{{"Header About" | translate}}</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header Our Services" | translate}}<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
@@ -178,7 +185,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header Resources" | translate}}<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" routerLink="/ourTeam">{{"Header Our Team" | translate}}</a>
+                          <a class="dropdown-item" routerLink="/events">{{"Header Our Congress / Events" | translate}}</a>
                           <a class="dropdown-item" routerLink="/proBono">{{"Header Pro Bono" | translate}}</a>
                           <a class="dropdown-item" routerLink="/testimonial">{{"Header Testimonials" | translate}}</a>
 						  <a class="dropdown-item" routerLink="/pricing">{{"Header Pricing" | translate}}</a>
