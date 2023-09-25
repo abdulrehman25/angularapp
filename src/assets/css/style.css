@@ -678,8 +678,11 @@ box-shadow: none;
 }
 .flip-box2 {
     width:100%;
-    height: 500px;
+    height: 535px;
     perspective: 1000px;
+}
+.flip-box2 h4 {
+    color:#fff;
 }
 .flip-box2-inner {
     position: relative;
@@ -729,7 +732,9 @@ box-shadow: none;
     height: 450px;
     perspective: 1000px;
   }
-  
+  .flip-box h4 {
+    color: #fff;
+  }
   .flip-box-inner {
     position: relative;
     width: 100%;

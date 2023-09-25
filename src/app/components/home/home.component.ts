@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-
+  homePageBannerImg="../../../assets/images/new_homepage/PP.png";
   objectForBookingAppointment: BookAppointment={
     name:'',
     visit_type:"",
