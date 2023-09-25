@@ -296,7 +296,8 @@ export class GetSecondOpinionComponent {
           stripeToken.id !== null
         ) {
           this.paymentObject.stripeToken = stripeToken.id;
-          alert('Stripe token generated!');
+          console.log("stripeToken",stripeToken)
+          // alert('Stripe token generated!');
           this.submitData();
         }
       },
@@ -320,7 +321,7 @@ export class GetSecondOpinionComponent {
           key: this.stripeAPIKey,
           locale: 'auto',
           token: function (stripeToken: any) {
-            alert('Payment has been successfull!');
+            // alert('Payment has been successfull!');
           },
         });
       };
