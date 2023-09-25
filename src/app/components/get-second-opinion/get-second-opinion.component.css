@@ -26,6 +26,9 @@ button.close-book-appointment-page {
   z-index: 1111;
   color: #ffffff;
 }
+.close-book-appointment-page .fa-xmark {
+	font-size: 32px;
+}
 .login-footer {
 	color: #fff;
 	font-size: 12px;
