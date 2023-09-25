@@ -60,8 +60,9 @@
 
     "Dr Ali Rahman": "Dr Ali Rahman",
     "Introduction":"Introduction",
+    "Pro Bono":"Pro Bono",
     "proBonoP1":"When it comes to healthcare, obtaining a correct diagnosis is crucial in ensuring appropriate treatment and care. However, due to the complex nature of medical conditions, misdiagnosis can occur and lead to harmful consequences for patients. This is where a second opinion proves to be handy.",
-    "proBonoP2":"We believe everybody is privy to good health; that is why Dr. Ali Rahman and his team have started an initiative of pro bono second opinions, where a free second opinion is provided on the radiology reports of people who are unemployed, disabled, elderly, living as single mothers or have limited access to healthcare. Pro bono second opinions are medical consultations provided by a healthcare professional free of charge.",
+    "proBonoP2":"We believe everybody is privy to good health; that is why Dr. Ali Rahman and his team have started an initiative of pro bono second opinions, where an opinion is provided on the radiology reports of people who are unemployed, disabled, elderly, living as single mothers or have limited access to healthcare. Pro bono second opinions are medical consultations provided by a healthcare professional free of charge.",
     "proBonoP3":"A second opinion as such can help patients gain a better understanding of their diagnosis and treatment options. It can either provide reassurance about the initial diagnosis being correct or identify potential misdiagnosis.",
     "proBonoP4":"Additionally, this type of a second opinion can help patients feel more in control of their healthcare by offering them necessary information and enabling them to make informed choices.",
     "proBonoP5_1":"By breaking down barriers to healthcare access, ",
@@ -554,6 +555,12 @@
     "Subject":"Subject",
     "Message":"Message",
 
+    "Congress/Events":"Congress/Events",
+    "Congress/Events_p1":"Upcoming Congresses and Workshops / Academy: Continuous Advancement for You!",
+    "Congress/Events_p2":"Radiology is an ever-evolving field. It's our ambition to always stay up-to-date, adapt the latest innovations, and put them into practice. Our Academy provides customers and employees the opportunity to be a part of this exciting progress.",
+    "key25":"",
+    "key25":"",
+    "key25":"",
     "key25":"",
     "key26":""
 

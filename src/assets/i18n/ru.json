@@ -60,12 +60,14 @@
 
     "Dr Ali Rahman": "Доктор Али Рахман",
     "Introduction":"Вступление",
-    "proBonoP1":"When it comes to healthcare, obtaining a correct diagnosis is crucial in ensuring appropriate treatment and care. However, due to the complex nature of medical conditions, misdiagnosis can occur and lead to harmful consequences for patients. This is where a second opinion proves to be handy.",
-    "proBonoP2":"We believe everybody is privy to good health; that is why Dr. Ali Rahman and his team have started an initiative of pro bono second opinions, where a free second opinion is provided on the radiology reports of people who are unemployed, disabled, elderly, living as single mothers or have limited access to healthcare. Pro bono second opinions are medical consultations provided by a healthcare professional free of charge.",
-    "proBonoP3":"A second opinion as such can help patients gain a better understanding of their diagnosis and treatment options. It can either provide reassurance about the initial diagnosis being correct or identify potential misdiagnosis.",
-    "proBonoP4":"Additionally, this type of a second opinion can help patients feel more in control of their healthcare by offering them necessary information and enabling them to make informed choices.",
-    "proBonoP5_1":"By breaking down barriers to healthcare access, ",
-    "proBonoP5_2":" has initiated a pro bono second opinion program that ensures all patients receive the care and attention they need regardless of their financial situation.",
+
+    "Pro Bono":"Про боно",
+    "proBonoP1":"Когда речь идет о здоровье, правильный диагноз имеет решающее значение для обеспечения адекватного лечения и прогноза. Однако из-за сложности радиологических исследований могут возникать ошибки диагностики, которые могут нанести вред пациентам. В этом случае второе мнение может быть полезным.",
+    "proBonoP2":"Мы считаем, что каждый имеет право на хорошее здоровье, поэтому доктор Али Рахман и его команда запустили инициативу по оказанию бесплатных вторых мнений по радиологическим отчетам для людей, которые, например, безработны, инвалиды, воспитывают детей в одиночку или имеют ограниченный доступ к медицинской помощи. Вторые мнения Pro Bono - это медицинские консультации, которые врач предоставляет бесплатно или по сниженной цене.",
+    "proBonoP3":"Такое второе мнение может помочь пациентам лучше понять свой диагноз и возможности лечения. Оно может либо подтвердить, что первоначальный диагноз верен, либо выявить возможные ошибки диагностики.",
+    "proBonoP4":"Кроме того, такое второе мнение может помочь пациентам чувствовать себя более контролирующими в отношении своего здоровья, предоставляя им необходимую информацию и позволяя принимать информированные решения.",
+    "proBonoP5_1":"создал программу Pro Bono вторых мнений, ",
+    "proBonoP5_2":" которая помогает снять барьеры в доступе к медицинской помощи и обеспечивает, что каждый пациент получает необходимое внимание, независимо от своего финансового положения.",
 
 
 
@@ -554,6 +556,11 @@
     "Subject":"Тема",
     "Message":"Сообщение",
     "You have characters left":"У вас осталось символов.",
+
+    "Congress/Events":"Конгрессы/События",
+    "Congress/Events_p1":"Ближайшие Конгрессы и Семинары / Академия: Постоянное Развитие для Вас!",
+    "Congress/Events_p2":"Радиология — это постоянно развивающаяся область. Наша цель — всегда оставаться актуальными, приспосабливать последние инновации и внедрять их в практику. Наша Академия предоставляет возможность для клиентов и сотрудников принять участие в этом увлекательном процессе.",
+
 
     "key25":"",
     "key26":""

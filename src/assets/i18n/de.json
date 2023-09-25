@@ -60,6 +60,7 @@
 
     "Dr Ali Rahman": "Dr Ali Rahman",
     "Introduction":"Introduction",
+    "Pro Bono":"Pro Bono",
     "proBonoP1":"Wenn es um Gesundheit geht geht, ist eine korrekte Diagnose entscheidend, um eine angemessene Behandlung und Prognorse sicherzustellen. Aufgrund der komplexen Natur radiologsicher Untersuchungen können jedoch Fehldiagnosen auftreten, die zu nachteiligen Folgen für die Patienten führen können. Hier erweist sich eine Zweitmeinung als nützlich.",
     "proBonoP2":"Wir glauben, dass jeder das Recht auf gute Gesundheit hat; deshalb haben Dr. Ali Rahman und sein Team eine Initiative für Pro-Bono-Zweitmeinungen ins Leben gerufen, bei der eine kostengünstige Zweitmeinung zu den Radiologieberichten von Menschen angeboten wird, die zum Beispiel arbeitslos, behindert, alleinerziehend sind oder einen begrenzten Zugang zur Gesundheitsversorgung haben. Pro-Bono-Zweitmeinungen sind medizinische Beratungen, die ein Arzt kostenlos oder günstiger anbietet.",
     "proBonoP3":"Eine solche Zweitmeinung kann den Patienten helfen, ein besseres Verständnis ihrer Diagnose und Behandlungsmöglichkeiten zu erlangen. Sie kann entweder die Sicherheit geben, dass die ursprüngliche Diagnose korrekt ist, oder eine mögliche Fehldiagnose aufdecken.",
@@ -550,6 +551,11 @@
     "Email":"Email",
     "Subject":"Subject",
     "Message":"Message",
+
+
+    "Congress/Events":"Kongresse/Veranstaltungen",
+    "Congress/Events_p1":"Nächste Kongresse und Workshops / Akademie: Stetige Weiterentwicklung für Sie!",
+    "Congress/Events_p2":"Die Radiologie ist ein sich ständig weiterentwickelndes Fachgebiet. Unsere Ambition ist es, stets aktuell zu bleiben, neueste Innovationen zu adaptieren und in die Praxis umzusetzen. Unsere Akademie bietet Kunden und Mitarbeitern die Möglichkeit, an dieser spannenden Entwicklung teilzuhaben.",
 
     "key25":"",
     "key26":""
