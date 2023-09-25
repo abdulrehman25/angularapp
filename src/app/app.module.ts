@@ -95,6 +95,8 @@ import { ClientManagementComponent } from './components/admin/client-management/
 import { OrdersManagementComponent } from './components/admin/orders-management/orders-management.component';
 import { RevenueComponent } from './components/admin/revenue/revenue.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { EventsComponent } from './components/resources/events/events.component';
+import { TopBannerComponent } from './components/shared/top-banner/top-banner.component';
 
 @NgModule({
   declarations: [
@@ -180,6 +182,8 @@ import { PaymentComponent } from './components/payment/payment.component';
     OrdersManagementComponent,
     RevenueComponent,
     PaymentComponent,
+    EventsComponent,
+    TopBannerComponent,
   ],
   imports: [
     BrowserModule,
