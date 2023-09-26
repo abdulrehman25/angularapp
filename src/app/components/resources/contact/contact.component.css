@@ -5,7 +5,8 @@
     padding-left: 30%;
 }
 .contact-info-section p a {
-	color: #212529;
+	color: #73778c;
+	text-decoration: none;
 }
 .contact-form-section {
 	background-color: #f6f6f6;
@@ -37,6 +38,14 @@
 	width: 70%;
 	border: #ccc solid 1px;
 	height: 40px;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+.contact-form-row textarea {
+	width: 70%;
+	border: #ccc solid 1px;
+	height: 100px;
 	border-radius: 5px;
 	padding: 10px;
 	outline: none;

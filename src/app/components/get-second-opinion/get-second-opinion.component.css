@@ -1083,7 +1083,15 @@ span.ng-star-inserted {
       scrollbar-width: thin;
       scrollbar-color: #67827b #999;
   }
-
+  #msform fieldset::-webkit-scrollbar {
+    width:10px;
+  }
+  #msform fieldset::-webkit-scrollbar-track {
+    background-color: darkgrey
+  }
+  #msform fieldset::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
 
   /* Chrome, Edge, and Safari */
   #msform fieldset::-webkit-scrollbar {
@@ -1514,6 +1522,15 @@ span.ng-star-inserted {
   .registerNow_step14 {
       width: calc(100% - 250px);
   } 
+  button.close-book-appointment-page {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 27px;
+  }
+  .close-book-appointment-page .fa-xmark {
+    font-size: 18px;
+  }
   }
 @media only screen and (max-width: 991px){
 .registerNow_step2,
@@ -1563,9 +1580,26 @@ span.ng-star-inserted {
   .registerNow_step14 {
     width: calc(100% - 145px);
   }
+  
+.step2-inner,
+.step3-inner,
+.step4-inner,
+.step5-inner,
+.step6-inner,
+.step7-inner,
+.step8-inner,
+.step9-inner,
+.step10-inner,
+.step11-inner,
+.step12-inner,
+.step13-inner,
+.step14-inner {
+overflow-y: scroll;
+}
   .sidebar_right {
     padding: 50px 5px 0;
     width: 150px;
+    overflow-y: scroll;
    }
    #progressbar {
     padding:0;
@@ -1687,10 +1721,10 @@ span.ng-star-inserted {
   }
 
   button.close-book-appointment-page {
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 27px;
   }
   #msform h1 {
     font-size: 20px;
@@ -1734,6 +1768,16 @@ span.ng-star-inserted {
     .registerNow_step13,
     .registerNow_step14 {
       width: calc(100% - 97px);
+    }
+    button.close-book-appointment-page {
+      top: 10px;
+      right: 98px;
+      width: 25px;
+      height: 27px;
+      border: 1px solid #427337;
+    }
+    .close-book-appointment-page .fa-xmark{
+      color: #427337;
     }
     .register-now-page aside {
       width: 100%;
