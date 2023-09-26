@@ -5,7 +5,8 @@
     padding-left: 30%;
 }
 .contact-info-section p a {
-	color: #212529;
+	color: #73778c;
+	text-decoration: none;
 }
 .contact-form-section {
 	background-color: #f6f6f6;

@@ -240,7 +240,9 @@ img {
     text-decoration: none;
     display: flex;
 }
-
+.footer-details-icon-wrapper .footer-icon-link-block:hover {
+	background: #3c59f2;
+}
 .footer-menu-wrapper {
     width: 880px;
 }

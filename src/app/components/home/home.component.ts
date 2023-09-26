@@ -35,12 +35,19 @@ export class HomeComponent {
     const reveals = document.querySelectorAll(".reveal");
     const windowHeight = window.innerHeight;
     const elementVisible = 150;
+    const elementVisible2 = 300;
     reveals.forEach((element:Element) => {
       const elementTop = element.getBoundingClientRect().top;
       if (elementTop < windowHeight - elementVisible) {
         this.renderer.addClass(element, "animation-active");
       } else {
         this.renderer.removeClass(element, "animation-active");
+      }
+      if (elementTop < windowHeight - elementVisible2) {
+        this.renderer.addClass(element, "animation-active2");
+      }
+      else {
+        this.renderer.removeClass(element, "animation-active2");
       }
     });
   }
@@ -118,20 +125,4 @@ export class HomeComponent {
       reveals[i].classList.remove("animation-active");
     }
   }
-}
-window.addEventListener("scroll", reveal);--*/
-function reveall() {
-  var reveal2s = document.querySelectorAll(".reveal2");
-  for (var i = 0; i < reveal2s.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveal2s[i].getBoundingClientRect().top;
-    var elementVisible = 300;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveal2s[i].classList.add("animation-active2");
-    } else {
-      reveal2s[i].classList.remove("animation-active2");
-    }
-  }
-}
-window.addEventListener("scroll", reveall);
+}--*/
