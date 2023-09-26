@@ -402,16 +402,9 @@
     .three-report-graph .rounded ol li img.img-fluid {height: 180px;}
     .myReport-page input[type="file"] {max-width: 100%;margin-bottom: 20px;}
     .give-feedback-page .col-xl-6 .d-flex {flex-direction: column;margin-bottom: 20px;}
-    .auth-sidebar-col {
-        display: none !important;
-    }
-    .checkbox-wrapper {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .checkbox-wrapper ul {
-        margin-bottom: 0;
-    }
+    .auth-sidebar-col {display: none !important;}
+    .checkbox-wrapper {margin-bottom: 0;margin-top: 0;}
+    .checkbox-wrapper ul {margin-bottom: 0;}
     /* for dashboard */
     
     .inner-pages .testimonial-section ul {margin-bottom: 0px;}
@@ -431,6 +424,7 @@
     .site-banner {padding-bottom: 20px;padding-top:0;}
     .site-banner::before {display: none;}
     .site-banner figure img {height: 600px;}
+    .banner-caption {bottom: 10%;}
     /*-- inner page banner --*/
     .subscribe-letter {top: 0;position: inherit;max-width: 300px;box-shadow: none;margin-bottom: 50px;}
     .subscribe-letter input[type="submit"] {position: relative;right: 0px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;width: 100%;
