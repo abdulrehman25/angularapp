@@ -1079,7 +1079,23 @@ span.ng-star-inserted {
       margin: 0;
       padding: 20px;
       position: relative;
-      overflow-y: scroll;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #67827b #999;
+  }
+
+
+  /* Chrome, Edge, and Safari */
+  #msform fieldset::-webkit-scrollbar {
+    width: 16px;
+  }
+  #msform fieldset::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  #msform fieldset::-webkit-scrollbar-thumb {
+    background-color: #67827b;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
   }
   
   .form-card {
@@ -1287,6 +1303,7 @@ span.ng-star-inserted {
     margin-bottom: 5px;
     color: #000000;
     padding: 0 0 0 55px;
+    outline: none;
   }
   #msform h1 {
     color: #000;

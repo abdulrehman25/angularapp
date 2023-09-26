@@ -625,6 +625,7 @@ box-shadow: none;
 .site-banner .banner-caption aside a {
     background-color: #427337;
     box-shadow: none;
+    padding: 10px 20px;
 }
 
 .site-banner .banner-caption aside a:hover {
