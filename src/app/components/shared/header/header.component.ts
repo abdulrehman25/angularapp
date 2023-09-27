@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,6 +8,22 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  isHomePage: boolean = false;
+  isAbout: boolean = false;
+  isTestimonialPage: boolean = false;
+  isFaqPage: boolean = false;
+  isContactPage: boolean = false;
+  isOurTeamPage: boolean = false;
+
+  isAbdominalRadiologyPage: boolean = false;
+  isProstateRadiologyPage: boolean = false;
+  // isHomePage: boolean = false;
+  // isHomePage: boolean = false;
+  // isHomePage: boolean = false;
+  // isHomePage: boolean = false;
+  // isHomePage: boolean = false;
+  // isHomePage: boolean = false;
+
   showHide: boolean = false;
   showRadiologyPages: boolean = false;
   showNueRadiologyPages: boolean = false;
@@ -25,7 +42,7 @@ export class HeaderComponent {
     { language: 'Russian', languageCode: 'ru', countryCode: 'ru' },
     { language: 'Chinese', languageCode: 'zh', countryCode: 'cn' },
   ];
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private router: Router, private activatedRoute: ActivatedRoute) {
     translate.addLangs(['en', 'de', 'ar', 'ru', 'zh']);
     translate.setDefaultLang('en');
   }
@@ -95,5 +112,32 @@ export class HeaderComponent {
   }
   seeMoreNeuroradiology(){
     this.showNueRadiologyPages=!this.showNueRadiologyPages;
+  }
+
+  ngOnInit() {
+
+    this.checkIfHomePage();
+
+    this.router.events.subscribe((event) => {
+
+      if (event instanceof NavigationEnd) {
+
+        // console.log('Current URL:', event.url);
+
+        this.checkIfHomePage();
+
+      }
+
+    });
+
+  }
+
+  private checkIfHomePage() {
+
+    this.isHomePage = this.router.url === '/home';
+    this.isAbout = this.router.url === '/about';
+
+    // console.log('isHomePage:', this.isHomePage);
+
   }
 }

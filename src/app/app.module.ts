@@ -97,6 +97,7 @@ import { RevenueComponent } from './components/admin/revenue/revenue.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { EventsComponent } from './components/resources/events/events.component';
 import { TopBannerComponent } from './components/shared/top-banner/top-banner.component';
+import { PackagesComponent } from './components/admin/packages/packages.component';
 
 @NgModule({
   declarations: [
@@ -184,6 +185,7 @@ import { TopBannerComponent } from './components/shared/top-banner/top-banner.co
     PaymentComponent,
     EventsComponent,
     TopBannerComponent,
+    PackagesComponent,
   ],
   imports: [
     BrowserModule,
