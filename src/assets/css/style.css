@@ -5,6 +5,7 @@
 }
 .navbar-nav .nav-item.current a {
 	color: #407839;
+    font-weight: bold;
 }
 @font-face {
     font-family: 'Fa solid 900';
@@ -1100,7 +1101,7 @@ padding-left: 75px;
 }
 /*-- slidebox css--*/
 .slide_box {
-	
+	display: none;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -1257,6 +1258,116 @@ padding-left: 75px;
 	padding: 10px 25px;
 }
 /*-- End Payment form CSS --*/
+
+
+/*-- Start Pricing page CSS --*/
+
+.pricing-plan-single-wrapper {
+	border: 1px solid rgba(178, 183, 187, .6);
+	border-radius: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+    margin:50px 0 0;
+}
+.pricing-plan-single-wrapper:hover {
+	background-color: rgba(38, 68, 120);
+}
+.pricing-plan-top-content {
+	border-bottom: 1px solid rgba(178, 183, 187, .6);
+	padding-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.pricing-plan-tag {
+	display: inline-block;
+    color: rgb(253,82,62);
+}
+.pricing-plan-single-wrapper:hover .pricing-plan-tag-wrapper {
+	background-color:#fff;
+}
+.pricing-plan-tag-wrapper {
+	color: #427337;
+	background-color:rgba(253, 82, 62, 0.1);
+	border-radius: 20px;
+	margin-bottom: 30px;
+	padding: 8px 25px;
+	font-weight: 700;
+	display: inline-block;
+}
+.price-wrapper {
+	align-items: center;
+	margin-bottom: 15px;
+	display: flex;
+    color: rgb(37, 47, 75);
+}
+.pricing-plan-single-wrapper:hover .price-wrapper h4{
+    color: #fff;
+}
+.price-description {
+	margin-bottom: 25px;
+    color: rgb(115, 119, 140);
+}
+.pricing-plan-single-wrapper:hover .price-description {
+    color: #fff;
+}
+.features-price-list-wrapper {
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.features-price-title {
+	margin-bottom: 20px;
+	font-size: 22px;
+	line-height: 32px;
+}
+.pricing-plan-single-wrapper:hover .features-price-title {
+    color:#fff;
+}
+.features-list-wrapper {
+	grid-row-gap: 25px;
+	flex-direction: column;
+	display: flex;
+}
+.features-list-single-wrap {
+	grid-column-gap: 15px;
+	align-items: center;
+	display: flex;
+}
+.features-price-list-wrapper {
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.features-list-single-wrap ul {
+	padding: 0;
+	margin: 0;
+}
+.features-list-single-wrap ul li {
+	position: relative;
+	list-style: none;
+	padding:0 0 0 40px;
+	margin: 0 0 25px;
+    color: rgb(115, 119, 140);
+    font-size: 18px;
+  font-weight: 500;
+}
+.features-list-single-wrap ul li .fa-solid {
+    color:rgb(60, 89, 242);
+    font-size:24px;
+    position: absolute;
+    left: 0;
+}
+.pricing-plan-single-wrapper:hover .features-list-single-wrap ul li, .pricing-plan-single-wrapper:hover .features-list-single-wrap ul li .fa-solid{
+    color:#fff;
+}
+.pricing-plan-single-wrapper:hover .primary-button {
+    color: #427337;
+    background-color:#fff;
+    background-image: linear-gradient(#fff, #fff);
+}
+/*-- End Pricing page CSS --*/
+
+
 .about-section {overflow: hidden;}
 
 @media screen and (max-width: 991px){

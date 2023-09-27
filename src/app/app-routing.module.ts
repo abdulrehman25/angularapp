@@ -75,6 +75,7 @@ import { OrdersManagementComponent } from './components/admin/orders-management/
 import { RevenueComponent } from './components/admin/revenue/revenue.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { EventsComponent } from './components/resources/events/events.component';
+import { PackagesComponent } from './components/admin/packages/packages.component';
 
 const routes: Routes = [
   // {
@@ -208,6 +209,7 @@ const routes: Routes = [
       { path: 'clientmanagement', component: ClientManagementComponent },
       { path: 'ordersmanagement', component: OrdersManagementComponent },
       { path: 'revenue', component: RevenueComponent },
+      { path: 'packages', component: PackagesComponent },
     ],
   },
   { path: '**', component: NotFoundComponent },
