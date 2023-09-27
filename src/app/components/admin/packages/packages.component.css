@@ -1,0 +1,38 @@
+
+.contact-form-row {
+	display: block;
+	padding: 10px 0px;
+}
+.contact-form-row label {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+.contact-form-row input[type="text"], .contact-form-row input[type="email"], .contact-form-row input[type="tel"] {
+	width: 70%;
+	border: #ccc solid 1px;
+	height: 40px;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+.contact-form-row textarea {
+	width: 70%;
+	border: #ccc solid 1px;
+	height: 100px;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+.contact-form-row input[type="submit"] {
+	background-color: #407839;
+	color: #ffffff;
+	padding: 8px 20px;
+	display: inline-block;
+	border-radius: 100px;
+	box-shadow: 0px 11px 35px #407839;
+	min-width: 150px;
+	border: 1px solid #407839;
+	text-transform: capitalize;
+	margin-right: 20px;
+}
