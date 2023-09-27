@@ -28,6 +28,7 @@ export class AdminComponent {
   }
 
   openSideBar(){
+    console.log("function clicked");
     this.toggleDashboardSidebar= !this.toggleDashboardSidebar
   }
 
