@@ -5,6 +5,7 @@
 }
 .navbar-nav .nav-item.current a {
 	color: #407839;
+    font-weight: bold;
 }
 @font-face {
     font-family: 'Fa solid 900';
