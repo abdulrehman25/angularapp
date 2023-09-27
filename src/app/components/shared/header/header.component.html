@@ -117,14 +117,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a routerLink="/" aria-current="page" class="nav-link current">{{"Header Home" | translate}}</a>
+                    <li class="nav-item" [ngClass]="{'current' : isHomePage}">
+                        <a routerLink="/" aria-current="page" class="nav-link">{{"Header Home" | translate}}</a>
                     </li>
 					<li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header About" | translate}}<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						  <a class="dropdown-item" routerLink="/about">{{"Header About" | translate}}</a>
+						  <a class="dropdown-item" [ngClass]="{'current' : isAbout}" routerLink="/about">{{"Header About" | translate}}</a>
                           <a class="dropdown-item" routerLink="/ourTeam">{{"Header Our Team" | translate}}</a>
+						  <a class="dropdown-item" routerLink="/testimonial">{{"Header Testimonials" | translate}}</a>
+                          <a class="dropdown-item" routerLink="/faq">{{"Header FAQ" | translate}}</a>
+                          <a class="dropdown-item" routerLink="/contact">{{"Header Contact" | translate}}</a>
                         </div>
                       </li>
                     <!-- <li class="nav-item">
@@ -187,10 +190,10 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <a class="dropdown-item" routerLink="/events">{{"Header Our Congress / Events" | translate}}</a>
                           <a class="dropdown-item" routerLink="/proBono">{{"Header Pro Bono" | translate}}</a>
-                          <a class="dropdown-item" routerLink="/testimonial">{{"Header Testimonials" | translate}}</a>
 						  <a class="dropdown-item" routerLink="/pricing">{{"Header Pricing" | translate}}</a>
+						  <!-- <a class="dropdown-item" routerLink="/testimonial">{{"Header Testimonials" | translate}}</a>
 						  <a class="dropdown-item" routerLink="/contact">{{"Header Contact" | translate}}</a>
-						  <a class="dropdown-item" routerLink="/faq">{{"Header FAQ" | translate}}</a>
+						  <a class="dropdown-item" routerLink="/faq">{{"Header FAQ" | translate}}</a> -->
 
                         </div>
                       </li>

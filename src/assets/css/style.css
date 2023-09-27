@@ -3,7 +3,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+.navbar-nav .nav-item.current a {
+	color: #407839;
+}
 @font-face {
     font-family: 'Fa solid 900';
     src: url('../fonts/fa-solid-900.ttf') format('truetype');
@@ -1098,7 +1100,7 @@ padding-left: 75px;
 }
 /*-- slidebox css--*/
 .slide_box {
-	display: none;
+	
 	position: fixed;
 	right: 0;
 	top: 0;
