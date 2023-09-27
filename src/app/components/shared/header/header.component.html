@@ -120,10 +120,10 @@
                     <li class="nav-item" [ngClass]="{'current' : isHomePage}">
                         <a routerLink="/" aria-current="page" class="nav-link">{{"Header Home" | translate}}</a>
                     </li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown" [ngClass]="{'current' : aboutNavItem}">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header About" | translate}}<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						  <a class="dropdown-item" [ngClass]="{'current' : isAbout}" routerLink="/about">{{"Header About" | translate}}</a>
+						  <a class="dropdown-item" routerLink="/about">{{"Header About" | translate}}</a>
                           <a class="dropdown-item" routerLink="/ourTeam">{{"Header Our Team" | translate}}</a>
 						  <a class="dropdown-item" routerLink="/testimonial">{{"Header Testimonials" | translate}}</a>
                           <a class="dropdown-item" routerLink="/faq">{{"Header FAQ" | translate}}</a>
@@ -133,7 +133,7 @@
                     <!-- <li class="nav-item">
                         <a routerLink="/about" class="nav-link w-nav-link">{{"Header About" | translate}}</a>
                     </li> -->
-                    <li class="nav-item">
+                    <li class="nav-item" [ngClass]="{'current' : ourServicesNavItem}">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header Our Services" | translate}}<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
                             <div class="container">
@@ -185,7 +185,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" [ngClass]="{'current' : resourcesNavItem}">
                         <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{"Header Resources" | translate}}<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <a class="dropdown-item" routerLink="/events">{{"Header Our Congress / Events" | translate}}</a>
