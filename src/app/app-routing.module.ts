@@ -177,7 +177,7 @@ const routes: Routes = [
   },
   {
     path: 'userDashboard',
-    component: UserDashboardComponent,
+    component: UserDashboardComponent, canActivate: [AuthGuardForUserDashboardGuard],
     children: [
       {
         path: '',
@@ -193,7 +193,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent,
+    component: AdminComponent, canActivate: [AdminRoutesGuardGuard],
     children: [
       {
         path: '',

@@ -26,7 +26,8 @@ export class HomeComponent {
 
   today = new Date().toISOString().slice(0, 10);
 
-  constructor(private router: Router , private bookAppointmentDataService:BookAppointmentService, private _toastr: ToastrService, private renderer: Renderer2) {  }
+  constructor(private router: Router , private bookAppointmentDataService:BookAppointmentService, private _toastr: ToastrService, private renderer: Renderer2) {
+    }
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     this.revealElements();
@@ -50,6 +51,9 @@ export class HomeComponent {
         this.renderer.removeClass(element, "animation-active2");
       }
     });
+  }
+
+  ngOnInIt(){
   }
   addBookAppointmentData(){
     this.bookAppointmentDataService.insertBookAppointmentData(this.objectForBookingAppointment).subscribe((res:any)=>{

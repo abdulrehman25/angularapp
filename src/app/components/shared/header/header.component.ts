@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  loginToDashboard:boolean=false;
   isHomePage: boolean = false;
 
   aboutNavItem: boolean = false;
@@ -61,6 +62,17 @@ export class HeaderComponent {
   ) {
     translate.addLangs(['en', 'de', 'ar', 'ru', 'zh']);
     translate.setDefaultLang('en');
+    const loggedInUser = localStorage.getItem("userName");
+    console.log("loggedInUser", loggedInUser);
+    if(loggedInUser !== undefined && loggedInUser !== null && loggedInUser !==''){
+      // this.loginToDashboard = true;
+      // console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
+    }else{
+      // this.loginToDashboard = false;
+      // console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
+
+    }
+
   }
 
   // switchLang(lang:string) {
