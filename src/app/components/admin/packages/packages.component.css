@@ -50,3 +50,27 @@
 	width: 100%;
 	margin:0 0 30px;
 }
+.package-form .fa-solid.fa-circle-plus {
+	font-size: 27px;
+	color: #8c8c8c;
+	padding: 0;
+	display: inline-block;
+	margin: 0px 0 0 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+@media only screen and (max-width:590px){
+.contact-form-row input[type="text"], .contact-form-row input[type="email"], .contact-form-row input[type="tel"], .contact-form-row textarea {
+	width:100%;
+}
+.contact-form-row label {
+	display:block;
+	width:100%;
+}
+.contact-form-row input[type="submit"] {
+	padding: 5px 11px;
+	font-size: 15px;
+	margin: 0 2px 3px;
+}
+}
