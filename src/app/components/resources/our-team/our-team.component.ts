@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-team.component.css']
 })
 export class OurTeamComponent {
+  OurTeamPageTitle = "Out Team At RadiologyCheck"
 
 }

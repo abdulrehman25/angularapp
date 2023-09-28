@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent {
+  EventPageTitle="RadiologyCheck Events"
 topBannerBackgroundImg="/assets/images/home-new-banner.jpg"
 }

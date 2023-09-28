@@ -11,6 +11,7 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  contactPageTitle="RadiologyCheck Contact Information";
   [x: string]: any;
   contactObj: ContactUs = {
     name: '',

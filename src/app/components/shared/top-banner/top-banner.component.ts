@@ -7,10 +7,12 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./top-banner.component.css']
 })
 export class TopBannerComponent {
-@Input() topBannerBackgroundImg=''
+@Input() topBannerBackgroundImg='';
+@Input() pageTitle:string = '';
 isHomePage: boolean = false;
 constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 ngOnInit() {
+  console.log("pageTitle", this.pageTitle)
   this.checkIfHomePage();
   this.router.events.subscribe((event) => {
     if (event instanceof NavigationEnd) {

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./testimonial.component.css']
 })
 export class TestimonialComponent {
+  TestimonialPageTitle = "Testimonials Of RadiologyCheck "
 
 }
