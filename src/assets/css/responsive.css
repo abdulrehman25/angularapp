@@ -263,7 +263,7 @@
         .site-banner figure img {width: 100%;}
         .site-banner .banner-caption h1 {padding-bottom: 15px;font-size: 30px;line-height: 40px;}
         .site-banner .banner-caption p {padding-right: 0rem !important;}
-        .banner-caption {bottom: 30%;}
+        .banner-caption {bottom: 10%;}
         .primary-button {padding: 5px 10px;font-size: 12px;}
         .site-banner figure {height: auto;}
     }
@@ -443,5 +443,15 @@
     
     
     
-    
-    
+@media (max-width: 470px) { 
+.site-banner .banner-caption h1 {
+    line-height: 36px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+.site-banner .banner-caption p {
+	padding-right: 0;
+	font-size: 16px;
+	line-height: 23px;
+}
+}
