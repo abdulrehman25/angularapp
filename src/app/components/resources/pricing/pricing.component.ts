@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pricing.component.css']
 })
 export class PricingComponent {
+  PricingPageTitle = " Pricing At RadiologyCheck"
 
 }

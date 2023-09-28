@@ -1,5 +1,5 @@
 <div class="site_wrapper">
-	<app-top-banner></app-top-banner>
+	<app-top-banner [pageTitle]="FAQPageTitle"></app-top-banner>
 	<!-- <div class="site-feature-banner">
 		<figure><img src="../../../../assets/images/our-team-banner.jpg" alt="">
 			<div class="feature-banner-caption">
@@ -655,7 +655,7 @@
 									<p>
 										{{
 										"There are many reasons as to why your patient may consider a second opinion of
-										their radiology reports" | translate
+										their radiology reports:" | translate
 										}}
 									</p>
 
@@ -920,7 +920,7 @@
 								</div>
 
 								<div class="form-group">
-									<input type="submit" value="Submit Query" />
+									<input type="submit" [value]="'Submit Query' | translate" />
 								</div>
 							</form>
 						</fieldset>

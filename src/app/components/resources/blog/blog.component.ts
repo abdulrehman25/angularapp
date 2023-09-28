@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
+  blogPageTitle = "RadiologyCheck Blogs";
 
   constructor(private router:Router){
 

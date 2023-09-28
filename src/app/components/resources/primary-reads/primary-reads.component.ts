@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./primary-reads.component.css']
 })
 export class PrimaryReadsComponent {
+  PrimaryReadsPageTitle = "Primary Reads At RadiologyCheck"
 
 }

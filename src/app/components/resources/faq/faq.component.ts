@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FaqComponent {
   emailForSendingDoc='info@radiologycheck.com';
+  FAQPageTitle = "FAQ's on RadiologyCheck";
 
 }
