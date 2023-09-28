@@ -281,7 +281,7 @@ img {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 440px;
+    padding-top: 100px;
 }
 .footer-section-except-homepage {
     background-image: url("../../../../assets/images/Footer-Bg.png");
@@ -764,7 +764,10 @@ img {
         padding: 25px;
     }
     .footer-section {
-        padding-top: 378px;
+        padding-top: 50px;
+    }
+    .footer-section-except-homepage {
+        padding-top:50px;
     }
     .footer-menu-grid {
         grid-template-columns: 1fr 1.75fr;
