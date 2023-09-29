@@ -65,11 +65,11 @@ export class HeaderComponent {
     const loggedInUser = localStorage.getItem("userName");
     console.log("loggedInUser", loggedInUser);
     if(loggedInUser !== undefined && loggedInUser !== null && loggedInUser !==''){
-      // this.loginToDashboard = true;
-      // console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
+      this.loginToDashboard = true;
+      console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
     }else{
-      // this.loginToDashboard = false;
-      // console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
+      this.loginToDashboard = false;
+      console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
 
     }
 
