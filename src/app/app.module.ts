@@ -98,6 +98,7 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { EventsComponent } from './components/resources/events/events.component';
 import { TopBannerComponent } from './components/shared/top-banner/top-banner.component';
 import { PackagesComponent } from './components/admin/packages/packages.component';
+import { TestimonialBlogComponent } from './components/shared/testimonial-blog/testimonial-blog.component';
 
 @NgModule({
   declarations: [
@@ -186,6 +187,7 @@ import { PackagesComponent } from './components/admin/packages/packages.componen
     EventsComponent,
     TopBannerComponent,
     PackagesComponent,
+    TestimonialBlogComponent,
   ],
   imports: [
     BrowserModule,
