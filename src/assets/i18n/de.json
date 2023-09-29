@@ -371,67 +371,67 @@
     "Bertolotti's syndrome_text":"Rückenschmerzen im Zusammenhang mit einem Übergangs- oder lumbalen Wirbel werden als Bertolotti-Syndrom bezeichnet.",
 
 
-    "Spinal Trauma and Injuries":"Spinal Trauma and Injuries",
-    "Spinal Trauma and Injuries_p":"Although less prevalent than cervical spinal column injuries, thoracolumbar (TL) spinal column injuries are becoming more common worldwide. While these injuries can be severe on their own, they are frequently accompanied by serious internal injuries of the chest and abdomen as a result of high-energy trauma.",
+    "Spinal Trauma and Injuries":"Wirbelsäulentrauma und Verletzungen",
+    "Spinal Trauma and Injuries_p":"Obwohl weniger verbreitet als Verletzungen der Halswirbelsäule, werden thorakolumbale (TL) Wirbelsäulenverletzungen weltweit zunehmend häufiger. Während diese Verletzungen an sich schwerwiegend sein können, gehen sie häufig mit schweren inneren Verletzungen der Brust und des Bauchraums einher, die aufgrund von Hochenergietraumata auftreten.",
 
 
-    "Demyelinating Diseases of the CNS (Brain and Spine)":"Demyelinating Diseases of the CNS (Brain and Spine)",
-    "Demyelinating Diseases of the CNS (Brain and Spine)_text":"The most prevalent immune-mediated inflammatory demyelinating disease of the central nervous system is multiple sclerosis (MS). Multifocal regions of demyelination with oligodendrocyte loss and astroglial scarring are pathological features of MS. Another major pathologic trait, particularly in the latter stages, is axonal damage. Although the illness has numerous atypical forms and a very varied course, several clinical characteristics are typical of MS.",
+    "Demyelinating Diseases of the CNS (Brain and Spine)":"Entmarkungskrankheiten des ZNS (Gehirn und Wirbelsäule)",
+    "Demyelinating Diseases of the CNS (Brain and Spine)_text":"Die häufigste immunvermittelte entzündliche Entmarkungskrankheit des zentralen Nervensystems ist die Multiple Sklerose (MS). Multifokale Bereiche der Entmarkung mit Verlust von Oligodendrozyten und astroglialer Narbenbildung sind pathologische Merkmale der MS. Ein weiteres wichtiges pathologisches Merkmal, insbesondere in fortgeschrittenen Stadien, ist die Schädigung von Axonen. Obwohl die Krankheit zahlreiche atypische Formen und einen sehr abwechslungsreichen Verlauf aufweist, sind mehrere klinische Merkmale für die MS typisch.",
     
 
-    "Dementia, Alzheimer & Other Neurodegenerative Disorders":"Dementia, Alzheimer & Other Neurodegenerative Disorders",
-    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p1":"The most frequent cause of dementia, Alzheimer's disease (AD) is a neurological condition with an unknown source and pathophysiology that mostly affects older persons.",
-    "Neuroimaging":"Neuroimaging",
-    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p2":"The examination of patients with suspected neurological disorders should include brain imaging, particularly with magnetic resonance imaging (MRI).",
-    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p3":"In individuals with a sudden start of cognitive impairment and/or fast neurologic deterioration, neuroimaging with a head computed tomography (CT) or MRI scan is categorically needed. Additionally, neuroimaging is advised if physical examination results or medical history point to subdural hematoma, thrombotic stroke, cerebral hemorrhage, or any another structural lesion.",
-    "Preferred Modality":"Preferred Modality",
-    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p4":"Brain atrophy is a typical symptom of neurodegenerative dementia patients as well as normal aging. Both general and regional atrophy are possible.",
-    "Cerebral atrophy":"Cerebral atrophy",
+    "Dementia, Alzheimer & Other Neurodegenerative Disorders":"Demenz, Alzheimer und andere neurodegenerative Erkrankungen",
+    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p1":"Die häufigste Ursache für Demenz, die Alzheimer-Krankheit (AD), ist ein neurologischer Zustand mit unbekannter Ursache und Pathophysiologie, der hauptsächlich ältere Menschen betrifft.",
+    "Neuroimaging":"Neurobildgebung",
+    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p2":"Die Untersuchung von Patienten mit Verdacht auf neurologische Störungen sollte die Bildgebung des Gehirns einschließen, insbesondere mittels Magnetresonanztomographie (MRT).",
+    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p3":"Bei Personen mit plötzlichem Beginn von kognitiven Beeinträchtigungen und/oder raschem neurologischem Abbau ist eine Neurobildgebung mit einer Computertomographie (CT) oder Magnetresonanztomographie (MRT) des Kopfes zwingend erforderlich. Darüber hinaus wird eine Neurobildgebung empfohlen, wenn die Ergebnisse der körperlichen Untersuchung oder die Krankengeschichte auf eine subdurale Hämorrhagie, einen thrombotischen Schlaganfall, eine Hirnblutung oder eine andere strukturelle Läsion hinweisen.",
+    "Preferred Modality":"Bevorzugte Modalität",
+    "Dementia, Alzheimer & Other Neurodegenerative Disorders_p4":"Gehirnatrophie ist ein typisches Symptom bei Patienten mit neurodegenerativer Demenz sowie im normalen Alterungsprozess. Sowohl eine allgemeine als auch regionale Atrophie sind möglich.",
+    "Cerebral atrophy":"Zerebrale Atrophie",
 
-    "Evaluation of Tinnitus and Hearing Loss in Adults":"Evaluation of Tinnitus and Hearing Loss in Adults",
-    "Evaluation of Tinnitus and Hearing Loss in Adults_text":"Tinnitus is the experience of a ringing sound in the ears even if an external source of sound is not present. Patients can hear the noise inside one or both ears, the head or as an outside distant noise. The sound is often  buzzing, ringing or hissing although it can also sound like other noises.",
-
-
-    "Toxic and Metabolic Disorders of the brain":"Toxic and Metabolic Disorders of the brain",
-    "Toxic and Metabolic Disorders of the brain_text":"Although toxic and metabolic brain illnesses, which affect the central nervous system, are relatively uncommon, it is nevertheless crucial to diagnose them since they can have disastrous effects if not treated promptly and effectively.",
-
-    "Imaging a Patient with Epilepsy or Seizures":"Imaging a Patient with Epilepsy or Seizures",
-    "Imaging a Patient with Epilepsy or Seizures_introduction":"introduction",
-    "Imaging a Patient with Epilepsy or Seizures_introduction_p1":"About 8 to 10 percent of the population is at risk of experiencing a seizure in their lifetime and 1 to 2 percent of all emergencies are seizure-related. These numbers are dangerously high, considering the seriousness of any form of seizure.",
-    "Imaging a Patient with Epilepsy or Seizures_introduction_p2":"The major goal of the examination is to determine if a patient's initial seizure was caused by a curable systemic disorder or an intrinsic nervous system failure. If it is the latter, determining the kind of underlying brain disease is the prime objective.",
-    "Imaging a Patient with Epilepsy or Seizures_introduction_p3":"Neuroimaging should be performed as soon as an intracranial lesion is suspected, especially in patients with a new focal deficit or persistent altered mental state, fever, chronic headache, focal-onset seizures, a history of acute head trauma, cancer, a compromised immune system, alcoholism, anticoagulation or bleeding.",
-    "Imaging a Patient with Epilepsy or Seizures_introduction_p4":"Seizures are widespread, affecting an estimated 8 to 10% of the population during their lifetime. Seizures account for 1 to 2% of all emergency room visits, with around one-quarter of these being a first seizure.",
+    "Evaluation of Tinnitus and Hearing Loss in Adults":"Bewertung von Tinnitus und Hörverlust bei Erwachsenen",
+    "Evaluation of Tinnitus and Hearing Loss in Adults_text":"Tinnitus ist das Erleben eines Klingelgeräusches in den Ohren, auch wenn keine externe Schallquelle vorhanden ist. Patienten können das Geräusch in einem oder beiden Ohren, im Kopf oder als entfernten Außengeräusch wahrnehmen. Der Klang ist oft summen, klingeln oder zischen, kann aber auch wie andere Geräusche klingen.",
 
 
-    "Imaging Evaluation of Patients with Cranial Nerve Disorders":"Imaging Evaluation of Patients with Cranial Nerve Disorders",
-    "Imaging Evaluation of Patients with Cranial Nerve Disorders_text":"Imaging evaluations of individuals with cranial nerve diseases are done on a daily basis. The anatomy and function of all 12 pairs of cranial nerves are difficult to understand due to their intricacy. In order to detect intra-axial, extra-axial intracranial and extra-cranial lesions, imaging interpretation must be precise.",
+    "Toxic and Metabolic Disorders of the brain":"Toxische und metabolische Störungen des Gehirns",
+    "Toxic and Metabolic Disorders of the brain_text":"Obwohl toxische und metabolische Gehirnerkrankungen, die das zentrale Nervensystem betreffen, relativ selten sind, ist es dennoch entscheidend, sie zu diagnostizieren, da sie katastrophale Auswirkungen haben können, wenn sie nicht rechtzeitig und effektiv behandelt werden.",
+
+    "Imaging a Patient with Epilepsy or Seizures":"Bildgebung eines Patienten mit Epilepsie oder Anfällen",
+    "Imaging a Patient with Epilepsy or Seizures_introduction":"Einführung",
+    "Imaging a Patient with Epilepsy or Seizures_introduction_p1":"Etwa 8 bis 10 Prozent der Bevölkerung haben im Laufe ihres Lebens das Risiko, einen Anfall zu erleben, und 1 bis 2 Prozent aller Notfälle sind mit Anfällen verbunden. Diese Zahlen sind alarmierend hoch, wenn man die Ernsthaftigkeit jeder Form von Anfall bedenkt.",
+    "Imaging a Patient with Epilepsy or Seizures_introduction_p2":"Das Hauptziel der Untersuchung besteht darin festzustellen, ob der erstmalige Anfall eines Patienten durch eine heilbare systemische Störung oder ein intrinsisches Versagen des Nervensystems verursacht wurde. Wenn es sich um Letzteres handelt, ist die Bestimmung der Art der zugrunde liegenden Gehirnerkrankung das Hauptziel.",
+    "Imaging a Patient with Epilepsy or Seizures_introduction_p3":"Die Neurobildgebung sollte so schnell wie möglich durchgeführt werden, wenn der Verdacht auf eine intrakranielle Läsion besteht, insbesondere bei Patienten mit neuen fokalen Ausfällen oder anhaltend veränderter geistiger Verfassung, Fieber, chronischen Kopfschmerzen, fokalen Anfallsanfällen, einer Vorgeschichte akuter Kopfverletzungen, Krebs, einem beeinträchtigten Immunsystem, Alkoholismus, Antikoagulation oder Blutungen.",
+    "Imaging a Patient with Epilepsy or Seizures_introduction_p4":"Anfälle sind weit verbreitet und betreffen schätzungsweise 8 bis 10% der Bevölkerung im Laufe ihres Lebens. Anfälle machen 1 bis 2% aller Notaufnahmebesuche aus, wobei etwa ein Viertel davon einen erstmaligen Anfall betrifft.",
+
+
+    "Imaging Evaluation of Patients with Cranial Nerve Disorders":"Bildgebende Untersuchung von Patienten mit Störungen der Hirnnerven",
+    "Imaging Evaluation of Patients with Cranial Nerve Disorders_text":"Bildgebende Untersuchungen von Personen mit Erkrankungen der Hirnnerven werden täglich durchgeführt. Die Anatomie und Funktion aller 12 Paare der Hirnnerven sind aufgrund ihrer Komplexität schwer zu verstehen. Um intraaxiale, extraaxiale intrakranielle und extrakranielle Läsionen zu erkennen, muss die Bildinterpretation präzise sein.",
     
 
-    "Diseases of the Hypophysis":"Diseases of the Hypophysis",
-    "Pituitary adenomas":"Pituitary adenomas",
-    "Craniopharyngioma":"Craniopharyngioma",
-    "Meningioma":"Meningioma",
-    "MRI — Magnetic resonance imaging (MRI) with gadolinium is the single best imaging procedure for most of the masses":"MRI — Magnetic resonance imaging (MRI) with gadolinium is the single best imaging procedure for most of the masses.",
+    "Diseases of the Hypophysis":"Erkrankungen der Hypophyse",
+    "Pituitary adenomas":"Hypophysenadenome",
+    "Craniopharyngioma":"Kraniopharyngeom",
+    "Meningioma":"Meningeom",
+    "MRI — Magnetic resonance imaging (MRI) with gadolinium is the single best imaging procedure for most of the masses":"MRT (Magnetresonanztomographie) mit Gadolinium ist das beste bildgebende Verfahren für die meisten Massen.",
     
 
-    "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)":"Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)",
-    "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)_text":"Normal pressure hydrocephalus (NPH) refers to a condition of pathologically enlarged ventricular size with normal opening pressures on lumbar puncture. NPH is associated with a classic triad of dementia, gait disturbance and urinary incontinence. Because this clinical syndrome is potentially reversible by the placement of a ventriculoperitoneal (VP) shunt, it is important to recognize and diagnose accurately.",
-    "Differential Diagnosis":"Differential Diagnosis",
-    "Dementia with Lewy bodies":"Dementia with Lewy bodies",
-    "Parkinson's disease dementia":"Parkinson's disease dementia",
-    "Progressive supranuclear palsy":"Progressive supranuclear palsy",
-    "Multiple system atrophy":"Multiple system atrophy",
-    "Corticobasal syndrome":"Corticobasal syndrome",
-    "Alzheimer":"Alzheimer",
+    "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)":"Hydrozephalus und Liquorstörungen (einschließlich intrakranieller Über- und Unterdruck)",
+    "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)_text":"Der Normaldruckhydrozephalus (NPH) bezieht sich auf einen Zustand mit pathologisch vergrößerten Ventrikeln bei normalen Öffnungsdrücken bei der Lumbalpunktion. NPH ist mit einer klassischen Trias aus Demenz, Gangstörungen und Harninkontinenz verbunden. Da dieses klinische Syndrom potenziell durch die Platzierung eines ventrikuloperitonealen (VP) Shunts reversibel ist, ist es wichtig, es genau zu erkennen und zu diagnostizieren.",
+    "Differential Diagnosis":"Differenzialdiagnose",
+    "Dementia with Lewy bodies":"Demenz mit Lewy-Körperchen",
+    "Parkinson's disease dementia":"Demenz bei Parkinson-Krankheit",
+    "Progressive supranuclear palsy":"Progressive supranukleäre Lähmung",
+    "Multiple system atrophy":"Multisystematrophie",
+    "Corticobasal syndrome":"Corticobasales Syndrom",
+    "Alzheimer":"Alzheimer-Krankheit",
     
     
-    "Stroke and Its Mimics: Differential diagnosis":"Stroke and Its Mimics: Differential diagnosis",
-    "Approach to Imaging":"Approach to Imaging",
-    "Imaging objectives":"Imaging objectives",
-    "Approach to Imaging below text":"All patients suspected of experiencing an acute stroke or a transient ischemic attack (TIA) should undergo neuroimaging - brain and neurovascular imaging.",
+    "Stroke and Its Mimics: Differential diagnosis":"Schlaganfall und seine Imitatoren: Differenzialdiagnose",
+    "Approach to Imaging":"Herangehensweise an die Bildgebung",
+    "Imaging objectives":"Bildgebungsziele",
+    "Approach to Imaging below text":"Alle Patienten, bei denen der Verdacht auf einen akuten Schlaganfall oder eine transitorische ischämische Attacke (TIA) besteht, sollten eine Neurobildgebung - Gehirn- und neurovaskuläre Bildgebung - durchlaufen.",
 
-    "Traumatic Brain Injury (TBI)":"Traumatic Brain Injury (TBI)",
-    "Traumatic Brain Injury (TBI)_text":"Traumatic brain injury (TBI) is a serious cause of mortality and disability. TBI caused about 2.5 million emergency department (ED) visits, 282,000 hospitalizations and 56,000 fatalities in the United States in 2013. Many survivors have substantial impairments, resulting in a huge economic burden. TBI's economic effect in the United States was projected to be $76.5 billion in direct and indirect expenditures in 2010. Severe TBI has a disproportionately higher economic cost.",
+    "Traumatic Brain Injury (TBI)":"Traumatische Hirnverletzung (TBI)",
+    "Traumatic Brain Injury (TBI)_text":"Traumatische Hirnverletzung (TBI) ist eine ernsthafte Ursache für Mortalität und Behinderung. TBI führte im Jahr 2013 in den Vereinigten Staaten zu etwa 2,5 Millionen Notaufnahmebesuchen, 282.000 Krankenhauseinweisungen und 56.000 Todesfällen. Viele Überlebende haben erhebliche Beeinträchtigungen, was zu einer enormen wirtschaftlichen Belastung führt. Die wirtschaftlichen Auswirkungen von TBI in den Vereinigten Staaten wurden für das Jahr 2010 auf 76,5 Milliarden US-Dollar in direkten und indirekten Ausgaben geschätzt. Schweres TBI hat unverhältnismäßig höhere wirtschaftliche Kosten.",
 
 
 
