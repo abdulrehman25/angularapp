@@ -19,3 +19,28 @@
 }
 
 /* home - section F */
+
+
+.testimonial-section {
+    margin-top: 50px;
+    position: relative;
+	background-image: linear-gradient(#427337, #427337);
+	background: #427337;
+	padding:70px 0;
+}
+
+.testimonial-container {
+    max-width: 1635px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.testimonial-wrapper {
+    overflow: hidden;
+}
+
+.testimonial-title-wrapper {
+    margin-bottom: 60px;
+}
