@@ -17,7 +17,8 @@ export class LoginComponent {
     password: ''
   };
   fieldTextType = true;
-  constructor(private router: Router, private authService: AuthService, private _toastr: ToastrService) { }
+  constructor(private router: Router, private authService: AuthService, private _toastr: ToastrService) { 
+  }
   ngOnInit() {
   }
   loginUserData() {

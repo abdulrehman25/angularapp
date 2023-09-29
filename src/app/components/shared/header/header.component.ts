@@ -10,6 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   loginToDashboard:boolean=false;
   isHomePage: boolean = false;
+  goToUserDashboard: boolean = false;
+  goToAdminDashboard: boolean = false;
 
   aboutNavItem: boolean = false;
   isAboutPage: boolean = false;
@@ -70,8 +72,17 @@ export class HeaderComponent {
     }else{
       this.loginToDashboard = false;
       console.log("loggedInUser if", loggedInUser, this.loginToDashboard);
-
     }
+    const isUserLoggedin = localStorage.getItem("isUserLoggedin");
+    const isAdmin = localStorage.getItem("isAdmin");
+    console.log("isUserLoggedin", !!isUserLoggedin, typeof(!isUserLoggedin))
+    if(!!isUserLoggedin){
+      this.goToUserDashboard = true;
+    }
+    if(!!isAdmin){
+      this.goToAdminDashboard = true;
+    }
+
 
   }
 
@@ -125,11 +136,6 @@ export class HeaderComponent {
         this.RussianCSS = false;
         this.EnglishCSS = false;
       }
-      // console.log("this.selectedLanguage",this.selectedLanguage)
-      // console.log("this.ChineseCSS",this.ChineseCSS)
-      // console.log("this.ArabicCSS",this.ArabicCSS)
-      // console.log("this.GermanCSS",this.GermanCSS)
-      // console.log("this.RussianCSS",this.RussianCSS)
     }
   }
   clickedOutside() {

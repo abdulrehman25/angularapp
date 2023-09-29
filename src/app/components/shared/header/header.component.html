@@ -228,7 +228,7 @@
         <div class="navbar-right-content">
             <div class="navbar-button-wrapper">
             <div class="primary-button-navbar desktop">
-				<a routerLink="/login" class="primary-button log_butto"><i class="fas fa-user"></i>{{ loginToDashboard ? ("Header Dashboard" | translate) : ("Header Login" | translate) }}</a>
+				<a [routerLink]="(goToUserDashboard ? '/userDashboard' : (goToAdminDashboard ? '/admin' : '/login'))" class="primary-button log_butto"><i class="fas fa-user"></i>{{ loginToDashboard ? ("Header Dashboard" | translate) : ("Header Login" | translate) }}</a>
 				<a routerLink="/GetSecondOpinion" class="primary-button w-button">{{"Header Get Second Opinion" | translate}}</a>
             </div>
             </div>

@@ -55,7 +55,19 @@ export class GetSecondOpinionComponent {
     private ngxLoader: NgxUiLoaderService,
     private getSecondOpinionService: GerSecondOpinionService,
     private _toastr: ToastrService
-  ) {}
+  ) {
+    const isUserLoggedin = localStorage.getItem("isUserLoggedin");
+    const isAdmin = localStorage.getItem("isAdmin");
+    console.log("isUserLoggedin", !!isUserLoggedin, typeof(!isUserLoggedin))
+    if(!!isUserLoggedin){
+      this.addClass = "registerNow_step4";
+      this.divStyle = `z-index : 4`;
+    }
+    // if(!!isAdmin){
+
+    // }
+
+  }
 
   ngOnInit() {
     this.invokeStripe();
@@ -69,6 +81,7 @@ export class GetSecondOpinionComponent {
   }
 
   showDiv(divClass: string, styleIndex: string) {
+    console.log("divClass", divClass)
     if (divClass !== 'registerNow_step8') {
       this.addClass = divClass;
       this.divStyle = `z-index : ${styleIndex}`;
