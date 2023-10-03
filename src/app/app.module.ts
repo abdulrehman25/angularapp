@@ -99,6 +99,7 @@ import { EventsComponent } from './components/resources/events/events.component'
 import { TopBannerComponent } from './components/shared/top-banner/top-banner.component';
 import { PackagesComponent } from './components/admin/packages/packages.component';
 import { TestimonialBlogComponent } from './components/shared/testimonial-blog/testimonial-blog.component';
+import { HeadAndNeckComponent } from './components/neuroradiology/head-and-neck/head-and-neck.component';
 
 @NgModule({
   declarations: [
@@ -188,6 +189,7 @@ import { TestimonialBlogComponent } from './components/shared/testimonial-blog/t
     TopBannerComponent,
     PackagesComponent,
     TestimonialBlogComponent,
+    HeadAndNeckComponent,
   ],
   imports: [
     BrowserModule,

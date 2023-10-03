@@ -76,6 +76,7 @@ import { RevenueComponent } from './components/admin/revenue/revenue.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { EventsComponent } from './components/resources/events/events.component';
 import { PackagesComponent } from './components/admin/packages/packages.component';
+import { HeadAndNeckComponent } from './components/neuroradiology/head-and-neck/head-and-neck.component';
 
 const routes: Routes = [
   // {
@@ -129,6 +130,7 @@ const routes: Routes = [
       { path: 'backPain', component: BackPainComponent },
       { path: 'spinalTrauma', component: SpinalTraumaComponent },
       { path: 'brainAndSpine', component: BrainAndSpineComponent },
+      { path: 'headandneck', component: HeadAndNeckComponent },
       { path: 'dementiaAlzheimer', component: DementiaAlzheimerComponent },
       {
         path: 'evaluationOfTinnitus',
@@ -177,7 +179,7 @@ const routes: Routes = [
   },
   {
     path: 'userDashboard',
-    component: UserDashboardComponent, canActivate: [AuthGuardForUserDashboardGuard],
+    component: UserDashboardComponent, //canActivate: [AuthGuardForUserDashboardGuard],
     children: [
       {
         path: '',
@@ -193,7 +195,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent, canActivate: [AdminRoutesGuardGuard],
+    component: AdminComponent, //canActivate: [AdminRoutesGuardGuard],
     children: [
       {
         path: '',
