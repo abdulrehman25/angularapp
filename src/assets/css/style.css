@@ -843,7 +843,7 @@ box-shadow: none;
 .profile-bar {background-color: #ffffff;border-radius: 15px;box-shadow: 0px 0px 15px rgba(0,0,0,.1);transition: all linear .3s; position: relative;}
 .profile-bar ol {position: absolute;z-index: 1111;background-color: #ffffff;padding: 15px;border: 1px solid rgba(0,0,0,.1);border-radius: 15px;width: 220px;transition: all linear .3s; right: 0px;}
 .profile-bar ol li {margin-left: 0px;border-bottom: 1px solid rgba(0,0,0,.1);line-height: 2; text-transform: capitalize;}
-.profile-bar ol li a {display: block;}
+.profile-bar ol li a {display: block;text-decoration: none;}
 .profile-bar ol li a:hover {background-color: #1f4474;color: #ffffff;}
 .profile-bar ol li:last-child {border-bottom: none;}
 .profile-bar ol li a i {width: 25px;color: #407839; transition: all linear .3s;}

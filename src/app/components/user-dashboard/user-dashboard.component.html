@@ -25,6 +25,9 @@
           <div class="profile-bar">
             <ol *ngIf="showProfile">
               <li>
+                <a class="pointer" (click)="redirectAndClose('userHome')"><i class="fa-solid fa-house"></i> Dashboard</a>
+              </li>
+              <li>
                 <a class="pointer" (click)="redirectAndClose('userProfile')"><i class="fa-regular fa-user"></i> update
                   profile</a>
               </li>
