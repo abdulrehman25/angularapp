@@ -59,6 +59,9 @@
 	vertical-align: middle;
 	cursor: pointer;
 }
+.error{
+	color: red;
+}
 
 @media only screen and (max-width:590px){
 .contact-form-row input[type="text"], .contact-form-row input[type="email"], .contact-form-row input[type="tel"], .contact-form-row textarea {

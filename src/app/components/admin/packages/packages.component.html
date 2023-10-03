@@ -69,28 +69,29 @@
           <div class="contact-form-row">
             <label>Package name :</label>
             <input type="text" formControlName="name" placeholder="Premium, 249 EUR" />
-            <!-- <div class="invalid-feedback" *ngIf="packageForm.get('name')?.hasError('required')">
+            <div class="error" *ngIf="packageForm.get('name')?.hasError('required')">
                 Name is required !
-              </div> -->
-            <!-- <div class="invalid-feedback">Name is required !</div> -->
+            </div>
           </div>
           <div class="contact-form-row">
             <label>Price :</label>
             <input type="text" formControlName="price" placeholder="249 EUR" />
-
-            <div class="invalid-feedback">Price is required !</div>
+            <div class="error" *ngIf="packageForm.get('price')?.hasError('required')">
+                Price is required !
+            </div>
           </div>
           <div class="contact-form-row">
             <label>Message :</label>
             <textarea type="textarea" formControlName="message"></textarea>
-
-            <div class="invalid-feedback">Message is required !</div>
           </div>
           <div class="contact-form-row">
             <label>Features :</label>
             <input type="text" formControlName="feature" placeholder="Report (24 Hours)..." />
             <!-- <a><i class="fa-solid fa-circle-plus"></i></a> -->
           </div>
+          <div class="error" *ngIf="packageForm.get('feature')?.hasError('required')">
+            feature is required !
+        </div>
 
           <div class="contact-form-row text-right mt-5">
             <input type="submit" value="Create" />
