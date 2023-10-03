@@ -26,6 +26,8 @@ export class GetSecondOpinionComponent {
   stepIndex: any;
   scanFileSizeError: boolean = false;
   reportFileSizeError: boolean = false;
+  disableBackButton: boolean = true;
+  isUserVarified: boolean = false;
   formObj: GetSecondOpenion = {
     id: '',
     email: '',
@@ -58,10 +60,14 @@ export class GetSecondOpinionComponent {
   ) {
     const isUserLoggedin = localStorage.getItem("isUserLoggedin");
     const isAdmin = localStorage.getItem("isAdmin");
-    console.log("isUserLoggedin", !!isUserLoggedin, typeof(!isUserLoggedin))
+    const loggedInUserDetails = JSON.parse(localStorage.getItem("user") || "{}");
+    console.log("isUserLoggedin", loggedInUserDetails, typeof(loggedInUserDetails));
     if(!!isUserLoggedin){
       this.addClass = "registerNow_step4";
       this.divStyle = `z-index : 4`;
+      this.formObj.id = loggedInUserDetails.id;
+      this.formObj.email = loggedInUserDetails.email;
+      this.disableBackButton = false;
     }
     // if(!!isAdmin){
 
@@ -107,9 +113,15 @@ export class GetSecondOpinionComponent {
 
     if (this.addClass == 'registerNow_step3') {
       this.sendVerificationCode();
-    } else if (this.addClass == 'registerNow_step4') {
-      this.validateCode();
     }
+    if (this.addClass == 'registerNow_step4') {
+      if(this.disableBackButton){
+        this.validateCode();
+      }
+    }
+    // if(this.isUserVarified){
+    //   this.disableBackButton = false;
+    // }
   }
 
   async sendVerificationCode() {
@@ -148,6 +160,7 @@ export class GetSecondOpinionComponent {
             .subscribe((res: any) => {
               if (res.status == 200) {
                 this.formObj.id = res.data.id;
+                this.disableBackButton = false;
                 this._toastr.success(
                   'User Registration Successful !',
                   'Success'

@@ -38,4 +38,8 @@ export class AdminService {
   disApproveUserFeedback(userId: number) {
     return this.httpClient.post(`${this.Api_Base}/dis_approve_users_feeback`, userId);
   }
+
+  addNewPackage(packageData: any) {
+    return this.httpClient.post(`${this.Api_Base}/package`, packageData);
+  }
 }

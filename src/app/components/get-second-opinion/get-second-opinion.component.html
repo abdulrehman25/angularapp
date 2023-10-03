@@ -388,6 +388,7 @@
                     </div>
                   </div>
                 </div>
+                <ng-container *ngIf="disableBackButton">
                 <input
                   type="button"
                   name="previous"
@@ -395,6 +396,7 @@
                   value="Previous"
                   (click)="showDiv('registerNow_step3', '3')"
                 />
+              </ng-container>
                 <input
                   *ngIf="formObj.type_of_scan.length > 0"
                   type="button"
