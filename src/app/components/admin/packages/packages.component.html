@@ -1,22 +1,23 @@
 <div class="app-page-title">
-    <div class="page-title-wrapper">
-        <div class="page-title-heading">
-            <div>Packages</div>
-        </div>
+  <div class="page-title-wrapper">
+    <div class="page-title-heading">
+      <div>Packages</div>
     </div>
-</div>            
+  </div>
+</div>
 <div class="row">
-    <div class="col-md-12 col-lg-12">
-        <div class="mb-3 card">
-            <div class="app-page-title ml-1 mr-1 mt-1">
-                <div class="page-title-wrapper">
-                    <div class="page-title-heading">
-                        <div class="card-header-title">
-                            <i class="header-icon lnr-rocket icon-gradient bg-tempting-azure"> </i>
-                            Packages Summary
-                        </div>
-                    </div>
-                    <!-- <div class="page-title-actions">
+  <div class="col-md-12 col-lg-12">
+    <div class="mb-3 card">
+      <div class="app-page-title ml-1 mr-1 mt-1">
+        <div class="page-title-wrapper">
+          <div class="page-title-heading">
+            <div class="card-header-title">
+              <i class="header-icon lnr-rocket icon-gradient bg-tempting-azure">
+              </i>
+              Packages Summary
+            </div>
+          </div>
+          <!-- <div class="page-title-actions">
                         <div class="d-inline-block dropdown">
                             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
                                 Old Package
@@ -61,52 +62,45 @@
                             </div>
                         </div>
                     </div>     -->
-                </div>
-            </div>
-            <div class="package-form">
-                <form name="form">
-                    <div class="contact-form-row">
-                        <label>Package name :</label>
-                        <input type="text" name="name" placeholder="Premium, 249 EUR" />
-    
-                        <div class="invalid-feedback">
-                            Name is required !
-                        </div>
-                    </div>
-                    <div class="contact-form-row">
-                        <label>Price :</label>
-                        <input type="text" name="name" placeholder="249 EUR" />
-    
-                        <div class="invalid-feedback">
-                            Price is required !
-                        </div>
-                    </div>
-                    <div class="contact-form-row">
-                        <label>Message :</label>
-                        <textarea name="message" type="textarea" name="message" ></textarea>
-    
-                        <div class="invalid-feedback">
-                            Message is required !
-                        </div>
-                    </div>
-                    <div class="contact-form-row">
-                        <label>Features :</label>
-                        <input type="text" name="name" placeholder="Report (24 Hours)..." /> <a ><i class="fa-solid fa-circle-plus"></i></a>
-                    </div>
-    
-                    <div class="contact-form-row text-right mt-5">
-                        <input type="submit" value="Create">
-                         <!-- <input type="submit" value="Update"> 
-                         <input type="submit" value="Delete"> -->
-                    </div>
-                </form>
-            </div>
-
-
         </div>
-    </div>
-    <div class="col-md-12 col-lg-12">
+      </div>
+      <div class="package-form">
+        <form [formGroup]="packageForm" (ngSubmit)="onSubmit()">
+          <div class="contact-form-row">
+            <label>Package name :</label>
+            <input type="text" formControlName="name" placeholder="Premium, 249 EUR" />
+            <div class="error" *ngIf="packageForm.get('name')?.hasError('required')">
+                Name is required !
+            </div>
+          </div>
+          <div class="contact-form-row">
+            <label>Price :</label>
+            <input type="text" formControlName="price" placeholder="249 EUR" />
+            <div class="error" *ngIf="packageForm.get('price')?.hasError('required')">
+                Price is required !
+            </div>
+          </div>
+          <div class="contact-form-row">
+            <label>Message :</label>
+            <textarea type="textarea" formControlName="message"></textarea>
+          </div>
+          <div class="contact-form-row">
+            <label>Features :</label>
+            <input type="text" formControlName="feature" placeholder="Report (24 Hours)..." />
+            <!-- <a><i class="fa-solid fa-circle-plus"></i></a> -->
+          </div>
+          <div class="error" *ngIf="packageForm.get('feature')?.hasError('required')">
+            feature is required !
+        </div>
 
+          <div class="contact-form-row text-right mt-5">
+            <input type="submit" value="Create" />
+            <!-- <input type="submit" value="Update"> 
+                         <input type="submit" value="Delete"> -->
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+  <div class="col-md-12 col-lg-12"></div>
 </div>
-
