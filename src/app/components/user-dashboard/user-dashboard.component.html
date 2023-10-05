@@ -3,7 +3,7 @@
     <div class="site-logo"><img src="../assets/images/logo2.png" alt="" /></div>
     <div class="site-navbar-options">
       <ul>
-        <li class="position-relative">
+        <!-- <li class="position-relative">
           <a href="javascript:;"> <i class="fa-regular fa-envelope"></i></a>
           <div class="get-notify">4</div>
         </li>
@@ -11,10 +11,11 @@
         <li class="position-relative">
           <a href="javascript:;"> <i class="fa-regular fa-bell"></i></a>
           <div class="get-notify">2</div>
-        </li>
+        </li> -->
         <li appClickOutside (clickOutside)="clickedOutside()">
           <a href="javascript:;" class="profile-picture">
-            <img src="../assets/images/testi-user.png" alt="" />
+            <!-- <img src="../assets/images/testi-user.png" alt="" /> -->
+            <i class="fas fa-user"></i>
             <h5>
               {{userName}}
               <button clickOutside (click)="openProfileBar()">
