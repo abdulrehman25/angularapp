@@ -53,17 +53,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>#AB26563021</td>
-                <td>Ronald Richards</td>
-                <td>CT</td>
-                <td>Colon</td>
-                <td>Premium</td>
-                <td><div class="btn btn-primary">Recevied</div></td>
+              <tr *ngFor="let item of casesList.data">
+                <td>{{item.id}}</td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.type_of_scan}}</td>
+                <td>{{item.what_part_of_body}}</td>
+                <td>{{item.selected_package}}</td>
+                <td><div class="btn btn-primary">{{item.appointment_status ? "Open" : "Closed"}}</div></td>
                 <td>
                   <div class="widget-content p-0">
                     <div class="widget-content-wrapper">
-                      <div class="widget-content-left">
+                        <button class="btn-primary" (click)="MakeAppointmentStatusOpenToClose(item.id)">Mark Closed</button>
+                      <!-- <div class="widget-content-left">
                         <div class="icon-click">
                           <i
                             class="fa fa-eye"
@@ -104,7 +105,7 @@
                             </button>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </td>

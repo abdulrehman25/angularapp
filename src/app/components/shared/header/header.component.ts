@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageServiceService } from 'src/app/services/language-service.service';
 
 @Component({
   selector: 'app-header',
@@ -60,7 +61,8 @@ export class HeaderComponent {
   constructor(
     public translate: TranslateService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private selectLanguageService:LanguageServiceService
   ) {
     translate.addLangs(['en', 'de', 'ar', 'ru', 'zh']);
     translate.setDefaultLang('en');
@@ -100,6 +102,9 @@ export class HeaderComponent {
       this.selectedLanguageCode = clickedLanguage.languageCode;
       this.selectedCountryCode = clickedLanguage.countryCode;
       this.translate.use(clickedLanguage.languageCode);
+      // this.selectLanguageService.setSelectedLanguage(this.selectedLanguage);
+      this.selectLanguageService.onLanguageChanged(this.selectedLanguage);
+
       this.showHide = false;
       if (this.selectedLanguage === 'English') {
         this.EnglishCSS = true;
@@ -107,6 +112,7 @@ export class HeaderComponent {
         this.ArabicCSS = false;
         this.RussianCSS = false;
         this.ChineseCSS = false;
+        // this.selectLanguageService.setSelectedLanguage("English");
       }
       if (this.selectedLanguage === 'German') {
         this.GermanCSS = true;
@@ -114,6 +120,7 @@ export class HeaderComponent {
         this.RussianCSS = false;
         this.ChineseCSS = false;
         this.EnglishCSS = false;
+        // this.selectLanguageService.setSelectedLanguage("German");
       }
       if (this.selectedLanguage === 'Arabic') {
         this.ArabicCSS = true;
@@ -121,6 +128,7 @@ export class HeaderComponent {
         this.RussianCSS = false;
         this.ChineseCSS = false;
         this.EnglishCSS = false;
+        // this.selectLanguageService.setSelectedLanguage("Arabic");
       }
       if (this.selectedLanguage === 'Russian') {
         this.RussianCSS = true;
@@ -128,6 +136,7 @@ export class HeaderComponent {
         this.GermanCSS = false;
         this.ChineseCSS = false;
         this.EnglishCSS = false;
+        // this.selectLanguageService.setSelectedLanguage("Russian");
       }
       if (this.selectedLanguage === 'Chinese') {
         this.ChineseCSS = true;
@@ -135,6 +144,7 @@ export class HeaderComponent {
         this.GermanCSS = false;
         this.RussianCSS = false;
         this.EnglishCSS = false;
+        // this.selectLanguageService.setSelectedLanguage("Chinese");
       }
     }
   }

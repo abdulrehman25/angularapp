@@ -1634,6 +1634,15 @@ opacity: 0;
 .blog-section img {
 	width: auto;
 }
+/* language css */
+.home_Germancss{}
+.home_ArabicCss{}
+.home_RussianCss{}
+.home_ChineseCss{}
+.home_EnglishCss{}
+
+
+
 /*-- responsive css --*/
 @media screen and (max-width: 1300px){
 .services-title-wrap h3 {

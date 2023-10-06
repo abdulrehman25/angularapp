@@ -44,14 +44,14 @@ export class AdminService {
   }
 
   getAppointmentListOpenCases(pageNumber: number) {
-    return this.httpClient.get(`${this.Api_Base}/appointment-list/0?page=${pageNumber}`);
+    return this.httpClient.get(`${this.Api_Base}/user-list/0?page=${pageNumber}`);
   }
 
   getAppointmentListCloseCases(pageNumber: number) {
-    return this.httpClient.get(`${this.Api_Base}/appointment-list/1?page=${pageNumber}`);
+    return this.httpClient.get(`${this.Api_Base}/user-list/1?page=${pageNumber}`);
   }
 
   MakeAppointmentStatusOpenToClose(data:any) {
-    return this.httpClient.post(`${this.Api_Base}/book-appointment`, data);
+    return this.httpClient.put(`${this.Api_Base}/user-appointment`, data);
   }
 }

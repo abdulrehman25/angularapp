@@ -17,6 +17,7 @@ interface ApiResponse {
 export class OrdersManagementComponent {
   slideBoxVisible = false;
   dataToMarkCaseClose:any;
+  casesList:any;
   openCasesList:any;
   closedCasesList:any;
   // closedCasesList:ApiResponse={
@@ -38,7 +39,12 @@ export class OrdersManagementComponent {
   //   });
   // }
 
-  constructor(private adminService: AdminService){}
+  constructor(private adminService: AdminService){
+    this.getAppointmentListOpenCases(1);
+  }
+
+  ngOnInIt(){
+  }
   
   showSlideBox() {
     console.log(" show slide function called")
@@ -49,20 +55,27 @@ export class OrdersManagementComponent {
   }
   getAppointmentListOpenCases(pageNumber:number){
     this.adminService.getAppointmentListOpenCases(pageNumber).subscribe(res=>{
-      this.openCasesList = res;
-      console.log("getAppointmentListOpenCases()", this.openCasesList);
+      this.casesList = res;
+      console.log("getAppointmentListOpenCases()", this.casesList);
     })
   }
   getAppointmentListCloseCases(pageNumber:number){
     this.adminService.getAppointmentListCloseCases(pageNumber).subscribe(res=>{
-      this.closedCasesList = res;
-      console.log("getAppointmentListOpenCases()", this.closedCasesList);
+      this.casesList = res;
+      console.log("getAppointmentListOpenCases()", this.casesList);
     })
   }
 
-  MakeAppointmentStatusOpenToClose(){
-    this.adminService.MakeAppointmentStatusOpenToClose(this.dataToMarkCaseClose).subscribe(res=>{
+  MakeAppointmentStatusOpenToClose(id:number){
+   const data = {
+      "id":id,  
+      "appointment_status":true
+   }
+    this.adminService.MakeAppointmentStatusOpenToClose(data).subscribe(res=>{
       console.log("getAppointmentListOpenCases()", res);
+      if(res){
+        this.getAppointmentListOpenCases(1);
+      }
     })
   }
 }
