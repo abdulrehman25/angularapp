@@ -327,7 +327,7 @@ button.select-language-btn i.flag-icon.flag-icon- {
 
 /*-- German header Language Css --*/
 
-@media (max-width: 1310px) {
+@media only screen and (max-width: 1310px) {
     .main_header.ger_header .navbar-expand-md .navbar-nav .nav-link {
         font-size: 14px;
     }
@@ -335,7 +335,7 @@ button.select-language-btn i.flag-icon.flag-icon- {
         font-size: 12px;
     }
 }
-@media (max-width: 1180px) {
+@media only screen and (max-width: 1180px) {
     .main_header.ger_header .navbar-expand-md .navbar-nav .nav-link {
         padding-left:0;
         padding-right:0;
@@ -344,12 +344,12 @@ button.select-language-btn i.flag-icon.flag-icon- {
         font-size: 12px;
     }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .main_header.ger_header .navbar-expand-md .navbar-nav .nav-link {
 	    font-size: 11px;
     }
 }
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     .main_header.ger_header .navbar-right-content {
 	    max-width: 320px;
     }
@@ -359,16 +359,25 @@ button.select-language-btn i.flag-icon.flag-icon- {
         padding-right: 3px;
     }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .main_header.ger_header .navbar-expand-md .navbar-nav .nav-link {
 	    font-size: 15px;
     }
 } 
 
-/*-- German header Language Css --*/
+/*-- End German header Language Css --*/
+
+/*-- Arabic header Language Css --*/
 .main_header.arabic-header .nav-link {
 	font-size: 24px;
 }
+@media only screen and  (max-width: 1180px) {
+    .main_header.arabic-header .nav-link {
+        font-size: 22px;
+    }
+}
+/*-- End Arabic header Language Css --*/
+
 @media (max-width: 1024px) {
 .main_header.arabic-header .nav-link {
 	font-size: 20px;
@@ -382,10 +391,12 @@ button.select-language-btn i.flag-icon.flag-icon- {
 }
 .main_header.rusiian-header .nav-link {
 	font-size: 15px;
+    padding-left: 4px;
+  padding-right: 4px;
 }
 @media (max-width: 1210px) {
 .main_header.rusiian-header .navbar-expand-md .navbar-nav .nav-link {
-	font-size: 14px;
+	font-size: 13px;
 	padding-left: 2px;
 	padding-right: 2px;
 }

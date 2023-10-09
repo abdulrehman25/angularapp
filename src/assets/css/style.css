@@ -575,14 +575,30 @@ box-shadow: none;
 
 /*-- language Banner Css --*/
 .main_header.ger_header .container .primary-button {
-	font-size: 13px;
+	font-size: 12px;
 }
 .main_header.ger_header .navbar-expand-md .navbar-nav .nav-link {
-    padding-left:1px;
-    padding-right:1px;
-    font-size: 15px;
+    padding-left:0px;
+    padding-right:0px;
+    font-size: 14px;
+}
+@media only screen and (max-width:1200px){
+.main_header.ger_header .navbar-expand-md .navbar-nav .nav-item {
+	margin: 0px;
+}
 }
 /*-- End Language Banner css --*/
+
+/*-- Arabic CSS --*/
+.home_ArabicCss .slider-arrow.left, .home_ArabicCss .slider-arrow.right {
+    top: -150px !important;
+}
+@media only screen and (max-width:1200px){
+.home_ArabicCss .slider-arrow.left, .home_ArabicCss .slider-arrow.right {
+    top: -80px !important;
+}
+}
+/*-- End Arabic CSS --*/
 
 /*-- start Banner css --*/
 .site-banner {
@@ -911,7 +927,7 @@ span.sidebar-item {padding-left: 5px;}
 
 /* End user dashboard */
 
-
+.testimonial-name-single {white-space: nomal;word-wrap: break-word;}
 .page-layout-names {
 	position: absolute;
 	bottom: 0;
@@ -1411,6 +1427,7 @@ padding-left: 75px;
 
 
 .about-section {overflow: hidden;}
+
 
 @media screen and (max-width: 991px){
 .w-nav-overlay {

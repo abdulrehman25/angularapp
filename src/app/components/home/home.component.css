@@ -273,11 +273,9 @@ img {
     align-items: center;
     display: flex;
 }
-
-
 .services-link-block {
     z-index: 9;
-    height: 260px;
+    min-height: 285px;
     background-color: rgba(43, 74, 238, .05);
     border-radius: 20px;
     margin-bottom: 0;
@@ -452,7 +450,7 @@ img {
 .work-chart-number.one {
     z-index: 1;
     position: absolute;
-    top: 0%;
+    top: -1%;
     bottom: auto;
     left: -6%;
     right: auto;
@@ -1641,7 +1639,62 @@ opacity: 0;
 .home_ChineseCss{}
 .home_EnglishCss{}
 
+/*-- Home language Css --*/
+/*-- German CSS --*/
+@media only screen and (max-width:1150px){
+.home_Germancss .services-right-content .primary-button {
+	font-size: 15px;
+}
+.home_Germancss .banner-wrapper .primary-button {
+	border-radius: 11px;
+}
+}
+@media only screen and (max-width:1024px){
+.home_Germancss .banner-heading {
+    font-size: 50px;
+}
+}
+@media only screen and (max-width:991px){
+.home_Germancss .services-right-content .primary-button {
+	font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
+@media only screen and (max-width:767px){
+.home_Germancss .banner-heading {
+	font-size: 35px;
+}
+.home_Germancss .services-right-content .primary-button {
+    font-size: 15px;
+}
+.home_Germancss .banner-wrapper .primary-button {
+	border-radius: 12px;
+	padding: 14px 30px;
+	font-size: 16px;
+}
+}
+@media only screen and (max-width:479px){
+.home_Germancss .banner-heading {
+	font-size: 23px;
+	line-height: 33px;
+}
+.accordion .accordion-item button h5 {
+	white-space: normal;
+	word-wrap: anywhere;
+}
+.accordion-item button span {
+	border-radius: 0;
+	margin: 0 15px 0 5px;
+}
+}
+/*-- End German CSS --*/
 
+
+/*-- Arabic CSS --*/
+
+/*-- End Arabic CSS --*/
+/*-- End home language Css --*/
 
 /*-- responsive css --*/
 @media screen and (max-width: 1300px){
@@ -1946,15 +1999,19 @@ opacity: 0;
         grid-row-gap: 40px;
         flex-direction: column-reverse;
     }
-    .about-image, .about-us-right-content {
+    .about-us-right-content {
         width: 100%;
     }
-
+    .about-image {
+        width: 50%;
+    }
     .about-us-left-content {
         width: 100%;
         margin-left: 0;
     }
-
+    .about-paragraph-text {
+        max-width: inherit;
+    }
 
     .about-tag {
         margin-bottom: 20px;
@@ -2308,6 +2365,9 @@ opacity: 0;
             font-size: 30px;
             line-height: 40px;
         }
+        .about-image {
+            width: 90%;
+        }
         .about-section {
             padding-top: 80px;
             padding-bottom: 550px;
@@ -2599,7 +2659,7 @@ opacity: 0;
             padding: 20px 15px;
         }
         .work-chart-number.one {
-            left: -9%;
+            left: -5%;
         }
         .work-chart-main-two {
             padding-top: 25px;
@@ -2613,7 +2673,7 @@ opacity: 0;
             width: 40px;
         }
         .work-chart-number.two {
-            right: -8%;
+            right: -5%;
         }
 
         .work-chart-main.three {
@@ -2628,7 +2688,7 @@ opacity: 0;
             line-height: 30px;
         }
         .work-chart-number.three {
-            left: -9%;
+            left: -5%;
         }
         .work-chart-main-two.four {
             padding-top: 30px;
