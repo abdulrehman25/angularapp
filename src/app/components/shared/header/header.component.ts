@@ -41,6 +41,7 @@ export class HeaderComponent {
   isPricingPage: boolean = false;
 
   showHide: boolean = false;
+  showHideMobile: boolean = false;
   showRadiologyPages: boolean = false;
   showNueRadiologyPages: boolean = false;
   EnglishCSS: boolean = false;
@@ -92,10 +93,12 @@ export class HeaderComponent {
   //   this.translate.use(lang);
   // }
 
+  showHideDropdownMobile() {
+    this.showHideMobile = !this.showHideMobile;
+  }
   showHideDropdown() {
     this.showHide = !this.showHide;
   }
-
   switchLang(clickedLanguage: any) {
     if (clickedLanguage) {
       this.selectedLanguage = clickedLanguage.language;
@@ -106,6 +109,7 @@ export class HeaderComponent {
       this.selectLanguageService.onLanguageChanged(this.selectedLanguage);
 
       this.showHide = false;
+      this.showHideMobile = false;
       if (this.selectedLanguage === 'English') {
         this.EnglishCSS = true;
         this.GermanCSS = false;
@@ -150,6 +154,9 @@ export class HeaderComponent {
   }
   clickedOutside() {
     this.showHide = false;
+  }
+  clickedOutsideMoble() {
+    this.showHideMobile = false;
   }
   seeMoreRadiology() {
     this.showRadiologyPages = !this.showRadiologyPages;

@@ -112,9 +112,31 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white p-0">
             <a class="navbar-brand mr-4 logo" routerLink="/"><img src="../../../../assets/images/new_homepage/logo-new.png" width="320px" /></a>
 
-            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+			<div class="d-flex align-items-center">
+				<div class="secondry-navbar mobileStyle">
+					<ul>
+						<li appClickOutside (clickOutside)="clickedOutsideMoble()">
+						<button type="button" class="select-language-btn" (click)="showHideDropdownMobile()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
+		
+						<div class="select-language-section" *ngIf="showHideMobile">
+							<ul class="countryFlags">
+								<ng-container *ngFor="let language of languageList">
+								<li class="mx-0" (click)="switchLang(language)">
+									<i class="flag-icon flag-icon-{{language.countryCode}}"></i>
+									{{ language.language.toUpperCase() }}
+								</li>
+							</ng-container>
+							</ul>
+						</div>
+					</li>
+					</ul>
+				</div>
+	
+				<button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item" [ngClass]="{'current' : isHomePage}">
@@ -202,15 +224,18 @@
 						<a routerLink="/GetSecondOpinion" class="primary-button w-button">{{"Header Get Second Opinion" | translate}}</a>
 					  </li>
 					  <li class="nav-item menu_mobile mt-3">
-						<a routerLink="#" class="primary-button w-button">{{"Header Login" | translate}}</a>
+						<a routerLink="#" class="primary-button w-button">{{"Header Login" | translate}} </a>
 					  </li>
                 </ul>
             </div>
+
+			
         </nav>
-		<div class="secondry-navbar">
+		<div class="secondry-navbar desktopStyle">
 			<ul>
 				<li appClickOutside (clickOutside)="clickedOutside()">
-				<button type="button" class="select-language-btn" (click)="showHideDropdown()"><i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
+				<button type="button" class="select-language-btn" (click)="showHideDropdown()">
+					<i class="flag-icon flag-icon-{{selectedCountryCode}}"></i> {{selectedLanguage | uppercase}}</button>
 
 				<div class="select-language-section" *ngIf="showHide">
 					<ul class="countryFlags">

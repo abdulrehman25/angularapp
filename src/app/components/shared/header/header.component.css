@@ -75,7 +75,7 @@
 }
 .navbar-expand-md .navbar-collapse {
 	margin: 0 auto;
-	max-width: 475px;
+	/* max-width: 475px; */
 }
 .fa-angle-down {
     padding-left: 10px;
@@ -93,7 +93,7 @@
     margin-top: 0px;
     border: none;
     background-color: #fff;
-    padding: 30px 23px;
+    padding: 16px;
     border-radius: 20px;
     box-shadow: 1px 1px 20px rgba(6, 21, 96, .1);
 }
@@ -141,7 +141,7 @@
 .secondry-navbar ul li button.select-language-btn {
 	background: transparent;
 	width: 120px;
-	margin: 10px 0 0;
+	margin: 4px 0 0;
 	border: 0;
 	font-size: 16px;
 	color: rgba(0,0,0,.5);
@@ -441,4 +441,21 @@ button.select-language-btn i.flag-icon.flag-icon- {
 .main_header.chinese-header .nav-link {
     font-size: 15px;
 }
+}
+.desktopStyle{
+    display: flex;
+    align-items: center;
+        justify-content: center;
+}
+.mobileStyle{
+    display: none;
+}
+@media(max-width: 767px) and (min-width: 450px){
+    .desktopStyle{
+        display: none;
+    }
+    .mobileStyle{
+        display: flex;
+        
+    }
 }

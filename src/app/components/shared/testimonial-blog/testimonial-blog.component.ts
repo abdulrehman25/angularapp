@@ -24,9 +24,12 @@ export class TestimonialBlogComponent {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 1.5,
       },
-      1000: {
+      800: {
+        items: 2,
+      },
+      1200: {
         items: 5,
       },
     },

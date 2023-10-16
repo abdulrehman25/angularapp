@@ -432,3 +432,13 @@
             font-size: 14px;
         }
     }
+
+    @media(max-width: 991px){
+        .testimonial-name-single {
+            font-size: 22px !important;
+            line-height: normal !important;
+        }
+    }
+
+   
+    

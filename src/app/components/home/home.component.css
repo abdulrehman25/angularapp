@@ -283,6 +283,7 @@ img {
     text-decoration: none;
     display: block;
     position: relative;
+    margin-bottom: 16px;
 }
 .services-top-content {
     grid-column-gap: 20px;
@@ -388,7 +389,25 @@ img {
     font-size: 32px;
     line-height: 42px;
 }
-
+@media (max-width: 1190px) {
+    .features-title {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .features-image-wrapper{
+        width: 100px;
+        height: 100px;
+    }
+    .banner-heading{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
 .features-paragraph-text {
     color: #73778c;
     margin-bottom: 0;
@@ -409,7 +428,7 @@ img {
 
 /* our process section */
 .process-work-section {
-    padding-top: 140px;
+    padding-top: 80px;
     padding-bottom: 140px;
 }
 .process-work-section-title-wrapper {
@@ -452,7 +471,7 @@ img {
     position: absolute;
     top: -1%;
     bottom: auto;
-    left: -6%;
+    left: -30px;
     right: auto;
 }
 .work-chart-boder.one {
@@ -514,7 +533,7 @@ img {
     top: 50%;
     left: auto;
     right: -6%;
-    transform: translate(0, -50%);
+    transform: translate(0px, -50%);
 }
 .work-chart-boder-two.two, .work-chart-boder-two.six {
     top: -2px;
@@ -559,7 +578,7 @@ img {
     position: absolute;
     top: 50%;
     bottom: auto;
-    left: -6%;
+    left: -30px;
     right: auto;
     transform: translate(0, -50%);
 }
@@ -619,7 +638,8 @@ img {
 }
 .work-chart-number.four {
     position: absolute;
-    top: 30%;
+    top: 27%;
+    z-index: 99;
     bottom: auto;
     left: auto;
     right: -5%;
@@ -1165,7 +1185,7 @@ img {
 .faq-section {
     background-color: #f2f4ff;
     margin-top: -136px;
-    padding-top: 281px;
+    padding-top: 221px;
     padding-bottom: 140px;
 }
 
@@ -1204,6 +1224,7 @@ img {
 .accordion-item button span {
 	background: rgba(60, 89, 242, .1);
 	width: 50px;
+	min-width: 50px;
 	height: 50px;
 	border-radius: 10px;
 	font-size: 28px;
@@ -1645,6 +1666,10 @@ opacity: 0;
 .home_Germancss .services-right-content .primary-button {
 	font-size: 15px;
 }
+.process-work-section {
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
 .home_Germancss .banner-wrapper .primary-button {
 	border-radius: 11px;
 }
@@ -1665,6 +1690,15 @@ opacity: 0;
 .home_Germancss .banner-heading {
 	font-size: 35px;
 }
+
+.features-section.home {
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+.process-work-section {
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
 .home_Germancss .services-right-content .primary-button {
     font-size: 15px;
 }
@@ -1682,6 +1716,8 @@ opacity: 0;
 .accordion .accordion-item button h5 {
 	white-space: normal;
 	word-wrap: anywhere;
+    font-size: 16px;
+    line-height: normal;
 }
 .accordion-item button span {
 	border-radius: 0;
@@ -1699,10 +1735,10 @@ opacity: 0;
 /*-- responsive css --*/
 @media screen and (max-width: 1300px){
 .services-title-wrap h3 {
-    font-size: 30px;
+    font-size: 24px;
 }
 .services-right-content h2 {
-	font-size: 35px;
+	font-size: 30px;
 	line-height: 45px;
 }
 }
@@ -1717,9 +1753,15 @@ opacity: 0;
 }
 @media screen and (max-width: 1100px){
 .services-title-wrap h3 {
-	font-size: 25px;
+	font-size: 20px;
 }
 }
+@media screen and (max-width: 991px){
+    .services-title-wrap h3 {
+        font-size: 16px;
+    }
+    }
+
 @media screen and (max-width: 991px){
     .w-nav-overlay {
         height: 100vh!important;
@@ -2214,8 +2256,8 @@ opacity: 0;
         .banner-heading {
             max-width: 448px;
             margin-bottom: 10px;
-            font-size: 35px;
-            line-height: 45px;
+            font-size: 28px;
+            line-height: 35px;
         }
         .banner-paragraph-text {
             max-width: 445px;
@@ -2366,7 +2408,7 @@ opacity: 0;
             line-height: 40px;
         }
         .about-image {
-            width: 90%;
+            width: 60%;
         }
         .about-section {
             padding-top: 80px;
@@ -2507,7 +2549,7 @@ opacity: 0;
         }
         /*-- Home page responsive css --*/
         .services-right-content {
-          margin-top: 50px;
+          margin-top: 24px;
         }
         .services-section {
           margin-top: -50px;
@@ -2553,6 +2595,7 @@ opacity: 0;
         }
         .banner-primary-button-wrapper {
             grid-column-gap: 20px;
+            display: grid;
         }
         .banner-hero-image-wrapper {
             padding-top: 40px;
@@ -2565,6 +2608,7 @@ opacity: 0;
         }
         .banner-button-text-link {
             font-size: 15px;
+            margin-top: 20px;
         }
         .services-wrapper {
             padding-left: 15px;
@@ -2659,7 +2703,7 @@ opacity: 0;
             padding: 20px 15px;
         }
         .work-chart-number.one {
-            left: -5%;
+            left: -30px !important;
         }
         .work-chart-main-two {
             padding-top: 25px;
@@ -2673,7 +2717,7 @@ opacity: 0;
             width: 40px;
         }
         .work-chart-number.two {
-            right: -5%;
+            right: -20px;
         }
 
         .work-chart-main.three {
@@ -2872,3 +2916,64 @@ opacity: 0;
         top: 300px;
       }
     }
+    @media screen and (max-width: 1091px) {
+        .accordion .accordion-item button h5 {
+            font-size: 18px;
+            line-height: normal;
+        }
+        .blog-single-post-image-wrapper {
+            height: 530px;
+        }
+        .faq-section {
+           
+            padding-bottom: 80px;
+        }
+      }
+  
+
+    @media(max-width: 767px){
+        .work-chart-number{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .work-chart-number.one , .work-chart-number.three{
+            left: -20px !important;
+        }
+        .blog-section-title-wrapper{
+            padding-top: 10px;
+        }
+        .faq-section {
+            padding-top: 200px;
+            padding-bottom:60px
+        }
+        .accordion .accordion-item button h5 {
+            white-space: normal;
+            word-wrap: anywhere;
+            font-size: 16px;
+            line-height: normal;
+        }
+        .work-chart-number.two, .work-chart-number.four {
+            right: -20px;
+        }
+       
+        
+    }
+
+.home_ArabicCss .banner-section, .home_ArabicCss .faq-section, .home_ArabicCss .about-section, .home_ArabicCss .services-section, .home_ArabicCss .features-section , .home_ArabicCss .process-work-section{
+    direction: rtl;
+}
+.home_ArabicCss .banner-swz-col{
+    left: 0;
+    right: auto;
+}
+.home_ArabicCss .banner-text-wrapper {
+    z-index: 999;
+}
+.home_ArabicCss .accordion-button::after{
+    margin-right: auto !important;
+    margin-left: 0;
+}
+.home_ArabicCss .accordion-item button span {
+    margin: 0 5px 0 25px;
+}  
