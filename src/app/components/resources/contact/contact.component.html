@@ -18,69 +18,73 @@
 				<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
 					<h2>{{"Contact Us" | translate}}</h2>
 					<p><strong>{{"Address:" | translate}}</strong></p>
-					<p>{{"radiologycheck.com GmbH" | translate}}<br/>
-						{{"Riedbachstrasse 78h, 3027 Bern" | translate}}<br/>
+					<p>{{"radiologycheck.com GmbH" | translate}}<br />
+						{{"Riedbachstrasse 78h, 3027 Bern" | translate}}<br />
 						{{"Switzerland" | translate}}</p>
-					<p class="mt-4"><strong>{{"WhatsApp:" | translate}}</strong> <a href="tel:+41795281875" target="blank"> {{"WhatsApp Number" | translate}}</a> {{"(24/7)" | translate}}</p>
-					<p><strong>{{"Email:" | translate}}</strong> <a href="mailto:info@radiologycheck.com"	target="blank"> {{"Email Id" | translate}}</a></p>
+					<p class="mt-4"><strong>{{"WhatsApp:" | translate}}</strong> <a href="tel:+41795281875"
+							target="blank"> {{"WhatsApp Number" | translate}}</a> {{"(24/7)" | translate}}</p>
+					<p><strong>{{"Email:" | translate}}</strong> <a href="mailto:info@radiologycheck.com"
+							target="blank"> {{"Email Id" | translate}}</a></p>
 					<p class="mt-4"><strong>{{"Working Hours:" | translate}}</strong></p>
 					<p>{{"Working Hours details" | translate}}</p>
 				</div>
 
 				<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
 					<div class="contact-form-section">
-						<h6>Please enter the following information in the form below</h6>
+						<h6>{{"contactUsTitle" | translate}}</h6>
 						<form name="form" #contactForm="ngForm" (ngSubmit)="contactForm.form.valid && storeData()">
 							<div class="contact-form-row">
-								<label>Name</label>
+								<label>{{"nameC" | translate}}</label>
 								<input type="text" name="name" required [(ngModel)]="contactObj.name" #name="ngModel"
 									[ngClass]="{ 'is-invalid': contactForm.submitted && name.errors }" />
 
 								<div *ngIf="contactForm.submitted && name.errors" class="invalid-feedback">
-									Name is required !
+									{{"errorName" | translate}}
 								</div>
 							</div>
 
 
 							<div class="contact-form-row">
-								<label>Email ID</label>
+								<label>{{"emailC" | translate}} </label>
 								<input type="email" name="email" required [(ngModel)]="contactObj.email"
 									#email="ngModel"
 									[ngClass]="{ 'is-invalid': contactForm.submitted && email.errors }" />
 
 								<div *ngIf="contactForm.submitted && email.errors" class="invalid-feedback">
-									Email is required !
+									{{"errorEmail" | translate}}
 								</div>
 							</div>
 
 							<div class="contact-form-row">
-								<label>Phone</label>
+								<label>{{"PhoneC" | translate}}</label>
 								<input type="tel" maxlength="12" pattern="^((\\+91-?)|0)?[0-9]{10}$" name="phone"
 									required [(ngModel)]="contactObj.phone" #phone="ngModel"
 									[ngClass]="{ 'is-invalid': contactForm.submitted && phone.errors }" />
 
 								<div *ngIf="contactForm.submitted && phone.errors" class="invalid-feedback">
-									<div *ngIf="phone.errors?.['required']">Phone
-										Number is required </div>
-									<div *ngIf="phone.errors?.['pattern']">This is not
-										a valid Phone Number</div>
+									<div *ngIf="phone.errors?.['required']">
+										{{"errorNumber1" | translate}}
+									</div>
+									<div *ngIf="phone.errors?.['pattern']">
+										{{"errorNumber2" | translate}}
+									</div>
 								</div>
 							</div>
 
 							<div class="contact-form-row">
-								<label>Message</label>
+								<label>{{"MessageC" | translate}}</label>
 								<textarea name="message" type="textarea" name="message" #message="ngModel"
 									[(ngModel)]="contactObj.message" required
 									[ngClass]="{ 'is-invalid': contactForm.submitted && message.errors }"></textarea>
 
 								<div *ngIf="contactForm.submitted && message.errors" class="invalid-feedback">
-									Message is required !
+									{{"errorMessage" | translate}}
 								</div>
 							</div>
 
 
 							<div class="contact-form-row text-right">
-								<input type="submit" value="submit">
+								<input type="submit" value="{{'submit' | translate}}">
 							</div>
 						</form>
 					</div>
@@ -97,8 +101,8 @@
 			<div class="position-relative">
 				<div class="subscribe-letter">
 					<form>
-						<input type="email" placeholder="Enter your email here" required>
-						<input type="submit" value="Subscribe Our Newsletter">
+						<input type="email" placeholder="{{'enterEmail' | translate}}" required>
+						<input type="submit" value="{{'subscribe' | translate}}">
 					</form>
 				</div>
 			</div>

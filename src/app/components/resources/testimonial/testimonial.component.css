@@ -1,8 +1,11 @@
 .site_wrapper {
-    padding: 0px 0px 100px;
+    padding: 0px 0px 50px;
 }
 .t-section ol, .t-section ul {
 	padding: 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .t-section ol li {
 	width: 47%;
@@ -45,3 +48,12 @@
     margin-bottom: 60px;
 }
 
+
+
+@media(max-width: 767px){
+	.t-section ol li {
+		width: 100%;
+		display: inline-block;
+		margin: 13px 1% 0 0;
+	}
+}

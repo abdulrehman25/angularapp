@@ -1,5 +1,5 @@
 .site_wrapper {
-	padding: 0px 0px 100px;
+	padding: 0px 0px 0px;
 }
 
 .intro-dr-rehman h3 {
@@ -43,7 +43,7 @@ font-size: 16px;
 	width: 100%;
 	height: auto;
 	display: inline-block;
-	padding: 100px 0px;
+	padding: 60px 0px;
 	position: relative;
 	background-color: #ffffff;
 	background-image: url("../../../../assets/images/specialist-area-bg.png");
@@ -116,7 +116,7 @@ font-size: 16px;
 }
 .experience-training .bg-white.p-5 {
 	box-shadow: 0px 6px 70px rgba(0,0,0,.1);
-	margin-top: 50px;
+	margin-top: 25px;
 	position: relative;
 }
 .experience-training h3 {
@@ -159,7 +159,7 @@ font-size: 16px;
 	width: 100%;
 	height: auto;
 	display: inline-block;
-	padding: 150px 0 80px;
+	padding: 60px 0 60px;
 	position: relative;
 	background-image: url('../../../../assets/images/qualimember-background.jpg');
 	background-size: cover;
@@ -423,4 +423,22 @@ font-size: 16px;
     .intro-dr-rehman figure {
         margin-bottom: 30px;
     }
+	.position-relative.qualiMember-item {
+		margin-bottom: 16px;
+	}
+	
+}
+
+@media(max-width: 991px){
+	.intro-dr-rehman h3 {
+		padding-bottom: 15px;
+		margin: 30px 0px;
+	}
+	.specialist-areas{
+		padding: 0;
+	}
+	.experience-training .bg-white.p-5{
+		margin: 50px 16px  0px 16px;
+	}
+
 }
