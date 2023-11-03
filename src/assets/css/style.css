@@ -78,7 +78,6 @@ h1 {
     font-family: Gilroy, sans-serif;
     font-size: 66px;
     font-weight: 700;
-    line-height: 82px;
 }
 h2 {
     color: #252f4b;
@@ -87,7 +86,6 @@ h2 {
     font-family: Gilroy, sans-serif;
     font-size: 44px;
     font-weight: 700;
-    line-height: 58px;
 }
 h3 {
     color: #252f4b;
@@ -96,7 +94,6 @@ h3 {
     font-family: Gilroy, sans-serif;
     font-size: 33px;
     font-weight: 700;
-    line-height: 46px;
 }
 h4 {
     color: #252f4b;
@@ -105,7 +102,6 @@ h4 {
     font-family: Gilroy, sans-serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 42px;
 }
 h5 {
     color: #252f4b;
@@ -114,7 +110,6 @@ h5 {
     font-family: Gilroy, sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 38px;
 }
 ol {
     padding-left: 0;
@@ -1326,7 +1321,7 @@ padding-left: 75px;
 	border-radius: 20px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-    margin:50px 0 0;
+    margin:30px 0 0;
 }
 .pricing-plan-single-wrapper:hover {
 	background-color: rgba(38, 68, 120);
@@ -2621,4 +2616,25 @@ padding-left: 75px;
     padding: 14px 30px;
     font-size: 16px;
 }
+}
+
+dd{
+    font-size: 20px;
+}
+
+.site_wrapper{
+    padding-bottom: 50px;
+}
+@media(max-width: 991px){
+    h4 {
+        font-size: 26px;
+        line-height: normal;
+    }
+        .site_wrapper {
+            padding-top: 50px;
+        }
+        dd{
+            font-size: 16px;
+        }
+     
 }

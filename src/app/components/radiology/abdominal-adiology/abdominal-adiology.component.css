@@ -52,7 +52,7 @@
 
 .sidebar-second-opinion-cta .position-absolute h5 {
     color: #264478;
-    font-family: 'WalsheimBold';
+    /* font-family: 'WalsheimBold'; */
     font-size: 18px;
 }
 
@@ -170,7 +170,9 @@ span.plus-icon::after {
       .inner-page-content .container>.row {
         flex-direction: column-reverse;
     }
-
+    
+    
+   
     .feature_picture img {
         min-height: 400px;
     }
@@ -195,3 +197,12 @@ span.plus-icon::after {
 }
 
 /*767*/
+
+@media(max-width: 991px){
+    .site-wrapper {
+        padding: 50px 0px;;
+    }
+    .inner-page-content .col-xl-9 ol li {
+        font-size: 16px;
+    }
+}

@@ -4,3 +4,9 @@
 
 
 /* home - section F */
+
+@media(max-width: 991px){
+	.site_wrapper {
+		padding: 0px 0px 50px;
+	}
+}

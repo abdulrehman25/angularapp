@@ -100,7 +100,7 @@
       </div>
 
     </div>
-    <div class="card main-card">
+    <div class="card main-card  mb-4">
       <div class="card-header" id="heading-2">
         <h5 class="mb-0">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
@@ -173,12 +173,12 @@
       </div>
     </div>
   </ng-container>
-    <div class="sidebar-second-opinion-cta position-relative mt-5">
+    <div class="sidebar-second-opinion-cta position-relative mt-lg-5 mt-0">
       <img src="assets/images/sidebar-second-opinion.jpg" alt="" />
       <div class="position-absolute">
-          <h5>Do you want an <span>{{ textFromParent | translate}}</span> Second Opinion?</h5>
+          <h5>{{'Do you want an' | translate}} <span>{{ textFromParent | translate}}</span> {{"Second Opinion?" | translate}}</h5>
           <!-- <h5>{{ textFromParent | translate}}</h5> -->
-          <button class="btn" routerLink="/contact" type="button">contact us</button>
+          <button class="btn" routerLink="/contact" type="button">{{'contact us' | translate}}</button>
       </div>
   </div>
   </div>

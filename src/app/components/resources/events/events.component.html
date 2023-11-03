@@ -1,30 +1,36 @@
-<div class="site_wrapper">
-	<app-top-banner [pageTitle]="EventPageTitle"></app-top-banner>
-<!--site banner-->
-	<div class="inner-pages p-t-100">
-	  <div class="container">
-		<div class="row">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-				<h2 class="heading_strip">{{"Congress/Events" | translate}}</h2>
-				<p>{{"Congress/Events_p1" | translate}}<br/>
-					{{"Congress/Events_p2" | translate}}
-				</p>
+
+<div [ngClass]="{'home_Germancss':GermanCss, 'home_ArabicCss':ArabicCss, 'home_RussianCss':RussianCss, 'home_ChineseCss':ChineseCss, 'home_EnglishCss':EnglishCss}">
+
+	<div class="site_wrapper">
+		<app-top-banner [pageTitle]="EventPageTitle"></app-top-banner>
+	<!--site banner-->
+		<div class="inner-pages p-t-100">
+		  <div class="container">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<h2 class="heading_strip">{{"Congress/Events" | translate}}</h2>
+					<p>{{"Congress/Events_p1" | translate}}<br/>
+						{{"Congress/Events_p2" | translate}}
+					</p>
+				</div>
 			</div>
+		  </div>
 		</div>
-	  </div>
-	</div>
-</div><!--site wrapper-->
-
-
-<div class="home_section_f">
-	<div class="container">
-		<div class="row">
-			<div class="position-relative">
-				<div class="subscribe-letter">
-					<form>
-						<input type="email" placeholder="Enter your email here" required>
-						<input type="submit" value="Subscribe Our Newsletter">
-					</form>
+	</div><!--site wrapper-->
+	
+	
+	<div class="home_section_f">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-11 mx-auto">
+					<div class="position-relative">
+						<div class="subscribe-letter">
+							<form>
+								<input type="email" placeholder="{{'enterEmail' | translate}}" required>
+								<input type="submit" value="{{'subscribe' | translate}}">
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

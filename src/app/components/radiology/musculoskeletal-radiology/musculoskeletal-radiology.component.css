@@ -196,3 +196,12 @@ span.plus-icon::after {
 }
 
 /*767*/
+
+@media(max-width: 991px){
+    .site-wrapper {
+        padding: 50px 0px;;
+    }
+    .inner-page-content .col-xl-9 ol li {
+        font-size: 16px;
+    }
+}

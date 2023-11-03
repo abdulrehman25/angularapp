@@ -166,7 +166,7 @@ span.plus-icon::after {
 
 @media (max-width: 767px) {
     .inner-page-content .container>.row {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
     }
 
     .feature_picture img {
@@ -193,3 +193,12 @@ span.plus-icon::after {
 }
 
 /*767*/
+
+@media(max-width: 991px){
+    .site-wrapper {
+        padding: 50px 0px;;
+    }
+    .inner-page-content .col-xl-9 ol li {
+        font-size: 16px;
+    }
+}

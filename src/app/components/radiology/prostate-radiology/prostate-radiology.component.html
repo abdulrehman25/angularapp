@@ -6,11 +6,11 @@
 	<div class="inner-page-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+				<div class="col-xl-3 col-lg-6 mx-auto col-md-12 col-sm-12 col-12">
 					<app-radiology-sidebar [textFromParent]="doYouWantSecondOpinionTextForEachComponent"></app-radiology-sidebar>
 				</div>
 
-				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+				<div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12 mt-xl-0 mt-4">
 					<h4>{{"Why should you go for a Prostate Radiology Second Opinion?" | translate}}</h4>
 					<p>{{"Why should you go for a Prostate Radiology Second Opinion?_p1" | translate}}</p>
 
@@ -39,11 +39,11 @@
 					<h4>{{"Why is it necessary to go for a Second Opinion?"| translate}}</h4>
 
 					<div class="row">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 							<img src="../assets/images/prostate-radiology.jpg" alt=""
 								class="img-fluid border-radius-15" />
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 
 							<p>{{"Why is it necessary to go for a Second Opinion?_p"| translate}}</p>
 
@@ -72,12 +72,14 @@
 <div class="home_section_f">
 	<div class="container">
 		<div class="row">
-			<div class="position-relative">
-				<div class="subscribe-letter">
-					<form>
-						<input type="email" placeholder="Enter your email here" required>
-						<input type="submit" value="Subscribe Our Newsletter">
-					</form>
+			<div class="col-md-11 mx-auto">
+				<div class="position-relative">
+					<div class="subscribe-letter">
+						<form>
+							<input type="email" placeholder="{{'enterEmail' | translate}}" required>
+							<input type="submit" value="{{'subscribe' | translate}}">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

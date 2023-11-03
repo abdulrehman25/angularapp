@@ -5,11 +5,11 @@
 	<div class="inner-page-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+				<div class="col-xl-3 col-lg-6 mx-auto col-md-12 col-sm-12 col-12">
 					<app-radiology-sidebar [textFromParent]="doYouWantSecondOpinionTextForEachComponent"></app-radiology-sidebar>
 
 				</div>
-				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+				<div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12 mt-xl-0 mt-4">
 					<h4>A Revolutionary Journey in Head & Neck Radiology</h4>
 					<p>Greetings, I'm Dr. Rahman and I specialize in neuroradiology with a focus on head and neck imaging. The field has seen significant advancements that have radically transformed patient diagnosis and treatment outcomes. Gone are the days when radiologists were limited to diagnosing diseases only when they disrupted air-filled structures or damaged bones. Earlier, we had only a handful of invasive procedures that barely augmented our diagnostic capabilities.</p>
                     <p>Today, state-of-the-art cross-sectional imaging techniques, including CT and MRI, provide unparalleled insights into the complex anatomy and pathological processes affecting the head and neck regions. These technological leaps were perhaps inconceivable during the infancy of radiology but have now become instrumental in elevating patient care.</p>
@@ -32,11 +32,11 @@
 
                         Ready to experience the future of head & neck radiology? Schedule your appointment today.</p>
 					<div class="row">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 							<img src="../assets/images/head-neck-banner.jpg" alt=""
 								class="img-fluid border-radius-15" />
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 
 						</div>
 					</div>
@@ -50,12 +50,14 @@
 <div class="home_section_f">
 	<div class="container">
 		<div class="row">
-			<div class="position-relative">
-				<div class="subscribe-letter">
-					<form>
-						<input type="email" placeholder="Enter your email here" required>
-						<input type="submit" value="Subscribe Our Newsletter">
-					</form>
+			<div class="col-md-11 mx-auto">
+				<div class="position-relative">
+					<div class="subscribe-letter">
+						<form>
+							<input type="email" placeholder="{{'enterEmail' | translate}}" required>
+							<input type="submit" value="{{'subscribe' | translate}}">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

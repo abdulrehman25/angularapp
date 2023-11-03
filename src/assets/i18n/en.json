@@ -736,6 +736,13 @@
      "errorNumber2":"This is not a valid Phone Number.",
      "MessageC":"Message",
      "errorMessage":"Message is required ! ",
+
+
+
+     
+     "Do you want an":"Do you want an",
+     "Second Opinion?":"Second Opinion?",
+     "contact us": "Contact us",
      
      "":""
    
