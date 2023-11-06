@@ -1,4 +1,4 @@
-{   
+{
     "Header section":"Header section",
     "Header Home":"Дом",
     "Header About":"информация о нас",
@@ -330,7 +330,7 @@
     "Our experts give second opinions for all Interventional Radiology Scans":"Наши эксперты дают второе мнение по всем типам интервенционных радиологических исследований и процедур.",
 
 
-    
+
     "Neuroradiology":"Нейрорадиология",
     "Banner - Get a Second Opinion on Neuroradiology":"Получите второе мнение по нейрорадиологии",
     "Instructions - Get a Second Opinion on Neuroradiology":"Ваши отчеты по нейрорадиологии проходят через наших специалистов с многолетним опытом работы в этой области. Благодаря экспертному анализу ваших снимков полностью исключается ошибочная диагностика нейрорадиологических изображений.",
@@ -381,7 +381,7 @@
 
     "Demyelinating Diseases of the CNS (Brain and Spine)":"Демиелинизирующие заболевания ЦНС (головного мозга и позвоночника)",
     "Demyelinating Diseases of the CNS (Brain and Spine)_text":"Наиболее распространенным иммуноопосредованным воспалительным демиелинизирующим заболеванием центральной нервной системы является рассеянный склероз (РС). Патологическими особенностями РС являются мультифокальные участки демиелинизации с потерей олигодендроцитов и астроглиальным рубцеванием. Другим основным патологическим признаком, особенно на последних стадиях, является повреждение аксонов. Хотя заболевание имеет множество атипичных форм и очень разнообразное течение, некоторые клинические характеристики типичны для РС.",
-    
+
 
     "Dementia, Alzheimer & Other Neurodegenerative Disorders":"Деменция, болезнь Альцгеймера и другие нейродегенеративные расстройства",
     "Dementia, Alzheimer & Other Neurodegenerative Disorders_p1":"Наиболее частая причина слабоумия, болезнь Альцгеймера (БА) - это неврологическое заболевание с неизвестным источником и патофизиологией, которое в основном поражает пожилых людей.",
@@ -409,14 +409,14 @@
 
     "Imaging Evaluation of Patients with Cranial Nerve Disorders":"Оценка изображений у пациентов с расстройствами черепно-мозговых нервов",
     "Imaging Evaluation of Patients with Cranial Nerve Disorders_text":"Визуализационная оценка пациентов с заболеваниями черепно-мозговых нервов проводится ежедневно. Анатомию и функции всех 12 пар черепно-мозговых нервов трудно понять из-за их сложности. Для того чтобы выявить интрааксиальные, экстрааксиальные внутричерепные и экстракраниальные поражения, интерпретация изображений должна быть очень точной.",
-    
+
 
     "Diseases of the Hypophysis":"Заболевания гипофиза",
     "Pituitary adenomas":"Аденомы гипофиза",
     "Craniopharyngioma":"Краниофарингиома",
     "Meningioma":"Менингиома",
     "MRI — Magnetic resonance imaging (MRI) with gadolinium is the single best imaging procedure for most of the masses":"МРТ - Магнитно-резонансная томография (МРТ) с гадолинием является единственной наилучшей процедурой визуализации для большинства образований.",
-    
+
 
     "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)":"Гидроцефалия и нарушения циркуляции цереброспинальный жидкости - ЦСЖ (включая внутричерепную гипер- и гипотензию)",
     "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)_text":"Гидроцефалия нормального давления (ГНД) - это состояние патологически увеличенного размера желудочков с нормальным давлением при люмбальной пункции. ГНД ассоциируется с классической триадой: деменцией, нарушением походки и недержанием мочи. Поскольку этот клинический синдром потенциально обратим при установке вентрикулоперитонеального (ВП) шунта, важно точно распознать и поставить диагноз.",
@@ -427,8 +427,8 @@
     "Multiple system atrophy":"Множественная системная атрофия",
     "Corticobasal syndrome":"Кортикобазальный синдром",
     "Alzheimer":"Альцгеймер",
-    
-    
+
+
     "Stroke and Its Mimics: Differential diagnosis":"Инсульт и его имитаторы: Дифференциальная диагностика",
     "Approach to Imaging":"ПОДХОД К ВИЗУАЛИЗАЦИИ ",
     "Imaging objectives":"Цели визуализации",
@@ -576,10 +576,10 @@
     "Working Hours:":"Часы работы:",
     "Working Hours details":"Понедельник - воскресенье, Центральноевропейское время (CET), с 8 утра до 18 вечера",
 
-    
+
     "Home Page":"Главная страница",
     "BEST RADIOLOGY CHECK":"ЛУЧШАЯ РАДИОЛОГИЧЕСКАЯ ПРОВЕРКА",
-    "Second Opinion Makes a Different":"Второе мнение имеет значение",
+    "Second Opinion Makes a Difference":"Второе мнение имеет значение",
     "home banner long text":"Зачем ограничиваться одним мнением, когда можно получить лучшее? Получите персонализированный уход от нашей команды экспертов и упростите свой медицинский путь с нами.",
     "Get Second Opinion":"Получить второе мнение",
     "Learn More":"Узнать больше",
@@ -645,8 +645,8 @@
     "Pathology":"Патология",
     "Demyelinating Diseases Of The CNS (Brain And Spine)":"Демиелинизирующие заболевания ЦНС (головной мозг и спинной мозг)",
     "The Most prevalent immune-mediated inflammatory demyelinating disease of the central nervous system is multiple sclerosis (MS).":"Самым распространенным иммуномедиированным воспалительным демиелинизирующим заболеванием центральной нервной системы является рассеянный склероз (РС).",
-    
-    
+
+
     "23/11/2023":"23/11/2023",
     "specialistAreas":"Специализированные области",
     "specialistAreas1":"Рентгенолог по мускулоскелетальной системе (MSK) и спортивной имагинг: Специализированная экспертиза в области мускулоскелетального и спортивного образования, с акцентом на диагностику и лечение состояний, затрагивающих кости, суставы, мышцы и мягкие ткани.",
@@ -733,18 +733,18 @@
      "MessageC":"Сообщение",
      "errorMessage":"Сообщение обязательно!",
 
-     
+
     "Second Opinion":"Второе мнение",
     "Makes a": "Делает",
     "Difference":"Разница",
     "Why settle for one opinion when you can have the best? Get personalized care from our expert team and simplify your medical journey with us.": "Зачем ограничиваться одним мнением, когда у вас может быть лучшее? Получите персонализированный уход от нашей команды экспертов и упростите свой медицинский путь с нами.",
-    
 
-    
+
+
     "Do you want an":"Do you want an",
     "Second Opinion?":"Second Opinion?",
     "contact us": "Contact us",
-    
+
     "pricingHeading":"Where clarity meets healthcare, decoding every detail for your peace of mind.",
     "Essential":"Essential",
     "Plan conditions are subject to change without notice customers will be informed if changes occur.":"Plan conditions are subject to change without notice customers will be informed if changes occur.",
@@ -832,5 +832,5 @@
     "headNeck23":" The advancements we've seen are not the end; they're merely the beginning. We anticipate further progress that will make diagnostic techniques even less invasive, safer, quicker, and more specific. Our ultimate aim remains to impact patient outcomes positively, identifying and treating conditions at the earliest stage possible. Ready to experience the future of head & neck radiology? Schedule your appointment today.",
     "":""
 
-    
+
 }

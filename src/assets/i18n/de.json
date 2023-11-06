@@ -326,7 +326,7 @@
     "Our experts give second opinions for all Interventional Radiology Scans":"Our experts give second opinions for all Interventional Radiology Scans",
 
 
-    
+
     "Neuroradiology":"Neuroradiologie",
     "Banner - Get a Second Opinion on Neuroradiology":"Get a Second Opinion on Neuroradiology.",
     "Instructions - Get a Second Opinion on Neuroradiology":"Your neuroradiology reports go through our specialists with years of expertise in the field. By expertly analyzing your scans, misdiagnosis of neuroradiology images is completely eliminated.",
@@ -377,7 +377,7 @@
 
     "Demyelinating Diseases of the CNS (Brain and Spine)":"Entmarkungskrankheiten des ZNS (Gehirn und Wirbelsäule)",
     "Demyelinating Diseases of the CNS (Brain and Spine)_text":"Die häufigste immunvermittelte entzündliche Entmarkungskrankheit des zentralen Nervensystems ist die Multiple Sklerose (MS). Multifokale Bereiche der Entmarkung mit Verlust von Oligodendrozyten und astroglialer Narbenbildung sind pathologische Merkmale der MS. Ein weiteres wichtiges pathologisches Merkmal, insbesondere in fortgeschrittenen Stadien, ist die Schädigung von Axonen. Obwohl die Krankheit zahlreiche atypische Formen und einen sehr abwechslungsreichen Verlauf aufweist, sind mehrere klinische Merkmale für die MS typisch.",
-    
+
 
     "Dementia, Alzheimer & Other Neurodegenerative Disorders":"Demenz, Alzheimer und andere neurodegenerative Erkrankungen",
     "Dementia, Alzheimer & Other Neurodegenerative Disorders_p1":"Die häufigste Ursache für Demenz, die Alzheimer-Krankheit (AD), ist ein neurologischer Zustand mit unbekannter Ursache und Pathophysiologie, der hauptsächlich ältere Menschen betrifft.",
@@ -405,14 +405,14 @@
 
     "Imaging Evaluation of Patients with Cranial Nerve Disorders":"Bildgebende Untersuchung von Patienten mit Störungen der Hirnnerven",
     "Imaging Evaluation of Patients with Cranial Nerve Disorders_text":"Bildgebende Untersuchungen von Personen mit Erkrankungen der Hirnnerven werden täglich durchgeführt. Die Anatomie und Funktion aller 12 Paare der Hirnnerven sind aufgrund ihrer Komplexität schwer zu verstehen. Um intraaxiale, extraaxiale intrakranielle und extrakranielle Läsionen zu erkennen, muss die Bildinterpretation präzise sein.",
-    
+
 
     "Diseases of the Hypophysis":"Erkrankungen der Hypophyse",
     "Pituitary adenomas":"Hypophysenadenome",
     "Craniopharyngioma":"Kraniopharyngeom",
     "Meningioma":"Meningeom",
     "MRI — Magnetic resonance imaging (MRI) with gadolinium is the single best imaging procedure for most of the masses":"MRT (Magnetresonanztomographie) mit Gadolinium ist das beste bildgebende Verfahren für die meisten Massen.",
-    
+
 
     "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)":"Hydrozephalus und Liquorstörungen (einschließlich intrakranieller Über- und Unterdruck)",
     "Hydrocephalus and CSF Disorders (incl. Intracranial Hyper- and Hypotension)_text":"Der Normaldruckhydrozephalus (NPH) bezieht sich auf einen Zustand mit pathologisch vergrößerten Ventrikeln bei normalen Öffnungsdrücken bei der Lumbalpunktion. NPH ist mit einer klassischen Trias aus Demenz, Gangstörungen und Harninkontinenz verbunden. Da dieses klinische Syndrom potenziell durch die Platzierung eines ventrikuloperitonealen (VP) Shunts reversibel ist, ist es wichtig, es genau zu erkennen und zu diagnostizieren.",
@@ -423,8 +423,8 @@
     "Multiple system atrophy":"Multisystematrophie",
     "Corticobasal syndrome":"Corticobasales Syndrom",
     "Alzheimer":"Alzheimer-Krankheit",
-    
-    
+
+
     "Stroke and Its Mimics: Differential diagnosis":"Schlaganfall und seine Imitatoren: Differenzialdiagnose",
     "Approach to Imaging":"Herangehensweise an die Bildgebung",
     "Imaging objectives":"Bildgebungsziele",
@@ -571,10 +571,10 @@
     "Working Hours:":"Arbeitszeiten:",
     "Working Hours details":"Montag - Sonntag MEZ - Von 8 Uhr morgens bis 18 Uhr abends",
 
-    
+
     "Home Page":"Startseite",
     "BEST RADIOLOGY CHECK":"BESTE RADIOLOGISCHE UNTERSUCHUNG",
-    "Second Opinion Makes a Different":"Die Zweitmeinung macht einen Unterschied",
+    "Second Opinion Makes a Difference":"Die Zweitmeinung macht einen Unterschied",
     "home banner long text":"Warum sich mit einer Meinung zufriedengeben, wenn Sie die beste haben können? Erhalten Sie eine individuelle Betreuung von unserem Expertenteam und vereinfachen Sie Ihre medizinische Reise mit uns.",
     "Get Second Opinion":"Holen Sie sich eine Zweitmeinung",
     "Learn More":"Mehr erfahren",
@@ -640,13 +640,13 @@
     "Pathology":"Pathologie",
     "Demyelinating Diseases Of The CNS (Brain And Spine)":"Demyelinisierende Erkrankungen des ZNS (Gehirn und Wirbelsäule)",
     "The Most prevalent immune-mediated inflammatory demyelinating disease of the central nervous system is multiple sclerosis (MS).":"Die am häufigsten vorkommende immunvermittelte entzündliche demyelinisierende Erkrankung des zentralen Nervensystems ist die Multiple Sklerose (MS).",
-     
+
     "Second Opinion":"Zweitmeinung",
     "Makes a": "Macht ein",
     "Difference":"Unterschied",
     "Why settle for one opinion when you can have the best? Get personalized care from our expert team and simplify your medical journey with us.": "Warum sich mit einer Meinung zufriedengeben, wenn Sie die beste bekommen können? Erhalten Sie individuelle Betreuung von unserem Expertenteam und vereinfachen Sie Ihre medizinische Reise mit uns.",
-   
-   
+
+
     "23/11/2023":"23/11/2023",
     "specialistAreas":"Fachgebiete",
     "specialistAreas1":"Muskuloskelettaler (MSK) und Sportbildgebungsradiologe: Eine spezialisierte Expertise im Bereich der muskuloskelettalen und sportbezogenen Bildgebung, mit Fokus auf der Diagnose und Behandlung von Erkrankungen, die Knochen, Gelenke, Muskeln und Weichteile betreffen.",
@@ -726,20 +726,20 @@
      "errorName":"Name ist erforderlich!",
      "emailC":"Email ID",
      "errorEmail":"Email ist erforderlich!",
-     
+
      "submit":"abschicken",
      "PhoneC":"Telefon",
      "errorNumber1":"Telefonnummer ist erforderlich!",
      "errorNumber2":"Dies ist keine gültige Telefonnummer. ",
      "MessageC":"Nachricht",
      "errorMessage":"Nachricht ist erforderlich!",
-     
-    
-   
+
+
+
      "Do you want an":"Do you want an",
      "Second Opinion?":"Second Opinion?",
      "contact us": "Contact us",
-     
+
      "pricingHeading":"Where clarity meets healthcare, decoding every detail for your peace of mind.",
      "Essential":"Essential",
      "Plan conditions are subject to change without notice customers will be informed if changes occur.":"Plan conditions are subject to change without notice customers will be informed if changes occur.",
@@ -826,5 +826,5 @@
      "headNeck22":"The Future is Here",
      "headNeck23":" The advancements we've seen are not the end; they're merely the beginning. We anticipate further progress that will make diagnostic techniques even less invasive, safer, quicker, and more specific. Our ultimate aim remains to impact patient outcomes positively, identifying and treating conditions at the earliest stage possible. Ready to experience the future of head & neck radiology? Schedule your appointment today.",
      "":""
- 
+
 }
