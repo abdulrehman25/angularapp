@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./evaluation-of-tinnitus.component.css']
 })
 export class EvaluationOfTinnitusComponent {
-  doYouWantSecondOpinionTextForEachComponent="Evaluation of Tinnitus and Hearing Loss in the Adult";
+  doYouWantSecondOpinionTextForEachComponent="Tinnitus and Hearing Loss  ";
+  pageTitle: string = "Tinnitus Diagnosis and Second Opinions | Radiology Check   ";
+  description: string = "Seeking a second opinion on your tinnitus diagnosis can prevent unwanted surgeries by confirming the accuracy of your diagnosis and treatment plan.   ";
+  keyword: string = "tinnitus, hearing loss, neuroradiology";
 
 }

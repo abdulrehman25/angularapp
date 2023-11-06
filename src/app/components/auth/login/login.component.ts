@@ -12,6 +12,13 @@ import { Login } from 'src/app/models/login';
 })
 export class LoginComponent {
 
+  
+  pageTitle: string = "Log in | Radiology Check   ";
+  description: string = "Log in to submit or access your detailed radiology reports by signing in to our secure and easy to use platform.   ";
+  keyword: string = "log in   ";
+
+
+
   loginObj: Login = {
     email: '',
     password: ''

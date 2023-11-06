@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./pricing.component.css']
 })
 export class PricingComponent {
-  PricingPageTitle = " Pricing At RadiologyCheck"
+  PricingPageTitle = " Pricing"
+  pageTitle: string = "Pricing | Radiology Second Opinions | Radiology Check   ";
+  description: string = "We offer a tiered pricing structure that works for both patients and medical institutions, giving detailed second opinions. Find the radiology solution for you.  ";
+  keyword: string = "pricing, subscription  ";
 
 }

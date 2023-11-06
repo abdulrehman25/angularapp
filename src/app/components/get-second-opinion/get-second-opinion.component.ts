@@ -52,18 +52,29 @@ export class GetSecondOpinionComponent {
     package_id: this.formObj.selected_package,
   };
 
+  pageTitle: string = 'Sign up to Get a Second Opinion | Radiology Check';
+  description: string =
+    "Don't leave your health to chance. Take control and ensure your peace of mind by getting a second opinion for your radiology scans or diagnosis today.";
+  keyword: string = 'Create an account, sign up';
+
   constructor(
     private router: Router,
     private ngxLoader: NgxUiLoaderService,
     private getSecondOpinionService: GerSecondOpinionService,
     private _toastr: ToastrService
   ) {
-    const isUserLoggedin = localStorage.getItem("isUserLoggedin");
-    const isAdmin = localStorage.getItem("isAdmin");
-    const loggedInUserDetails = JSON.parse(localStorage.getItem("user") || "{}");
-    console.log("isUserLoggedin", loggedInUserDetails, typeof(loggedInUserDetails));
-    if(!!isUserLoggedin){
-      this.addClass = "registerNow_step4";
+    const isUserLoggedin = localStorage.getItem('isUserLoggedin');
+    const isAdmin = localStorage.getItem('isAdmin');
+    const loggedInUserDetails = JSON.parse(
+      localStorage.getItem('user') || '{}'
+    );
+    console.log(
+      'isUserLoggedin',
+      loggedInUserDetails,
+      typeof loggedInUserDetails
+    );
+    if (!!isUserLoggedin) {
+      this.addClass = 'registerNow_step4';
       this.divStyle = `z-index : 4`;
       this.formObj.id = loggedInUserDetails.id;
       this.formObj.email = loggedInUserDetails.email;
@@ -72,7 +83,6 @@ export class GetSecondOpinionComponent {
     // if(!!isAdmin){
 
     // }
-
   }
 
   ngOnInit() {
@@ -87,7 +97,7 @@ export class GetSecondOpinionComponent {
   }
 
   showDiv(divClass: string, styleIndex: string) {
-    console.log("divClass", divClass)
+    console.log('divClass', divClass);
     if (divClass !== 'registerNow_step8') {
       this.addClass = divClass;
       this.divStyle = `z-index : ${styleIndex}`;
@@ -115,7 +125,7 @@ export class GetSecondOpinionComponent {
       this.sendVerificationCode();
     }
     if (this.addClass == 'registerNow_step4') {
-      if(this.disableBackButton){
+      if (this.disableBackButton) {
         this.validateCode();
       }
     }
@@ -282,8 +292,7 @@ export class GetSecondOpinionComponent {
           this._toastr.success('Completed !', 'Success');
           this.addClass = 'registerNow_step8';
           this.divStyle = `z-index : 8`;
-          this.stepIndex = "8";
-
+          this.stepIndex = '8';
         } else {
           this._toastr.error(
             'Something wend wrong ! Please try again..',
@@ -291,8 +300,7 @@ export class GetSecondOpinionComponent {
           );
           this.addClass = 'registerNow_step7';
           this.divStyle = `z-index : 7`;
-          this.stepIndex = "7";
-
+          this.stepIndex = '7';
         }
       });
   }
@@ -322,7 +330,7 @@ export class GetSecondOpinionComponent {
           stripeToken.id !== null
         ) {
           this.paymentObject.stripeToken = stripeToken.id;
-          console.log("stripeToken",stripeToken)
+          console.log('stripeToken', stripeToken);
           // alert('Stripe token generated!');
           this.submitData();
         }

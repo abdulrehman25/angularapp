@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cranial-nerve-disorders.component.css']
 })
 export class CranialNerveDisordersComponent {
-  doYouWantSecondOpinionTextForEachComponent="Imaging Evaluation of Patients with Cranial Nerve Disorders";
+  doYouWantSecondOpinionTextForEachComponent="Demyelinating Diseases of the Cranial Nerve Disorder  ";
+  pageTitle: string = "Cranial Nerve Disorder | Second Opinions | Radiology Check   ";
+  description: string = "Getting a second opinion for cranial nerve issues is a smart idea. It gives you a thorough evaluation and helps ensure the best treatment plan.  ";
+  keyword: string = "cranial nerve disorder, neuroradiology  ";
 
 }

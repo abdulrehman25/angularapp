@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class OncologicalRadiologyComponent {
   doYouWantSecondOpinionTextForEachComponent="Oncological Radiology";
 
+  pageTitle: string = "Second Opinions on Oncological Radiology | Radiology Check  ";
+  description: string = "Your oncological radiology reports go through our specialists with years of expertise in the field. Giving you a second opinion and peace of mind.   ";
+  keyword: string = "Oncological imaging, Oncological radiology";
+
 }

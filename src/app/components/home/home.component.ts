@@ -7,6 +7,7 @@ import { ToastrService } from 'ngx-toastr';
 import { LanguageServiceService } from 'src/app/services/language-service.service';
 import { Subscription } from 'rxjs';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -24,6 +25,10 @@ export class HomeComponent {
     appointment_number: '',
   };
 
+  pageTitle: string = 'Radiology Check | A Second Opinion Makes a Difference';
+  description: string = 'Radiology Check offers top of the line diagnostic radiological services available online! If you need quick services from a radiologist, look no further';
+  keyword: string = 'Second Opinion, radiology reports, accurate diagnosis, radiology, Neuroradiology,  xray, CT, PET';
+
   today = new Date().toISOString().slice(0, 10);
   // selectedLanguage: string;
   // private languageSubscription: Subscription;
@@ -40,7 +45,7 @@ export class HomeComponent {
     private _toastr: ToastrService,
     private renderer: Renderer2,
     private selectLanguageService: LanguageServiceService,
-    private translate: TranslateService
+    private translate: TranslateService,
   ) {
     // this.getSelectedLanguage();
     this.selectLanguageService.langObsevable.subscribe((res) => {
@@ -110,6 +115,7 @@ export class HomeComponent {
   }
 
   ngOnInIt() {
+
     // this.getSelectedLanguage();
     // this.languageSubscription = this.selectLanguageService
     // .getSelectedLanguageObservable()

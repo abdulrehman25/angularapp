@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./primary-reads.component.css']
 })
 export class PrimaryReadsComponent {
-  PrimaryReadsPageTitle = "Primary Reads At RadiologyCheck"
+  PrimaryReadsPageTitle = "Upload your Radiology Reports"
 
+  pageTitle: string = "Uploading your Radiology Reports | Radiology Check   ";
+  description: string = "Put your images on our safe Swisscom server. It's easy and secure. Whether it's a body, brain, spine or head & neck image, the right expert will check it.  ";
+  keyword: string = "submit your scan, upload, radiology reports ";
 }

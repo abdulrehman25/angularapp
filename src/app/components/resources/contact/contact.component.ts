@@ -11,7 +11,13 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  contactPageTitle="RadiologyCheck Contact Information";
+  contactPageTitle="Contact Us  ";
+  
+  pageTitle: string = "Contact Us | Radiology Check   ";
+  description: string = "Looking to speak with someone directly? Here you will find our email, phone number and every other way to contact the Radiology Check team.   ";
+  keyword: string = "contact";
+
+
   [x: string]: any;
   contactObj: ContactUs = {
     name: '',

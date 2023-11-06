@@ -7,8 +7,14 @@ import { LanguageServiceService } from 'src/app/services/language-service.servic
   styleUrls: ['./events.component.css'],
 })
 export class EventsComponent {
-  EventPageTitle = 'RadiologyCheck Events';
+  EventPageTitle = 'Events, Innovation and Radiology News  ';
   topBannerBackgroundImg = '/assets/images/home-new-banner.jpg';
+
+  
+  pageTitle: string = "Events, Innovation and Radiology News | Radiology Check   ";
+  description: string = "Radiology is an ever-evolving field. It's our ambition to always stay up-to-date, adapt the latest innovations, and put them into practice.   ";
+  keyword: string = "events, blog, radiology news, training   ";
+
 
   currentLanguage: any;
   GermanCss: boolean = false;
