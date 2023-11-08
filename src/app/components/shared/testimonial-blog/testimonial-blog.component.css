@@ -125,7 +125,9 @@
     font-size: 36px;
     line-height: 46px;
 }
-
+.text-transform-none{
+  text-transform: none!important;
+}
 .testimonial-description {
     color: #73778c;
     margin-bottom: 0;
@@ -440,5 +442,4 @@
         }
     }
 
-   
-    
+
