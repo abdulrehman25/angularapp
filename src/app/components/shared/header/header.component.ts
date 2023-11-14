@@ -57,7 +57,7 @@ export class HeaderComponent {
     { language: 'German', languageCode: 'de', countryCode: 'de' },
     { language: 'Arabic', languageCode: 'ar', countryCode: '' },
     { language: 'Russian', languageCode: 'ru', countryCode: 'ru' },
-    { language: 'Chinese', languageCode: 'zh', countryCode: 'cn' },
+    { language: '中文', languageCode: 'zh', countryCode: 'cn' },
   ];
   constructor(
     public translate: TranslateService,
