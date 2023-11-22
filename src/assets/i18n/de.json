@@ -569,7 +569,7 @@
     "Email:":"E-Mail:",
     "Email Id":"info@radiologycheck.com",
     "Working Hours:":"Arbeitszeiten:",
-    "Working Hours details":"Montag - Sonntag MEZ - Von 8 Uhr morgens bis 18 Uhr abends",
+    "Working Hours details":"Montag – Freitag MEZ – 8:00 bis 18:00 Uhr",
 
 
     "Home Page":"Startseite",
@@ -698,6 +698,10 @@
     "subscribe": "bonnieren Sie unseren Newsletter.",
     "descriptionOpinion": "Denn wie ich gesehen habe, lassen Sie mich kurz auf die Frage eingehen, welchen größeren Nutzen der Leser für diejenigen hat, die ihre Nostrud-Übung machen",
     "meetRadiologists": "Lernen Sie einige unserer Fachärzte für Radiologie kennen.",
+    "footer privacy policy": "Datenschutz",
+    "footer cookie policy": "Cookies",
+    "footer imprint": "Impressum",
+    "footer terms and conditions": "Nutzerbedignungen",
     "CEO": "Geschäftsführer",
     "CEODes": "Leitender Facharzt für Neuro- und Körper-Radiologie.",
     "Read more": "Mehr lesen",

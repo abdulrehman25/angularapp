@@ -573,7 +573,7 @@
     "Email:":"Email:",
     "Email Id":"info@radiologycheck.com",
     "Working Hours:":"Working Hours:",
-    "Working Hours details":"Monday - Sunday CET- 8A M to 6 PM",
+    "Working Hours details":"Monday - Friday CET- 8 AM to 6 PM",
 
 
     "Home Page":"Home Page",
@@ -699,6 +699,10 @@
     "subscribe": "Subscribe Our Newsletter",
     "descriptionOpinion": "Ut wisi enim ad minim veniam, quis laore est usus legentis in iis qui facit eorum nostrud exerci tation",
     "meetRadiologists": "Meet some of our Specialist Radiologists",
+    "footer privacy policy": "Privacy Policy",
+    "footer cookie policy": "Cookie Policy",
+    "footer imprint": "Imprint",
+    "footer terms and conditions": "Terms & conditions",
     "CEO": "CEO",
     "CEODes": "Senior Specialist Neuro and Body Radiology",
     "Read more": "Read more",

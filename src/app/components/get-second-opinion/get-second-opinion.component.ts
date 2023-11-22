@@ -105,18 +105,18 @@ export class GetSecondOpinionComponent {
     }
     if (divClass == 'registerNow_step8') {
       if (this.formObj.selected_package === '1') {
-        this.paymentObject.amount = 399;
-        this.paymentObject.package_name = 'Express, 399 EUR';
-        this.makePayment(399);
+        this.paymentObject.amount = 499;
+        this.paymentObject.package_name = 'Premium, 499 EUR';
+        this.makePayment(499);
       }
       if (this.formObj.selected_package === '2') {
-        this.paymentObject.amount = 249;
-        this.paymentObject.package_name = 'Premium, 249 EUR';
-        this.makePayment(249);
+        this.paymentObject.amount = 299;
+        this.paymentObject.package_name = 'Standard, 299 EUR';
+        this.makePayment(299);
       }
       if (this.formObj.selected_package === '3') {
         this.paymentObject.amount = 199;
-        this.paymentObject.package_name = 'Basic, 199 EUR';
+        this.paymentObject.package_name = 'Essentials, 199 EUR';
         this.makePayment(199);
       }
     }
@@ -271,11 +271,13 @@ export class GetSecondOpinionComponent {
     }
     formData.append('id', this.formObj.id);
     formData.append('email', this.formObj.email);
+    formData.append('password', this.formObj.password);
     formData.append('first_name', this.formObj.first_name);
+    formData.append('last_name', this.formObj.last_name);
     formData.append('type_of_scan', this.formObj.type_of_scan);
     formData.append('what_part_of_body', this.formObj.what_part_of_body);
     formData.append('comment', this.formObj.comment);
-    formData.append('selected_package', this.formObj.selected_package);
+    formData.append('selected_package', this.paymentObject.package_name);
 
     this.ngxLoader.start();
 

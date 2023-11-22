@@ -26,7 +26,7 @@
 					<h2>{{"Contact Us" | translate}}</h2>
 					<p><strong>{{"Address:" | translate}}</strong></p>
 					<p>{{"radiologycheck.com GmbH" | translate}}<br />
-						{{"Riedbachstrasse 78h, 3027 Bern" | translate}}<br />
+						{{"Colombstrasse 12, 3027 Bern" | translate}}<br />
 						{{"Switzerland" | translate}}</p>
 					<p class="mt-4"><strong>{{"WhatsApp:" | translate}}</strong> <a href="tel:+41795281875"
 							target="blank"> {{"WhatsApp Number" | translate}}</a> {{"(24/7)" | translate}}</p>
@@ -64,7 +64,7 @@
 
 							<div class="contact-form-row">
 								<label>{{"PhoneC" | translate}}</label>
-								<input type="tel" maxlength="12" pattern="^((\\+91-?)|0)?[0-9]{10}$" name="phone"
+								<input type="tel" name="phone"
 									required [(ngModel)]="contactObj.phone" #phone="ngModel"
 									[ngClass]="{ 'is-invalid': contactForm.submitted && phone.errors }" />
 

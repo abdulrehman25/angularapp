@@ -569,7 +569,7 @@
     "Email:":"邮箱:",
     "Email Id":"info@radiologycheck.com",
     "Working Hours:":"工作时间:",
-    "Working Hours details":"周一至周日，中欧时间（CET），上午8点至下午6点",
+    "Working Hours details":"週一至週五（歐洲中部時間）上午 8 點至下午 6 點",
 
 
 
@@ -694,6 +694,10 @@
     "subscribe": "订阅我们的通讯",
     "descriptionOpinion": "因为正如我所看到的，让我得出一个结论，对于那些将自己的诺斯特德练习作为读者的人来说，读者的最大用途是什么？",
     "meetRadiologists": "了解一些我们的专科放射科医师",
+    "footer privacy policy": "隐私政策",
+    "footer cookie policy": "Cookie政策",
+    "footer imprint": "标记",
+    "footer terms and conditions": "条款和条件",
     "CEO": "首席执行官",
     "CEODes": "资深专科神经和躯体放射科医师",
     "Read more": "阅读更多",
