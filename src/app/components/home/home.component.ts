@@ -49,7 +49,6 @@ export class HomeComponent {
   ) {
     // this.getSelectedLanguage();
     this.selectLanguageService.langObsevable.subscribe((res) => {
-      console.log('res', res);
       // this.currentLanguage = res;
       // if(res === "English"){
       // }

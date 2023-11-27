@@ -1,0 +1,53 @@
+<div class="myReport-page">
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <h4 class="text-dark text-capitalize"><span><i class="fa-solid fa-file-medical"></i></span> Checkout your GetSecondOpinion reports status</h4><hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <ul class="my-reports-listing">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="main-card mb-3 card">
+                    <div class="table-responsive text-center">
+                      <table class="table">
+                        <thead>
+                        <tr>
+                          <th>#ID</th>
+<!--                          <th>Client Name</th>-->
+                          <th>Type of Scan</th>
+                          <th>Part of Body</th>
+                          <th>Package</th>
+                          <th>Status</th>
+<!--                          <th>Action</th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let item of reportList">
+                          <td>{{item.id}}</td>
+<!--                          <td>{{item.first_name}}</td>-->
+                          <td class="text-capitalize">{{item.type_of_scan}}</td>
+                          <td class="text-capitalize">{{item.what_part_of_body}}</td>
+                          <td class="text-capitalize">{{item.selected_package}}</td>
+                          <td><div class="btn btn-primary">{{item.status}}</div></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+

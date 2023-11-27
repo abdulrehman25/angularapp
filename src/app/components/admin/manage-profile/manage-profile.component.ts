@@ -20,7 +20,7 @@ export class ManageProfileComponent {
   }
 
   ngOnInit() { }
-  
+
 
   getUserListData(){
     this.ngxLoader.start();
@@ -37,10 +37,10 @@ export class ManageProfileComponent {
     this.adminServices.deleteUser(id).subscribe((res:any)=>{
       if(res.status == '200'){
         this.ngxLoader.stop();
-        this._toastr.success('User deleted Successfully !!', 'User Delete');   
+        this._toastr.success('User deleted Successfully !!', 'User Delete');
 
       }else{
-        this._toastr.error(res.data, 'Error');   
+        this._toastr.error(res.data, 'Error');
       }
       this.getUserListData();
     });
@@ -52,7 +52,6 @@ export class ManageProfileComponent {
   }
 
   sortArr(colName:any){
-    console.log(colName);
     this.userList.sort((a:any,b:any)=>{
       a= a[colName].toLowerCase();
       b= b[colName].toLowerCase();

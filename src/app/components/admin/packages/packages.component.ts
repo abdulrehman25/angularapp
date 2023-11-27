@@ -22,7 +22,6 @@ export class PackagesComponent {
       const formData = this.packageForm.value;
       console.log("this.packageForm.value;", this.packageForm.value)
       this.adminService.addNewPackage(formData).subscribe(res=>{
-        console.log("res", res)
       })
   }
 }

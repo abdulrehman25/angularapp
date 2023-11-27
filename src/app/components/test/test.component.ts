@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
 import { StripeService, StripeCardNumberComponent } from 'ngx-stripe';
+// @ts-ignore
 import {
   StripeCardElementOptions,
   StripeElementsOptions,

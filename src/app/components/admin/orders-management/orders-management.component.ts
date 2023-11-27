@@ -23,7 +23,7 @@ export class OrdersManagementComponent {
   // closedCasesList:ApiResponse={
   //   data: {
   //     current_page: 0,
-  //     data: [], 
+  //     data: [],
   //   },
   //   status: ""
   // };
@@ -45,9 +45,8 @@ export class OrdersManagementComponent {
 
   ngOnInIt(){
   }
-  
+
   showSlideBox() {
-    console.log(" show slide function called")
     this.slideBoxVisible = true;
   }
   hideSlideBox() {
@@ -56,7 +55,6 @@ export class OrdersManagementComponent {
   getAppointmentListOpenCases(pageNumber:number){
     this.adminService.getAppointmentListOpenCases(pageNumber).subscribe(res=>{
       this.casesList = res;
-      console.log("getAppointmentListOpenCases()", this.casesList);
     })
   }
   getAppointmentListCloseCases(pageNumber:number){
@@ -68,7 +66,7 @@ export class OrdersManagementComponent {
 
   MakeAppointmentStatusOpenToClose(id:number){
    const data = {
-      "id":id,  
+      "id":id,
       "appointment_status":true
    }
     this.adminService.MakeAppointmentStatusOpenToClose(data).subscribe(res=>{

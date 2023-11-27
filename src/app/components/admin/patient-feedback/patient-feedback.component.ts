@@ -25,7 +25,6 @@ export class PatientFeedbackComponent {
   getUsersFeedback() {
     this.ngxLoader.start();
     this.adminServices.getUsersFeedback().subscribe((res: any) => {
-      console.log("entry");
       if (res.status == '200') {
         console.log('welcome');
         this.userFeedbackList = res.data;

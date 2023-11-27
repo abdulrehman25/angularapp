@@ -77,6 +77,7 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { EventsComponent } from './components/resources/events/events.component';
 import { PackagesComponent } from './components/admin/packages/packages.component';
 import { HeadAndNeckComponent } from './components/neuroradiology/head-and-neck/head-and-neck.component';
+import {GsoReportsComponent} from "./components/user-dashboard/gso-reports/gso-reports.component";
 
 const routes: Routes = [
   // {
@@ -189,6 +190,7 @@ const routes: Routes = [
       { path: 'userHome', component: UserHomeComponent },
       { path: 'userProfile', component: UserProfileComponent },
       { path: 'myReports', component: MyReportsComponent },
+      { path: 'gso-reports', component: GsoReportsComponent },
       { path: 'giveFeedback', component: GiveFeedbackComponent },
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
     ],

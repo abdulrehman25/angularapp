@@ -100,6 +100,7 @@ import { TopBannerComponent } from './components/shared/top-banner/top-banner.co
 import { PackagesComponent } from './components/admin/packages/packages.component';
 import { TestimonialBlogComponent } from './components/shared/testimonial-blog/testimonial-blog.component';
 import { HeadAndNeckComponent } from './components/neuroradiology/head-and-neck/head-and-neck.component';
+import {GsoReportsComponent} from "./components/user-dashboard/gso-reports/gso-reports.component";
 
 @NgModule({
   declarations: [
@@ -152,6 +153,7 @@ import { HeadAndNeckComponent } from './components/neuroradiology/head-and-neck/
     UserHomeComponent,
     ClickOutsideDirective,
     MyReportsComponent,
+    GsoReportsComponent,
     GiveFeedbackComponent,
     ResetPasswordComponent,
     UpdatePasswordComponent,

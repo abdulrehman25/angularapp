@@ -46,6 +46,7 @@ export class GetSecondOpinionComponent {
     amount: 0,
     name: '',
     customer_id: '',
+    user_id: '',
     email: '',
     stripeToken: '',
     package_name: '',
@@ -67,11 +68,6 @@ export class GetSecondOpinionComponent {
     const isAdmin = localStorage.getItem('isAdmin');
     const loggedInUserDetails = JSON.parse(
       localStorage.getItem('user') || '{}'
-    );
-    console.log(
-      'isUserLoggedin',
-      loggedInUserDetails,
-      typeof loggedInUserDetails
     );
     if (!!isUserLoggedin) {
       this.addClass = 'registerNow_step4';
@@ -97,7 +93,6 @@ export class GetSecondOpinionComponent {
   }
 
   showDiv(divClass: string, styleIndex: string) {
-    console.log('divClass', divClass);
     if (divClass !== 'registerNow_step8') {
       this.addClass = divClass;
       this.divStyle = `z-index : ${styleIndex}`;
@@ -106,17 +101,17 @@ export class GetSecondOpinionComponent {
     if (divClass == 'registerNow_step8') {
       if (this.formObj.selected_package === '1') {
         this.paymentObject.amount = 499;
-        this.paymentObject.package_name = 'Premium, 499 EUR';
+        this.paymentObject.package_name = 'Premium, 499 USD';
         this.makePayment(499);
       }
       if (this.formObj.selected_package === '2') {
         this.paymentObject.amount = 299;
-        this.paymentObject.package_name = 'Standard, 299 EUR';
+        this.paymentObject.package_name = 'Standard, 299 USD';
         this.makePayment(299);
       }
       if (this.formObj.selected_package === '3') {
         this.paymentObject.amount = 199;
-        this.paymentObject.package_name = 'Essentials, 199 EUR';
+        this.paymentObject.package_name = 'Essentials, 199 USD';
         this.makePayment(199);
       }
     }
@@ -161,7 +156,6 @@ export class GetSecondOpinionComponent {
       .validateVerificationCode(this.formObj)
       .subscribe((res: any) => {
         if (res.status == 200) {
-          // console.log(res);
           this.ngxLoader.stop();
           this._toastr.success('Code Verified !', 'Success');
 
@@ -181,7 +175,6 @@ export class GetSecondOpinionComponent {
         if (res.status == 404) {
           this.addClass = 'registerNow_step3';
           this.divStyle = `z-index : 3`;
-          // console.log(res);
           this.ngxLoader.stop();
           this._toastr.error(res.message.code, 'Error');
         }
@@ -189,7 +182,6 @@ export class GetSecondOpinionComponent {
   }
 
   onChange(scan: string, event: any) {
-    // console.log('scan',scan)
     if (event.target.checked) {
       const index = this.scanType.indexOf(scan);
       if (index == -1) {
@@ -202,7 +194,6 @@ export class GetSecondOpinionComponent {
       }
     }
     this.formObj.type_of_scan = this.scanType;
-    // console.log('scabtypes',this.scanType);
   }
 
   setBodyPartArr(bodyname: string, event: any) {
@@ -261,7 +252,6 @@ export class GetSecondOpinionComponent {
   }
 
   submitData() {
-    console.log('submit function called');
     let formData = new FormData();
     if (this.scanfile != undefined) {
       formData.append('scan', this.scanfile, this.scanfile.name);
@@ -289,6 +279,7 @@ export class GetSecondOpinionComponent {
           this.paymentObject.email = res.data.email;
           this.paymentObject.customer_id =
             res.data.first_name + '_' + res.data.id;
+          this.paymentObject.user_id = res.data.id;
           this.sendDataToBackendForPayment();
           this.ngxLoader.stop();
           this._toastr.success('Completed !', 'Success');
@@ -316,7 +307,6 @@ export class GetSecondOpinionComponent {
     this.getSecondOpinionService
       .payment(this.paymentObject)
       .subscribe((response: any) => {
-        console.log('response', response);
       });
   }
 
@@ -332,7 +322,6 @@ export class GetSecondOpinionComponent {
           stripeToken.id !== null
         ) {
           this.paymentObject.stripeToken = stripeToken.id;
-          console.log('stripeToken', stripeToken);
           // alert('Stripe token generated!');
           this.submitData();
         }

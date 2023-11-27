@@ -15,4 +15,8 @@ export class MyReportService {
   getUserReports(userId:number){
     return this.httpClient.get(`${this.Api_Base}/get_user_report/${userId}`);
   }
+
+  getUserGsoReports(userId:number){
+    return this.httpClient.get(`${this.Api_Base}/get_user_gso_report/${userId}`);
+  }
 }
