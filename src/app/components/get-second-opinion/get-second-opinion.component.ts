@@ -14,7 +14,8 @@ import { GerSecondOpinionService } from 'src/app/services/ger-second-opinion.ser
 export class GetSecondOpinionComponent {
   paymentHandler: any = null;
   stripeAPIKey: any =
-    'pk_test_51Mjk9kEnkPTKRYXTTOWeEJ6EDvF9s8cfi4eFdwFoDx1Q3ZapvlGp69OaZQVpmdKPXsih2iW1HCp3xQBmUx4ZwWBZ00H1XV1s83';
+    'pk_live_51Mjk9kEnkPTKRYXThuNXzxCbTzh1f9qEiOxI9ZfoNAbNQAR6XufDrMbbOjlGYPgRMqiZOq6YTJ9JwuofT39F3vcH00188ngnVp'; // live pub key
+    // 'pk_test_51Mjk9kEnkPTKRYXTTOWeEJ6EDvF9s8cfi4eFdwFoDx1Q3ZapvlGp69OaZQVpmdKPXsih2iW1HCp3xQBmUx4ZwWBZ00H1XV1s83'; // test pub key
   stripeResponseObj: any;
   scanType: any = [];
   bodyPart: any = [];

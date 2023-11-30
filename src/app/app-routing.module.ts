@@ -195,27 +195,27 @@ const routes: Routes = [
       { path: 'GetSecondOpinion', component: GetSecondOpinionComponent },
     ],
   },
-  {
-    path: 'admin',
-    component: AdminComponent, //canActivate: [AdminRoutesGuardGuard],
-    children: [
-      {
-        path: '',
-        redirectTo: 'adminHome',
-        pathMatch: 'full',
-      },
-      { path: 'adminHome', component: AdminHomeComponent },
-      { path: 'appointments', component: AppointmentsComponent },
-      { path: 'manageProfile', component: ManageProfileComponent },
-      { path: 'patientFeedback', component: PatientFeedbackComponent },
-      { path: 'viewReports', component: ViewReportsComponent },
-      { path: 'userReports/:id', component: UserReportsComponent },
-      { path: 'clientmanagement', component: ClientManagementComponent },
-      { path: 'ordersmanagement', component: OrdersManagementComponent },
-      { path: 'revenue', component: RevenueComponent },
-      { path: 'packages', component: PackagesComponent },
-    ],
-  },
+  // {
+  //   path: 'admin',
+  //   component: AdminComponent, //canActivate: [AdminRoutesGuardGuard],
+  //   children: [
+  //     {
+  //       path: '',
+  //       redirectTo: 'adminHome',
+  //       pathMatch: 'full',
+  //     },
+  //     { path: 'adminHome', component: AdminHomeComponent },
+  //     { path: 'appointments', component: AppointmentsComponent },
+  //     { path: 'manageProfile', component: ManageProfileComponent },
+  //     { path: 'patientFeedback', component: PatientFeedbackComponent },
+  //     { path: 'viewReports', component: ViewReportsComponent },
+  //     { path: 'userReports/:id', component: UserReportsComponent },
+  //     { path: 'clientmanagement', component: ClientManagementComponent },
+  //     { path: 'ordersmanagement', component: OrdersManagementComponent },
+  //     { path: 'revenue', component: RevenueComponent },
+  //     { path: 'packages', component: PackagesComponent },
+  //   ],
+  // },
   { path: '**', component: NotFoundComponent },
 ];
 
