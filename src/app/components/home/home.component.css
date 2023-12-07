@@ -750,35 +750,35 @@ img {
   outline: 2px dotted #73778c;
 }
 .process-work-section .reveal.animation-active2 .work-chart-number.one{
-  animation: circle_fade 1s ease-in-out; 
+  animation: circle_fade 1s ease-in-out;
   background-color: #3c59f2;
   color:#fff;
 }
 .process-work-section .reveal.animation-active2 .work-chart-number.two{
-  animation: circle_fade 1s ease-in-out; 
+  animation: circle_fade 1s ease-in-out;
   background-color: #3c59f2;
   color:#fff;
 }
 .process-work-section .reveal.animation-active2 .work-chart-number.three{
-  animation: circle_fade .2s ease; 
+  animation: circle_fade .2s ease;
   background-color: #3c59f2;
   color:#fff;
 }
 .process-work-section .reveal.animation-active2 .work-chart-number.four{
-  animation: circle_fade .2s ease; 
+  animation: circle_fade .2s ease;
   background-color: #3c59f2;
   color:#fff;
 }
-@keyframes circle_fade {  
-  0% {  
-      opacity:.3;  
-  } 
-  50% {  
-    opacity:.6;  
+@keyframes circle_fade {
+  0% {
+      opacity:.3;
   }
-  100% {  
-      opacity:1;  
-  }  
+  50% {
+    opacity:.6;
+  }
+  100% {
+      opacity:1;
+  }
 }
 /*-- End process section animation --*/
 
@@ -786,7 +786,7 @@ img {
 .about-section {
     background-image: linear-gradient(#427337, #427337);
     padding-top: 70px;
-    padding-bottom: 760px;
+    padding-bottom: 190px;
 }
 
 .about-tag {
@@ -2925,11 +2925,11 @@ opacity: 0;
             height: 530px;
         }
         .faq-section {
-           
+
             padding-bottom: 80px;
         }
       }
-  
+
 
     @media(max-width: 767px){
         .work-chart-number{
@@ -2956,8 +2956,8 @@ opacity: 0;
         .work-chart-number.two, .work-chart-number.four {
             right: -20px;
         }
-       
-        
+
+
     }
 
 .home_ArabicCss .banner-section, .home_ArabicCss .faq-section, .home_ArabicCss .about-section, .home_ArabicCss .services-section, .home_ArabicCss .features-section , .home_ArabicCss .process-work-section{
@@ -2976,4 +2976,4 @@ opacity: 0;
 }
 .home_ArabicCss .accordion-item button span {
     margin: 0 5px 0 25px;
-}  
+}

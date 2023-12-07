@@ -35,7 +35,7 @@
     font-style: normal;
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Light.otf') format('opentype');
@@ -43,7 +43,7 @@
     font-style: normal;
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
@@ -220,7 +220,7 @@ img {
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
-}  
+}
 .w-dropdown {
     display: inline-block;
     position: relative;
@@ -308,7 +308,7 @@ margin: 30px 0 0;
     font-size: 18px;
     font-weight: 500;
     display: flex;
-} 
+}
 .dropdown-column-wrapper {
     width: 730px;
     background-color: #fff;
@@ -634,7 +634,7 @@ box-shadow: none;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    
+
 }
 .page-title {
 	background: #427337;
@@ -698,7 +698,7 @@ box-shadow: none;
 }
 .our-team figure img {
 	height: 400px;
-	object-fit: cover;
+	object-fit: unset;
 	border: 10px solid #ffffff;
 	box-shadow: 0px 0px 15px rgba(0,0,0,.1);
 }
@@ -779,11 +779,11 @@ box-shadow: none;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
+
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
-  
+
   .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
@@ -791,12 +791,12 @@ box-shadow: none;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+
   .flip-box-front {
     background-color: #fff;
     color: #000;
   }
-  
+
   .flip-box-back {
     background-color: #1e4171;
     color: white;
@@ -866,7 +866,7 @@ box-shadow: none;
 .h-backbutton a:hover {
     text-decoration: none;
     color:#fff;
-} 
+}
 
 .dashboard-section {width: 100%;height: 100vh;display: inline-block;position: relative;box-sizing: border-box;}
 .dashboard-navbar {width: 100%;background-color: #ffffff;padding: 10px 15px;box-shadow: 0px 0px 15px rgba(0,0,0,.1);border-bottom: 1px solid rgba(0,0,0,.05); display: flex; align-items: center; justify-content: space-between;}
@@ -1100,7 +1100,7 @@ padding-left: 75px;
 /*-- Css client Management page --*/
 
 .cm-section table thead th{
-    background: #f5f5f7; 
+    background: #f5f5f7;
 }
 .cm-section a .fa.fa-file-text {
 	font-size: 20px;
@@ -1127,7 +1127,7 @@ padding-left: 75px;
   border-color:#334b2a;
 }
 .om-section table thead th{
-    background: #f5f5f7; 
+    background: #f5f5f7;
 }
 
 .om-section table a .fa.fa-eye {
@@ -1223,7 +1223,7 @@ padding-left: 75px;
 .sb-content-result tr td {
   padding: 7px;
 }
-.sb-content-result tr td a, .sb-content-result tr td .fa { 
+.sb-content-result tr td a, .sb-content-result tr td .fa {
 	color: #405e34;
 }
 /*--- Revenue page css --*/
@@ -1448,7 +1448,7 @@ padding-left: 75px;
 .primary-button-navbar.mobile {
     display: block;
 }
- 
+
 .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
 }
@@ -1472,7 +1472,7 @@ padding-left: 75px;
 .nav-menu-wrapper {
     margin-left: 140px;
     font-size: 14px;
-} 
+}
 
 .nav-link {
     margin-bottom: 0px;
@@ -2559,7 +2559,7 @@ padding-left: 75px;
         font-size: 16px;
         line-height: 20px;
     }
-   
+
 }
 .primary-button{
     padding: 13px 30px;
@@ -2636,5 +2636,5 @@ dd{
         dd{
             font-size: 16px;
         }
-     
+
 }
